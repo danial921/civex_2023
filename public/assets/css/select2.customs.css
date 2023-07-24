@@ -1,0 +1,29 @@
+.select2 {
+    width:100%!important;
+}
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border-color: #c0ccda;
+    border-radius: 0.25rem;
+    height: calc(3.5rem + 2px);
+    outline: none;
+    padding: 1.5rem 0.25rem 0.625rem 0.75rem;
+}
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #212529;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #212529;
+    line-height: calc(1.5em + 0.9375rem + 2px)-0.1rem;
+    display: flex;
+    font-size: inherit;
+    font-weight: 400;
+    align-items: center;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.select2-container--open {
+    z-index: 1051;
+}
