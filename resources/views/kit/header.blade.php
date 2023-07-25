@@ -39,7 +39,8 @@
 <link href="../../lib/jqvmap/jqvmap.min.css" rel="stylesheet">
 <link href="../../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
 <link href="../../lib/animate.css/animate.min.css" rel="stylesheet">
-<link href="../../lib/ekko-lightbox/css/ekko-lightbox.css" rel="stylesheet">
+{{-- <link href="../../lib/ekko-lightbox/css/ekko-lightbox.css" rel="stylesheet"> --}}
+<link href="../../civex/scss/style.css" rel="stylesheet">
 
 
 <!-- DashForge CSS -->
