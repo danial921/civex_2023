@@ -2,5 +2,157 @@ input.form-control:hover {
     box-shadow: none !important;
 }
 
+.general {
+    .profiledropdown {
+        p {
+            padding-left: 20px;
+            color: #000;
+            text-align: center;
+            font-family: 'Poppins';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            /* 14px */
+        }
+    }
+
+    .welcome-hero {
+        border-bottom: 3px solid #527AA4;
+
+        .title-1 {
+            color: #000;
+            font-family: 'Poppins';
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .subtitle-1 {
+            color: #000;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .subtitle-2 {
+            color: #527AA4;
+            font-family: 'Poppins';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .card-competition {
+
+        .gec {
+            .ket-pendaftaran {
+                font-family: 'Poppins';
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+                /* 8px */
+            }
+
+            .details {
+                border-radius: 0 0 12px 12px;
+                border: 3px solid #539275;
+                // background: #FFF;
+            }
+
+            .detailpendaftaran {
+                .ket-pendaftaran {
+                    color: #539275 !important;
+                    font-family: 'Poppins';
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 100%;
+                    /* 8px */
+                }
+
+                border-radius: 0 0 0 12px;
+                background-color: #FFF;
+            }
+
+            .detailanggota {
+                border-radius: 0 0 12px 0;
+                background-color: #539275;
+                .ket-pendaftaran {
+                    color: white !important;
+                    font-family: 'Poppins';
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 100%;
+                    /* 8px */
+                }
+            }
+
+            .detail {
+                color: #000;
+                font-family: 'Poppins';
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%;
+                text-align: center;
+            }
+
+            .card-gec {
+                border-radius: 12px 12px 0 0;
+                border: 3px solid #539275;
+                background: #FFF;
+            }
+
+            .card-gec1 {
+                width: 100%;
+                color: #000;
+                text-align: center;
+                font-family: 'Poppins';
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 300;
+                border-left: 3px solid #539275;
+                border-right: 3px solid #539275;
+            }
+
+        }
+
+        .card-cpcc {
+            border-radius: 12px;
+            border: 3px solid #93B4D1;
+            background: #FFF;
+        }
+
+        .card-cesc {
+            border-radius: 12px;
+            border: 3px solid #C0B4D1;
+            background: #FFF;
+        }
+
+        .competitle {
+            width: 100%;
+            color: #000;
+            font-family: 'Golos Text';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%;
+            letter-spacing: 1px;
+            text-align: center;
+        }
 
 
+    }
+}
