@@ -27,7 +27,7 @@
                             <button class="submitbutton">Masuk</button>
                             <p class="mt-3">tidak memiliki akun ? <a href="/register" ><span class="actiontext">daftar sekarang</span></a></p>
                             <p>atau</p>
-                            <p><a href="forgotpassword"><span class="actiontext">lupa password</span></a></p>
+                            <p><a href="/forgetpassword"><span class="actiontext">lupa password</span></a></p>
                         </div>
                     </form>
                 </div>

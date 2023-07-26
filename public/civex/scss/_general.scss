@@ -53,8 +53,18 @@ input.form-control:hover {
     }
 
     .card-competition {
-
         .gec {
+            img {
+                height: 165px;
+            }
+
+            .card-gec {
+                border-radius: 12px 12px 0 0;
+                border: 3px solid #539275;
+                background: #FFF;
+                height: 294.33px;
+            }
+
             .ket-pendaftaran {
                 font-family: 'Poppins';
                 font-size: 10px;
@@ -88,6 +98,7 @@ input.form-control:hover {
             .detailanggota {
                 border-radius: 0 0 12px 0;
                 background-color: #539275;
+
                 .ket-pendaftaran {
                     color: white !important;
                     font-family: 'Poppins';
@@ -129,11 +140,120 @@ input.form-control:hover {
 
         }
 
-        .card-cpcc {
-            border-radius: 12px;
-            border: 3px solid #93B4D1;
-            background: #FFF;
+        .cpcc {
+            .card-cpcc {
+                border-radius: 12px 12px 0 0;
+                border: 3px solid #93B4D1;
+                background: #FFF;
+                height: 294.33px;
+            }
+
+            .ket-pendaftaran {
+                font-family: 'Poppins';
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+                /* 8px */
+            }
+
+            .card-cpcc1 {
+                width: 100%;
+                color: #000;
+                text-align: center;
+                font-family: 'Poppins';
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 300;
+                border-left: 3px solid #93B4D1;
+                border-right: 3px solid #93B4D1;
+            }
+
         }
+
+        .cesc {
+            .card-cesc {
+                border-radius: 12px 12px 0 0;
+                border: 3px solid #C0B4D1;
+                background: #FFF;
+                height: 294.33px;
+            }
+
+            .ket-pendaftaran {
+                font-family: 'Poppins';
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+                /* 8px */
+            }
+
+            .card-cesc1 {
+                width: 100%;
+                color: #000;
+                text-align: center;
+                font-family: 'Poppins';
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 300;
+                border-left: 3px solid #C0B4D1;
+                border-right: 3px solid #C0B4D1;
+            }
+
+            .detailanggota {
+                background-color: #C0B4D1;
+            }
+        }
+
+        .details {
+            border-radius: 0 0 12px 12px;
+            border: 3px solid #C0B4D1;
+            // background: #FFF;
+        }
+
+        .detailpendaftaran {
+            .ket-pendaftaran {
+                color: #C0B4D1 !important;
+                font-family: 'Poppins';
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+                /* 8px */
+            }
+
+            border-radius: 0 0 0 12px;
+            background-color: #FFF;
+        }
+
+        .detailanggota {
+            border-radius: 0 0 12px 0;
+            background-color: #93B4D1;
+
+            .ket-pendaftaran {
+                color: white !important;
+                font-family: 'Poppins';
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+                /* 8px */
+            }
+        }
+
+        .detail {
+            color: #000;
+            font-family: 'Poppins';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            text-align: center;
+        }
+
+
+
+
 
         .card-cesc {
             border-radius: 12px;
@@ -152,7 +272,243 @@ input.form-control:hover {
             letter-spacing: 1px;
             text-align: center;
         }
+    }
 
+    .back {
+        a:hover {
+            background-color: hsla(0, 0%, 0%, 0.22) !important;
+        }
+    }
+
+    .card-header {
+        .title {
+            color: #000;
+            font-family: 'Poppins';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .term {
+            color: #BC4749;
+            font-family: 'Poppins';
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
 
     }
+}
+
+.form-pendaftaran {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fileupload {
+    .btn-file {
+        p.imagetitle {
+            color: #0F172A;
+            font-family: 'Inter';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+
+            span {
+                color: #527AA4;
+            }
+        }
+
+        p.imagesubtitle {
+            color: #6A738F;
+            font-family: 'Inter';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        margin: 0;
+        padding: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .btn-file__actions {
+        margin: 0;
+        padding: 0;
+    }
+
+    .btn-file__actions__item {
+        padding: 35px;
+        font-size: 1.5em;
+        color: rgba(82, 121, 163, 0.62);
+        cursor: pointer;
+        text-decoration: none;
+        border-top: 3px dashed rgba(82, 121, 163, 0.62);
+        border-left: 3px dashed rgba(82, 121, 163, 0.62);
+        border-bottom: 3px dashed rgba(82, 121, 163, 0.62);
+    }
+
+    .btn-file__actions__item:first-child {
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+    }
+
+    .btn-file__actions__item:last-child {
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+        border-right: 3px dashed rgba(82, 121, 163, 0.62);
+    }
+
+    .btn-file__actions__item:hover,
+    .btn-file__actions__item:focus {
+        color: #636b6f;
+        background-color: rgba(211, 224, 233, 0.1);
+    }
+
+    .btn-file__actions__item:hover--shadow,
+    .btn-file__actions__item:focus--shadow {
+        box-shadow: rgba(82, 121, 163, 0.62) 0 0 60px 15px;
+    }
+
+    .btn-file__actions__item--shadow {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+    }
+
+    .btn-file__actions__item--shadow::before {
+        content: " ";
+        box-shadow: #fff 0 0 60px 40px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .btn-file__preview {
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        border-radius: 35px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .form-group label.attachment {
+        width: 100%;
+    }
+
+    .form-group label.attachment .btn-create>a,
+    .form-group label.attachment .btn-create>div {
+        margin-top: 5px;
+    }
+
+    .form-group label.attachment input[type="file"] {
+        display: none;
+    }
+}
+
+.image-sub-label {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-civex {
+    background-color: #527AA4 !important;
+    border-color: #527AA4 !important;
+    color: #fff !important;
+    padding: 6px 45px !important;
+
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.btn-civex:hover {
+    background-color: rgba(255, 255, 255, 0.62) !important;
+    border-color: #527AA4 !important;
+    color: #527AA4 !important;
+    padding: 6px 45px !important;
+
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+
+.btn-civex-danger {
+    background-color: #BC4749 !important;
+    border-color: #BC4749 !important;
+    color: #fff !important;
+    padding: 6px 45px !important;
+
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.btn-civex-danger:hover {
+    background-color: #fff !important;
+    border-color: #BC4749 !important;
+    color: #BC4749 !important;
+    padding: 6px 45px !important;
+
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.kuotahabis {
+    border-radius: 5px;
+    background: #BC4749;
+    display: flex;
+    padding: 5px 15px !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

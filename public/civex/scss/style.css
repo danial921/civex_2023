@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Golos+Text:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Golos+Text:wght@400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 input.form-control:hover {
   box-shadow: none !important;
 }
@@ -45,6 +46,15 @@ input.form-control:hover {
 }
 .general .welcome-hero img {
   width: 100%;
+}
+.general .card-competition .gec img {
+  height: 165px;
+}
+.general .card-competition .gec .card-gec {
+  border-radius: 12px 12px 0 0;
+  border: 3px solid #539275;
+  background: #FFF;
+  height: 294.33px;
 }
 .general .card-competition .gec .ket-pendaftaran {
   font-family: "Poppins";
@@ -109,10 +119,97 @@ input.form-control:hover {
   border-left: 3px solid #539275;
   border-right: 3px solid #539275;
 }
-.general .card-competition .card-cpcc {
-  border-radius: 12px;
+.general .card-competition .cpcc .card-cpcc {
+  border-radius: 12px 12px 0 0;
   border: 3px solid #93B4D1;
   background: #FFF;
+  height: 294.33px;
+}
+.general .card-competition .cpcc .ket-pendaftaran {
+  font-family: "Poppins";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 8px */
+}
+.general .card-competition .cpcc .card-cpcc1 {
+  width: 100%;
+  color: #000;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  border-left: 3px solid #93B4D1;
+  border-right: 3px solid #93B4D1;
+}
+.general .card-competition .cesc .card-cesc {
+  border-radius: 12px 12px 0 0;
+  border: 3px solid #C0B4D1;
+  background: #FFF;
+  height: 294.33px;
+}
+.general .card-competition .cesc .ket-pendaftaran {
+  font-family: "Poppins";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 8px */
+}
+.general .card-competition .cesc .card-cesc1 {
+  width: 100%;
+  color: #000;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  border-left: 3px solid #C0B4D1;
+  border-right: 3px solid #C0B4D1;
+}
+.general .card-competition .cesc .detailanggota {
+  background-color: #C0B4D1;
+}
+.general .card-competition .details {
+  border-radius: 0 0 12px 12px;
+  border: 3px solid #C0B4D1;
+}
+.general .card-competition .detailpendaftaran {
+  border-radius: 0 0 0 12px;
+  background-color: #FFF;
+}
+.general .card-competition .detailpendaftaran .ket-pendaftaran {
+  color: #C0B4D1 !important;
+  font-family: "Poppins";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 8px */
+}
+.general .card-competition .detailanggota {
+  border-radius: 0 0 12px 0;
+  background-color: #93B4D1;
+}
+.general .card-competition .detailanggota .ket-pendaftaran {
+  color: white !important;
+  font-family: "Poppins";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 8px */
+}
+.general .card-competition .detail {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-align: center;
 }
 .general .card-competition .card-cesc {
   border-radius: 12px;
@@ -129,6 +226,209 @@ input.form-control:hover {
   line-height: 100%;
   letter-spacing: 1px;
   text-align: center;
+}
+.general .back a:hover {
+  background-color: hsla(0, 0%, 0%, 0.22) !important;
+}
+.general .card-header .title {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.general .card-header .term {
+  color: #BC4749;
+  font-family: "Poppins";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form-pendaftaran {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.fileupload .btn-file {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+.fileupload .btn-file p.imagetitle {
+  color: #0F172A;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.fileupload .btn-file p.imagetitle span {
+  color: #527AA4;
+}
+.fileupload .btn-file p.imagesubtitle {
+  color: #6A738F;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.fileupload .btn-file__actions {
+  margin: 0;
+  padding: 0;
+}
+.fileupload .btn-file__actions__item {
+  padding: 35px;
+  font-size: 1.5em;
+  color: rgba(82, 121, 163, 0.62);
+  cursor: pointer;
+  text-decoration: none;
+  border-top: 3px dashed rgba(82, 121, 163, 0.62);
+  border-left: 3px dashed rgba(82, 121, 163, 0.62);
+  border-bottom: 3px dashed rgba(82, 121, 163, 0.62);
+}
+.fileupload .btn-file__actions__item:first-child {
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
+.fileupload .btn-file__actions__item:last-child {
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  border-right: 3px dashed rgba(82, 121, 163, 0.62);
+}
+.fileupload .btn-file__actions__item:hover,
+.fileupload .btn-file__actions__item:focus {
+  color: #636b6f;
+  background-color: rgba(211, 224, 233, 0.1);
+}
+.fileupload .btn-file__actions__item:hover--shadow,
+.fileupload .btn-file__actions__item:focus--shadow {
+  box-shadow: rgba(82, 121, 163, 0.62) 0 0 60px 15px;
+}
+.fileupload .btn-file__actions__item--shadow {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.fileupload .btn-file__actions__item--shadow::before {
+  content: " ";
+  box-shadow: #fff 0 0 60px 40px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+.fileupload .btn-file__preview {
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 35px;
+  background-size: cover;
+  background-position: center;
+}
+.fileupload .form-group label.attachment {
+  width: 100%;
+}
+.fileupload .form-group label.attachment .btn-create > a,
+.fileupload .form-group label.attachment .btn-create > div {
+  margin-top: 5px;
+}
+.fileupload .form-group label.attachment input[type=file] {
+  display: none;
+}
+
+.image-sub-label {
+  color: #000;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btn-civex {
+  background-color: #527AA4 !important;
+  border-color: #527AA4 !important;
+  color: #fff !important;
+  padding: 6px 45px !important;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.btn-civex:hover {
+  background-color: rgba(255, 255, 255, 0.62) !important;
+  border-color: #527AA4 !important;
+  color: #527AA4 !important;
+  padding: 6px 45px !important;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.btn-civex-danger {
+  background-color: #BC4749 !important;
+  border-color: #BC4749 !important;
+  color: #fff !important;
+  padding: 6px 45px !important;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.btn-civex-danger:hover {
+  background-color: #fff !important;
+  border-color: #BC4749 !important;
+  color: #BC4749 !important;
+  padding: 6px 45px !important;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.kuotahabis {
+  border-radius: 5px;
+  background: #BC4749;
+  display: flex;
+  padding: 5px 15px !important;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .authcard {
