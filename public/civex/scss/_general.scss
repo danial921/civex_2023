@@ -481,11 +481,10 @@ input.form-control:hover {
 }
 
 .btn-civex-danger:hover {
-    background-color: #fff !important;
+    background-color: #000 !important;
     border-color: #BC4749 !important;
     color: #BC4749 !important;
     padding: 6px 45px !important;
-
     text-align: center;
     font-family: 'Poppins';
     font-size: 18px;
@@ -497,7 +496,7 @@ input.form-control:hover {
 
 .kuotahabis {
     border-radius: 5px;
-    background: #BC4749;
+    background: rgba(188, 71, 73, 0.62);
     display: flex;
     padding: 5px 15px !important;
     justify-content: center;
@@ -511,4 +510,134 @@ input.form-control:hover {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.verifikasi {
+    p.form {
+        color: #000;
+        font-family: 'Poppins';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .danger {
+        border-radius: 5px;
+        background: rgba(188, 71, 73, 0.62);
+        display: flex;
+        padding: 5px 15px !important;
+        text-align: center;
+        gap: 10px;
+
+        p {
+            color: #000;
+            font-family: 'Roboto';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+
+    .medium {
+        border-radius: 5px;
+        background: #FFE898;
+        display: flex;
+        padding: 5px 15px !important;
+        text-align: center;
+        gap: 10px;
+
+        p {
+            color: #000;
+            font-family: 'Roboto';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+
+    a {
+        .btn-daftar {
+            padding: 5px 20px !important;
+            background: rgba(82, 122, 164, 0.12);
+            border-radius: 5px;
+            border: 1px solid #527AA4;
+            color: #527AA4;
+
+        }
+
+        .btn-daftar:hover {
+            padding: 5px 20px !important;
+            background: rgba(82, 122, 164, 0.62);
+            border-radius: 5px;
+            border: 1px solid #527AA4;
+            color: #000;
+            transition: background-color 0.5s ease;
+        }
+    }
+}
+
+
+.back {
+    ion-icon {
+        width: 18px;
+    }
+
+    h4 {
+        @media screen and (max-width: 500px) {
+            font-size: 0.9rem !important;
+        }
+    }
+}
+
+.timeline {
+
+.card-body{
+    img{
+        height: 40;
+        justify-content: center;
+align-items: center;
+    }
+    .title {
+        color: #344767;
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 21px;
+        /* 150% */
+    }
+
+    .subtitle {
+        color: #7B809A;
+        font-family: 'Roboto';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 15px;
+        /* 125% */
+    }
+}
+}
+
+.formkelengkapan{
+
+    .btn-download {
+        padding: 5px 20px !important;
+        background: rgba(82, 122, 164, 0.12);
+        border-radius: 5px;
+        border: 1px solid #527AA4;
+        color: #527AA4;
+
+    }
+    .titleheading{
+        color: #003459;
+        font-family: 'Poppins';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
 }

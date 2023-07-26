@@ -6,7 +6,7 @@
     @section('title', 'dashboard') -->
     @include('kit.header')
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicon.png">
-    <title>Dashboard - Civex 2023</title>
+    <title>Login - Civex 2023</title>
     <style>
         body {
             background-color: #EDEDED !important;
@@ -15,9 +15,9 @@
 </head>
 
 <body class="mn-ht-100v d-flex flex-column general">
-    @include('gec.slicing.navbar')
-    @include('gec.slicing.sidebar')
-    @include('gec.slicing.fixednav')
+    @include('general.slicing.navbar')
+    @include('general.slicing.sidebar')
+    @include('general.slicing.fixednav')
 
     @yield('content')
 

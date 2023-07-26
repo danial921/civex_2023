@@ -16,7 +16,7 @@
             <div class="card-header">
                 <p class="title">Biaya Pendaftaran</p>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-sm-6 col-12">
                         <div class="d-flex bd-highlight mb-3 justify-content-center">
                             <div class="p-2 bd-highlight"><img src="{{ asset('civex/img/icon/icon-earlybird.png') }}"
                                     class=" mg-l-10 mg-r-25 "></div>
@@ -26,7 +26,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6 col-12">
                         <div class="d-flex bd-highlight mb-3 justify-content-center">
                             <div class="p-2 bd-highlight"><img src="{{ asset('civex/img/icon/icon-regular.png') }}"
                                     class=" mg-l-10 mg-r-25 "></div>
@@ -45,7 +45,7 @@
             <div class="card-header">
                 <p class="title">Biaya Pendaftaran</p>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-sm-6 col-12">
                         <div class="d-flex bd-highlight mb-3 justify-content-center">
                             <div class="p-2 bd-highlight"><img src="{{ asset('civex/img/icon/icon-earlybird.png') }}"
                                     class=" mg-l-10 mg-r-25 "></div>
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6 col-12">
                         <div class="d-flex bd-highlight mb-3 justify-content-center">
                             <div class="p-2 bd-highlight"><img src="{{ asset('civex/img/icon/icon-regular.png') }}"
                                     class=" mg-l-10 mg-r-25 "></div>
