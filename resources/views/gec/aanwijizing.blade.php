@@ -17,6 +17,9 @@
 
                 {{-- hasil jawaban aanwijizing, ditampilkan jika sudah masuk waktunya --}}
                 @include('gec.slicing.aanwijizing-resultpreview')
+
+                {{-- recap aanwijizing --}}
+                @include('gec.slicing.aanwijizing-resulttable')
             </div>
             <div class="col-lg-4 col-12">
                 @include('gec.slicing.timeline')

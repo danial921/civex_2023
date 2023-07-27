@@ -11,6 +11,13 @@
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
 <!-- Script base -->
+
+<!-- data table-->
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.js"></script>
+
+<script>
+    let table = new DataTable('#myTable');
+</script>
 <script>
     $(function(){
         'use strict'

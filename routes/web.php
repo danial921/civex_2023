@@ -104,8 +104,20 @@ Route::get('/gec/soal', function () {return view('gec.soal',
     ]);
 });
 
-Route::get('/gec/aanwijizing', function () {return view('gec.aanwijizing',
-    [
+Route::get('/gec/aanwijizing', function () {
+    $questions = [
+        ['penanya' => 'User1', 'judul_pertanyaan' => 'Pertanyaan 1', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 1'],
+        ['penanya' => 'User2', 'judul_pertanyaan' => 'Pertanyaan 2', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 2'],
+        ['penanya' => 'User3', 'judul_pertanyaan' => 'Pertanyaan 3', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 3'],
+        ['penanya' => 'User4', 'judul_pertanyaan' => 'Pertanyaan 4', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 4'],
+        ['penanya' => 'User5', 'judul_pertanyaan' => 'Pertanyaan 5', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 5'],
+        ['penanya' => 'User6', 'judul_pertanyaan' => 'Pertanyaan 6', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 6'],
+        ['penanya' => 'User7', 'judul_pertanyaan' => 'Pertanyaan 7', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 7'],
+        ['penanya' => 'User8', 'judul_pertanyaan' => 'Pertanyaan 8', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 8'],
+        ['penanya' => 'User9', 'judul_pertanyaan' => 'Pertanyaan 9', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 9'],
+        ['penanya' => 'User10', 'judul_pertanyaan' => 'Pertanyaan 10', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 10']
+    ];
+    return view('gec.aanwijizing',[
         'time' => Carbon::now()->addDays(3),
         'username' => 'Danial Farros',
         'email' => 'example@gmail.com',
@@ -117,7 +129,45 @@ Route::get('/gec/aanwijizing', function () {return view('gec.aanwijizing',
         'countDownName' => 'Aanwizing',
         'judulAanwijzing' => 'Lorem ipsum sir dolor amet',
         'pertanyaanAanwijzing' => '1.Mengapa bumi bulat ?. 2.Sejak kapan lalala test test',
-        'jawabanAanwijizing' => '1betul. 2.Betul'
+        'jawabanAanwijizing' => '1betul. 2.Betul',
+        'questions' => $questions
+    ]);
+});
+
+Route::get('/gec/detail-aanwijizing', function () {
+    return view('gec.detail-aanwijizing',[
+        'time' => Carbon::now()->addDays(3),
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'Institut Teknologi Sepuluh Nopember',
+        'countDownName' => 'Aanwizing',
+        'judulAanwijzing' => 'Lorem ipsum sir dolor amet',
+        'pertanyaanAanwijzing' => '1.Mengapa bumi bulat ?. 2.Sejak kapan lalala test test',
+        'jawabanAanwijizing' => '1betul. 2.Betul',
+    ]);
+});
+
+Route::get('/gec/submission-final', function () {
+    return view('gec.submission-final',[
+
+        'time' => Carbon::now()->addDays(3),
+        'dosenpembimbing' => 'Abdul',
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'ketuatim' => 'Aushaf Amrega Hisyam',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'Institut Teknologi Sepuluh Nopember',
+        'countDownName' => 'Aanwizing',
+        'judulAanwijzing' => 'Lorem ipsum sir dolor amet',
+        'pertanyaanAanwijzing' => '1.Mengapa bumi bulat ?. 2.Sejak kapan lalala test test',
+        'jawabanAanwijizing' => '1betul. 2.Betul',
     ]);
 });
 
