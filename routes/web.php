@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Dummmudata;
+use Carbon\Carbon;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,7 +56,7 @@ Route::get('/form-cesc', function () {return view('general.form-pendaftaran-cesc
     ]);
 });
 
-Route::get('/gec-verifikasi1', function () {return view('gec.verifikasi_1',
+Route::get('/gec/verifikasi', function () {return view('gec.verifikasi_1',
     [
         'username' => 'Danial Farros',
         'email' => 'example@gmail.com',
@@ -64,7 +66,7 @@ Route::get('/gec-verifikasi1', function () {return view('gec.verifikasi_1',
     ]);
 });
 
-Route::get('/gec-formulirtim', function () {return view('gec.form_lengkap',
+Route::get('/gec/formulirtim', function () {return view('gec.form_lengkap',
     [
         'username' => 'Danial Farros',
         'email' => 'example@gmail.com',
@@ -73,6 +75,49 @@ Route::get('/gec-formulirtim', function () {return view('gec.form_lengkap',
         'rekening_transfer' => '12345678991 (BCA)',
         'namatim' => 'WibuWotaBerdsatu',
         'institusi' => 'Institut Teknologi Sepuluh Nopember'
+    ]);
+});
+
+Route::get('/gec', function () {return view('gec.dashboard',
+    [
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'Institut Teknologi Sepuluh Nopember'
+    ]);
+});
+
+Route::get('/gec/soal', function () {return view('gec.soal',
+    [
+        'time' => Carbon::now()->addDays(3),
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'Institut Teknologi Sepuluh Nopember',
+        'countDownName' => 'Pembagian Soal /Kasus'
+    ]);
+});
+
+Route::get('/gec/aanwijizing', function () {return view('gec.aanwijizing',
+    [
+        'time' => Carbon::now()->addDays(3),
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'Institut Teknologi Sepuluh Nopember',
+        'countDownName' => 'Aanwizing',
+        'judulAanwijzing' => 'Lorem ipsum sir dolor amet',
+        'pertanyaanAanwijzing' => '1.Mengapa bumi bulat ?. 2.Sejak kapan lalala test test',
+        'jawabanAanwijizing' => '1betul. 2.Betul'
     ]);
 });
 

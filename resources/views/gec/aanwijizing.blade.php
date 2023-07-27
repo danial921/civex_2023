@@ -1,26 +1,32 @@
-@extends('general.master')
+@extends('gec.master')
 
 @section('content')
     <div class="container verifikasi pt-5 mt-5">
         <div class="row">
-            <div class="col-lg-8 col-12">
-                {{-- pendaftaran di verifikasi, timbelum melengkapi berkas --}}
-                @include('gec.slicing.verif-status')
-                {{-- proses verif --}}
-                @include('gec.slicing.verif-status2')
-                {{-- DiTolak --}}
-                @include('gec.slicing.verif-status3')
+            <div class="col-lg-8 col-12 mb-lg-5 mb-2">
+                {{-- status bar --}}
+                @include('gec.slicing.aanwijizing-status')
+                @include('gec.slicing.aanwijizing-status2')
+                @include('gec.slicing.aanwijizing-status3')
+
+                {{-- saat belum bertanya --}}
+                @include('gec.slicing.aanwijizing-form')
+
+                {{-- preview sudah mengajukan --}}
+                @include('gec.slicing.aanwijizing-preview')
+
+                {{-- hasil jawaban aanwijizing, ditampilkan jika sudah masuk waktunya --}}
+                @include('gec.slicing.aanwijizing-resultpreview')
             </div>
             <div class="col-lg-4 col-12">
-                    @include('gec.slicing.timeline')
+                @include('gec.slicing.timeline')
             </div>
         </div>
     </div>
 
 
     <!-- Modal simpan -->
-    <div class="modal fade effect-scale" id="simpan" tabindex="-1" role="dialog" aria-labelledby="simpan"
-        aria-hidden="true">
+    <div class="modal fade effect-scale" id="simpan" tabindex="-1" role="dialog" aria-labelledby="simpan" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">

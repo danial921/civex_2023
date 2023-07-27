@@ -1,18 +1,20 @@
-@extends('general.master')
+@extends('gec.master')
 
 @section('content')
     <div class="container verifikasi pt-5 mt-5">
         <div class="row">
             <div class="col-lg-8 col-12">
                 {{-- pendaftaran di verifikasi, timbelum melengkapi berkas --}}
-                @include('gec.slicing.verif-status')
+                @include('gec.slicing.dashboard-status')
                 {{-- proses verif --}}
-                @include('gec.slicing.verif-status2')
+                @include('gec.slicing.dashboard-status2')
                 {{-- DiTolak --}}
-                @include('gec.slicing.verif-status3')
+                @include('gec.slicing.dashboard-status3')
+                {{-- pendaftaran di verifikasi, tim sudah melengkapi berkas --}}
+                @include('gec.slicing.dashboard-status4')
             </div>
             <div class="col-lg-4 col-12">
-                    @include('gec.slicing.timeline')
+                @include('gec.slicing.timeline')
             </div>
         </div>
     </div>
