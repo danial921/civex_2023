@@ -1,4 +1,4 @@
-@extends('general.master')
+@extends('cpcc.master')
 
 @section('content')
     <div class="container pt-5 mt-5 mb-1">
@@ -16,5 +16,7 @@
     </div>
 
     {{-- form --}}
+    <div class="container formkelengkapan">
     @include('gec.slicing.form2-formulir')
+    </div>
 @endsection

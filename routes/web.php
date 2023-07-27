@@ -56,17 +56,7 @@ Route::get('/form-cesc', function () {return view('general.form-pendaftaran-cesc
     ]);
 });
 
-Route::get('/gec/verifikasi', function () {return view('gec.verifikasi_1',
-    [
-        'username' => 'Danial Farros',
-        'email' => 'example@gmail.com',
-        'nomerhp' => '1234567891',
-        'biaya_daftar' => 'Rp.300,000,00',
-        'rekening_transfer' => '12345678991 (BCA)',
-    ]);
-});
-
-Route::get('/gec/formulirtim', function () {return view('gec.form_lengkap',
+Route::get('/gec', function () {return view('gec.dashboard',
     [
         'username' => 'Danial Farros',
         'email' => 'example@gmail.com',
@@ -78,7 +68,17 @@ Route::get('/gec/formulirtim', function () {return view('gec.form_lengkap',
     ]);
 });
 
-Route::get('/gec', function () {return view('gec.dashboard',
+Route::get('/gec/verifikasi', function () {return view('gec.verifikasi_1',
+    [
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+    ]);
+});
+
+Route::get('/gec/formulirtim', function () {return view('gec.form_lengkap',
     [
         'username' => 'Danial Farros',
         'email' => 'example@gmail.com',
@@ -151,9 +151,8 @@ Route::get('/gec/detail-aanwijizing', function () {
     ]);
 });
 
-Route::get('/gec/submission-final', function () {
-    return view('gec.submission-final',[
-
+Route::get('/gec/submission', function () {
+    return view('gec.submission',[
         'time' => Carbon::now()->addDays(3),
         'dosenpembimbing' => 'Abdul',
         'username' => 'Danial Farros',
@@ -171,9 +170,121 @@ Route::get('/gec/submission-final', function () {
     ]);
 });
 
+Route::get('/cpcc/verifikasi', function () {return view('cpcc.verifikasi_1',
+    [
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+    ]);
+});
 
+Route::get('/cpcc/formulirtim', function () {return view('cpcc.form_lengkap',
+    [
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'Institut Teknologi Sepuluh Nopember'
+    ]);
+});
 
+Route::get('/cpcc', function () {return view('cpcc.dashboard',
+    [
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'Institut Teknologi Sepuluh Nopember'
+    ]);
+});
 
+Route::get('/cpcc/soal', function () {return view('cpcc.soal',
+    [
+        'time' => Carbon::now()->addDays(3),
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'Institut Teknologi Sepuluh Nopember',
+        'countDownName' => 'Pembagian Soal /Kasus'
+    ]);
+});
+
+Route::get('/cpcc/aanwijizing', function () {
+    $questions = [
+        ['penanya' => 'User1', 'judul_pertanyaan' => 'Pertanyaan 1', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 1'],
+        ['penanya' => 'User2', 'judul_pertanyaan' => 'Pertanyaan 2', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 2'],
+        ['penanya' => 'User3', 'judul_pertanyaan' => 'Pertanyaan 3', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 3'],
+        ['penanya' => 'User4', 'judul_pertanyaan' => 'Pertanyaan 4', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 4'],
+        ['penanya' => 'User5', 'judul_pertanyaan' => 'Pertanyaan 5', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 5'],
+        ['penanya' => 'User6', 'judul_pertanyaan' => 'Pertanyaan 6', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 6'],
+        ['penanya' => 'User7', 'judul_pertanyaan' => 'Pertanyaan 7', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 7'],
+        ['penanya' => 'User8', 'judul_pertanyaan' => 'Pertanyaan 8', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 8'],
+        ['penanya' => 'User9', 'judul_pertanyaan' => 'Pertanyaan 9', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 9'],
+        ['penanya' => 'User10', 'judul_pertanyaan' => 'Pertanyaan 10', 'deskripsi_pertanyaan' => 'Deskripsi pertanyaan 10']
+    ];
+    return view('cpcc.aanwijizing',[
+        'time' => Carbon::now()->addDays(3),
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'Institut Teknologi Sepuluh Nopember',
+        'countDownName' => 'Aanwizing',
+        'judulAanwijzing' => 'Lorem ipsum sir dolor amet',
+        'pertanyaanAanwijzing' => '1.Mengapa bumi bulat ?. 2.Sejak kapan lalala test test',
+        'jawabanAanwijizing' => '1betul. 2.Betul',
+        'questions' => $questions
+    ]);
+});
+
+Route::get('/cpcc/submission', function () {
+    return view('cpcc.submission',[
+        'time' => Carbon::now()->addDays(3),
+        'dosenpembimbing' => 'Abdul',
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'ketuatim' => 'Aushaf Amrega Hisyam',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'Institut Teknologi Sepuluh Nopember',
+        'countDownName' => 'Aanwizing',
+        'judulAanwijzing' => 'Lorem ipsum sir dolor amet',
+        'pertanyaanAanwijzing' => '1.Mengapa bumi bulat ?. 2.Sejak kapan lalala test test',
+        'jawabanAanwijizing' => '1betul. 2.Betul',
+    ]);
+});
+
+Route::get('/cpcc/submission-final', function () {
+    return view('cpcc.berkasfinal',[
+        'time' => Carbon::now()->addDays(3),
+        'dosenpembimbing' => 'Abdul',
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'ketuatim' => 'Aushaf Amrega Hisyam',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'Institut Teknologi Sepuluh Nopember',
+        'countDownName' => 'Aanwizing',
+        'judulAanwijzing' => 'Lorem ipsum sir dolor amet',
+        'pertanyaanAanwijzing' => '1.Mengapa bumi bulat ?. 2.Sejak kapan lalala test test',
+        'jawabanAanwijizing' => '1betul. 2.Betul',
+    ]);
+});
 
 Route::get('/test', function () {
     return view('test');

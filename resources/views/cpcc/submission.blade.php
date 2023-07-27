@@ -1,4 +1,4 @@
-@extends('general.master')
+@extends('cpcc.master')
 
 @section('content')
     <div class="container pt-5 mt-5">
@@ -9,15 +9,13 @@
                     title="Kembali">
                     <ion-icon name="arrow-back-outline" class="mg-y-2 tx-22"></ion-icon>
                 </a>
-                <h4 class="tx-poppins tx-medium mg-b-0">Form Pendaftaran <span class="c-cpcc">CPCC</span> Costruction Project Planning Competition</h4>
+                <h4 class="tx-poppins tx-medium mg-b-0">Submission <span class="c-cpcc">CPCC</span> Berkas</h4>
             </div>
         </div>
-        {{-- jumbotron early masih ada --}}
-        @include('cpcc.slicing.form1-status')
 
-        {{-- jumbotronkalo udah abis --}}
-        @include('cpcc.slicing.form1-status2')
+        {{-- hero submit --}}
+        @include('cpcc.slicing.submission-submited')
 
-        @include('cpcc.slicing.form1-formulir')
-    </div>
-@endsection
+        {{-- form submission --}}
+        @include('cpcc.slicing.submission-form')
+    @endsection

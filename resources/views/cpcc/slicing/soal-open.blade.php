@@ -13,7 +13,7 @@
                         <div class="pb-2">
                             <a href="">
                                 <button type="button" class="btn btn-daftar">
-                                    <img src="{{ asset('civex/img/icon/icon-cloud.svg') }}" alt="your_image"
+                                    <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
                                     <b>Download</b> Soal
                                 </button>
@@ -21,7 +21,7 @@
                         </div>
                         <div class="pb-1"> <a href="">
                                 <button type="button" class="btn btn-daftar">
-                                    <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
+                                    <img src="{{ asset('civex/img/icon/icon-cloud.svg') }}" alt="your_image"
                                         width="20" height="20">
                                     <b>Download</b> Template Laporan
                                 </button>

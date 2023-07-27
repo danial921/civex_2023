@@ -2,20 +2,22 @@ input.form-control:hover {
     box-shadow: none !important;
 }
 
-.general {
-    .profiledropdown {
-        p {
-            padding-left: 20px;
-            color: #000;
-            text-align: center;
-            font-family: 'Poppins';
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 100%;
-            /* 14px */
-        }
+.profiledropdown {
+    p {
+        padding-left: 20px;
+        color: #000;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        /* 14px */
     }
+}
+
+.general {
+
 
     .welcome-hero {
         border-bottom: 3px solid #527AA4;
@@ -778,4 +780,30 @@ line-height: normal;
         font-weight: 300;
         line-height: normal;
     }
+}
+.hint-blue{
+    color: #527AA4;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.formbody-header{
+    color: #003459;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.subtitleform{
+    color: #BC4749;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

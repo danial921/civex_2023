@@ -9,13 +9,13 @@
                     title="Kembali">
                     <ion-icon name="arrow-back-outline" class="mg-y-2 tx-22"></ion-icon>
                 </a>
-                <h4 class="tx-poppins tx-medium mg-b-0">Submission <span class="c-gec">GEC</span>Berkas Final</h4>
+                <h4 class="tx-poppins tx-medium mg-b-0">Submission <span class="c-gec">GEC</span>Berkas</h4>
             </div>
         </div>
 
         {{-- hero submit --}}
-        @include('gec.slicing.final-submited')
+        @include('gec.slicing.submission-submited')
 
         {{-- form submission --}}
-        @include('gec.slicing.final-form')
+        @include('gec.slicing.submission-form')
     @endsection
