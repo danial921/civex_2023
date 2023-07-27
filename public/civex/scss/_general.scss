@@ -2,20 +2,22 @@ input.form-control:hover {
     box-shadow: none !important;
 }
 
-.general {
-    .profiledropdown {
-        p {
-            padding-left: 20px;
-            color: #000;
-            text-align: center;
-            font-family: 'Poppins';
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 100%;
-            /* 14px */
-        }
+.profiledropdown {
+    p {
+        padding-left: 20px;
+        color: #000;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        /* 14px */
     }
+}
+
+.general {
+
 
     .welcome-hero {
         border-bottom: 3px solid #527AA4;
@@ -540,6 +542,24 @@ input.form-control:hover {
         }
     }
 
+    .success {
+        border-radius: 5px;
+        background: #DBF4A7;
+        display: flex;
+        padding: 5px 15px !important;
+        text-align: center;
+        gap: 10px;
+
+        p {
+            color: #000;
+            font-family: 'Roboto';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+
     .medium {
         border-radius: 5px;
         background: #FFE898;
@@ -594,35 +614,36 @@ input.form-control:hover {
 
 .timeline {
 
-.card-body{
-    img{
-        height: 40;
-        justify-content: center;
-align-items: center;
-    }
-    .title {
-        color: #344767;
-        font-family: 'Roboto';
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 21px;
-        /* 150% */
-    }
+    .card-body {
+        img {
+            height: 40;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .subtitle {
-        color: #7B809A;
-        font-family: 'Roboto';
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 15px;
-        /* 125% */
+        .title {
+            color: #344767;
+            font-family: 'Roboto';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 21px;
+            /* 150% */
+        }
+
+        .subtitle {
+            color: #7B809A;
+            font-family: 'Roboto';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 15px;
+            /* 125% */
+        }
     }
 }
-}
 
-.formkelengkapan{
+.formkelengkapan {
 
     .btn-download {
         padding: 5px 20px !important;
@@ -632,7 +653,8 @@ align-items: center;
         color: #527AA4;
 
     }
-    .titleheading{
+
+    .titleheading {
         color: #003459;
         font-family: 'Poppins';
         font-size: 24px;
@@ -640,4 +662,148 @@ align-items: center;
         font-weight: 500;
         line-height: normal;
     }
+}
+
+.soal {
+    .title {
+        color: #000;
+        font-family: 'Poppins';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    span.bold-blue {
+        color: #003459;
+        font-family: 'Poppins';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .sub-title {
+        color: #000;
+        font-family: 'Poppins';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.countdownBar {
+    .nominal {
+        width: 100%;
+        border: 3px solid #000;
+        background: linear-gradient(0deg, #FFFBFB 0%, #FFFBFB 100%), #FFF;
+        box-shadow: 4px 4px 0px 0px #000;
+
+        p.count {
+            margin: 3px auto;
+            color: #000;
+            text-align: center;
+            font-family: 'Inter';
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 600;
+            text-transform: uppercase;
+
+        }
+
+        .subtitle {
+            border-top: 3px solid #000;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin: 0px;
+            color: #000;
+            text-align: center;
+            font-family: 'Inter';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.51px;
+            text-transform: uppercase;
+        }
+
+        .day {
+            background: linear-gradient(0deg, #97CADB 0%, #97CADB 100%), #FFF;
+        }
+
+        .hour {
+            background: #ACCE82;
+        }
+
+        .minute {
+            background: #E1CCD5;
+        }
+
+        .second {
+            background: linear-gradient(0deg, #CDB8D4 0%, #CDB8D4 100%), #FFF;
+        }
+    }
+}
+
+.aanwijizing{
+    .title{
+        color: #003459;
+        font-family: 'Poppins';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .subtitle{
+        color: #000;
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    label.form-pendaftaran{
+        color: #000;
+font-family: 'Poppins';
+font-size: 12px;
+font-style: normal;
+font-weight: 600!important;
+line-height: normal;
+    }
+
+    .sublabel{
+        color: #BC4749;
+        font-family: 'Poppins';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+}
+.hint-blue{
+    color: #527AA4;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.formbody-header{
+    color: #003459;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.subtitleform{
+    color: #BC4749;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

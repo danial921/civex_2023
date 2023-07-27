@@ -15,9 +15,9 @@
 </head>
 
 <body class="mn-ht-100v d-flex flex-column general">
-    @include('gec.slicing.navbar')
-    @include('gec.slicing.sidebar')
-    @include('gec.slicing.fixednav')
+    @include('general.slicing.navbar')
+    @include('general.slicing.sidebar')
+    @include('general.slicing.fixednav')
 
     @yield('content')
 
