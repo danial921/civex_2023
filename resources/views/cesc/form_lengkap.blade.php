@@ -1,7 +1,7 @@
-@extends('general.master')
+@extends('cesc.master')
 
 @section('content')
-    <div class="container pt-5 mt-5">
+    <div class="container pt-5 mt-5 mb-1">
         <div class="back d-flex align-items-center justify-content-between mg-b-20 mg-sm-b-25 mg-lg-b-25">
             <div class="d-flex align-items-center justify-content-start">
                 <a href="/"
@@ -9,16 +9,14 @@
                     title="Kembali">
                     <ion-icon name="arrow-back-outline" class="mg-y-2 tx-22"></ion-icon>
                 </a>
-                <h4 class="tx-poppins tx-medium mg-b-0">Form Pendaftaran <span class="c-gec">GEC</span> Geotechnical
-                    Engineering Competition</h4>
+                <h4 class="tx-poppins tx-medium mg-b-0">Form Kelengkapan Tim <span class="c-cesc">CESC</span>
+                    Civil Engginering Student Competition</h4>
             </div>
         </div>
-        {{-- jumbotron early masih ada --}}
-        @include('gec.slicing.form1-status')
+    </div>
 
-        {{-- jumbotronkalo udah abis --}}
-        @include('gec.slicing.form1-status2')
-
-        @include('gec.slicing.form1-formulir')
+    {{-- form --}}
+    <div class="container formkelengkapan">
+    @include('cesc.slicing.form2-formulir')
     </div>
 @endsection

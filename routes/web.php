@@ -286,6 +286,96 @@ Route::get('/cpcc/submission-final', function () {
     ]);
 });
 
+Route::get('/cesc', function () {return view('cesc.dashboard',
+    [
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'Institut Teknologi Sepuluh Nopember'
+    ]);
+});
+
+Route::get('/cesc/verifikasi', function () {return view('cesc.verifikasi_1',
+    [
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+    ]);
+});
+
+Route::get('/cesc/formulirtim', function () {return view('cesc.form_lengkap',
+    [
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'SMA Negeri 1 Gresik'
+    ]);
+});
+
+Route::get('/cesc/penyisihan', function () {return view('cesc.penyisihan',
+    [
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'SMA Negeri 1 Gresik',
+        'usernamelomba' => 'danial921',
+        'pwlomba'   => 'hade'
+    ]);
+});
+
+Route::get('/cesc/semifinal', function () {return view('cesc.semifinal',
+    [
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'SMA Negeri 1 Gresik',
+        'usernamelomba' => 'danial921',
+        'pwlomba'   => 'hade'
+    ]);
+});
+
+Route::get('/cesc/submission-semifinal', function () {return view('cesc.submission_semifinal',
+    [
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'SMA Negeri 1 Gresik',
+        'usernamelomba' => 'danial921',
+        'pwlomba'   => 'hade'
+    ]);
+});
+
+Route::get('/cesc/final', function () {return view('cesc.final',
+    [
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'SMA Negeri 1 Gresik',
+        'usernamelomba' => 'danial921',
+        'pwlomba'   => 'hade'
+    ]);
+});
+
 Route::get('/test', function () {
     return view('test');
 });

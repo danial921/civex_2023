@@ -682,6 +682,53 @@ input.form-control:hover {
   line-height: normal;
 }
 
+.dark-blue {
+  color: #003459 !important;
+}
+
+p.hero-subtitle {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero-desc {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.table.transparent-table {
+  background-color: rgba(255, 255, 255, 0); /* 0 adalah nilai untuk transparansi */
+}
+
+.anounce {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.c-red {
+  color: #BC4749;
+}
+
+.c-green {
+  color: #4B877F;
+}
+
+.c-black {
+  color: #000 !important;
+}
+
 .authcard {
   height: 90vh !important;
 }
