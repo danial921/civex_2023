@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dummmudata;
 use Carbon\Carbon;
-
+use App\Http\Controllers\Auth\RegisteredUserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,8 +17,22 @@ use Carbon\Carbon;
 
 Route::get('/', function () {return view('welcome');});
 
+// Route::group([
+//     'middleware' => 'guest',
+// ],function () {
+    
+// });
+Route::get('register', [RegisteredUserController::class, 'create'])
+    ->name('register');
+Route::post('register', [RegisteredUserController::class, 'store'])
+    ->name('register');
+
+
+
+
+
 Route::get('/login', function () {return view('authentication.login');});
-Route::get('/register', function () {return view('authentication.register');});
+// Route::get('/register', function () {return view('authentication.register');});
 Route::get('/forgetpassword', function () {return view('authentication.forgetpassword');});
 Route::get('/dashboard', function () {return view('general.dashboard',
     [
