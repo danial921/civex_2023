@@ -27,27 +27,27 @@
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1 formtitle" class="form-label">Nama Lengkap</label>
                                 <input type="TEXT" class="form-control" id="exampleFormControlInput1" name="name"
-                                    placeholder="Masukkan Nama Lengkapmu">
+                                    placeholder="Masukkan Nama Lengkapmu" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1 formtitle" class="form-label">email</label>
                                 <input type="email" class="form-control" id="exampleFormControlInput1" name="email"
-                                    placeholder="masukkan emailmu">
+                                    placeholder="masukkan emailmu" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1 formtitle" class="form-label">password</label>
                                 <input type="password" class="form-control" id="exampleFormControlInput1" name="password"
-                                    placeholder="masukkan password">
+                                    placeholder="masukkan password" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1 formtitle" class="form-label">confirm password</label>
                                 <input type="password" class="form-control" id="exampleFormControlInput1" name="password_confirmation"
-                                    placeholder="ulangipassword">
+                                    placeholder="ulangipassword" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1 formtitle" class="form-label">nomer telefon</label>
                                 <input type="password" class="form-control" id="exampleFormControlInput1" name="no_telp"
-                                    placeholder="masukkan nomer telefonmu">
+                                    placeholder="masukkan nomer telefonmu" required>
                             </div>
                             <div class="actionfield mt-4">
                             <button type="submit" class="submitbutton">Daftar</button>
@@ -75,7 +75,7 @@
                 srcset="">
         </div>
     </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <script src=" {{ asset('assets/js/register.js') }} " ></script> -->
+    <script src=" {{ asset('assets/js/register.js') }} " ></script>
 @endsection

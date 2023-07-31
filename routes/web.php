@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dummmudata;
 use Carbon\Carbon;
 use App\Http\Controllers\Auth\RegisteredUserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,28 +18,13 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 
 Route::get('/', function () {return view('welcome');});
 
-// Route::group([
-//     'middleware' => 'guest',
-// ],function () {
-    
-// });
-Route::get('register', [RegisteredUserController::class, 'create'])
-    ->name('register');
-Route::post('register', [RegisteredUserController::class, 'store'])
-    ->name('register');
-
-
-
-
-
-Route::get('/login', function () {return view('authentication.login');});
-// Route::get('/register', function () {return view('authentication.register');});
-Route::get('/forgetpassword', function () {return view('authentication.forgetpassword');});
+// Route::get('/coba', function () {return view('authentication.forgetpassword ');});
+// Route::get('/forgetpassword', function () {return view('authentication.forgetpassword');});
 Route::get('/dashboard', function () {return view('general.dashboard',
     [
         'username' => 'Danial Farros'
     ]);
-});
+})->middleware(['auth', 'verified']);
 
 Route::get('/form-gec', function () {return view('general.form-pendaftaran-gec',
     [
@@ -393,3 +379,5 @@ Route::get('/cesc/final', function () {return view('cesc.final',
 Route::get('/test', function () {
     return view('test');
 });
+
+require __DIR__.'/auth.php';

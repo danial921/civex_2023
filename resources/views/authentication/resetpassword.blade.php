@@ -12,14 +12,24 @@
                 </div>
             </div>
             <div class="card-body">
-                <h5 class="title">Lupa Password ?</h5>
-                <p class="subtitle mt-1">masukkan email anda, kami akan mengirim link reset password melalui email anda.</p>
-                <form method="POST" action="{{ route('password.email') }}">
+                <h5 class="title">Reset Password </h5>
+                <p class="subtitle mt-1">masukkan password baru anda.</p>
+                <form method="POST" action="{{ route('password.update') }}">
                     @csrf
                     <div class="mb-3">
                         <label for="exampleFormControlInput1 formtitle" class="form-label">Email</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1"
                             placeholder="civex@its.ac.id" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1 formtitle" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput1"
+                            placeholder="civex@its.ac.id" name="password" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1 formtitle" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput1"
+                            placeholder="civex@its.ac.id" name="password_confirmation" required>
                     </div>
                     <div class="actionfield mt-4">
                         <button class="submitbutton">Reset Password</button>

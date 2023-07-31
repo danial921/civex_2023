@@ -6,9 +6,10 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
-use App\Http\Requests\RegistrationRequest;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\Rules;
 
 class RegisteredUserController extends Controller
 {
@@ -30,20 +31,22 @@ class RegisteredUserController extends Controller
      *
      * @throws \Illuminate\Validation\ValidationException
      */
-    public function store(RegistrationRequest $request, User $user)
+    public function store(Request $request)
     {
         date_default_timezone_set('Asia/Jakarta');
 
-        // Not using route model binding because we need the id of new created team. 
         $user = User::create([
-            'name'      => $request->input('name'),
-            'email'     => $request->input('email'),
-            'password'  => Hash::make($request->input('password')),
-            'no_telp'   => $request->input('no_telp'),
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'no_telp' => $request->no_telp
         ]);
 
         event(new Registered($user));
 
-        return redirect(RouteServiceProvider::HOME);
+        Auth::login($user);
+
+        return response()->json(['message' => 'Registration successful']);
+        // return redirect(RouteServiceProvider::HOME);
     }
 }
