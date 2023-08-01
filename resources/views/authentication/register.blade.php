@@ -13,36 +13,45 @@
                     <div class="registerform pr-2 mr-0 pt-sm-2">
                         <h5 class="title">Register</h5>
                         <p class="subtitle mt-1">Daftarkan Akun Anda</p>
-                        <form action="" class="mt-2 ">
+                        <form id="register_form" class="mt-2 " method="POST" action=" {{ route ('register')}} " enctype="multipart/form-data">
+                        @csrf
+                        @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1 formtitle" class="form-label">Nama Lengkap</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Masukkan Nama Lengkapmu">
+                                <input type="TEXT" class="form-control" id="exampleFormControlInput1" name="name"
+                                    placeholder="Masukkan Nama Lengkapmu" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1 formtitle" class="form-label">email</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="masukkan emailmu">
+                                <input type="email" class="form-control" id="exampleFormControlInput1" name="email"
+                                    placeholder="masukkan emailmu" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1 formtitle" class="form-label">password</label>
-                                <input type="password" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="masukkan password">
+                                <input type="password" class="form-control" id="exampleFormControlInput1" name="password"
+                                    placeholder="masukkan password" required>
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1 formtitle" class="form-label">password</label>
-                                <input type="password" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="ulangipassword">
+                                <label for="exampleFormControlInput1 formtitle" class="form-label">confirm password</label>
+                                <input type="password" class="form-control" id="exampleFormControlInput1" name="password_confirmation"
+                                    placeholder="ulangipassword" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1 formtitle" class="form-label">nomer telefon</label>
-                                <input type="password" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="masukkan nomer telefonmu">
+                                <input type="text" class="form-control" id="exampleFormControlInput1" name="no_telp"
+                                    placeholder="masukkan nomer telefonmu" required>
                             </div>
                             <div class="actionfield mt-4">
-                                <a href="#simpan" data-toggle="modal" data-animation="effect-scale" style="width: 100%">
-                                    <button type="submit" class="submitbutton">Daftar</button>
-                                </a>
+                            <button type="submit" class="submitbutton">Daftar</button>
+                                <a  href="#simpan" data-toggle="modal"  data-animation="effect-scale" style="width: 100%" id="btnModal" hidden>modal</a>
 
                                 <p class="mt-3">sudah punya akun ? <a href="/login"><span class="actiontext">Login
                                             Sekarang</span></a></p>
@@ -55,7 +64,7 @@
     </div>
 
     <div class="modal fade effect-scale show" id="simpan" tabindex="-1" role="dialog" aria-labelledby="simpan"
-        aria-hidden="true">
+        aria-hidden="true" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog modalregister " role="document" style="top: 100px">
             <button type="button colsemodal " class="btn tx-poppins tx-medium" data-dismiss="modal">
                 <img src="{{ asset('civex/img/loginornamen/closeblack.svg') }}">
@@ -64,4 +73,8 @@
                 srcset="">
         </div>
     </div>
+    <div id="overlay" class="overlay"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src=" {{ asset('assets/js/register.js') }} " ></script>
 @endsection

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dummmudata;
 use Carbon\Carbon;
+use App\Http\Controllers\Auth\RegisteredUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,14 +18,13 @@ use Carbon\Carbon;
 
 Route::get('/', function () {return view('welcome');});
 
-Route::get('/login', function () {return view('authentication.login');});
-Route::get('/register', function () {return view('authentication.register');});
-Route::get('/forgetpassword', function () {return view('authentication.forgetpassword');});
+// Route::get('/coba', function () {return view('authentication.forgetpassword ');});
+// Route::get('/forgetpassword', function () {return view('authentication.forgetpassword');});
 Route::get('/dashboard', function () {return view('general.dashboard',
     [
         'username' => 'Danial Farros'
     ]);
-});
+})->middleware(['auth', 'verified']);
 
 Route::get('/form-gec', function () {return view('general.form-pendaftaran-gec',
     [
@@ -379,3 +379,5 @@ Route::get('/cesc/final', function () {return view('cesc.final',
 Route::get('/test', function () {
     return view('test');
 });
+
+require __DIR__.'/auth.php';

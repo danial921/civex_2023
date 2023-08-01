@@ -7,6 +7,8 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Auth\Notifications\VerifyEmail;
+use Illuminate\Notifications\Messages\MailMessage;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -17,7 +19,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/home';
+    public const HOME = '/dashboard';
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -35,6 +37,14 @@ class RouteServiceProvider extends ServiceProvider
             Route::prefix('api')
                 ->middleware('api')
                 ->group(base_path('routes/api.php'));
+        });
+
+        VerifyEmail::toMailUsing(function ($notifiable, $verificationUrl) {
+            return (new MailMessage)
+                ->subject('Verify your email address')
+                ->line('Click the button below to verify your email address.')
+                ->action('Verify Email Address', $verificationUrl)
+                ->line('If you did not create an account, no further action is required.');
         });
     }
 
