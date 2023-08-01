@@ -46,7 +46,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1 formtitle" class="form-label">nomer telefon</label>
-                                <input type="password" class="form-control" id="exampleFormControlInput1" name="no_telp"
+                                <input type="text" class="form-control" id="exampleFormControlInput1" name="no_telp"
                                     placeholder="masukkan nomer telefonmu" required>
                             </div>
                             <div class="actionfield mt-4">
