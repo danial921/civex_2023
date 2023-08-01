@@ -14,6 +14,12 @@
             <div class="card-body">
                 <h5 class="title">Lupa Password ?</h5>
                 <p class="subtitle mt-1">masukkan email anda, kami akan mengirim link reset password melalui email anda.</p>
+                
+                @if (session('status') == 'We have emailed your password reset link!')
+                    <div class="mb-4 font-medium text-sm text-green-600">
+                        {{ __('Link reset password telah terkirim.') }}
+                    </div>
+                @endif
                 <form method="POST" action="{{ route('password.email') }}">
                     @csrf
                     <div class="mb-3">

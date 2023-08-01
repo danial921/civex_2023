@@ -51,9 +51,7 @@
                             </div>
                             <div class="actionfield mt-4">
                             <button type="submit" class="submitbutton">Daftar</button>
-                                <!-- <a  href="#simpan" data-toggle="modal"  data-animation="effect-scale" style="width: 100%">
-                                    
-                                </a> -->
+                                <a  href="#simpan" data-toggle="modal"  data-animation="effect-scale" style="width: 100%" id="btnModal" hidden>modal</a>
 
                                 <p class="mt-3">sudah punya akun ? <a href="/login"><span class="actiontext">Login
                                             Sekarang</span></a></p>
@@ -75,6 +73,7 @@
                 srcset="">
         </div>
     </div>
+    <div id="overlay" class="overlay"></div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <script src=" {{ asset('assets/js/register.js') }} " ></script>

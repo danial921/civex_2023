@@ -16,6 +16,7 @@
                 <p class="subtitle mt-1">masukkan password baru anda.</p>
                 <form method="POST" action="{{ route('password.update') }}">
                     @csrf
+                    <input type="hidden" name="token" value="{{ $request->route('token') }}">
                     <div class="mb-3">
                         <label for="exampleFormControlInput1 formtitle" class="form-label">Email</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1"
