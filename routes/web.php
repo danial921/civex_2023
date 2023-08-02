@@ -396,6 +396,8 @@ Route::get('/cesc/final', function () {return view('cesc.final',
 });
 
 Route::get('/admin/gec',[AdminController::class, 'gec_dashboard']);
+Route::get('/admin/detailteamgec/{id}',[AdminController::class, 'gec_detailTeam']);
+Route::post('/admin/updatestatus/{id}',[AdminController::class, 'gec_updateStatus']);
 
 
 Route::get('/test', function () {

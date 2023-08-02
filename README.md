@@ -11,7 +11,7 @@
  - 1 Konfirmasi Pembayaran
 >> Validasi Kelengkapan Biodata
  - 11 Biodata Ditolak
- - 2 Konfirmasi TIM
+ - 2 Konfirmasi Biodata TIM
 >> Peserta Final
  - 3 Peserta Final
  - 31 Tidak Lolos Final

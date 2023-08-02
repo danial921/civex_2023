@@ -17,4 +17,23 @@ class AdminController extends Controller
             "teams" => $peserta
         ]);
     }
+
+    public function gec_detailTeam($id)
+    {
+        $dataPeserta = DB::table('gec_teams')->where('id',$id)->first();
+
+        return view('admin.gec.detail',
+        [
+            'username' => 'Admin CIVEX 2023',
+            'dataPeserta' => $dataPeserta
+        ]);
+    }
+
+    public function gec_updateStatus(Request $request, $id){
+        DB::table('gec_teams')  // Ganti 'pesertas' dengan nama tabel Anda
+        ->where('id', $id)
+        ->update(['status_tim' => $request->input('status_tim')]);
+
+        return redirect('admin/detailteamgec/'.$id);
+    }
 }

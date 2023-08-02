@@ -973,3 +973,30 @@ p.hero-subtitle {
         color: #000;
     }
 }
+
+.ct-black{
+    color: #000;
+}
+
+.titleheading {
+    color: #527AA4;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    @media screen and (max-width: 720px) {
+        font-size: 18px;
+    }
+}
+
+.detail{
+    .btn-download {
+        padding: 5px 20px !important;
+        background: rgba(82, 122, 164, 0.12);
+        border-radius: 5px;
+        border: 1px solid #527AA4;
+        color: #527AA4;
+    }
+}

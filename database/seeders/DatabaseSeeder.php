@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        for ($i = 0; $i < 10; $i++) { // Membuat 50 entri
+        for ($i = 0; $i < 30; $i++) { // Membuat 50 entri
             DB::table('gec_teams')->insert([
                 'nama_tim' => $faker->company,
                 'institusi' => $faker->randomElement(['ITS','IPB','UI','UNAIR', 'UDAYANA']),
@@ -36,9 +36,9 @@ class DatabaseSeeder extends Seeder
                 'anggota2_nim' => Str::random(10),
                 'file_zip' => 'https://www.google.com/',
                 'status_tim' => $faker->randomElement(['0','01','1', '11','2','3']),
-                'aanwijzing_tanya' => $faker->sentence,
-                'aanwijzing_jawab' => "",
-                'submission_proposal' => 'https://www.google.com/',
+                'aanwijzing_tanya' => $faker->optional(0.3)->sentence,
+                'aanwijzing_jawab' => null,
+                'submission_proposal' => $faker->randomElement([null,'https://www.google.com/']),
                 'status_proposal' => $faker->numberBetween(0,1),
                 'created_at' => $faker->dateTime,
                 'updated_at' => $faker->dateTime
