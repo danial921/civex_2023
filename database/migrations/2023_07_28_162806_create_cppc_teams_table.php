@@ -40,9 +40,12 @@ class CreateCppcTeamsTable extends Migration
             $table->string('anggota2_ktm');
             $table->string('anggota2_sk');
             $table->string('form_pendaftaran');
-            $table->integer('status_tim');
+            $table->string('status_tim');
             $table->string('submission_proposal');
             $table->integer('status_proposal');
+            $table->string('aanwijzing_tanya');
+            $table->string('aanwijzing_jawab');
+
             $table->timestamps();
         });
     }

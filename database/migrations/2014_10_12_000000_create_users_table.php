@@ -21,7 +21,8 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('no_telp');
             $table->boolean('is_admin')->default(0);
-            $table->integer('status')->default(0);
+            $table->string('status')->default("-");
+            $table->string('status_comp')->default("0");
             $table->rememberToken();
             $table->timestamps();
         });
