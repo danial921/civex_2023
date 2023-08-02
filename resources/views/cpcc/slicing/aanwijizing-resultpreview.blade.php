@@ -1,20 +1,20 @@
 <div class="card mb-2">
     <div class="card-body aanwijizing">
-        <p class="title">Detail Pertanyaan Aanjwizing</p>
-        <p class="subtitle">Setiap tim diberikan kesempatan untuk bertanya dalam 1 x submit, diperbolehkan bertanya lebih dari 1 pertanyaan dalam setiap submissionnya</p>
+        <p class="title mb-lg-2 mb-0">Detail Pertanyaan Aanjwizing</p>
+        <p class="subtitle mb-2">Setiap tim diberikan kesempatan untuk bertanya dalam 1 x submit, diperbolehkan bertanya lebih dari 1 pertanyaan dalam setiap submissionnya</p>
 
-        <div class="mb-3">
-            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran">Judul Pertanyaan</label>
+        <div class="mb-2">
+            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran mb-0">Judul Pertanyaan</label>
             <input type="text" readonly disabled class="form-control-plaintext" id="staticEmail"
             value="{{ $judulAanwijzing }}">
         </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran">Deskripsi Pertanyaan</label>
+        <div class="mb-2">
+            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran mb-0">Deskripsi Pertanyaan</label>
             <input type="text" readonly disabled class="form-control-plaintext" id="staticEmail"
                 value="{{ $pertanyaanAanwijzing }}">
         </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran">Deskripsi Pertanyaan</label>
+        <div class="mb-2">
+            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran mb-0">Deskripsi Pertanyaan</label>
             <input type="text" readonly disabled class="form-control-plaintext" id="staticEmail"
                 value="{{ $jawabanAanwijizing }}">
         </div>

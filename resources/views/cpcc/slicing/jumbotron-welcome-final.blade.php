@@ -7,9 +7,9 @@
             <div class="col-lg-8 col-12">
                 <div class="d-flex align-items-end h-100">
                     <div class="">
-                        <div class="pb-1 bd-highlight title">One Step Closer,  <span class="bold-blue">{{ $username }}</div>
-                        <div class="pb-1 bd-highligt sub-title">Tim Kamu Menjadi Finalis CPCC 2023</div>
-                        <div class="hint-blue pb-2">Silahkan Begabung kedalam WA Grup Finalis pada link berikut</div>
+                        <div class="mb-lg-2 mb-1 bd-highlight title">One Step Closer,  <span class="bold-blue">{{ $username }}</div>
+                        <div class="mb-lg-2 mb-1 bd-highligt sub-title">Tim Kamu Menjadi Finalis CPCC 2023</div>
+                        <div class="hint-blue mb-2">Silahkan Begabung kedalam WA Grup Finalis pada link berikut</div>
                         <div class="col-lg-10 col-12">
                             <a href="submission-final">
                                 <button type="button" class="btn btn-daftar w-100">

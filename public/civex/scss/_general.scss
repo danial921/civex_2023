@@ -16,206 +16,74 @@ input.form-control:hover {
     }
 }
 
-.general {
 
 
-    .welcome-hero {
-        border-bottom: 3px solid #527AA4;
+.welcome-hero {
+    border-bottom: 3px solid #527AA4;
 
-        .title-1 {
-            color: #000;
-            font-family: 'Poppins';
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-        }
-
-        .subtitle-1 {
-            color: #000;
-            font-family: Poppins;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-
-        .subtitle-2 {
-            color: #527AA4;
-            font-family: 'Poppins';
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-
-        img {
-            width: 100%;
-        }
+    .title-1 {
+        color: #000;
+        font-family: 'Poppins';
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
     }
 
-    .card-competition {
-        .gec {
-            img {
-                height: 165px;
-            }
+    .subtitle-1 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 
-            .card-gec {
-                border-radius: 12px 12px 0 0;
-                border: 3px solid #539275;
-                background: #FFF;
-                height: 294.33px;
-            }
+    .subtitle-2 {
+        color: #527AA4;
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 
-            .ket-pendaftaran {
-                font-family: 'Poppins';
-                font-size: 10px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 100%;
-                /* 8px */
-            }
+    img {
+        width: 100%;
+    }
+}
 
-            .details {
-                border-radius: 0 0 12px 12px;
-                border: 3px solid #539275;
-                // background: #FFF;
-            }
-
-            .detailpendaftaran {
-                .ket-pendaftaran {
-                    color: #539275 !important;
-                    font-family: 'Poppins';
-                    font-size: 10px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 100%;
-                    /* 8px */
-                }
-
-                border-radius: 0 0 0 12px;
-                background-color: #FFF;
-            }
-
-            .detailanggota {
-                border-radius: 0 0 12px 0;
-                background-color: #539275;
-
-                .ket-pendaftaran {
-                    color: white !important;
-                    font-family: 'Poppins';
-                    font-size: 10px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 100%;
-                    /* 8px */
-                }
-            }
-
-            .detail {
-                color: #000;
-                font-family: 'Poppins';
-                font-size: 12px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 150%;
-                text-align: center;
-            }
-
-            .card-gec {
-                border-radius: 12px 12px 0 0;
-                border: 3px solid #539275;
-                background: #FFF;
-            }
-
-            .card-gec1 {
-                width: 100%;
-                color: #000;
-                text-align: center;
-                font-family: 'Poppins';
-                font-size: 12px;
-                font-style: normal;
-                font-weight: 300;
-                border-left: 3px solid #539275;
-                border-right: 3px solid #539275;
-            }
-
+.card-competition {
+    .gec {
+        img {
+            height: 165px;
         }
 
-        .cpcc {
-            .card-cpcc {
-                border-radius: 12px 12px 0 0;
-                border: 3px solid #93B4D1;
-                background: #FFF;
-                height: 294.33px;
-            }
-
-            .ket-pendaftaran {
-                font-family: 'Poppins';
-                font-size: 10px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 100%;
-                /* 8px */
-            }
-
-            .card-cpcc1 {
-                width: 100%;
-                color: #000;
-                text-align: center;
-                font-family: 'Poppins';
-                font-size: 12px;
-                font-style: normal;
-                font-weight: 300;
-                border-left: 3px solid #93B4D1;
-                border-right: 3px solid #93B4D1;
-            }
-
+        .card-gec {
+            border-radius: 12px 12px 0 0;
+            border: 3px solid #539275;
+            background: #FFF;
+            height: 294.33px;
         }
 
-        .cesc {
-            .card-cesc {
-                border-radius: 12px 12px 0 0;
-                border: 3px solid #C0B4D1;
-                background: #FFF;
-                height: 294.33px;
-            }
-
-            .ket-pendaftaran {
-                font-family: 'Poppins';
-                font-size: 10px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 100%;
-                /* 8px */
-            }
-
-            .card-cesc1 {
-                width: 100%;
-                color: #000;
-                text-align: center;
-                font-family: 'Poppins';
-                font-size: 12px;
-                font-style: normal;
-                font-weight: 300;
-                border-left: 3px solid #C0B4D1;
-                border-right: 3px solid #C0B4D1;
-            }
-
-            .detailanggota {
-                background-color: #C0B4D1;
-            }
+        .ket-pendaftaran {
+            font-family: 'Poppins';
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            /* 8px */
         }
 
         .details {
             border-radius: 0 0 12px 12px;
-            border: 3px solid #C0B4D1;
+            border: 3px solid #539275;
             // background: #FFF;
         }
 
         .detailpendaftaran {
             .ket-pendaftaran {
-                color: #C0B4D1 !important;
+                color: #539275 !important;
                 font-family: 'Poppins';
                 font-size: 10px;
                 font-style: normal;
@@ -230,7 +98,7 @@ input.form-control:hover {
 
         .detailanggota {
             border-radius: 0 0 12px 0;
-            background-color: #93B4D1;
+            background-color: #539275;
 
             .ket-pendaftaran {
                 color: white !important;
@@ -253,64 +121,198 @@ input.form-control:hover {
             text-align: center;
         }
 
-
-
-
-
-        .card-cesc {
-            border-radius: 12px;
-            border: 3px solid #C0B4D1;
+        .card-gec {
+            border-radius: 12px 12px 0 0;
+            border: 3px solid #539275;
             background: #FFF;
         }
 
-        .competitle {
+        .card-gec1 {
             width: 100%;
             color: #000;
-            font-family: 'Golos Text';
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 100%;
-            letter-spacing: 1px;
             text-align: center;
-        }
-    }
-
-    .back {
-        a:hover {
-            background-color: hsla(0, 0%, 0%, 0.22) !important;
-        }
-    }
-
-    .card-header {
-        .title {
-            color: #000;
             font-family: 'Poppins';
-            font-size: 18px;
+            font-size: 12px;
             font-style: normal;
-            font-weight: 500;
-            line-height: normal;
+            font-weight: 300;
+            border-left: 3px solid #539275;
+            border-right: 3px solid #539275;
         }
 
-        .term {
-            color: #BC4749;
+    }
+
+    .cpcc {
+        .card-cpcc {
+            border-radius: 12px 12px 0 0;
+            border: 3px solid #93B4D1;
+            background: #FFF;
+            height: 294.33px;
+        }
+
+        .ket-pendaftaran {
             font-family: 'Poppins';
-            font-size: 13px;
+            font-size: 10px;
             font-style: normal;
             font-weight: 400;
-            line-height: normal;
+            line-height: 100%;
+            /* 8px */
+        }
+
+        .card-cpcc1 {
+            width: 100%;
+            color: #000;
+            text-align: center;
+            font-family: 'Poppins';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            border-left: 3px solid #93B4D1;
+            border-right: 3px solid #93B4D1;
         }
 
     }
+
+    .cesc {
+        .card-cesc {
+            border-radius: 12px 12px 0 0;
+            border: 3px solid #C0B4D1;
+            background: #FFF;
+            height: 294.33px;
+        }
+
+        .ket-pendaftaran {
+            font-family: 'Poppins';
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            /* 8px */
+        }
+
+        .card-cesc1 {
+            width: 100%;
+            color: #000;
+            text-align: center;
+            font-family: 'Poppins';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            border-left: 3px solid #C0B4D1;
+            border-right: 3px solid #C0B4D1;
+        }
+
+        .detailanggota {
+            background-color: #C0B4D1;
+        }
+    }
+
+    .details {
+        border-radius: 0 0 12px 12px;
+        border: 3px solid #C0B4D1;
+        // background: #FFF;
+    }
+
+    .detailpendaftaran {
+        .ket-pendaftaran {
+            color: #C0B4D1 !important;
+            font-family: 'Poppins';
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            /* 8px */
+        }
+
+        border-radius: 0 0 0 12px;
+        background-color: #FFF;
+    }
+
+    .detailanggota {
+        border-radius: 0 0 12px 0;
+        background-color: #93B4D1;
+
+        .ket-pendaftaran {
+            color: white !important;
+            font-family: 'Poppins';
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            /* 8px */
+        }
+    }
+
+    .detail {
+        color: #000;
+        font-family: 'Poppins';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        text-align: center;
+    }
+
+
+
+
+
+    .card-cesc {
+        border-radius: 12px;
+        border: 3px solid #C0B4D1;
+        background: #FFF;
+    }
+
+    .competitle {
+        width: 100%;
+        color: #000;
+        font-family: 'Golos Text';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: 1px;
+        text-align: center;
+    }
 }
+
+.back {
+    a:hover {
+        background-color: hsla(0, 0%, 0%, 0.22) !important;
+    }
+}
+
+.card-body {
+    .title {
+        color: #527AA4;
+        font-family: 'Poppins';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .term {
+        color: #BC4749;
+        font-family: 'Poppins';
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+}
+
 
 .form-pendaftaran {
     color: #000;
     font-family: 'Poppins';
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
+    @media screen and (max-width: 720px) {
+        font-size: 14px;
+    }
 }
 
 .fileupload {
@@ -522,6 +524,9 @@ input.form-control:hover {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        @media screen and (max-width: 720px) {
+            font-size: 12px !important;
+        }
     }
 
     .danger {
@@ -606,14 +611,13 @@ input.form-control:hover {
     }
 
     h4 {
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 720px) {
             font-size: 0.9rem !important;
         }
     }
 }
 
 .timeline {
-
     .card-body {
         img {
             height: 40;
@@ -651,19 +655,39 @@ input.form-control:hover {
         border-radius: 5px;
         border: 1px solid #527AA4;
         color: #527AA4;
-
+    }
+    .btn-download:hover{
+        padding: 5px 20px !important;
+        background: rgba(82, 122, 164, 0.64);
+        border-radius: 5px;
+        border: 1px solid #527AA4;
+        color: #fff;
     }
 
     .titleheading {
-        color: #003459;
+        color: #527AA4;
         font-family: 'Poppins';
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        @media screen and (max-width: 720px) {
+            font-size: 18px;
+        }
     }
 }
 
+.bold{
+    font-weight: 700;
+}
+.sub-cp{
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 .soal {
     .title {
         color: #000;
@@ -746,8 +770,8 @@ input.form-control:hover {
     }
 }
 
-.aanwijizing{
-    .title{
+.aanwijizing {
+    .title {
         color: #003459;
         font-family: 'Poppins';
         font-size: 24px;
@@ -755,33 +779,42 @@ input.form-control:hover {
         font-weight: 600;
         line-height: normal;
     }
-    .subtitle{
+
+    .subtitle {
         color: #000;
         font-family: 'Poppins';
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-    }
-    label.form-pendaftaran{
-        color: #000;
-font-family: 'Poppins';
-font-size: 12px;
-font-style: normal;
-font-weight: 600!important;
-line-height: normal;
+        @media screen and (max-width: 720px) {
+            font-size: 12px !important;
+        }
     }
 
-    .sublabel{
-        color: #BC4749;
+    label.form-pendaftaran {
+        color: #000;
         font-family: 'Poppins';
         font-size: 12px;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 600 !important;
         line-height: normal;
     }
+
+    .sublabel {
+        color: #BC4749;
+        font-family: 'Poppins';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        @media screen and (max-width: 720px) {
+            font-size: 12px;
+        }
+    }
 }
-.hint-blue{
+
+.hint-blue {
     color: #527AA4;
     font-family: 'Poppins';
     font-size: 12px;
@@ -790,7 +823,7 @@ line-height: normal;
     line-height: normal;
 }
 
-.formbody-header{
+.formbody-header {
     color: #003459;
     font-family: 'Poppins';
     font-size: 24px;
@@ -799,20 +832,23 @@ line-height: normal;
     line-height: normal;
 }
 
-.subtitleform{
+.subtitleform {
     color: #BC4749;
     font-family: 'Poppins';
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    @media screen and (max-width: 720px) {
+        font-size: 13px !important;
+    }
 }
 
-.dark-blue{
-    color: #003459!important;
+.dark-blue {
+    color: #003459 !important;
 }
 
-p.hero-subtitle{
+p.hero-subtitle {
     color: #000;
     font-family: 'Poppins';
     font-size: 12px;
@@ -820,7 +856,8 @@ p.hero-subtitle{
     font-weight: 400;
     line-height: normal;
 }
-.hero-desc{
+
+.hero-desc {
     color: #000;
     font-family: 'Poppins';
     font-size: 13px;
@@ -830,25 +867,27 @@ p.hero-subtitle{
 }
 
 .table.transparent-table {
-    background-color: rgba(255, 255, 255, 0); /* 0 adalah nilai untuk transparansi */
+    background-color: rgba(255, 255, 255, 0);
+    /* 0 adalah nilai untuk transparansi */
 }
 
-.anounce{
+.anounce {
     color: #000;
-font-family: 'Poppins';
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
-.c-red{
+
+.c-red {
     color: #BC4749
 }
 
-.c-green{
+.c-green {
     color: #4B877F
 }
 
-.c-black{
-color: #000!important;
+.c-black {
+    color: #000 !important;
 }

@@ -46,7 +46,7 @@
 
 <script>
     var countDownDate = new Date("{{ $time }}").getTime();
-
+    console.log(countDownDate);
     var x = setInterval(function() {
         var now = new Date().getTime();
         var distance = countDownDate - now;

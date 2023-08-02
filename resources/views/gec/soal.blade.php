@@ -16,26 +16,4 @@
             </div>
         </div>
     </div>
-
-
-    <!-- Modal simpan -->
-    <div class="modal fade effect-scale" id="simpan" tabindex="-1" role="dialog" aria-labelledby="simpan"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <h5 class="tx-poppins tx-medium">Pendaftaran TIM</h5>
-                    <p class="mg-b-0">Apakah anda yakin ingin melakukan pendaftaran tim dengan data tim yang telah diisi?
-                    </p>
-                </div>
-                <form>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-civex-danger tx-poppins tx-medium"
-                            data-dismiss="modal">Batal</button>
-                        <button type="submit" class="btn btn-civex tx-poppins tx-medium">Ya, Saya Yakin</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 @endsection
