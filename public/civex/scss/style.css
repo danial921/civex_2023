@@ -146,6 +146,10 @@ input.form-control:hover {
   border-left: 3px solid #93B4D1;
   border-right: 3px solid #93B4D1;
 }
+.card-competition .cpcc .details {
+  border-radius: 0 0 12px 12px;
+  border: 3px solid #93B4D1;
+}
 .card-competition .cesc .card-cesc {
   border-radius: 12px 12px 0 0;
   border: 3px solid #C0B4D1;
@@ -781,6 +785,72 @@ p.hero-subtitle {
 
 .c-black {
   color: #000 !important;
+}
+
+.admin-teamstatus {
+  border-radius: 5px;
+  display: inline-flex;
+  padding: 5px 10px !important;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.admin-teamstatus p {
+  margin: 0px !important;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.gec-00 {
+  background: #FFE898;
+}
+.gec-00 p {
+  color: #000;
+}
+
+.gec-01 {
+  background: #BC4749;
+}
+.gec-01 p {
+  color: #fff;
+}
+
+.gec-1 {
+  background: #DBF4A7;
+}
+.gec-1 p {
+  color: #000;
+}
+
+.gec-11 {
+  background: #BC4749;
+}
+.gec-11 p {
+  color: #fff;
+}
+
+.gec-2 {
+  background: #DBF4A7;
+}
+.gec-2 p {
+  color: #000;
+}
+
+.gec-3 {
+  background: #4B877F;
+}
+.gec-3 p {
+  color: #fff;
+}
+
+.gec-31 {
+  background: #DCB2C8;
+}
+.gec-31 p {
+  color: #000;
 }
 
 .authcard {

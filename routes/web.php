@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dummmudata;
 use Carbon\Carbon;
 use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -393,6 +394,9 @@ Route::get('/cesc/final', function () {return view('cesc.final',
         'pwlomba'   => 'hade'
     ]);
 });
+
+Route::get('/admin/gec',[AdminController::class, 'gec_dashboard']);
+
 
 Route::get('/test', function () {
     return view('test');

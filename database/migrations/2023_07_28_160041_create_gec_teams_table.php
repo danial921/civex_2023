@@ -30,7 +30,9 @@ class CreateGecTeamsTable extends Migration
             $table->string('anggota2_prodi');
             $table->string('anggota2_nim');
             $table->string('file_zip');
-            $table->integer('status_tim');
+            $table->string('status_tim');
+            $table->string('aanwijzing_tanya');
+            $table->string('aanwijzing_jawab');
             $table->string('submission_proposal');
             $table->integer('status_proposal');
             $table->timestamps();

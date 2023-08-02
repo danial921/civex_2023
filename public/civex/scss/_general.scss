@@ -170,6 +170,12 @@ input.form-control:hover {
             border-right: 3px solid #93B4D1;
         }
 
+        .details {
+            border-radius: 0 0 12px 12px;
+            border: 3px solid #93B4D1;
+            // background: #FFF;
+        }
+
     }
 
     .cesc {
@@ -310,6 +316,7 @@ input.form-control:hover {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+
     @media screen and (max-width: 720px) {
         font-size: 14px;
     }
@@ -524,6 +531,7 @@ input.form-control:hover {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+
         @media screen and (max-width: 720px) {
             font-size: 12px !important;
         }
@@ -656,7 +664,8 @@ input.form-control:hover {
         border: 1px solid #527AA4;
         color: #527AA4;
     }
-    .btn-download:hover{
+
+    .btn-download:hover {
         padding: 5px 20px !important;
         background: rgba(82, 122, 164, 0.64);
         border-radius: 5px;
@@ -671,16 +680,18 @@ input.form-control:hover {
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+
         @media screen and (max-width: 720px) {
             font-size: 18px;
         }
     }
 }
 
-.bold{
+.bold {
     font-weight: 700;
 }
-.sub-cp{
+
+.sub-cp {
     color: #000;
     font-family: 'Roboto';
     font-size: 12px;
@@ -688,6 +699,7 @@ input.form-control:hover {
     font-weight: 500;
     line-height: normal;
 }
+
 .soal {
     .title {
         color: #000;
@@ -787,6 +799,7 @@ input.form-control:hover {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+
         @media screen and (max-width: 720px) {
             font-size: 12px !important;
         }
@@ -808,6 +821,7 @@ input.form-control:hover {
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+
         @media screen and (max-width: 720px) {
             font-size: 12px;
         }
@@ -839,6 +853,7 @@ input.form-control:hover {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
     @media screen and (max-width: 720px) {
         font-size: 13px !important;
     }
@@ -890,4 +905,71 @@ p.hero-subtitle {
 
 .c-black {
     color: #000 !important;
+}
+
+.admin-teamstatus {
+    border-radius: 5px;
+    display: inline-flex;
+    padding: 5px 10px !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    p {
+        margin: 0px !important;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.gec-00{
+    background: #FFE898;
+    p{
+        color: #000;
+    }
+}
+
+.gec-01{
+    background: #BC4749;
+    p{
+        color: #fff;
+    }
+}
+
+.gec-1{
+    background: #DBF4A7;
+    p{
+        color: #000;
+    }
+}
+
+.gec-11{
+    background: #BC4749;
+    p{
+        color: #fff;
+    }
+}
+
+.gec-2{
+    background: #DBF4A7;
+    p{
+        color: #000;
+    }
+}
+
+.gec-3{
+    background: #4B877F;
+    p{
+        color: #fff;
+    }
+}
+
+.gec-31{
+    background: #DCB2C8;
+    p{
+        color: #000;
+    }
 }
