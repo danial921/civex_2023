@@ -1000,3 +1000,34 @@ p.hero-subtitle {
         color: #527AA4;
     }
 }
+
+.monitoring{
+    .card{
+        .card-header{
+            color: #000;
+            font-family: 'Poppins';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .isi{
+            color: #000;
+            font-family: 'Poppins';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    .bg-yellow{
+        background: rgba(255, 232, 152, 0.62);
+    }
+    .bg-green{
+        background: rgba(219, 244, 167, 1);
+    }
+    .bg-red{
+        background: rgba(220, 178, 200, 1);
+    }
+    }
+}
+

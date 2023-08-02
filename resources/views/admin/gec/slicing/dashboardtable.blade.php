@@ -21,52 +21,37 @@
                                 <p class="mg-b-0">{{ $team->institusi }}</p>
                             </td>
                             <td class="text-center">
-                                @switch($team->status_tim)
-                                    @case('00')
-                                        <div class="mb-2 admin-teamstatus gec-00">
-                                            <p>Pembayaran Belum Dikonfirmasi</p>
-                                        </div>
-                                    @break
-
-                                    @case('01')
-                                        <div class="mb-2 admin-teamstatus gec-01">
-                                            <p>Konfirmasi Pembayaran ditolak</p>
-                                        </div>
-                                    @break
-
-                                    @case('1')
-                                        <div class="mb-2 admin-teamstatus gec-1">
-                                            <p>Pembayaran Terkonfirmasi</p>
-                                        </div>
-                                    @break
-
-                                    @case('11')
-                                        <div class="mb-2 admin-teamstatus gec-11">
-                                            <p>Biodata Ditolak</p>
-                                        </div>
-                                    @break
-
-                                    @case('2')
-                                        <div class="mb-2 admin-teamstatus gec-2">
-                                            <p>Biodata Terkonfirmasi</p>
-                                        </div>
-                                    @break
-
-                                    @case('3')
-                                        <div class="mb-2 admin-teamstatus gec-3">
-                                            <p>Peserta Final</p>
-                                        </div>
-                                    @break
-
-                                    @case('31')
-                                        <div class="mb-2 admin-teamstatus gec-31">
-                                            <p>Tidak Lolos Final</p>
-                                        </div>
-                                    @break
-
-                                    @default
-                                        <p>error</p>
-                                @endswitch
+                                @if ($team->status_tim === '00')
+                                <div class="mb-2 admin-teamstatus gec-00">
+                                    <p>Pembayaran Belum Dikonfirmasi</p>
+                                </div>
+                            @elseif ($team->status_tim === '01')
+                                <div class="mb-2 admin-teamstatus gec-01">
+                                    <p>Konfirmasi Pembayaran ditolak</p>
+                                </div>
+                            @elseif ($team->status_tim === '1')
+                                <div class="mb-2 admin-teamstatus gec-1">
+                                    <p>Pembayaran Terkonfirmasi</p>
+                                </div>
+                            @elseif ($team->status_tim === '11')
+                                <div class="mb-2 admin-teamstatus gec-11">
+                                    <p>Biodata Ditolak</p>
+                                </div>
+                            @elseif ($team->status_tim === '2')
+                                <div class="mb-2 admin-teamstatus gec-2">
+                                    <p>Biodata Terkonfirmasi</p>
+                                </div>
+                            @elseif ($team->status_tim === '3')
+                                <div class="mb-2 admin-teamstatus gec-3">
+                                    <p>Peserta Final</p>
+                                </div>
+                            @elseif ($team->status_tim === '31')
+                                <div class="mb-2 admin-teamstatus gec-31">
+                                    <p>Tidak Lolos Final</p>
+                                </div>
+                            @else
+                                <p>error</p>
+                            @endif
                             </td>
                             <td>
                                 <div class="dropdown">

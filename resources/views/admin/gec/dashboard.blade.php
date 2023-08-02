@@ -7,7 +7,39 @@
                 <h4 class="tx-poppins tx-medium mg-b-0">Dashboard Admin <span class="c-gec">GEC</span> CIVEX 2023</h4>
             </div>
         </div>
-        <div class="row">
+        <div class="row monitoring">
+            <div class="col-lg-4 col-md-4 col-12 mb-lg-3 mb-1">
+                <div class="card">
+                    <div class="card-header bg-green text-center">
+                        Total Pendaftar
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="isi"> {{ $totalPeserta }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-12 mb-lg-3 mb-1">
+                <div class="card">
+                    <div class="card-header bg-yellow text-center">
+                        Pendaftar Belum Direview
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="isi"> {{ $belumdiReview }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-12 mb-lg-3 mb-1">
+                <div class="card">
+                    <div class="card-header bg-red text-center">
+                        Pendaftaran Ditolak
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="isi"> {{ $pembayaranDitolak }}</div>
+                    </div>
+                </div>
+            </div>
             <div class="col-12">
                 {{-- tabel peserta --}}
                 @include('admin.gec.slicing.dashboardtable')

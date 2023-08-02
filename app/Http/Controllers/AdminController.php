@@ -10,11 +10,18 @@ class AdminController extends Controller
     public function gec_dashboard()
     {
         $peserta = DB::table('gec_teams')->get();
+        $totalPeserta = DB::table('gec_teams')->count();
+        $belumdiReview = DB::table('gec_teams')->where('status_tim','00')->count();
+        $pembayaranDitolak = DB::table('gec_teams')->where('status_tim','11')->count() + DB::table('gec_teams')->where('status_tim','01')->count();
+
 
         return view('admin.gec.dashboard',
         [
             "username" => "Admin CIVEX 2023",
-            "teams" => $peserta
+            "teams" => $peserta,
+            'totalPeserta' => $totalPeserta,
+            'belumdiReview' =>$belumdiReview,
+            'pembayaranDitolak' => $pembayaranDitolak
         ]);
     }
 
@@ -25,7 +32,8 @@ class AdminController extends Controller
         return view('admin.gec.detail',
         [
             'username' => 'Admin CIVEX 2023',
-            'dataPeserta' => $dataPeserta
+            'dataPeserta' => $dataPeserta,
+
         ]);
     }
 

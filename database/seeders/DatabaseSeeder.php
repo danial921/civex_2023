@@ -35,7 +35,7 @@ class DatabaseSeeder extends Seeder
                 'anggota2_prodi' => $faker->jobTitle,
                 'anggota2_nim' => Str::random(10),
                 'file_zip' => 'https://www.google.com/',
-                'status_tim' => $faker->randomElement(['0','01','1', '11','2','3']),
+                'status_tim' => $faker->randomElement(['00','01','1', '11','2','3']),
                 'aanwijzing_tanya' => $faker->optional(0.3)->sentence,
                 'aanwijzing_jawab' => null,
                 'submission_proposal' => $faker->randomElement([null,'https://www.google.com/']),

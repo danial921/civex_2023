@@ -879,6 +879,32 @@ p.hero-subtitle {
   color: #527AA4;
 }
 
+.monitoring .card .card-header {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.monitoring .card .isi {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.monitoring .card .bg-yellow {
+  background: rgba(255, 232, 152, 0.62);
+}
+.monitoring .card .bg-green {
+  background: rgb(219, 244, 167);
+}
+.monitoring .card .bg-red {
+  background: rgb(220, 178, 200);
+}
+
 .authcard {
   height: 90vh !important;
 }
