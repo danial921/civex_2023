@@ -17,7 +17,7 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-Route::get('/', function () {return view('welcome');});
+Route::get('/', function () {return view('landingpage.dashboard');});
 
 // Route::get('/coba', function () {return view('authentication.forgetpassword ');});
 // Route::get('/forgetpassword', function () {return view('authentication.forgetpassword');});

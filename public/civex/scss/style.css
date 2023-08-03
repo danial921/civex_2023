@@ -905,6 +905,191 @@ p.hero-subtitle {
   background: rgb(220, 178, 200);
 }
 
+.landing-page {
+  overflow-x: hidden;
+  position: relative;
+}
+.landing-page .navbar-civex {
+  background-color: #E3EEF0 !important;
+}
+.landing-page .navbar-civex a {
+  padding: 15px 0px 15px 30px;
+}
+.landing-page .navbar-civex a img.nav-icon {
+  height: 35px !important;
+}
+.landing-page .navbar-civex .nav-item {
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+.landing-page .navbar-civex .nav-item a {
+  color: #000 !important;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  margin-right: 20px;
+}
+.landing-page .navbar-civex .nav-item.civex-active {
+  background-color: rgba(255, 0, 0, 0) !important;
+}
+.landing-page .navbar-civex .nav-item.civex-active a {
+  color: #000 !important;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  margin-right: 20px;
+}
+.landing-page .navbar-civex .active {
+  height: 40px;
+  display: inline-block;
+  padding: 0px 15px;
+  margin: auto 0;
+  border-radius: 28px;
+  border: 2px solid #000 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-page .navbar-civex .active a {
+  background-color: rgba(0, 0, 0, 0) !important;
+  margin: 0px 10px;
+  padding: 0px;
+}
+.landing-page .navbar-civex .active:hover {
+  background-color: #BF9BC5 !important;
+  transition: background-color 0.5s ease;
+  border: 2px solid rgba(0, 0, 0, 0) !important;
+}
+.landing-page .navbar-civex .active:hover a {
+  color: #fff !important;
+  font-weight: 800 !important;
+}
+.landing-page .container-home {
+  padding-top: 5rem;
+}
+.landing-page .container-home .container-bg {
+  z-index: -1;
+  position: absolute;
+  left: 0px;
+  height: calc(100vh - 5rem);
+  width: 100vw;
+}
+.landing-page .container-home .container-bg img.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0vh;
+}
+@media (max-width: 900px) {
+  .landing-page .container-home .container-bg img.footer {
+    width: auto;
+  }
+}
+@media (max-width: 600px) {
+  .landing-page .container-home .container-bg img.footer {
+    display: none;
+  }
+}
+.landing-page .container-home .container-bg img.mhs-hero {
+  position: absolute;
+  right: 0px;
+  bottom: 0vh;
+  max-height: 90%;
+  width: auto;
+}
+@media (max-width: 750px) {
+  .landing-page .container-home .container-bg img.mhs-hero {
+    max-height: 60%;
+    width: auto;
+  }
+}
+@media (max-width: 600px) {
+  .landing-page .container-home .container-bg img.mhs-hero {
+    opacity: 0.5;
+  }
+}
+.landing-page .container-home .container-bg img.bullet-hero {
+  position: absolute;
+}
+.landing-page .container-home .title-home {
+  height: calc(100vh - 6rem);
+}
+.landing-page .container-home .title-home .col-lg-6 {
+  margin-top: 120px !important;
+}
+@media (max-width: 720px) {
+  .landing-page .container-home .title-home .col-lg-6 {
+    margin-top: 170px !important;
+  }
+}
+.landing-page .container-home .title-home .title {
+  color: #003459;
+  font-family: "Inter";
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.7px;
+}
+@media (max-width: 720px) {
+  .landing-page .container-home .title-home .title {
+    font-size: 50px;
+  }
+}
+.landing-page .container-home .title-home .sub-title {
+  color: #000;
+  font-family: "Inter";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.75px;
+}
+@media (max-width: 720px) {
+  .landing-page .container-home .title-home .sub-title {
+    font-size: 20px;
+  }
+}
+.landing-page .container-home .title-home .button {
+  padding: 21px 33px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  background: #FFEC88;
+  width: -moz-max-content;
+  width: max-content;
+}
+@media (max-width: 720px) {
+  .landing-page .container-home .title-home .button {
+    padding: 15px 20px;
+  }
+}
+.landing-page .container-home .title-home .button p {
+  width: -moz-max-content;
+  width: max-content;
+  color: #000;
+  margin: auto;
+  font-family: "Inter";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+@media (max-width: 720px) {
+  .landing-page .container-home .title-home .button p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
 .authcard {
   height: 90vh !important;
 }
