@@ -8,7 +8,7 @@
         <div class="col-lg-6 col-12">
             <div class="title">Civil Expo ITS 2023</div>
             <div class="sub-title mt-lg-4 mt-3">“From Civil Engineer to Civilization”</div>
-            <div class="button mt-lg-4 mt-3"><p>Explore More</p></div>
+            <button class="button mt-lg-4 mt-3"><p>Explore More</p></button>
         </div>
     </div>
 

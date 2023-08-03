@@ -1230,6 +1230,13 @@ p.hero-subtitle {
                     }
                 }
             }
+            .button:hover{
+                background: rgb(92, 76, 19,0.42);
+                transition: background-color 0.5s ease;
+                p{
+                    color: #fff;
+                }
+            }
 
         }
     }
