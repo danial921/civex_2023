@@ -17,7 +17,8 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-Route::get('/', function () {return view('landingpage.dashboard');});
+Route::get('/', function () {return view('landingpage.home');});
+Route::get('/detail', function () {return view('landingpage.detail-civex');});
 
 // Route::get('/coba', function () {return view('authentication.forgetpassword ');});
 // Route::get('/forgetpassword', function () {return view('authentication.forgetpassword');});
