@@ -1,6 +1,6 @@
 <div class="card mb-lg-3 mb-2 soal">
     <div class="card-body">
-        <div class="row ml-0">
+        <div class="row ml-0 d-flex align-items-center h-100">
             <div class="col-lg-3 d-none d-lg-block ml-0">
                 <img class="w-100" src="{{ asset('civex/img/icon/hero-final.svg') }}" alt="">
             </div>

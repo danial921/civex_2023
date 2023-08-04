@@ -1,8 +1,8 @@
 @extends('cpcc.master')
 
 @section('content')
-    <div class="container pt-5 mt-5 mb-1">
-        <div class="back d-flex align-items-center justify-content-between mg-b-20 mg-sm-b-25 mg-lg-b-25">
+    <div class="container pt-5 mt-5 mb-lg-3 mb-2">
+        <div class="back d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center justify-content-start">
                 <a href="/"
                     class="btn btn-icon btn-its-custom-1 tx-poppins tx-medium rounded-its-50p d-flex align-items-center mg-r-5"

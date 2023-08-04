@@ -12,22 +12,23 @@
                 <div class="card-body">
                     <h5 class="title">Login</h5>
                     <p class="subtitle mt-1">Silahkan Masuk dengan akun anda</p>
-                    <form action="" class="mt-2">
+                    <form method="POST" action="{{route('login')}}" class="mt-2">
+                        @csrf
                         <div class="mb-3">
                             <label for="exampleFormControlInput1 formtitle" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="name@example.com">
+                                placeholder="name@example.com" name="email" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1 formtitle" class="form-label">Password</label>
                             <input type="password" class="form-control" id="exampleFormControlInput1"
-                                placeholder="name@example.com">
+                                placeholder="name@example.com" name="password" required>
                         </div>
                         <div class="actionfield mt-4">
-                            <button class="submitbutton">Masuk</button>
+                            <button class="submitbutton" type="submit">Masuk</button>
                             <p class="mt-3">tidak memiliki akun ? <a href="/register" ><span class="actiontext">daftar sekarang</span></a></p>
                             <p>atau</p>
-                            <p><a href="/forgetpassword"><span class="actiontext">lupa password</span></a></p>
+                            <p><a href="/forgot-password"><span class="actiontext">lupa password</span></a></p>
                         </div>
                     </form>
                 </div>

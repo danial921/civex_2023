@@ -26,13 +26,13 @@
                             </div>
                             <div class="col-3">
                                 <div class="nominal">
-                                    <p id="countdown-detik" class="count">0</p>
+                                    <p id="countdown-menit" class="count">0</p>
                                     <div class="subtitle minute">MINUTES</div>
                                 </div>
                             </div>
                             <div class="col-3">
                                 <div class="nominal">
-                                    <p id="countdown-menit" class="count">0</p>
+                                    <p id="countdown-detik" class="count">0</p>
                                     <div class="subtitle second">SECOND</div>
                                 </div>
                             </div>
@@ -46,7 +46,7 @@
 
 <script>
     var countDownDate = new Date("{{ $time }}").getTime();
-
+    console.log(countDownDate);
     var x = setInterval(function() {
         var now = new Date().getTime();
         var distance = countDownDate - now;

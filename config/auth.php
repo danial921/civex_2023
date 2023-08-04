@@ -16,6 +16,7 @@ return [
     'defaults' => [
         'guard' => 'web',
         'passwords' => 'users',
+        'verification' => true,
     ],
 
     /*
@@ -76,7 +77,7 @@ return [
         //     'table' => 'users',
         // ],
     ],
-
+    
     /*
     |--------------------------------------------------------------------------
     | Resetting Passwords

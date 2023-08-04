@@ -1,4 +1,4 @@
-<div class="card md-2 soal">
+<div class="card mb-2 soal">
     <div class="card-body">
         <div class="row">
             <div class="col-lg-4 d-none d-lg-block">
@@ -7,9 +7,9 @@
             <div class="col-lg-8 col-12">
                 <div class="d-flex align-items-end h-100">
                     <div class="">
-                        <div class="pb-1 bd-highlight title">Situs Tidak dapat <span class="bold-blue">diakses</span>
+                        <div class="pb-1 bd-highlight title mb-lg-2 mb-0">Situs Tidak dapat <span class="bold-blue">diakses</span>
                         </div>
-                        <div class="pb-1 bd-highligt sub-title">batas waktu mengakses situs sudah terlewati, silahkan
+                        <div class="pb-1 bd-highligt sub-title mb-lg-2 mb-0">batas waktu mengakses situs sudah terlewati, silahkan
                             beralih ke tahap selanjutnya</div>
                     </div>
                 </div>

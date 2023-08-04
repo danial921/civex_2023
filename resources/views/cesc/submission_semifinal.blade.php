@@ -4,7 +4,7 @@
 <div class="container verifikasi pt-5 mt-5">
     {{-- form --}}
     <div class="container formkelengkapan">
-    @include('cesc.slicing.form2-formulir')
+    @include('cesc.slicing.submission-form')
     </div>
 </div>
 @endsection

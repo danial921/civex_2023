@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dummmudata;
 use Carbon\Carbon;
+use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,16 +17,19 @@ use Carbon\Carbon;
 |
 */
 
-Route::get('/', function () {return view('welcome');});
+Route::get('/', function () {$active = 'home'; return view('landingpage.home', compact('active'));});
+Route::get('/detail', function () {$active = 'home'; return view('landingpage.detail-civex', compact('active'));});
+Route::get('/competition', function () {$active = 'competition'; return view('landingpage.competition', compact('active'));});
+Route::get('/competition-cpcc', function () {$active = 'competition';return view('landingpage.competition-cpcc', compact('active'));});
 
-Route::get('/login', function () {return view('authentication.login');});
-Route::get('/register', function () {return view('authentication.register');});
-Route::get('/forgetpassword', function () {return view('authentication.forgetpassword');});
+
+// Route::get('/coba', function () {return view('authentication.forgetpassword ');});
+// Route::get('/forgetpassword', function () {return view('authentication.forgetpassword');});
 Route::get('/dashboard', function () {return view('general.dashboard',
     [
         'username' => 'Danial Farros'
     ]);
-});
+})->middleware(['auth', 'verified']);
 
 Route::get('/form-gec', function () {return view('general.form-pendaftaran-gec',
     [
@@ -92,7 +97,7 @@ Route::get('/gec/formulirtim', function () {return view('gec.form_lengkap',
 
 Route::get('/gec/soal', function () {return view('gec.soal',
     [
-        'time' => Carbon::now()->addDays(3),
+        'time' => "2023-09-10 15:00:00",
         'username' => 'Danial Farros',
         'email' => 'example@gmail.com',
         'nomerhp' => '1234567891',
@@ -206,7 +211,7 @@ Route::get('/cpcc', function () {return view('cpcc.dashboard',
 
 Route::get('/cpcc/soal', function () {return view('cpcc.soal',
     [
-        'time' => Carbon::now()->addDays(3),
+        'time' => "2023-09-10 15:00:00",
         'username' => 'Danial Farros',
         'email' => 'example@gmail.com',
         'nomerhp' => '1234567891',
@@ -245,6 +250,23 @@ Route::get('/cpcc/aanwijizing', function () {
         'pertanyaanAanwijzing' => '1.Mengapa bumi bulat ?. 2.Sejak kapan lalala test test',
         'jawabanAanwijizing' => '1betul. 2.Betul',
         'questions' => $questions
+    ]);
+});
+
+Route::get('/cpcc/detail-aanwijizing', function () {
+    return view('cpcc.detail-aanwijizing',[
+        'time' => Carbon::now()->addDays(3),
+        'username' => 'Danial Farros',
+        'email' => 'example@gmail.com',
+        'nomerhp' => '1234567891',
+        'biaya_daftar' => 'Rp.300,000,00',
+        'rekening_transfer' => '12345678991 (BCA)',
+        'namatim' => 'WibuWotaBerdsatu',
+        'institusi' => 'Institut Teknologi Sepuluh Nopember',
+        'countDownName' => 'Aanwizing',
+        'judulAanwijzing' => 'Lorem ipsum sir dolor amet',
+        'pertanyaanAanwijzing' => '1.Mengapa bumi bulat ?. 2.Sejak kapan lalala test test',
+        'jawabanAanwijizing' => '1betul. 2.Betul',
     ]);
 });
 
@@ -351,6 +373,7 @@ Route::get('/cesc/semifinal', function () {return view('cesc.semifinal',
 Route::get('/cesc/submission-semifinal', function () {return view('cesc.submission_semifinal',
     [
         'username' => 'Danial Farros',
+        'ketuatim' => 'Danial Farros',
         'email' => 'example@gmail.com',
         'nomerhp' => '1234567891',
         'biaya_daftar' => 'Rp.300,000,00',
@@ -376,6 +399,13 @@ Route::get('/cesc/final', function () {return view('cesc.final',
     ]);
 });
 
+Route::get('/admin/gec',[AdminController::class, 'gec_dashboard']);
+Route::get('/admin/detailteamgec/{id}',[AdminController::class, 'gec_detailTeam']);
+Route::post('/admin/updatestatus/{id}',[AdminController::class, 'gec_updateStatus']);
+
+
 Route::get('/test', function () {
     return view('test');
 });
+
+require __DIR__.'/auth.php';

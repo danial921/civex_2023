@@ -1,41 +1,41 @@
-<div class="card container mb-3">
+<div class="card container">
     <div class="card-body">
         <div class="row">
-            <div class="col-lg-6 col-12 mb-3">
-                <label for="staticEmail" class="form-pendaftaran">Nama Tim</label>
+            <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                <label for="staticEmail" class="form-pendaftaran mb-1">Nama Tim</label>
                 <div class="">
-                    <input type="text" readonly disabled class="form-control-plaintext" id="staticEmail"
+                    <input type="text" readonly disabled class="form-control mb-0" id="staticEmail"
                         value="{{ $namatim }}">
                 </div>
             </div>
-            <div class="col-lg-6 col-12 mb-3">
-                <label for="staticEmail" class="form-pendaftaran">Institusi Asal</label>
+            <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                <label for="staticEmail" class="form-pendaftaran mb-1">Institusi Asal</label>
                 <div class="">
-                    <input type="text" readonly disabled class="form-control-plaintext" id="staticEmail"
+                    <input type="text" readonly disabled class="form-control mb-0" id="staticEmail"
                         value="{{ $institusi }}">
                 </div>
             </div>
-            <div class="col-lg-6 col-12 mb-3">
-                <label for="staticEmail" class="form-pendaftaran">Nama Ketua Tim</label>
+            <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                <label for="staticEmail" class="form-pendaftaran mb-1">Nama Ketua Tim</label>
                 <div class="">
-                    <input type="text" readonly disabled class="form-control-plaintext" id="staticEmail"
+                    <input type="text" readonly disabled class="form-control mb-0" id="staticEmail"
                         value="{{ $ketuatim }}">
                 </div>
             </div>
-            <div class="col-lg-6 col-12 mb-3">
-                <label for="staticEmail" class="form-pendaftaran">Nama Dosen Pembimbing</label>
+            <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                <label for="staticEmail" class="form-pendaftaran mb-1">Nama Dosen Pembimbing</label>
                 <div class="">
-                    <input type="text" readonly disabled class="form-control-plaintext" id="staticEmail"
+                    <input type="text" readonly disabled class="form-control mb-0" id="staticEmail"
                         value="{{ $dosenpembimbing }}">
                 </div>
             </div>
-            <div class="col-lg-6 col-12 mb-3">
-                <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran">Unggah Proposal</label>
+            <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran mb-2">Unggah Proposal</label>
                 <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="Nama Tim">
             </div>
             <div class="d-flex justify-content-end align-items-center">
                 <a href="#simpan" data-toggle="modal" data-animation="effect-scale">
-                    <button type="submit" class="btn btn-civex  mg-b-20 mg-r-20">Submit</button>
+                    <button type="submit" class="btn btn-civex mt-2">Submit</button>
                 </a>
             </div>
         </div>
