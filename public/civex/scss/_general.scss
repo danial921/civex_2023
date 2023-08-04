@@ -1113,9 +1113,10 @@ p.hero-subtitle {
         }
 
         .active:hover {
-            background-color: #BF9BC5 !important;
+            background-color: black !important;
             transition: background-color 0.5s ease;
             border: 2px solid #00000000 !important;
+            color: #fff;
 
             a {
                 color: #fff !important;
@@ -1594,83 +1595,88 @@ p.hero-subtitle {
     }
 }
 
-#slider-container {
-    margin-top: 20px;
-    height: 300px;
-    width: 85vw;
-    max-width: 1400px;
-    background: #EBEBEB;
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
-    border-radius: 30px;
+.landing-page {
+    .container-galery {
 
-}
+        #slider-container {
+            margin-top: 20px;
+            height: 300px;
+            width: 85vw;
+            max-width: 1400px;
+            background: #EBEBEB;
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+            border-radius: 30px;
 
-#slider-container .btn {
-    position: absolute;
-    top: calc(50% - 30px);
-}
+        }
+
+        #slider-container .btn {
+            position: absolute;
+            top: calc(50% - 30px);
+        }
 
 
 
-#slider-container .btn:first-of-type {
-    left: 10px
-}
+        #slider-container .btn:first-of-type {
+            left: 10px
+        }
 
-#slider-container .btn:last-of-type {
-    right: 10px;
-}
+        #slider-container .btn:last-of-type {
+            right: 10px;
+        }
 
-#slider-container #slider {
-    display: flex;
-    width: 1000%;
-    height: 100%;
-    transition: all .5s;
-}
+        #slider-container #slider {
+            display: flex;
+            width: 1000%;
+            height: 100%;
+            transition: all .5s;
+        }
 
-#slider-container #slider .slide {
-    height: 90%;
-    margin: auto 10px;
-    display: grid;
-    place-items: center;
-}
+        #slider-container #slider .slide {
+            height: 90%;
+            margin: auto 10px;
+            display: grid;
+            place-items: center;
+        }
 
-#slider-container #slider .slide span {
-    color: white;
-    font-size: 150px;
-}
+        #slider-container #slider .slide span {
+            color: white;
+            font-size: 150px;
+        }
 
-@media only screen and (min-width: 1100px) {
+        @media only screen and (min-width: 1100px) {
 
-    #slider-container #slider .slide {
-        width: calc(2.5% - 20px);
+            #slider-container #slider .slide {
+                width: calc(2.5% - 20px);
+            }
+
+        }
+
+        @media only screen and (max-width: 1100px) {
+
+            #slider-container #slider .slide {
+                width: calc(3.3333333% - 20px);
+            }
+
+        }
+
+        @media only screen and (max-width: 900px) {
+
+            #slider-container #slider .slide {
+                width: calc(5% - 20px);
+            }
+
+        }
+
+        @media only screen and (max-width: 550px) {
+
+            #slider-container #slider .slide {
+                width: calc(10% - 20px);
+            }
+
+        }
     }
-
-}
-
-@media only screen and (max-width: 1100px) {
-
-    #slider-container #slider .slide {
-        width: calc(3.3333333% - 20px);
-    }
-
-}
-
-@media only screen and (max-width: 900px) {
-
-    #slider-container #slider .slide {
-        width: calc(5% - 20px);
-    }
-
-}
-
-@media only screen and (max-width: 550px) {
-
-    #slider-container #slider .slide {
-        width: calc(10% - 20px);
-    }
-
 }
 
 
@@ -1753,7 +1759,7 @@ p.hero-subtitle {
 }
 
 .container-about-detail {
-    margin-top: 6rem;
+    margin-top: 1rem;
     height: max-content;
     padding-bottom: 1rem;
 
@@ -1797,14 +1803,15 @@ p.hero-subtitle {
         }
 
         @media only screen and (max-width: 820px) {
-            font-size: 15px;
-            line-height: 130%;
+            font-size: 18px;
+            line-height: 150%;
         }
     }
 }
 
 .ourthem {
     margin-bottom: 40px;
+
     .title {
         margin-top: 50px;
 
@@ -1917,14 +1924,15 @@ p.hero-subtitle {
     img.arrow {
         position: relative;
         left: -40px;
-        height: 150px !important;
+        height: 200px !important;
     }
 
     .container {
         border-radius: 25px;
         border: 1px solid #000;
         background: linear-gradient(135deg, rgba(200, 211, 213, 0.79) 22.86%, rgba(200, 211, 213, 0.00) 100%);
-        p{
+
+        p {
             padding: 30px 20px;
             color: #000;
 
@@ -1935,16 +1943,18 @@ p.hero-subtitle {
             font-weight: 400;
             line-height: 1.8;
             letter-spacing: 0.6px;
+
             @media screen and (max-width: 720px) {
                 font-size: 15px !important;
             }
 
-            span{
+            span {
                 font-weight: 600;
             }
         }
     }
-    .ornamen1{
+
+    .ornamen1 {
         position: absolute;
         right: 0;
         top: 60%;
@@ -1952,23 +1962,376 @@ p.hero-subtitle {
     }
 }
 
-a{
+.back-button {
+    margin-top: 7rem;
     align-items: center;
-img.back{
-    position: relative;
-    top: -2px;
-    width: 25;
 
-}
-span{ margin-top: 0;
-    margin-bottom: 0;
-margin-left: 10px;
-    color: #000;
-    font-family: 'Inter';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 130%;
-}
+    img.back {
+        position: relative;
+        width: 25;
+
+    }
+
+    span {
+
+        margin-bottom: 0;
+        margin-left: 10px;
+        color: #000;
+        font-family: 'Inter';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+    }
 }
 
+.compe-bg {
+    z-index: -1;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 100vw;
+    background: rgba(35, 31, 32, 1);
+}
+
+.competition-detail {
+    margin-top: 5rem;
+    padding-bottom: 1rem;
+
+    .compe-bg {
+        img.ornamen1 {
+            bottom: 0px;
+            position: absolute;
+            height: calc(100vh - 6rem);
+
+            @media screen and (max-width: 920px) {
+                max-height: 100%;
+            }
+
+        }
+
+        img.ornamen2 {
+            top: 0px;
+            right: 0px;
+            position: absolute;
+            height: calc(100vh - 6rem);
+
+            @media screen and (max-width: 920px) {
+                max-height: 100%;
+            }
+
+        }
+    }
+
+    .title {
+        padding-top: 60px;
+        color: #FFF;
+        text-align: center;
+        font-family: 'Inter';
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.5px;
+    }
+
+    p {
+        color: #fff;
+    }
+
+    .container {
+        img.image {
+            max-width: 100%;
+        }
+
+        a {
+            p {
+                color: #FFF;
+                text-align: center;
+                font-family: 'Inter';
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 0.75px;
+            }
+        }
+    }
+}
+
+.competition-gec {
+    .compe-bg {
+        img.ornamen1 {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            max-width: 100%;
+        }
+        img.ornamen2 {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            max-width: 100%;
+            @media screen and (max-width: 720px) {
+                display: none;
+            }
+        }
+    }
+
+    margin-top: 5rem;
+    padding-bottom: 1rem;
+
+    .row,
+    .container {
+        padding-top: 50px;
+    }
+
+    a.cta {
+        align-items: center;
+        border-radius: 50px;
+        border: 3px solid white;
+        height: max-content;
+        display: inline-flex;
+
+        span {
+            padding: 2px 30px;
+            margin: 10px 0px;
+            color: #FFF;
+            text-align: justify;
+            font-family: 'Inter';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+
+        }
+
+    }
+
+    a.cta:hover {
+        background: #ffffff22;
+        transition: background-color 0.5s ease;
+    }
+
+    p.title {
+        padding-top: 30px;
+        color: #FFF;
+        text-align: center;
+        font-family: 'Inter';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.5px;
+    }
+
+    p.detail {
+        @media (max-width: 920px) {
+            max-width: 100%;
+        }
+
+        max-width: 75%;
+        color: #FFF;
+        text-align: justify;
+        font-family: 'Inter';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        /* 120% */
+        letter-spacing: 0.75px;
+
+        span {
+            color: #93B4D1;
+        }
+    }
+
+    .competition-gec-timeline {
+        margin-top: 200px;
+        padding-bottom: 200px;
+
+        .scrollable {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+
+            @media screen and (max-width: 1000px) {
+                padding-bottom: 20px;
+            }
+
+            img.timeline {
+                width: 100%;
+
+                @media screen and (max-width: 1000px) {
+                    width: 200%;
+                }
+            }
+        }
+
+        /* Mengubah penampilan scrollbar */
+        ::-webkit-scrollbar {
+            padding-top: 20px;
+            height: 5px;
+            width: 10px;
+        }
+
+        /* Mengubah penampilan track/trek scrollbar */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Mengubah penampilan handle/pegangan scrollbar */
+        ::-webkit-scrollbar-thumb {
+            background: #466496;
+        }
+
+        /* Mengubah penampilan handle/pegangan scrollbar saat dihover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .content {
+            flex: 0 0 auto;
+            margin: 10px;
+        }
+
+    }
+
+    .competition-term {
+        background: linear-gradient(134deg, #344767 0%, rgba(147, 180, 209, 0.00) 100%);
+
+        .container {
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+            .total-price {
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 1.2px;
+            }
+
+            .money {
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 2.1px;
+            }
+
+            .aditonal {
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.75px;
+            }
+
+            .fee {
+                margin-top: 30px;
+                border-radius: 50px;
+                background: #1B1B1B;
+                width: max-content;
+                height: max-content;
+
+                p {
+                    color: #FFF;
+                    margin: 0;
+                    padding: 10px 20px;
+                    font-family: 'Inter';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.9px;
+                }
+            }
+
+            table {
+                margin-top: 20px;
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.75px;
+
+                tr {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .limited {
+                margin-top: 10px;
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.6px;
+            }
+
+            .button {
+                align-items: center;
+
+                p {
+                    padding: 14px 15px;
+                    margin: 0px;
+                    color: #FFF;
+                    font-family: 'Inter';
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 1.2px;
+                }
+
+                .register {
+                    width: 100%;
+                    border-radius: 100px;
+                    background: #466496;
+                }
+
+                .register:hover {
+                    transition: background-color 0.5s ease;
+                    width: 100%;
+                    border-radius: 100px;
+                    background: #fff;
+
+                    p {
+                        color: #466496;
+                    }
+                }
+
+                .cta {
+                    margin-top: 20px;
+                    width: 100%;
+                    border-radius: 100px;
+                    background: #fff;
+
+                    p {
+                        color: #466496;
+                    }
+                }
+
+                .cta:hover {
+                    transition: background-color 0.5s ease;
+                    background: #466496;
+
+                    p {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

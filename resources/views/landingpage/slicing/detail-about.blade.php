@@ -1,5 +1,5 @@
+<div class="back-button pl-lg-4 pl-2"><a href="/" class="back"><img class="back" src="{{ asset('civex/img/icon/icon-back.svg') }}" alt=""><span>kembali ke home</span></a></div>
 <div class="container container-about-detail">
-    <a href="/"><img class="back" src="{{ asset('civex/img/icon/icon-back.svg') }}" alt=""><span>kembali ke home</span></a>
     <p class="about">About</p>
     <p class="title pt-0">Civil Expo ITS 2023 </p>
     <p class="desc pt-4"><span>Civil Expo ITS 2023</span> is a series of <span>national</span> and <span>international
@@ -56,7 +56,7 @@
             </div>
         </div>
         <div class="col-lg-6 col-12 contianer-image">
-            <img class="run mt-4" src="{{ asset('civex/img/icon/details-run.png') }}" alt="">
+            <img class="run mt-lg-2 mt-4" src="{{ asset('civex/img/icon/details-run.png') }}" alt="">
         </div>
     </div>
     <div class="container ">

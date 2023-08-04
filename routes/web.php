@@ -17,8 +17,11 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-Route::get('/', function () {return view('landingpage.home');});
-Route::get('/detail', function () {return view('landingpage.detail-civex');});
+Route::get('/', function () {$active = 'home'; return view('landingpage.home', compact('active'));});
+Route::get('/detail', function () {$active = 'home'; return view('landingpage.detail-civex', compact('active'));});
+Route::get('/competition', function () {$active = 'competition'; return view('landingpage.competition', compact('active'));});
+Route::get('/competition-cpcc', function () {$active = 'competition';return view('landingpage.competition-cpcc', compact('active'));});
+
 
 // Route::get('/coba', function () {return view('authentication.forgetpassword ');});
 // Route::get('/forgetpassword', function () {return view('authentication.forgetpassword');});
