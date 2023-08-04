@@ -7,8 +7,8 @@
             <div class="col-lg-8 col-12">
                 <div class="d-flex align-items-end h-100">
                     <div class="">
-                        <div class="pb-1 bd-highlight title">Selamat,  <span class="bold-blue">{{ $username }}</div>
-                        <div class="pb-1 bd-highligt sub-title">Tim Kamu Menjadi Semifinalis CPCC CESC</div>
+                        <div class="mb-2-lg mb-0 bd-highlight title">Selamat,  <span class="bold-blue">{{ $username }}</div>
+                        <div class="mb-2-lg mb-0 bd-highligt sub-title">Tim Kamu Menjadi Semifinalis CPCC CESC</div>
                         <div class="hint-blue pb-2">Silahkan menuunggu informasi lanjutan untuk kegiatan semifinal</div>
                     </div>
                 </div>

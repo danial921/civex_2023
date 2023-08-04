@@ -12,15 +12,13 @@
                 @include('cpcc.slicing.verif-status3')
             </div>
             <div class="col-lg-4 col-12">
-                    @include('cpcc.slicing.timeline')
+                @include('cpcc.slicing.timeline')
             </div>
         </div>
     </div>
 
-
     <!-- Modal simpan -->
-    <div class="modal fade effect-scale" id="simpan" tabindex="-1" role="dialog" aria-labelledby="simpan"
-        aria-hidden="true">
+    <div class="modal fade effect-scale" id="simpan" tabindex="-1" role="dialog" aria-labelledby="simpan" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">

@@ -32,6 +32,8 @@ class CreateCescTeamsTable extends Migration
             $table->string('anggota_follow');
             $table->string('anggota_twibbon');
             $table->string('status_tim');
+            $table->string('aanwijzing_tanya');
+            $table->string('aanwijzing_jawab');
             $table->string('submission_proposal');
             $table->string('status_proposal');
             $table->timestamps();

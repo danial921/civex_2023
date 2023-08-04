@@ -1,35 +1,35 @@
-<div class="card container mb-3">
+<div class="card container mb-2">
     <div class="card-body">
         <div class="formbody-header">Pengumpulan Berkas Final</div>
         <div class="row">
-            <div class="col-lg-6 col-12 mb-3">
-                <label for="staticEmail" class="form-pendaftaran">Nama Tim</label>
+            <div class="col-lg-6 col-12 mb-2">
+                <label for="staticEmail" class="form-pendaftaran mb-0">Nama Tim</label>
                 <div class="">
                     <input type="text" readonly disabled class="form-control-plaintext" id="staticEmail"
                         value="{{ $namatim }}">
                 </div>
             </div>
-            <div class="col-lg-6 col-12 mb-3">
-                <label for="staticEmail" class="form-pendaftaran">Institusi Asal</label>
+            <div class="col-lg-6 col-12 mb-2">
+                <label for="staticEmail" class="form-pendaftaran mb-0">Institusi Asal</label>
                 <div class="">
                     <input type="text" readonly disabled class="form-control-plaintext" id="staticEmail"
                         value="{{ $institusi }}">
                 </div>
             </div>
-            <div class="col-12 mb-3">
-                <label for="staticEmail" class="form-pendaftaran">Nama Ketua Tim</label>
+            <div class="col-12 mb-2">
+                <label for="staticEmail" class="form-pendaftaran mb-0">Nama Ketua Tim</label>
                 <div class="">
                     <input type="text" readonly disabled class="form-control-plaintext" id="staticEmail"
                         value="{{ $ketuatim }}">
                 </div>
             </div>
-            <div class="col-lg-6 col-12 mb-3">
-                <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran">Unggah Proposal</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama Tim">
-            </div>
-            <div class="col-lg-6 col-12 mb-3">
-                <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran">Url Video</label>
+            <div class="col-lg-6 col-12 mb-2">
+                <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran mb-1">Unggah Proposal</label>
                 <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="Nama Tim">
+            </div>
+            <div class="col-lg-6 col-12 mb-2">
+                <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran mb-1">Url Video</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama Tim">
             </div>
             <div class="subtitleform">* video dapat di upload di youtube, dan pastikan video tidak di private</div>
             <div class="d-flex justify-content-end align-items-center">

@@ -14,7 +14,7 @@
                 {{-- video --}}
                 <div class="card mg-b-20">
                     <div class="card-body">
-                        <p class="tx-poppins tx-medium mb-1 tx-15">Video Tutorial Pendaftaran</p>
+                        <p class="title">Video Tutorial Pendaftaran</p>
                         <iframe width="100%" height="400px" src="https://www.youtube.com/embed/ZM9RSg-ppOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>

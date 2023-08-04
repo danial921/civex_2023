@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container pt-5 mt-5">
-        <div class="back d-flex align-items-center justify-content-between mg-b-20 mg-sm-b-25 mg-lg-b-25">
+        <div class="back d-flex align-items-center justify-content-between mb-lg-2 mb-0 mg-lg-b-25">
             <div class="d-flex align-items-center justify-content-start">
                 <a href="/"
                     class="btn btn-icon btn-its-custom-1 tx-poppins tx-medium rounded-its-50p d-flex align-items-center mg-r-5"
