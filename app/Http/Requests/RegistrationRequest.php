@@ -32,10 +32,10 @@ class RegistrationRequest extends FormRequest
             'no_telp' => 'required|numeric'
         ];
     }
-    // protected function failedValidation(Validator $validator)
-    // {
-    //     throw new HttpResponseException(
-    //         response()->json(['errors' => $validator->errors()], 422)
-    //     );
-    // }
+    protected function failedValidation(Validator $validator)
+    {
+        throw new HttpResponseException(
+            response()->json(['errors' => $validator->errors()], 422)
+        );
+    }
 }

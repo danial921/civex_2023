@@ -5,7 +5,7 @@
         <div class="welcome-hero pt-5 mt-5">
             <div class="row mt-3 d-flex align-items-end">
                 <div class="col-md-6 col-sm-12">
-                    <p class="title-1 mb-0">Hai, <span class="c-cpcc">Danial !!</span></p>
+                    <p class="title-1 mb-0">Hai, <span class="c-cpcc">{{ $username }} !!</span></p>
                     <p class="subtitle-1 mb-1">Selamat datang di dashboard Civex 2023</p>
                     <p class="subtitle-2 mb-4">silahkan pilih 1 lomba yang akan diikuti</p>
                 </div>
