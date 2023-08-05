@@ -18,12 +18,14 @@
                 <div class="d-flex align-items-center">
                     <!-- CP -->
                     <div class="container-fluid">
-                        <p class="tx-poppins tx-medium mg-b-0 tx-15">{{ ENV('GEC_CP1') }}</p>
-                        <p class="sub-cp">{{ ENV('GEC_NO_CP1') }}</p>
+                        <p class="tx-poppins tx-medium mb-1 tx-15">{{ ENV('GEC_CP1') }}</p>
+                        <p class="sub-cp mb-1">{{ ENV('GEC_NO_CP1') }}</p>
+                        <p class="sub-cp">{{ ENV('GEC_LINE_CP1') }}</p>
                     </div>
                     <div class="container-fluid">
-                        <p class="tx-poppins tx-medium mg-b-0 tx-15">{{ ENV('GEC_CP2') }}</p>
-                        <p class="sub-cp">{{ ENV('GEC_NO_CP2') }}</p>
+                        <p class="tx-poppins tx-medium mb-1 tx-15">{{ ENV('GEC_CP2') }}</p>
+                        <p class="sub-cp mb-1">{{ ENV('GEC_NO_CP2') }}</p>
+                        <p class="sub-cp">{{ ENV('GEC_LINE_CP2') }}</p>
                     </div>
                 </div>
             </div>
