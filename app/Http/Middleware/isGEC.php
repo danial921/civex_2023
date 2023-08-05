@@ -16,8 +16,8 @@ class isGEC
      */
     public function handle(Request $request, Closure $next)
     {
-        if(auth()->user()->status = "CPPC") return redirect()->route('/cpcc');
-        elseif(auth()->user()->status = "CESC") return redirect()->route('/cesc');
+        if(auth()->user()->status_comp == "CPPC") return redirect()->route('/cpcc');
+        elseif(auth()->user()->status_comp == "CESC") return redirect()->route('/cesc');
         
         return $next($request);
     }

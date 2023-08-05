@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class gec_form extends Model
+class cesc_form extends Model
 {
     use HasFactory;
 
-    protected $table = 'gec_teams';
+    protected $table = 'cesc_teams';
 
     protected $fillable = 
     [

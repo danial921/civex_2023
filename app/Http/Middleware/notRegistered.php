@@ -16,9 +16,9 @@ class notRegistered
      */
     public function handle(Request $request, Closure $next)
     {
-        if(auth()->user()->status = "GEC") return redirect()->route('/gec');
-        elseif(auth()->user()->status = "CPPC") return redirect()->route('/cppc');
-        elseif(auth()->user()->status = "CESC") return redirect()->route('/cesc');
+        if(auth()->user()->status_comp == "GEC") return redirect()->route('gec');
+        elseif(auth()->user()->status_comp == "CPPC") return redirect()->route('cppc');
+        elseif(auth()->user()->status_comp == "CESC") return redirect()->route('cesc');
         return $next($request);
     }
 }

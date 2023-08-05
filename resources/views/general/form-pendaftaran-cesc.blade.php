@@ -13,11 +13,13 @@
             </div>
         </div>
 
-        {{-- jumbotron belum habis --}}
-        @include('cesc.slicing.form1-status')
-        {{-- jumbotronkalo udah abis --}}
-        @include('cesc.slicing.form1-status')
-        {{-- form pendaftaran --}}
+        @if($urutan <= 5)
+            {{-- jumbotron early masih ada --}}
+            @include('cesc.slicing.form1-status2')
+        @else
+            {{-- jumbotronkalo udah abis --}}
+            @include('cesc.slicing.form1-status')
+        @endif
         @include('cesc.slicing.form1-formulir')
 
     </div>

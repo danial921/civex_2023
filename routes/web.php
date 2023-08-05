@@ -19,42 +19,17 @@ use App\Http\Controllers\User\DashboardController;
 Route::get('/', function () {return view('welcome');});
 
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('/dashboard', [DashboardController::class, 'dashboard']);
-    Route::get('/form-gec', [DashboardController::class, 'form_gec']);
-    Route::post('/form-gec', [DashboardController::class, 'store_form_gec'])->name('form-gec');
+    Route::middleware('notRegisterComp')->group(function () {
+        Route::get('/dashboard', [DashboardController::class, 'dashboard']);
+        Route::get('/form-gec', [DashboardController::class, 'form_gec']);
+        Route::post('/form-gec', [DashboardController::class, 'store_form_gec'])->name('form-gec');
+        Route::get('/form-cppc', [DashboardController::class, 'form_cppc']);
+        Route::post('/form-cppc', [DashboardController::class, 'store_form_cppc'])->name('form-cppc');
+        Route::get('/form-cesc', [DashboardController::class, 'form_cesc']);
+        Route::post('/form-cesc', [DashboardController::class, 'store_form_cesc'])->name('form-cesc');
+    });
 });
-
-
-
-// Route::get('/form-gec', function () {return view('general.form-pendaftaran-gec',
-//     [
-//         'username' => 'Danial Farros',
-//         'email' => 'example@gmail.com',
-//         'nomerhp' => '1234567891',
-//         'biaya_daftar' => 'Rp.150,000,00',
-//         'rekening_transfer' => '12345678991 (BCA)',
-//     ]);
-// });
-
-Route::get('/form-cpcc', function () {return view('general.form-pendaftaran-cpcc',
-    [
-        'username' => 'Danial Farros',
-        'email' => 'example@gmail.com',
-        'nomerhp' => '1234567891',
-        'biaya_daftar' => 'Rp.250,000,00',
-        'rekening_transfer' => '12345678991 (BCA)',
-    ]);
-});
-
-Route::get('/form-cesc', function () {return view('general.form-pendaftaran-cesc',
-    [
-        'username' => 'Danial Farros',
-        'email' => 'example@gmail.com',
-        'nomerhp' => '1234567891',
-        'biaya_daftar' => 'Rp.300,000,00',
-        'rekening_transfer' => '12345678991 (BCA)',
-    ]);
-});
+    
 
 Route::get('/gec', function () {return view('gec.dashboard',
     [
@@ -66,7 +41,7 @@ Route::get('/gec', function () {return view('gec.dashboard',
         'namatim' => 'WibuWotaBerdsatu',
         'institusi' => 'Institut Teknologi Sepuluh Nopember'
     ]);
-});
+})->name('gec');
 
 Route::get('/gec/verifikasi', function () {return view('gec.verifikasi_1',
     [
@@ -202,7 +177,7 @@ Route::get('/cpcc', function () {return view('cpcc.dashboard',
         'namatim' => 'WibuWotaBerdsatu',
         'institusi' => 'Institut Teknologi Sepuluh Nopember'
     ]);
-});
+})->name('cppc');
 
 Route::get('/cpcc/soal', function () {return view('cpcc.soal',
     [

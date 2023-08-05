@@ -39,11 +39,11 @@
                     </div>
                 </div>
             </a>
-            <a href="/form-cpcc" class="mt-4 col-lg-4 col-md-6 col-sm-12 cpcc">
+            <a href="/form-cppc" class="mt-4 col-lg-4 col-md-6 col-sm-12 cpcc">
                 <div class="card-cpcc p-3">
                     <div class="hero">
                         <img class="mx-auto d-block" src="{{ asset('civex/img/icon/icon-cpcc.svg') }}" alt="">
-                        <p class="mt-3 competitle"><span class="c-cpcc">CPCC</span> CONSTRUCTION PROJECT PLANNING COMPETITION</p>
+                        <p class="mt-3 competitle"><span class="c-cpcc">CPPC</span> CONSTRUCTION PROJECT PLANNING COMPETITION</p>
                     </div>
                 </div>
                 <div class="card-cpcc1 px-2 py-2 text-center">

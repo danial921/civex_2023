@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-body">
-        <form id="gec_form" class="mt-2 " method="post" route="{{ route('form-gec') }}">
+        <form id="gec_form" class="mt-2 " method="post" route="{{ route('form-gec') }}" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
                 <label for="nama_tim" class="form-pendaftaran">Nama Tim</label>
@@ -19,7 +19,7 @@
             <div class="mb-3">
                 <label for="institusi" class="form-pendaftaran">Asal Universitas</label>
                 <input type="text" class="form-control" id="institusi" name="institusi" placeholder="Asal Universitas" required>
-                @error('nama_tim')
+                @error('institusi')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
             </div>
@@ -28,7 +28,7 @@
                     <label for="staticEmail" class="form-pendaftaran">Email Pendaftar</label>
                     <div class="">
                         <input type="text" readonly disabled class="form-control-plaintext" id="staticEmail"
-                            value="{{ $email }}"">
+                            value="{{ $email }}">
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">
@@ -96,6 +96,5 @@
         </div>
     </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 <script src=" {{ asset('js/form-gec.js') }} " ></script>
