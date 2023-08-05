@@ -16,7 +16,7 @@
         {{-- jumbotron belum habis --}}
         @include('cesc.slicing.form1-status')
         {{-- jumbotronkalo udah abis --}}
-        @include('cesc.slicing.form1-status')
+        @include('cesc.slicing.form1-status2')
         {{-- form pendaftaran --}}
         @include('cesc.slicing.form1-formulir')
 

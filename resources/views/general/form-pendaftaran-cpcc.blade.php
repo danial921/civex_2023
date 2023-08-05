@@ -13,10 +13,11 @@
             </div>
         </div>
         {{-- jumbotron early masih ada --}}
-        @include('cpcc.slicing.form1-status')
+        @include('cpcc.slicing.form1-status2')
+
 
         {{-- jumbotronkalo udah abis --}}
-        @include('cpcc.slicing.form1-status2')
+        @include('cpcc.slicing.form1-status')
 
         @include('cpcc.slicing.form1-formulir')
     </div>

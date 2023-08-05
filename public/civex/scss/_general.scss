@@ -523,6 +523,24 @@ input.form-control:hover {
     line-height: normal;
 }
 
+.kuotaReady {
+    border-radius: 5px;
+    background: rgba(75, 135, 127, 0.62);
+    display: flex;
+    padding: 5px 15px !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .verifikasi {
     p.form {
         color: #000;

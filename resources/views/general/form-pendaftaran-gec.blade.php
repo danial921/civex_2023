@@ -14,10 +14,10 @@
             </div>
         </div>
         {{-- jumbotron early masih ada --}}
-        @include('gec.slicing.form1-status')
+        @include('gec.slicing.form1-status2')
 
         {{-- jumbotronkalo udah abis --}}
-        @include('gec.slicing.form1-status2')
+        @include('gec.slicing.form1-status')
 
         @include('gec.slicing.form1-formulir')
     </div>
