@@ -1,5 +1,5 @@
 <div class="opening-time">
-    <div class="compe-bg">
+    <div class="compe-bg" style="background: linear-gradient(135deg, #CDB8D4 0%, rgba(205, 184, 212, 0.00) 100%);">
         <img class="ornamen1" src="{{ asset('civex/img/icon/opening-ornamen1.svg') }}" alt="">
         <img class="ornamen2" src="{{ asset('civex/img/icon/opening-ornamen2.svg') }}" alt="">
     </div>

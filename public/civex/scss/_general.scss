@@ -1048,10 +1048,11 @@ p.hero-subtitle {
 
     .navbar-countdown {
         background-color: #E3EEF0 !important;
-        box-shadow: none!important;
-        background: #46639600!important;
+        box-shadow: none !important;
+        background: #46639600 !important;
+
         @media screen and (max-width: 920px) {
-            background: #ffffff!important;
+            background: #ffffff !important;
         }
 
         a {
@@ -2151,11 +2152,13 @@ p.hero-subtitle {
             top: 0px;
             max-width: 100%;
         }
+
         img.ornamen2 {
             position: absolute;
             left: 0px;
             bottom: 0px;
             max-width: 100%;
+
             @media screen and (max-width: 720px) {
                 display: none;
             }
@@ -2232,9 +2235,10 @@ p.hero-subtitle {
     .competition-gec-timeline {
         margin-top: 200px;
         padding-bottom: 200px;
-        .container{
-            p.title{
-                text-align: left!important;
+
+        .container {
+            p.title {
+                text-align: left !important;
             }
         }
 
@@ -2433,11 +2437,13 @@ p.hero-subtitle {
             top: 0px;
             max-width: 100%;
         }
+
         img.ornamen2 {
             position: absolute;
             left: 0px;
             bottom: 0px;
             max-width: 100%;
+
             @media screen and (max-width: 720px) {
                 display: none;
             }
@@ -2514,9 +2520,10 @@ p.hero-subtitle {
     .competition-gec-timeline {
         margin-top: 200px;
         padding-bottom: 200px;
-        .container{
-            p.title{
-                text-align: left!important;
+
+        .container {
+            p.title {
+                text-align: left !important;
             }
         }
 
@@ -2715,11 +2722,13 @@ p.hero-subtitle {
             top: 0px;
             max-width: 100%;
         }
+
         img.ornamen2 {
             position: absolute;
             left: 0px;
             bottom: 0px;
             max-width: 100%;
+
             @media screen and (max-width: 720px) {
                 display: none;
             }
@@ -2796,9 +2805,10 @@ p.hero-subtitle {
     .competition-gec-timeline {
         margin-top: 200px;
         padding-bottom: 200px;
-        .container{
-            p.title{
-                text-align: left!important;
+
+        .container {
+            p.title {
+                text-align: left !important;
             }
         }
 
@@ -2989,19 +2999,111 @@ p.hero-subtitle {
     }
 }
 
-.opening{
-    .compe-bg{
+.opening-time {
+    .compe-bg {
         background: linear-gradient(135deg, #95B8D1 0%, rgba(103, 132, 153, 0.00) 100%);
     }
-    img.ornamen2{
+
+    img.ornamen2 {
         position: absolute;
         bottom: 0;
         right: 0;
     }
-    .container{
+    .jumbo{
+        height: calc(100vh - 10rem);
+    }
+
+    .container {
         padding-top: 10rem;
+
         @media screen and (max-width: 920px) {
-        padding-top: 6rem;
+            padding-top: 6rem;
+        }
+    }
+
+    .col-3 {
+        @media screen and (max-width: 720px) {
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        .card-counter {
+            border-radius: 22px;
+            border: 1px solid #FFF;
+            background: rgba(255, 255, 255, 0.60);
+            padding: 3px;
+
+            .nominal {
+                .count {
+                    padding: 20px;
+                    color: #080F1A;
+                    text-align: center;
+                    font-family: 'Poppins';
+                    font-size: 50px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    @media screen and (max-width: 720px) {
+                        font-size: 30px;
+                        padding:0px;
+                        padding-top: 5px;
+                    }
+                }
+
+                padding: 3px;
+                @media screen and (max-width: 720px) {
+                    padding: 1px;
+                }
+
+                .subtitle {
+                    padding-bottom: 10px;
+                    color: #004267;
+                    text-align: center;
+                    font-family: 'Poppins';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    padding-bottom: 15px;
+                    @media screen and (max-width: 720px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    p.title {
+        color: #000;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        @media screen and (max-width: 720px) {
+            font-size: 40px;
+            margin-top: 50px;
+            margin-bottom: 0rem;
+        }
+    }
+
+    p.sub {
+        margin-top: 0px;
+        color: #000;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        @media screen and (max-width: 720px) {
+            font-size: 20px;
+            padding-top: 0px;
         }
     }
 }
+
+

@@ -2600,20 +2600,108 @@ p.hero-subtitle {
   color: #fff;
 }
 
-.opening .compe-bg {
+.opening-time .compe-bg {
   background: linear-gradient(135deg, #95B8D1 0%, rgba(103, 132, 153, 0) 100%);
 }
-.opening img.ornamen2 {
+.opening-time img.ornamen2 {
   position: absolute;
   bottom: 0;
   right: 0;
 }
-.opening .container {
+.opening-time .jumbo {
+  height: calc(100vh - 10rem);
+}
+.opening-time .container {
   padding-top: 10rem;
 }
 @media screen and (max-width: 920px) {
-  .opening .container {
+  .opening-time .container {
     padding-top: 6rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .opening-time .col-3 {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+.opening-time .col-3 .card-counter {
+  border-radius: 22px;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 3px;
+}
+.opening-time .col-3 .card-counter .nominal {
+  padding: 3px;
+}
+.opening-time .col-3 .card-counter .nominal .count {
+  padding: 20px;
+  color: #080F1A;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+@media screen and (max-width: 720px) {
+  .opening-time .col-3 .card-counter .nominal .count {
+    font-size: 30px;
+    padding: 0px;
+    padding-top: 5px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .opening-time .col-3 .card-counter .nominal {
+    padding: 1px;
+  }
+}
+.opening-time .col-3 .card-counter .nominal .subtitle {
+  padding-bottom: 10px;
+  color: #004267;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 15px;
+}
+@media screen and (max-width: 720px) {
+  .opening-time .col-3 .card-counter .nominal .subtitle {
+    font-size: 12px;
+  }
+}
+.opening-time p.title {
+  color: #000;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media screen and (max-width: 720px) {
+  .opening-time p.title {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 0rem;
+  }
+}
+.opening-time p.sub {
+  margin-top: 0px;
+  color: #000;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media screen and (max-width: 720px) {
+  .opening-time p.sub {
+    font-size: 20px;
+    padding-top: 0px;
   }
 }
 

@@ -1,7 +1,7 @@
 <div class="opening-time">
-    <div class="compe-bg">
-        <img class="ornamen1" src="{{ asset('civex/img/icon/opening-ornamen1.svg') }}" alt="">
-        <img class="ornamen2" src="{{ asset('civex/img/icon/opening-ornamen2.svg') }}" alt="">
+    <div class="compe-bg" style="background: linear-gradient(135deg, #FFE898 0%, rgba(255, 232, 152, 0.27) 100%);">
+        <img class="ornamen1" src="{{ asset('civex/img/icon/merch-ornamen1.svg') }}" alt="">
+        <img class="ornamen2" src="{{ asset('civex/img/icon/merch-ornamen2.svg') }}" alt="">
     </div>
 <div class="jumbo">
     <div class="container d-flex align-items-center justify-content-center">
