@@ -1,10 +1,10 @@
-<div class="competition-cpcc">
+<div class="competition-gec">
     <div class="compe-bg">
-        <img class="ornamen1" src="{{ asset('civex/img/icon/cpcc-ornamen1.svg') }}" alt="">
-        <img class="ornamen2" src="{{ asset('civex/img/icon/cpcc-ornamen2.svg') }}" alt="">
+        <img class="ornamen1" src="{{ asset('civex/img/icon/gec-ornamen1.svg') }}" alt="">
+        <img class="ornamen2" src="{{ asset('civex/img/icon/gec-ornamen2.svg') }}" alt="">
     </div>
     <div class="container text-center">
-        <p class="title">Construction Project Planning Competition</p>
+        <p class="title">Geotechnical Engineering Competition</p>
         <div class="row">
             <div class="col-lg-8 col-12">
                 <div class="d-flex align-items-end h-100">
@@ -13,11 +13,7 @@
                             <span>About Competition <img src="{{ asset('civex/img/icon/icon-arrow-down.svg') }}"
                                     alt=""></span>
                         </a>
-                        <p class="detail pt-4">Construction Project Planning Competition Civil Expo ITS 2023 is a
-                            construction project
-                            auction competition with the theme <span>“Optimizing Technology Utilization for
-                                Cost-Efficient and
-                                Sustainable Building in Era 4.0”</span>.</p>
+                        <p class="detail pt-4">Construction Project Planning Competition Civil Expo ITS 2023 is competition in the field of geotechnical that will bring the theme <span>“MSE Wall Challenge: Designing Sustainable Mechanically Stabilized Earth Walls for a Resilient Future”</span>.</p>
                     </div>
                 </div>
             </div>
@@ -53,7 +49,7 @@
         <div class="container"><p class="title">Timeline</p></div>
         <div class="container">
             <div class="scrollable">
-                <img class="timeline" src="{{ asset('civex/img/icon/cpcc-timeline.svg') }}" alt="">
+                <img class="timeline" src="{{ asset('civex/img/icon/gec-timeline.svg') }}" alt="">
             </div>
         </div>
     </div>
@@ -62,7 +58,7 @@
             <div class="row">
                 <div class="col-8 col-md-6 col-12">
                     <p class="total-price">Total Prize</p>
-                    <p class="money">10 Million Rupiah</p>
+                    <p class="money">24,5 Million Rupiah</p>
                     <p class="aditonal">+ Trophy + Certificate + Merchandise</p>
                     <div class="fee">
                         <p>Registration Fee</p>
@@ -70,12 +66,12 @@
                     <table>
                         <tr>
                             <td>Early Bird*</td>
-                            <td>: Rp 150.000</td>
+                            <td>: Rp 250.000</td>
                         </tr>
                         <tr>
                             <td>Normal Price</td>
 
-                            <td>: Rp 180.000</td>
+                            <td>: Rp 300.000</td>
                         </tr>
                     </table>
                     <p class="limited">* limited quota</p>

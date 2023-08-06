@@ -18,13 +18,15 @@
                 <div class="d-flex align-items-center">
                     <!-- CP -->
                     <div class="container-fluid">
-                      <p class="tx-poppins tx-medium mg-b-0 tx-15">{{ ENV('CPCC_CP1') }}</p>
-                      <p class="sub-cp">{{ ENV('CPCC_NO_CP1') }}</p>
-                    </div>
-                    <div class="container-fluid">
-                      <p class="tx-poppins tx-medium mg-b-0 tx-15">{{ ENV('CPCC_CP2') }}</p>
-                      <p class="sub-cp">{{ ENV('CPCC_NO_CP2') }}</p>
-                    </div>
+                        <p class="tx-poppins tx-medium mg-b-1 tx-15">{{ ENV('CPCC_CP1') }}</p>
+                        <p class="sub-cp mg-b-1">{{ ENV('CPCC_NO_CP1') }}</p>
+                        <p class="sub-cp">{{ ENV('CPCC_LINE_CP1') }}</p>
+                      </div>
+                      <div class="container-fluid">
+                        <p class="tx-poppins tx-medium mg-b-1 tx-15">{{ ENV('CPCC_CP2') }}</p>
+                        <p class="sub-cp mg-b-1">{{ ENV('CPCC_NO_CP2') }}</p>
+                        <p class="sub-cp">{{ ENV('CPCC_LINE_CP2') }}</p>
+                      </div>
                   </div>
             </div>
         </div>
