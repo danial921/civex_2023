@@ -4,13 +4,16 @@
     <div class="container verifikasi pt-5 mt-5">
         <div class="row">
             <div class="col-lg-8 col-12">
-                {{-- pendaftaran di verifikasi --}}
-                @include('cesc.slicing.dashboard-status')
-                {{-- proses verif --}}
-                @include('cesc.slicing.dashboard-status2')
-                {{-- DiTolak --}}
-                @include('cesc.slicing.dashboard-status3')
-
+                @if($status == '1')
+                    {{-- pendaftaran di verifikasi --}}
+                    @include('cesc.slicing.dashboard-status')
+                @elseif($status == '12')
+                    {{-- proses verif --}}
+                    @include('cesc.slicing.dashboard-status2')
+                @elseif($status == '11')
+                    {{-- DiTolak --}}
+                    @include('cesc.slicing.dashboard-status3')
+                @endif
                 {{-- video --}}
                 <div class="card mg-b-20">
                     <div class="card-body">

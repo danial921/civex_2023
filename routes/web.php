@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dummmudata;
 use Carbon\Carbon;
 use App\Http\Controllers\User\DashboardController;
+use App\Http\Controllers\User\GecController;
+use App\Http\Controllers\User\CppcController;
+use App\Http\Controllers\User\CescController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,20 +31,31 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/form-cesc', [DashboardController::class, 'form_cesc']);
         Route::post('/form-cesc', [DashboardController::class, 'store_form_cesc'])->name('form-cesc');
     });
+
+    Route::middleware('isGEC')->group(function () {
+        Route::get('/gec', [GecController::class, 'GEC'])->name('gec');
+    });
+
+    Route::middleware('isCPPC')->group(function () {
+        Route::get('/cppc', [CppcController::class, 'CPPC'])->name('cppc');
+    });
+
+    Route::middleware('isCESC')->group(function () {
+        Route::get('/cesc', [CescController::class, 'CESC'])->name('cesc');
+    });
 });
     
-
-Route::get('/gec', function () {return view('gec.dashboard',
-    [
-        'username' => 'Danial Farros',
-        'email' => 'example@gmail.com',
-        'nomerhp' => '1234567891',
-        'biaya_daftar' => 'Rp.300,000,00',
-        'rekening_transfer' => '12345678991 (BCA)',
-        'namatim' => 'WibuWotaBerdsatu',
-        'institusi' => 'Institut Teknologi Sepuluh Nopember'
-    ]);
-})->name('gec');
+// Route::get('/gec', function () {return view('gec.dashboard',
+//     [
+//         'username' => 'Danial Farros',
+//         'email' => 'example@gmail.com',
+//         'nomerhp' => '1234567891',
+//         'biaya_daftar' => 'Rp.300,000,00',
+//         'rekening_transfer' => '12345678991 (BCA)',
+//         'namatim' => 'WibuWotaBerdsatu',
+//         'institusi' => 'Institut Teknologi Sepuluh Nopember'
+//     ]);
+// })->name('gec');
 
 Route::get('/gec/verifikasi', function () {return view('gec.verifikasi_1',
     [
@@ -167,17 +181,17 @@ Route::get('/cpcc/formulirtim', function () {return view('cpcc.form_lengkap',
     ]);
 });
 
-Route::get('/cpcc', function () {return view('cpcc.dashboard',
-    [
-        'username' => 'Danial Farros',
-        'email' => 'example@gmail.com',
-        'nomerhp' => '1234567891',
-        'biaya_daftar' => 'Rp.300,000,00',
-        'rekening_transfer' => '12345678991 (BCA)',
-        'namatim' => 'WibuWotaBerdsatu',
-        'institusi' => 'Institut Teknologi Sepuluh Nopember'
-    ]);
-})->name('cppc');
+// Route::get('/cpcc', function () {return view('cpcc.dashboard',
+//     [
+//         'username' => 'Danial Farros',
+//         'email' => 'example@gmail.com',
+//         'nomerhp' => '1234567891',
+//         'biaya_daftar' => 'Rp.300,000,00',
+//         'rekening_transfer' => '12345678991 (BCA)',
+//         'namatim' => 'WibuWotaBerdsatu',
+//         'institusi' => 'Institut Teknologi Sepuluh Nopember'
+//     ]);
+// })->name('cppc');
 
 Route::get('/cpcc/soal', function () {return view('cpcc.soal',
     [
@@ -261,17 +275,17 @@ Route::get('/cpcc/submission-final', function () {
     ]);
 });
 
-Route::get('/cesc', function () {return view('cesc.dashboard',
-    [
-        'username' => 'Danial Farros',
-        'email' => 'example@gmail.com',
-        'nomerhp' => '1234567891',
-        'biaya_daftar' => 'Rp.300,000,00',
-        'rekening_transfer' => '12345678991 (BCA)',
-        'namatim' => 'WibuWotaBerdsatu',
-        'institusi' => 'Institut Teknologi Sepuluh Nopember'
-    ]);
-});
+// Route::get('/cesc', function () {return view('cesc.dashboard',
+//     [
+//         'username' => 'Danial Farros',
+//         'email' => 'example@gmail.com',
+//         'nomerhp' => '1234567891',
+//         'biaya_daftar' => 'Rp.300,000,00',
+//         'rekening_transfer' => '12345678991 (BCA)',
+//         'namatim' => 'WibuWotaBerdsatu',
+//         'institusi' => 'Institut Teknologi Sepuluh Nopember'
+//     ]);
+// });
 
 Route::get('/cesc/verifikasi', function () {return view('cesc.verifikasi_1',
     [

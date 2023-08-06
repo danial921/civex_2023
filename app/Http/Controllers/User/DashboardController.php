@@ -67,7 +67,8 @@ class DashboardController extends Controller
             'institusi' => $request->institusi,
             'ketua_email' => auth()->user()->email,
             'ketua_notelp' => $request->ketua_notelp,
-            'bukti_bayar' => $gdriveController->uploadImageToGDrive($request->nama_tim."_GEC_bukti-bayar", $request->file('bukti_bayar'))
+            'bukti_bayar' => $gdriveController->uploadImageToGDrive($request->nama_tim."_GEC_bukti-bayar", $request->file('bukti_bayar')),
+            'status_tim' => '00'
         ]);  
 
         $record = User::find(auth()->user()->id);
@@ -126,7 +127,8 @@ class DashboardController extends Controller
             'institusi' => $request->institusi,
             'ketua_email' => auth()->user()->email,
             'ketua_notelp' => $request->ketua_notelp,
-            'bukti_bayar' => $gdriveController->uploadImageToGDrive($request->nama_tim."_CPPC_bukti-bayar", $request->file('bukti_bayar'))
+            'bukti_bayar' => $gdriveController->uploadImageToGDrive($request->nama_tim."_CPPC_bukti-bayar", $request->file('bukti_bayar')),
+            'status_tim' => '00'
         ]);  
 
         $record = User::find(auth()->user()->id);
@@ -185,7 +187,8 @@ class DashboardController extends Controller
             'institusi' => $request->institusi,
             'ketua_email' => auth()->user()->email,
             'ketua_notelp' => $request->ketua_notelp,
-            'bukti_bayar' => $gdriveController->uploadImageToGDrive($request->nama_tim."_CESC_bukti-bayar", $request->file('bukti_bayar'))
+            'bukti_bayar' => $gdriveController->uploadImageToGDrive($request->nama_tim."_CESC_bukti-bayar", $request->file('bukti_bayar')),
+            'status_tim' => '00'
         ]);  
 
         $record = User::find(auth()->user()->id);
