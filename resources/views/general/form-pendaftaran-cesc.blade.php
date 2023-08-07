@@ -9,7 +9,7 @@
                     title="Kembali">
                     <ion-icon name="arrow-back-outline" class="mg-y-2 tx-22"></ion-icon>
                 </a>
-                <h4 class="tx-poppins tx-medium mg-b-0">Form Pendaftaran <span class="c-gec">Form Pendaftaran <span class="c-cesc">CESC</span> Civil Engginering Student Competition</h4>
+                <h4 class="tx-poppins tx-medium mg-b-0">Form Pendaftaran <span class="c-cesc">CESC</span> Civil Engginering Student Competition</h4>
             </div>
         </div>
 
