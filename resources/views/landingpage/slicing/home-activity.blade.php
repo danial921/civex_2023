@@ -12,7 +12,7 @@
                     <div class="opening">
                         <img class="logo" src="{{ asset('civex/img/landingpage/activity-icon-opening.svg') }}"
                             alt="">
-                        <a href="" class="note">
+                        <a href="/opening" class="note">
                             <div class="title">Opening</div>
                             <div class="sub">2 Event</div>
                             <img src="{{ asset('civex/img/landingpage/activity-button.svg') }}" alt="">
@@ -23,7 +23,7 @@
                     <div class="competition">
                         <img class="logo" src="{{ asset('civex/img/landingpage/activity-icon-competition.svg') }}"
                             alt="">
-                        <a href="" class="note">
+                        <a href="/competition" class="note">
                             <div class="title">Competition</div>
                             <div class="sub">3 Event</div>
                             <img src="{{ asset('civex/img/landingpage/activity-button.svg') }}" alt="">
@@ -34,7 +34,7 @@
                     <div class="closing">
                         <img class="logo" src="{{ asset('civex/img/landingpage/activity-icon-closing.svg') }}"
                             alt="">
-                        <a href="" class="note">
+                        <a href="/closing" class="note">
                             <div class="title">Closing</div>
                             <div class="sub">2 Event</div>
                             <img src="{{ asset('civex/img/landingpage/activity-button.svg') }}" alt="">

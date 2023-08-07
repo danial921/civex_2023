@@ -11,20 +11,20 @@
                 <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item {{ $active == 'opening' ? 'civex-active' : '' }}">
-                <a class="nav-link " href="#">Opening</a>
+                <a class="nav-link " href="/opening">Opening</a>
             </li>
             <li class="nav-item {{ $active == 'competition' ? 'civex-active' : '' }}">
                 <a class="nav-link" href="/competition">Competition</a>
             </li>
             <li class="nav-item {{ $active == 'merchandise' ? 'civex-active' : '' }}">
-                <a class="nav-link" href="#">Merchandise</a>
+                <a class="nav-link" href="/merchandise">Merchandise</a>
             </li>
             <li class="nav-item {{ $active == 'closing' ? 'civex-active' : '' }}">
-                <a class="nav-link" href="#">Closing</a>
+                <a class="nav-link" href="/closing">Closing</a>
             </li>
             <li class="nav-item  active">
 
-                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link" href="/login">Login</a>
 
             </li>
         </ul>
