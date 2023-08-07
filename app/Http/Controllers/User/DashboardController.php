@@ -77,12 +77,8 @@ class DashboardController extends Controller
             $record->status_comp = 'GEC';
 
             $record->save();
-
-            return "Record has been updated successfully.";
-        } else {
-            return "Record not found.";
         }
-        return redirect('/gec');
+        return redirect('/gec/verifikasi');
         // return response()->json(['message' => "Success"]);
     }
 
@@ -117,8 +113,6 @@ class DashboardController extends Controller
 
     public function store_form_cppc(CppcFormRequest $request){
         $gdriveController = new GoogleDriveController();
-        
-        // dd($request->ketua_nama);
 
         cppc_form::create([
             'id_user' => auth()->user()->id,
@@ -138,12 +132,9 @@ class DashboardController extends Controller
 
             $record->save();
 
-            return "Record has been updated successfully.";
-        } else {
-            return "Record not found.";
         }
 
-        return redirect('/cppc');
+        return redirect('/cppc/verifikasi');
     }
 
     public function form_cesc(){
@@ -178,13 +169,11 @@ class DashboardController extends Controller
     public function store_form_cesc(CescFormRequest $request){
         $gdriveController = new GoogleDriveController();
         
-        // dd($request->ketua_nama);
-
         cesc_form::create([
             'id_user' => auth()->user()->id,
             'nama_tim' => $request->nama_tim, 
             'ketua_nama' => $request->ketua_nama, 
-            'institusi' => $request->institusi,
+            'sekolah' => $request->sekolah,
             'ketua_email' => auth()->user()->email,
             'ketua_notelp' => $request->ketua_notelp,
             'bukti_bayar' => $gdriveController->uploadImageToGDrive($request->nama_tim."_CESC_bukti-bayar", $request->file('bukti_bayar')),
@@ -197,12 +186,8 @@ class DashboardController extends Controller
             $record->status_comp = 'CESC';
 
             $record->save();
-
-            return "Record has been updated successfully.";
-        } else {
-            return "Record not found.";
         }
 
-        return redirect('/cesc');
+        return redirect('/cesc/verifikasi');
     }
 }   

@@ -21,12 +21,14 @@ class CreateCescTeamsTable extends Migration
             $table->string('ketua_email')->default('-');
             $table->string('ketua_nama')->default('-');
             $table->string('ketua_notelp')->default('-');
+            $table->string('ketua_kelas')->default('-');
             $table->string('ketua_kartu')->default('-');
             $table->string('ketua_foto')->default('-');
             $table->string('ketua_follow')->default('-');
             $table->string('ketua_twibbon')->default('-');
             $table->string('anggota_nama')->default('-');
             $table->string('anggota_notelp')->default('-');
+            $table->string('anggota_kelas')->default('-');
             $table->string('anggota_kartu')->default('-');
             $table->string('anggota_foto')->default('-');
             $table->string('anggota_follow')->default('-');

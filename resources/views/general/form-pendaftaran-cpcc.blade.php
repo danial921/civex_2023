@@ -12,7 +12,7 @@
                 <h4 class="tx-poppins tx-medium mg-b-0">Form Pendaftaran <span class="c-cpcc">CPCC</span> Costruction Project Planning Competition</h4>
             </div>
         </div>
-        @if($urutan <= 5)
+        @if($urutan <= 15)
             {{-- jumbotron early masih ada --}}
             @include('cpcc.slicing.form1-status2')
         @else

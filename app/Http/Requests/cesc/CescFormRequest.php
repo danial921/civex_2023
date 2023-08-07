@@ -13,7 +13,7 @@ class CescFormRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,11 @@ class CescFormRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'nama_tim' => 'required|unique:cesc_teams,nama_tim|string', 
+            'ketua_nama' => 'required|string', 
+            'sekolah' => 'required', 
+            'ketua_notelp' => 'required|numeric',
+            'bukti_bayar' => 'required|image|mimes:jpeg,png,jpg|max:2048'
         ];
     }
 }

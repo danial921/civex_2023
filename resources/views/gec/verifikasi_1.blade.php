@@ -4,12 +4,22 @@
     <div class="container verifikasi pt-5 mt-5">
         <div class="row">
             <div class="col-lg-8 col-12">
-                {{-- pendaftaran di verifikasi, timbelum melengkapi berkas --}}
-                @include('gec.slicing.verif-status')
-                {{-- proses verif --}}
-                @include('gec.slicing.verif-status2')
-                {{-- DiTolak --}}
-                @include('gec.slicing.verif-status3')
+                @if($status == '1')
+                    {{-- pendaftaran di verifikasi, timbelum melengkapi berkas --}}
+                    @include('gec.slicing.verif-status')
+                @elseif($status == '12')
+                    {{-- proses verif berkas--}}
+                    @include('gec.slicing.verif-status2')
+                @elseif($status == '10')
+                    {{-- tolak berkas--}}
+                    @include('gec.slicing.verif-status5')
+                @elseif($status == '-1')
+                    {{-- formulir DiTolak --}}
+                    @include('gec.slicing.verif-status3')
+                @elseif($status == '00')
+                    {{-- formulir direview --}}
+                    @include('gec.slicing.verif-status4')
+                @endif
             </div>
             <div class="col-lg-4 col-12">
                     @include('gec.slicing.timeline')

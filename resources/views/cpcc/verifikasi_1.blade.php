@@ -4,12 +4,22 @@
     <div class="container verifikasi pt-5 mt-5">
         <div class="row">
             <div class="col-lg-8 col-12">
-                {{-- pendaftaran di verifikasi, timbelum melengkapi berkas --}}
-                @include('cpcc.slicing.verif-status')
-                {{-- proses verif --}}
-                @include('cpcc.slicing.verif-status2')
-                {{-- DiTolak --}}
-                @include('cpcc.slicing.verif-status3')
+                @if($status == '1')
+                    {{-- pendaftaran di verifikasi, timbelum melengkapi berkas --}}
+                    @include('cpcc.slicing.verif-status')
+                @elseif($status == '12')
+                    {{-- proses verif berkas--}}
+                    @include('cpcc.slicing.verif-status2')
+                @elseif($status == '10')
+                    {{-- tolak berkas--}}
+                    @include('cpcc.slicing.verif-status5')
+                @elseif($status == '-1')
+                    {{-- formulir DiTolak --}}
+                    @include('cpcc.slicing.verif-status3')
+                @elseif($status == '00')
+                    {{-- formulir direview --}}
+                    @include('cpcc.slicing.verif-status4')
+                @endif
             </div>
             <div class="col-lg-4 col-12">
                 @include('cpcc.slicing.timeline')

@@ -17,7 +17,7 @@
 
 
         <div class="card-competition row">
-            <a href="/form-gec" class="mt-4 col-lg-4 col-md-6 col-sm-12 gec">
+            <a href="/pendaftaran-gec" class="mt-4 col-lg-4 col-md-6 col-sm-12 gec">
                 <div class="card-gec p-3">
                     <div class="hero">
                         <img class="mx-auto d-block" src="{{ asset('civex/img/icon/icon-gec.svg') }}" alt="">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
             </a>
-            <a href="/form-cppc" class="mt-4 col-lg-4 col-md-6 col-sm-12 cpcc">
+            <a href="/pendaftaran-cppc" class="mt-4 col-lg-4 col-md-6 col-sm-12 cpcc">
                 <div class="card-cpcc p-3">
                     <div class="hero">
                         <img class="mx-auto d-block" src="{{ asset('civex/img/icon/icon-cpcc.svg') }}" alt="">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </a>
-            <a href="/form-cesc" class="mt-4 col-lg-4 col-md-6 col-sm-12 cesc">
+            <a href="/pendaftaran-cesc" class="mt-4 col-lg-4 col-md-6 col-sm-12 cesc">
                 <div class="card-cesc p-3">
                     <div class="hero">
                         <img class="mx-auto d-block" src="{{ asset('civex/img/icon/icon-cesc.svg') }}" alt="">

@@ -16,7 +16,7 @@ class cesc_form extends Model
         'id_user',
         'nama_tim', 
         'ketua_nama', 
-        'institusi',
+        'sekolah',
         'ketua_email',
         'ketua_notelp',
         'bukti_bayar',

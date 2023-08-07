@@ -51,8 +51,30 @@ class DatabaseSeeder extends Seeder
         // }
 
         DB::table('users')->insert([
-            'name' => 'asd',
-            'email' => 'asd@asd',
+            'name' => 'asda',
+            'email' => 'asd@asda',
+            'email_verified_at' => now(),
+            'password' => Hash::make('asdasdasd'),
+            'no_telp' => '123',
+            'is_admin' => false,
+            'status'    => '-',
+            'status_comp' => '-'
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'asdb',
+            'email' => 'asd@asdb',
+            'email_verified_at' => now(),
+            'password' => Hash::make('asdasdasd'),
+            'no_telp' => '123',
+            'is_admin' => false,
+            'status'    => '-',
+            'status_comp' => '-'
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'asdc',
+            'email' => 'asd@asdc',
             'email_verified_at' => now(),
             'password' => Hash::make('asdasdasd'),
             'no_telp' => '123',

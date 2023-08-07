@@ -24,24 +24,33 @@ Route::get('/', function () {return view('welcome');});
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::middleware('notRegisterComp')->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'dashboard']);
-        Route::get('/form-gec', [DashboardController::class, 'form_gec']);
-        Route::post('/form-gec', [DashboardController::class, 'store_form_gec'])->name('form-gec');
-        Route::get('/form-cppc', [DashboardController::class, 'form_cppc']);
-        Route::post('/form-cppc', [DashboardController::class, 'store_form_cppc'])->name('form-cppc');
-        Route::get('/form-cesc', [DashboardController::class, 'form_cesc']);
-        Route::post('/form-cesc', [DashboardController::class, 'store_form_cesc'])->name('form-cesc');
+        Route::get('/pendaftaran-gec', [DashboardController::class, 'form_gec']);
+        Route::post('/pendaftaran-gec', [DashboardController::class, 'store_form_gec'])->name('form-gec');
+        Route::get('/pendaftaran-cppc', [DashboardController::class, 'form_cppc']);
+        Route::post('/pendaftaran-cppc', [DashboardController::class, 'store_form_cppc'])->name('form-cppc');
+        Route::get('/pendaftaran-cesc', [DashboardController::class, 'form_cesc']);
+        Route::post('/pendaftaran-cesc', [DashboardController::class, 'store_form_cesc'])->name('form-cesc');
     });
 
     Route::middleware('isGEC')->group(function () {
         Route::get('/gec', [GecController::class, 'GEC'])->name('gec');
+        Route::get('/gec/verifikasi', [GecController::class, 'GEC_verifikasi']);
+        Route::get('/gec/formulir-tim', [GecController::class, 'GEC_biodata']);
+        Route::post('/gec/formulir-tim', [GecController::class, 'store_GEC_biodata'])->name('submit-berkas-gec');
     });
 
     Route::middleware('isCPPC')->group(function () {
         Route::get('/cppc', [CppcController::class, 'CPPC'])->name('cppc');
+        Route::get('/cppc/verifikasi', [CppcController::class, 'CPPC_verifikasi']);
+        Route::get('/cppc/formulir-tim', [CppcController::class, 'CPPC_biodata']);
+        Route::post('/cppc/formulir-tim', [CppcController::class, 'store_CPPC_biodata'])->name('submit-berkas-cppc');
     });
 
     Route::middleware('isCESC')->group(function () {
         Route::get('/cesc', [CescController::class, 'CESC'])->name('cesc');
+        Route::get('/cesc/verifikasi', [CescController::class, 'CESC_verifikasi']);
+        Route::get('/cesc/formulir-tim', [CescController::class, 'CESC_biodata']);
+        Route::post('/cesc/formulir-tim', [CescController::class, 'store_CESC_biodata'])->name('submit-berkas-cesc');
     });
 });
     
@@ -57,27 +66,24 @@ Route::middleware(['auth', 'verified'])->group(function () {
 //     ]);
 // })->name('gec');
 
-Route::get('/gec/verifikasi', function () {return view('gec.verifikasi_1',
-    [
-        'username' => 'Danial Farros',
-        'email' => 'example@gmail.com',
-        'nomerhp' => '1234567891',
-        'biaya_daftar' => 'Rp.300,000,00',
-        'rekening_transfer' => '12345678991 (BCA)',
-    ]);
-});
+// Route::get('/gec/verifikasi', function () {return view('gec.verifikasi_1',
+//     [
+//         'username' => 'Danial Farros',
+//         'email' => 'example@gmail.com',
+//         'nomerhp' => '1234567891',
+//         'biaya_daftar' => 'Rp.300,000,00',
+//         'rekening_transfer' => '12345678991 (BCA)',
+//     ]);
+// });
 
-Route::get('/gec/formulirtim', function () {return view('gec.form_lengkap',
-    [
-        'username' => 'Danial Farros',
-        'email' => 'example@gmail.com',
-        'nomerhp' => '1234567891',
-        'biaya_daftar' => 'Rp.300,000,00',
-        'rekening_transfer' => '12345678991 (BCA)',
-        'namatim' => 'WibuWotaBerdsatu',
-        'institusi' => 'Institut Teknologi Sepuluh Nopember'
-    ]);
-});
+// Route::get('/gec/formulirtim', function () {return view('gec.form_lengkap',
+//     [
+//         'username' => 'Danial Farros',
+//         'nomerhp' => '1234567891',
+//         'namatim' => 'WibuWotaBerdsatu',
+//         'institusi' => 'Institut Teknologi Sepuluh Nopember'
+//     ]);
+// });
 
 Route::get('/gec/soal', function () {return view('gec.soal',
     [
@@ -159,27 +165,24 @@ Route::get('/gec/submission', function () {
     ]);
 });
 
-Route::get('/cpcc/verifikasi', function () {return view('cpcc.verifikasi_1',
-    [
-        'username' => 'Danial Farros',
-        'email' => 'example@gmail.com',
-        'nomerhp' => '1234567891',
-        'biaya_daftar' => 'Rp.300,000,00',
-        'rekening_transfer' => '12345678991 (BCA)',
-    ]);
-});
+// Route::get('/cpcc/verifikasi', function () {return view('cpcc.verifikasi_1',
+//     [
+//         'username' => 'Danial Farros',
+//         'email' => 'example@gmail.com',
+//         'nomerhp' => '1234567891',
+//         'biaya_daftar' => 'Rp.300,000,00',
+//         'rekening_transfer' => '12345678991 (BCA)',
+//     ]);
+// });
 
-Route::get('/cpcc/formulirtim', function () {return view('cpcc.form_lengkap',
-    [
-        'username' => 'Danial Farros',
-        'email' => 'example@gmail.com',
-        'nomerhp' => '1234567891',
-        'biaya_daftar' => 'Rp.300,000,00',
-        'rekening_transfer' => '12345678991 (BCA)',
-        'namatim' => 'WibuWotaBerdsatu',
-        'institusi' => 'Institut Teknologi Sepuluh Nopember'
-    ]);
-});
+// Route::get('/cpcc/formulirtim', function () {return view('cpcc.form_lengkap',
+//     [
+//         'username' => 'Danial Farros',
+//         'nomerhp' => '1234567891',
+//         'namatim' => 'WibuWotaBerdsatu',
+//         'institusi' => 'Institut Teknologi Sepuluh Nopember'
+//     ]);
+// });
 
 // Route::get('/cpcc', function () {return view('cpcc.dashboard',
 //     [
@@ -275,29 +278,7 @@ Route::get('/cpcc/submission-final', function () {
     ]);
 });
 
-// Route::get('/cesc', function () {return view('cesc.dashboard',
-//     [
-//         'username' => 'Danial Farros',
-//         'email' => 'example@gmail.com',
-//         'nomerhp' => '1234567891',
-//         'biaya_daftar' => 'Rp.300,000,00',
-//         'rekening_transfer' => '12345678991 (BCA)',
-//         'namatim' => 'WibuWotaBerdsatu',
-//         'institusi' => 'Institut Teknologi Sepuluh Nopember'
-//     ]);
-// });
-
-Route::get('/cesc/verifikasi', function () {return view('cesc.verifikasi_1',
-    [
-        'username' => 'Danial Farros',
-        'email' => 'example@gmail.com',
-        'nomerhp' => '1234567891',
-        'biaya_daftar' => 'Rp.300,000,00',
-        'rekening_transfer' => '12345678991 (BCA)',
-    ]);
-});
-
-Route::get('/cesc/formulirtim', function () {return view('cesc.form_lengkap',
+Route::get('/cesc', function () {return view('cesc.dashboard',
     [
         'username' => 'Danial Farros',
         'email' => 'example@gmail.com',
@@ -305,9 +286,32 @@ Route::get('/cesc/formulirtim', function () {return view('cesc.form_lengkap',
         'biaya_daftar' => 'Rp.300,000,00',
         'rekening_transfer' => '12345678991 (BCA)',
         'namatim' => 'WibuWotaBerdsatu',
-        'institusi' => 'SMA Negeri 1 Gresik'
+        'institusi' => 'Institut Teknologi Sepuluh Nopember',
+        'status'    => '1'
     ]);
 });
+
+// Route::get('/cesc/verifikasi', function () {return view('cesc.verifikasi_1',
+//     [
+//         'username' => 'Danial Farros',
+//         'email' => 'example@gmail.com',
+//         'nomerhp' => '1234567891',
+//         'biaya_daftar' => 'Rp.300,000,00',
+//         'rekening_transfer' => '12345678991 (BCA)',
+//     ]);
+// });
+
+// Route::get('/cesc/formulirtim', function () {return view('cesc.form_lengkap',
+//     [
+//         'username' => 'Danial Farros',
+//         'email' => 'example@gmail.com',
+//         'nomerhp' => '1234567891',
+//         'biaya_daftar' => 'Rp.300,000,00',
+//         'rekening_transfer' => '12345678991 (BCA)',
+//         'namatim' => 'WibuWotaBerdsatu',
+//         'institusi' => 'SMA Negeri 1 Gresik'
+//     ]);
+// });
 
 Route::get('/cesc/penyisihan', function () {return view('cesc.penyisihan',
     [

@@ -13,7 +13,7 @@
                     Engineering Competition</h4>
             </div>
         </div>
-        @if($urutan <= 5)
+        @if($urutan <= 15)
             {{-- jumbotron early masih ada --}}
             @include('gec.slicing.form1-status2')
         @else

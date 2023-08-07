@@ -19,7 +19,7 @@
                     <div class="mb-4 font-medium text-sm text-green-600">
                         {{ __('Tautan verifikasi baru telah dikirim ke alamat email.') }}
                     </div>
-                @endif
+                @else
                 
                 <form method="POST" action="{{ route('verification.send') }}">
                     @csrf
@@ -30,12 +30,12 @@
                         </button>
                     </div>
                 </form>
-
+                @endif
                 <form method="GET" action="{{ route('logout') }}">
                     @csrf
 
                     <button type="submit" class="submitbutton">
-                        {{ __('Log Out') }}
+                        {{ __('Back') }}
                     </button>
                 </form>
             </div>

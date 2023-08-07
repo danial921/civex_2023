@@ -17,9 +17,9 @@
                 @enderror
             </div>
             <div class="mb-3">
-                <label for="institusi" class="form-pendaftaran">Asal Universitas</label>
-                <input type="text" class="form-control" id="institusi" name="institusi" placeholder="Asal Universitas" required>
-                @error('institusi')
+                <label for="sekolah" class="form-pendaftaran">Asal Sekolah</label>
+                <input type="text" class="form-control" id="sekolah" name="sekolah" placeholder="Asal Universitas" required>
+                @error('sekolah')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
             </div>
