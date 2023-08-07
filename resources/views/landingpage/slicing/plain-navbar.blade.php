@@ -1,4 +1,4 @@
-<nav class="mb-4 navbar navbar-expand-lg navbar-light navbar-civex cyan fixed-top">
+<nav class="mb-4 navbar navbar-expand-lg navbar-light navbar-countdown cyan fixed-top">
     <a class="navbar-brand font-bold" href="/">
         <img class="nav-icon" src="{{ asset('civex/img/Logo.svg') }}" alt="">
     </a>

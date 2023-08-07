@@ -444,6 +444,23 @@ input.form-control:hover {
   line-height: normal;
 }
 
+.kuotaReady {
+  border-radius: 5px;
+  background: rgba(75, 135, 127, 0.62);
+  display: flex;
+  padding: 5px 15px !important;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .verifikasi p.form {
   color: #000;
   font-family: "Poppins";
@@ -908,6 +925,78 @@ p.hero-subtitle {
 .landing-page {
   overflow-x: hidden;
   position: relative;
+}
+.landing-page .navbar-countdown {
+  background-color: #E3EEF0 !important;
+  box-shadow: none !important;
+  background: rgba(70, 99, 150, 0) !important;
+}
+@media screen and (max-width: 920px) {
+  .landing-page .navbar-countdown {
+    background: #ffffff !important;
+  }
+}
+.landing-page .navbar-countdown a {
+  padding: 15px 0px 15px 30px;
+}
+.landing-page .navbar-countdown a img.nav-icon {
+  height: 35px !important;
+}
+.landing-page .navbar-countdown .nav-item {
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+.landing-page .navbar-countdown .nav-item a {
+  color: #000 !important;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  margin-right: 20px;
+}
+.landing-page .navbar-countdown .nav-item.civex-active {
+  background-color: rgba(255, 0, 0, 0) !important;
+}
+.landing-page .navbar-countdown .nav-item.civex-active a {
+  color: #000 !important;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  margin-right: 20px;
+}
+.landing-page .navbar-countdown .active {
+  height: 40px;
+  display: inline-block;
+  padding: 0px 15px;
+  margin: auto 0;
+  border-radius: 28px;
+  border: 2px solid #000 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-page .navbar-countdown .active a {
+  background-color: rgba(0, 0, 0, 0) !important;
+  margin: 0px 10px;
+  padding: 0px;
+}
+.landing-page .navbar-countdown .active:hover {
+  background-color: black !important;
+  transition: background-color 0.5s ease;
+  border: 2px solid rgba(0, 0, 0, 0) !important;
+  color: #fff;
+}
+.landing-page .navbar-countdown .active:hover a {
+  color: #fff !important;
+  font-weight: 800 !important;
 }
 .landing-page .navbar-civex {
   background-color: #E3EEF0 !important;
@@ -1784,6 +1873,254 @@ p.hero-subtitle {
   letter-spacing: 0.75px;
 }
 
+.competition-cpcc {
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+}
+.competition-cpcc .compe-bg img.ornamen1 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  max-width: 100%;
+}
+.competition-cpcc .compe-bg img.ornamen2 {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  max-width: 100%;
+}
+@media screen and (max-width: 720px) {
+  .competition-cpcc .compe-bg img.ornamen2 {
+    display: none;
+  }
+}
+.competition-cpcc .row,
+.competition-cpcc .container {
+  padding-top: 50px;
+}
+.competition-cpcc a.cta {
+  align-items: center;
+  border-radius: 50px;
+  border: 3px solid white;
+  height: -moz-max-content;
+  height: max-content;
+  display: inline-flex;
+}
+.competition-cpcc a.cta span {
+  padding: 2px 30px;
+  margin: 10px 0px;
+  color: #FFF;
+  text-align: justify;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+.competition-cpcc a.cta:hover {
+  background: rgba(255, 255, 255, 0.1333333333);
+  transition: background-color 0.5s ease;
+}
+.competition-cpcc p.title {
+  padding-top: 30px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.5px;
+}
+.competition-cpcc p.detail {
+  max-width: 75%;
+  color: #FFF;
+  text-align: justify;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  /* 120% */
+  letter-spacing: 0.75px;
+}
+@media (max-width: 920px) {
+  .competition-cpcc p.detail {
+    max-width: 100%;
+  }
+}
+.competition-cpcc p.detail span {
+  color: #93B4D1;
+}
+.competition-cpcc .competition-gec-timeline {
+  margin-top: 200px;
+  padding-bottom: 200px;
+  /* Mengubah penampilan scrollbar */
+  /* Mengubah penampilan track/trek scrollbar */
+  /* Mengubah penampilan handle/pegangan scrollbar */
+  /* Mengubah penampilan handle/pegangan scrollbar saat dihover */
+}
+.competition-cpcc .competition-gec-timeline .container p.title {
+  text-align: left !important;
+}
+.competition-cpcc .competition-gec-timeline .scrollable {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+@media screen and (max-width: 1000px) {
+  .competition-cpcc .competition-gec-timeline .scrollable {
+    padding-bottom: 20px;
+  }
+}
+.competition-cpcc .competition-gec-timeline .scrollable img.timeline {
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .competition-cpcc .competition-gec-timeline .scrollable img.timeline {
+    width: 200%;
+  }
+}
+.competition-cpcc .competition-gec-timeline ::-webkit-scrollbar {
+  padding-top: 20px;
+  height: 5px;
+  width: 10px;
+}
+.competition-cpcc .competition-gec-timeline ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.competition-cpcc .competition-gec-timeline ::-webkit-scrollbar-thumb {
+  background: #466496;
+}
+.competition-cpcc .competition-gec-timeline ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.competition-cpcc .competition-gec-timeline .content {
+  flex: 0 0 auto;
+  margin: 10px;
+}
+.competition-cpcc .competition-term {
+  background: linear-gradient(134deg, #344767 0%, rgba(147, 180, 209, 0) 100%);
+}
+.competition-cpcc .competition-term .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.competition-cpcc .competition-term .container .total-price {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.competition-cpcc .competition-term .container .money {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+}
+.competition-cpcc .competition-term .container .aditonal {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.75px;
+}
+.competition-cpcc .competition-term .container .fee {
+  margin-top: 30px;
+  border-radius: 50px;
+  background: #1B1B1B;
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.competition-cpcc .competition-term .container .fee p {
+  color: #FFF;
+  margin: 0;
+  padding: 10px 20px;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+.competition-cpcc .competition-term .container table {
+  margin-top: 20px;
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.75px;
+}
+.competition-cpcc .competition-term .container table tr {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.competition-cpcc .competition-term .container .limited {
+  margin-top: 10px;
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+.competition-cpcc .competition-term .container .button {
+  align-items: center;
+}
+.competition-cpcc .competition-term .container .button p {
+  padding: 14px 15px;
+  margin: 0px;
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.competition-cpcc .competition-term .container .button .register {
+  width: 100%;
+  border-radius: 100px;
+  background: #466496;
+}
+.competition-cpcc .competition-term .container .button .register:hover {
+  transition: background-color 0.5s ease;
+  width: 100%;
+  border-radius: 100px;
+  background: #fff;
+}
+.competition-cpcc .competition-term .container .button .register:hover p {
+  color: #466496;
+}
+.competition-cpcc .competition-term .container .button .cta {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 100px;
+  background: #fff;
+}
+.competition-cpcc .competition-term .container .button .cta p {
+  color: #466496;
+}
+.competition-cpcc .competition-term .container .button .cta:hover {
+  transition: background-color 0.5s ease;
+  background: #466496;
+}
+.competition-cpcc .competition-term .container .button .cta:hover p {
+  color: #fff;
+}
+
 .competition-gec {
   margin-top: 5rem;
   padding-bottom: 1rem;
@@ -1828,7 +2165,7 @@ p.hero-subtitle {
   font-weight: 600;
 }
 .competition-gec a.cta:hover {
-  background: rgba(255, 255, 255, 0.1333333333);
+  background: rgba(121, 220, 129, 0.1333333333);
   transition: background-color 0.5s ease;
 }
 .competition-gec p.title {
@@ -1836,7 +2173,7 @@ p.hero-subtitle {
   color: #FFF;
   text-align: center;
   font-family: "Inter";
-  font-size: 30px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -1860,7 +2197,7 @@ p.hero-subtitle {
   }
 }
 .competition-gec p.detail span {
-  color: #93B4D1;
+  color: #79DC82;
 }
 .competition-gec .competition-gec-timeline {
   margin-top: 200px;
@@ -1869,6 +2206,9 @@ p.hero-subtitle {
   /* Mengubah penampilan track/trek scrollbar */
   /* Mengubah penampilan handle/pegangan scrollbar */
   /* Mengubah penampilan handle/pegangan scrollbar saat dihover */
+}
+.competition-gec .competition-gec-timeline .container p.title {
+  text-align: left !important;
 }
 .competition-gec .competition-gec-timeline .scrollable {
   display: flex;
@@ -1897,7 +2237,7 @@ p.hero-subtitle {
   background: #f1f1f1;
 }
 .competition-gec .competition-gec-timeline ::-webkit-scrollbar-thumb {
-  background: #466496;
+  background: #79DC82;
 }
 .competition-gec .competition-gec-timeline ::-webkit-scrollbar-thumb:hover {
   background: #555;
@@ -1907,7 +2247,7 @@ p.hero-subtitle {
   margin: 10px;
 }
 .competition-gec .competition-term {
-  background: linear-gradient(134deg, #344767 0%, rgba(147, 180, 209, 0) 100%);
+  background: linear-gradient(134deg, #539656 0%, rgba(152, 209, 147, 0) 100%);
 }
 .competition-gec .competition-term .container {
   padding-top: 40px;
@@ -2001,7 +2341,7 @@ p.hero-subtitle {
 .competition-gec .competition-term .container .button .register {
   width: 100%;
   border-radius: 100px;
-  background: #466496;
+  background: #79DC82;
 }
 .competition-gec .competition-term .container .button .register:hover {
   transition: background-color 0.5s ease;
@@ -2010,7 +2350,7 @@ p.hero-subtitle {
   background: #fff;
 }
 .competition-gec .competition-term .container .button .register:hover p {
-  color: #466496;
+  color: #79DC82;
 }
 .competition-gec .competition-term .container .button .cta {
   margin-top: 20px;
@@ -2019,14 +2359,367 @@ p.hero-subtitle {
   background: #fff;
 }
 .competition-gec .competition-term .container .button .cta p {
-  color: #466496;
+  color: #79DC82;
 }
 .competition-gec .competition-term .container .button .cta:hover {
   transition: background-color 0.5s ease;
-  background: #466496;
+  background: #79DC82;
 }
 .competition-gec .competition-term .container .button .cta:hover p {
   color: #fff;
+}
+
+.competition-cesc {
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+}
+.competition-cesc .compe-bg img.ornamen1 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  max-width: 100%;
+}
+.competition-cesc .compe-bg img.ornamen2 {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  max-width: 100%;
+}
+@media screen and (max-width: 720px) {
+  .competition-cesc .compe-bg img.ornamen2 {
+    display: none;
+  }
+}
+.competition-cesc .row,
+.competition-cesc .container {
+  padding-top: 50px;
+}
+.competition-cesc a.cta {
+  align-items: center;
+  border-radius: 50px;
+  border: 3px solid white;
+  height: -moz-max-content;
+  height: max-content;
+  display: inline-flex;
+}
+.competition-cesc a.cta span {
+  padding: 2px 30px;
+  margin: 10px 0px;
+  color: #FFF;
+  text-align: justify;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+.competition-cesc a.cta:hover {
+  background: rgba(205, 184, 212, 0.1333333333);
+  transition: background-color 0.5s ease;
+}
+.competition-cesc p.title {
+  padding-top: 30px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.5px;
+}
+.competition-cesc p.detail {
+  max-width: 75%;
+  color: #FFF;
+  text-align: justify;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  /* 120% */
+  letter-spacing: 0.75px;
+}
+@media (max-width: 920px) {
+  .competition-cesc p.detail {
+    max-width: 100%;
+  }
+}
+.competition-cesc p.detail span {
+  color: #CDB8D4;
+}
+.competition-cesc .competition-gec-timeline {
+  margin-top: 200px;
+  padding-bottom: 200px;
+  /* Mengubah penampilan scrollbar */
+  /* Mengubah penampilan track/trek scrollbar */
+  /* Mengubah penampilan handle/pegangan scrollbar */
+  /* Mengubah penampilan handle/pegangan scrollbar saat dihover */
+}
+.competition-cesc .competition-gec-timeline .container p.title {
+  text-align: left !important;
+}
+.competition-cesc .competition-gec-timeline .scrollable {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+@media screen and (max-width: 1000px) {
+  .competition-cesc .competition-gec-timeline .scrollable {
+    padding-bottom: 20px;
+  }
+}
+.competition-cesc .competition-gec-timeline .scrollable img.timeline {
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .competition-cesc .competition-gec-timeline .scrollable img.timeline {
+    width: 200%;
+  }
+}
+.competition-cesc .competition-gec-timeline ::-webkit-scrollbar {
+  padding-top: 20px;
+  height: 5px;
+  width: 10px;
+}
+.competition-cesc .competition-gec-timeline ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.competition-cesc .competition-gec-timeline ::-webkit-scrollbar-thumb {
+  background: #CDB8D4;
+}
+.competition-cesc .competition-gec-timeline ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.competition-cesc .competition-gec-timeline .content {
+  flex: 0 0 auto;
+  margin: 10px;
+}
+.competition-cesc .competition-term {
+  background: linear-gradient(134deg, #603467 0%, rgba(193, 147, 209, 0) 100%);
+}
+.competition-cesc .competition-term .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.competition-cesc .competition-term .container .total-price {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.competition-cesc .competition-term .container .money {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+}
+.competition-cesc .competition-term .container .aditonal {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.75px;
+}
+.competition-cesc .competition-term .container .fee {
+  margin-top: 30px;
+  border-radius: 50px;
+  background: #1B1B1B;
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.competition-cesc .competition-term .container .fee p {
+  color: #FFF;
+  margin: 0;
+  padding: 10px 20px;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+.competition-cesc .competition-term .container table {
+  margin-top: 20px;
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.75px;
+}
+.competition-cesc .competition-term .container table tr {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.competition-cesc .competition-term .container .limited {
+  margin-top: 10px;
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+.competition-cesc .competition-term .container .button {
+  align-items: center;
+}
+.competition-cesc .competition-term .container .button p {
+  padding: 14px 15px;
+  margin: 0px;
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.competition-cesc .competition-term .container .button .register {
+  width: 100%;
+  border-radius: 100px;
+  background: #CDB8D4;
+}
+.competition-cesc .competition-term .container .button .register:hover {
+  transition: background-color 0.5s ease;
+  width: 100%;
+  border-radius: 100px;
+  background: #fff;
+}
+.competition-cesc .competition-term .container .button .register:hover p {
+  color: #CDB8D4;
+}
+.competition-cesc .competition-term .container .button .cta {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 100px;
+  background: #fff;
+}
+.competition-cesc .competition-term .container .button .cta p {
+  color: #CDB8D4;
+}
+.competition-cesc .competition-term .container .button .cta:hover {
+  transition: background-color 0.5s ease;
+  background: #CDB8D4;
+}
+.competition-cesc .competition-term .container .button .cta:hover p {
+  color: #fff;
+}
+
+.opening-time .compe-bg {
+  background: linear-gradient(135deg, #95B8D1 0%, rgba(103, 132, 153, 0) 100%);
+}
+.opening-time img.ornamen2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.opening-time .jumbo {
+  height: calc(100vh - 10rem);
+}
+.opening-time .container {
+  padding-top: 10rem;
+}
+@media screen and (max-width: 920px) {
+  .opening-time .container {
+    padding-top: 6rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .opening-time .col-3 {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+.opening-time .col-3 .card-counter {
+  border-radius: 22px;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 3px;
+}
+.opening-time .col-3 .card-counter .nominal {
+  padding: 3px;
+}
+.opening-time .col-3 .card-counter .nominal .count {
+  padding: 20px;
+  color: #080F1A;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+@media screen and (max-width: 720px) {
+  .opening-time .col-3 .card-counter .nominal .count {
+    font-size: 30px;
+    padding: 0px;
+    padding-top: 5px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .opening-time .col-3 .card-counter .nominal {
+    padding: 1px;
+  }
+}
+.opening-time .col-3 .card-counter .nominal .subtitle {
+  padding-bottom: 10px;
+  color: #004267;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 15px;
+}
+@media screen and (max-width: 720px) {
+  .opening-time .col-3 .card-counter .nominal .subtitle {
+    font-size: 12px;
+  }
+}
+.opening-time p.title {
+  color: #000;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media screen and (max-width: 720px) {
+  .opening-time p.title {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 0rem;
+  }
+}
+.opening-time p.sub {
+  margin-top: 0px;
+  color: #000;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media screen and (max-width: 720px) {
+  .opening-time p.sub {
+    font-size: 20px;
+    padding-top: 0px;
+  }
 }
 
 .authcard {

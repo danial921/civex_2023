@@ -9,6 +9,7 @@
                     <div class="p-2 bd-highlight">
                         <p class=" tx-poppins tx-medium mg-b-0 tx-15 ">Early Bird</p>
                         <p class="mg-b-1 ">Rp.250.000,00</p>
+                        <p class="mg-b-1 kuotaReady">Persediaan Masih Ada</p>
                     </div>
                 </div>
             </div>

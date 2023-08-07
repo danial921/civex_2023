@@ -19,7 +19,15 @@ use App\Http\Controllers\User\CescController;
 |
 */
 
-Route::get('/', function () {return view('welcome');});
+Route::get('/', function () {$active = 'home'; return view('landingpage.home', compact('active'));});
+Route::get('/detail', function () {$active = 'home'; return view('landingpage.detail-civex', compact('active'));});
+Route::get('/competition', function () {$active = 'competition'; return view('landingpage.competition', compact('active'));});
+Route::get('/competition-cpcc', function () {$active = 'competition';return view('landingpage.competition-cpcc', compact('active'));});
+Route::get('/competition-gec', function () {$active = 'competition';return view('landingpage.competition-gec', compact('active'));});
+Route::get('/competition-cesc', function () {$active = 'competition';return view('landingpage.competition-cesc', compact('active'));});
+Route::get('/opening', function () {$active = 'opening'; $time = "2023-09-10 15:00:00"; return view('landingpage.opening', compact('active', 'time'));});
+Route::get('/closing', function () {$active = 'closing'; $time = "2023-09-10 15:00:00"; return view('landingpage.closing', compact('active', 'time'));});
+Route::get('/merchandise', function () {$active = 'opening'; $time = "2023-09-10 15:00:00"; return view('landingpage.merchandise', compact('active', 'time'));});
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::middleware('notRegisterComp')->group(function () {
