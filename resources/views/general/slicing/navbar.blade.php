@@ -14,7 +14,7 @@
                 <p class="my-auto d-none d-lg-block">{{ $username }}</p>
             </a>
             <div class="dropdown-menu dropdown-menu-right allow-focus shadow rounded-its-10">
-                <a target="_blank" href="https://my.its.ac.id/" class="dropdown-item-its tx-poppins tx-medium bd-b" style="padding-top: 20px !important; padding-bottom: 20px !important;">
+                <a target="_blank" class="dropdown-item-its tx-poppins tx-medium bd-b" style="padding-top: 20px !important; padding-bottom: 20px !important;">
                     <div class="avatar avatar-md mg-r-15">
                         <img src="{{ asset('civex/img/profile1.svg')}}" class="rounded-circle" alt="">
                     </div>
