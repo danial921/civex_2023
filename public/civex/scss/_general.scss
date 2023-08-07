@@ -523,6 +523,24 @@ input.form-control:hover {
     line-height: normal;
 }
 
+.kuotaReady {
+    border-radius: 5px;
+    background: rgba(75, 135, 127, 0.62);
+    display: flex;
+    padding: 5px 15px !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .verifikasi {
     p.form {
         color: #000;
@@ -1045,6 +1063,91 @@ p.hero-subtitle {
 .landing-page {
     overflow-x: hidden;
     position: relative;
+
+    .navbar-countdown {
+        background-color: #E3EEF0 !important;
+        box-shadow: none !important;
+        background: #46639600 !important;
+
+        @media screen and (max-width: 920px) {
+            background: #ffffff !important;
+        }
+
+        a {
+            padding: 15px 0px 15px 30px;
+
+            img.nav-icon {
+                height: 35px !important;
+            }
+        }
+
+        .nav-item {
+            justify-content: center;
+            align-items: center;
+            align-items: center;
+
+            a {
+                color: #000 !important;
+                text-align: center;
+                font-family: 'Inter';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.72px;
+                margin-right: 20px;
+            }
+        }
+
+        .nav-item.civex-active {
+            background-color: #ff000000 !important;
+
+            a {
+                color: #000 !important;
+                text-align: center;
+                font-family: 'Inter';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.72px;
+                margin-right: 20px;
+            }
+        }
+
+        .active {
+            height: 40px;
+            display: inline-block;
+            padding: 0px 15px;
+            margin: auto 0;
+            // background-color: #00000000;
+            border-radius: 28px;
+            border: 2px solid #000 !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                background-color: #00000000 !important;
+                margin: 0px 10px;
+                padding: 0px;
+
+
+            }
+        }
+
+        .active:hover {
+            background-color: black !important;
+            transition: background-color 0.5s ease;
+            border: 2px solid #00000000 !important;
+            color: #fff;
+
+            a {
+                color: #fff !important;
+                font-weight: 800 !important;
+            }
+        }
+    }
 
     .navbar-civex {
         background-color: #E3EEF0 !important;
@@ -2059,7 +2162,7 @@ p.hero-subtitle {
     }
 }
 
-.competition-gec {
+.competition-cpcc {
     .compe-bg {
         img.ornamen1 {
             position: absolute;
@@ -2067,11 +2170,13 @@ p.hero-subtitle {
             top: 0px;
             max-width: 100%;
         }
+
         img.ornamen2 {
             position: absolute;
             left: 0px;
             bottom: 0px;
             max-width: 100%;
+
             @media screen and (max-width: 720px) {
                 display: none;
             }
@@ -2117,7 +2222,7 @@ p.hero-subtitle {
         color: #FFF;
         text-align: center;
         font-family: 'Inter';
-        font-size: 30px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -2148,6 +2253,12 @@ p.hero-subtitle {
     .competition-gec-timeline {
         margin-top: 200px;
         padding-bottom: 200px;
+
+        .container {
+            p.title {
+                text-align: left !important;
+            }
+        }
 
         .scrollable {
             display: flex;
@@ -2335,3 +2446,682 @@ p.hero-subtitle {
         }
     }
 }
+
+.competition-gec {
+    .compe-bg {
+        img.ornamen1 {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            max-width: 100%;
+        }
+
+        img.ornamen2 {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            max-width: 100%;
+
+            @media screen and (max-width: 720px) {
+                display: none;
+            }
+        }
+    }
+
+    margin-top: 5rem;
+    padding-bottom: 1rem;
+
+    .row,
+    .container {
+        padding-top: 50px;
+    }
+
+    a.cta {
+        align-items: center;
+        border-radius: 50px;
+        border: 3px solid white;
+        height: max-content;
+        display: inline-flex;
+
+        span {
+            padding: 2px 30px;
+            margin: 10px 0px;
+            color: #FFF;
+            text-align: justify;
+            font-family: 'Inter';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+
+        }
+
+    }
+
+    a.cta:hover {
+        background: #79dc8122;
+        transition: background-color 0.5s ease;
+    }
+
+    p.title {
+        padding-top: 30px;
+        color: #FFF;
+        text-align: center;
+        font-family: 'Inter';
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.5px;
+    }
+
+    p.detail {
+        @media (max-width: 920px) {
+            max-width: 100%;
+        }
+
+        max-width: 75%;
+        color: #FFF;
+        text-align: justify;
+        font-family: 'Inter';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        /* 120% */
+        letter-spacing: 0.75px;
+
+        span {
+            color: #79DC82;
+        }
+    }
+
+    .competition-gec-timeline {
+        margin-top: 200px;
+        padding-bottom: 200px;
+
+        .container {
+            p.title {
+                text-align: left !important;
+            }
+        }
+
+        .scrollable {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+
+            @media screen and (max-width: 1000px) {
+                padding-bottom: 20px;
+            }
+
+            img.timeline {
+                width: 100%;
+
+                @media screen and (max-width: 1000px) {
+                    width: 200%;
+                }
+            }
+        }
+
+        /* Mengubah penampilan scrollbar */
+        ::-webkit-scrollbar {
+            padding-top: 20px;
+            height: 5px;
+            width: 10px;
+        }
+
+        /* Mengubah penampilan track/trek scrollbar */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Mengubah penampilan handle/pegangan scrollbar */
+        ::-webkit-scrollbar-thumb {
+            background: #79DC82;
+        }
+
+        /* Mengubah penampilan handle/pegangan scrollbar saat dihover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .content {
+            flex: 0 0 auto;
+            margin: 10px;
+        }
+
+    }
+
+    .competition-term {
+        background: linear-gradient(134deg, #539656 0%, rgba(152, 209, 147, 0.00) 100%);
+
+        .container {
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+            .total-price {
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 1.2px;
+            }
+
+            .money {
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 2.1px;
+            }
+
+            .aditonal {
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.75px;
+            }
+
+            .fee {
+                margin-top: 30px;
+                border-radius: 50px;
+                background: #1B1B1B;
+                width: max-content;
+                height: max-content;
+
+                p {
+                    color: #FFF;
+                    margin: 0;
+                    padding: 10px 20px;
+                    font-family: 'Inter';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.9px;
+                }
+            }
+
+            table {
+                margin-top: 20px;
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.75px;
+
+                tr {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .limited {
+                margin-top: 10px;
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.6px;
+            }
+
+            .button {
+                align-items: center;
+
+                p {
+                    padding: 14px 15px;
+                    margin: 0px;
+                    color: #FFF;
+                    font-family: 'Inter';
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 1.2px;
+                }
+
+                .register {
+                    width: 100%;
+                    border-radius: 100px;
+                    background: #79DC82;
+                }
+
+                .register:hover {
+                    transition: background-color 0.5s ease;
+                    width: 100%;
+                    border-radius: 100px;
+                    background: #fff;
+
+                    p {
+                        color: #79DC82;
+                    }
+                }
+
+                .cta {
+                    margin-top: 20px;
+                    width: 100%;
+                    border-radius: 100px;
+                    background: #fff;
+
+                    p {
+                        color: #79DC82;
+                    }
+                }
+
+                .cta:hover {
+                    transition: background-color 0.5s ease;
+                    background: #79DC82;
+
+                    p {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.competition-cesc {
+    .compe-bg {
+        img.ornamen1 {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            max-width: 100%;
+        }
+
+        img.ornamen2 {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            max-width: 100%;
+
+            @media screen and (max-width: 720px) {
+                display: none;
+            }
+        }
+    }
+
+    margin-top: 5rem;
+    padding-bottom: 1rem;
+
+    .row,
+    .container {
+        padding-top: 50px;
+    }
+
+    a.cta {
+        align-items: center;
+        border-radius: 50px;
+        border: 3px solid white;
+        height: max-content;
+        display: inline-flex;
+
+        span {
+            padding: 2px 30px;
+            margin: 10px 0px;
+            color: #FFF;
+            text-align: justify;
+            font-family: 'Inter';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+
+        }
+
+    }
+
+    a.cta:hover {
+        background: #CDB8D422;
+        transition: background-color 0.5s ease;
+    }
+
+    p.title {
+        padding-top: 30px;
+        color: #FFF;
+        text-align: center;
+        font-family: 'Inter';
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.5px;
+    }
+
+    p.detail {
+        @media (max-width: 920px) {
+            max-width: 100%;
+        }
+
+        max-width: 75%;
+        color: #FFF;
+        text-align: justify;
+        font-family: 'Inter';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        /* 120% */
+        letter-spacing: 0.75px;
+
+        span {
+            color: #CDB8D4;
+        }
+    }
+
+    .competition-gec-timeline {
+        margin-top: 200px;
+        padding-bottom: 200px;
+
+        .container {
+            p.title {
+                text-align: left !important;
+            }
+        }
+
+        .scrollable {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+
+            @media screen and (max-width: 1000px) {
+                padding-bottom: 20px;
+            }
+
+            img.timeline {
+                width: 100%;
+
+                @media screen and (max-width: 1000px) {
+                    width: 200%;
+                }
+            }
+        }
+
+        /* Mengubah penampilan scrollbar */
+        ::-webkit-scrollbar {
+            padding-top: 20px;
+            height: 5px;
+            width: 10px;
+        }
+
+        /* Mengubah penampilan track/trek scrollbar */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Mengubah penampilan handle/pegangan scrollbar */
+        ::-webkit-scrollbar-thumb {
+            background: #CDB8D4;
+        }
+
+        /* Mengubah penampilan handle/pegangan scrollbar saat dihover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .content {
+            flex: 0 0 auto;
+            margin: 10px;
+        }
+
+    }
+
+    .competition-term {
+        background: linear-gradient(134deg, #603467 0%, rgba(193, 147, 209, 0.00) 100%);
+
+        .container {
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+            .total-price {
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 1.2px;
+            }
+
+            .money {
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 2.1px;
+            }
+
+            .aditonal {
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.75px;
+            }
+
+            .fee {
+                margin-top: 30px;
+                border-radius: 50px;
+                background: #1B1B1B;
+                width: max-content;
+                height: max-content;
+
+                p {
+                    color: #FFF;
+                    margin: 0;
+                    padding: 10px 20px;
+                    font-family: 'Inter';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.9px;
+                }
+            }
+
+            table {
+                margin-top: 20px;
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.75px;
+
+                tr {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .limited {
+                margin-top: 10px;
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.6px;
+            }
+
+            .button {
+                align-items: center;
+
+                p {
+                    padding: 14px 15px;
+                    margin: 0px;
+                    color: #FFF;
+                    font-family: 'Inter';
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 1.2px;
+                }
+
+                .register {
+                    width: 100%;
+                    border-radius: 100px;
+                    background: #CDB8D4;
+                }
+
+                .register:hover {
+                    transition: background-color 0.5s ease;
+                    width: 100%;
+                    border-radius: 100px;
+                    background: #fff;
+
+                    p {
+                        color: #CDB8D4;
+                    }
+                }
+
+                .cta {
+                    margin-top: 20px;
+                    width: 100%;
+                    border-radius: 100px;
+                    background: #fff;
+
+                    p {
+                        color: #CDB8D4;
+                    }
+                }
+
+                .cta:hover {
+                    transition: background-color 0.5s ease;
+                    background: #CDB8D4;
+
+                    p {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.opening-time {
+    .compe-bg {
+        background: linear-gradient(135deg, #95B8D1 0%, rgba(103, 132, 153, 0.00) 100%);
+    }
+
+    img.ornamen2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .jumbo{
+        height: calc(100vh - 10rem);
+    }
+
+    .container {
+        padding-top: 10rem;
+
+        @media screen and (max-width: 920px) {
+            padding-top: 6rem;
+        }
+    }
+
+    .col-3 {
+        @media screen and (max-width: 720px) {
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        .card-counter {
+            border-radius: 22px;
+            border: 1px solid #FFF;
+            background: rgba(255, 255, 255, 0.60);
+            padding: 3px;
+
+            .nominal {
+                .count {
+                    padding: 20px;
+                    color: #080F1A;
+                    text-align: center;
+                    font-family: 'Poppins';
+                    font-size: 50px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    @media screen and (max-width: 720px) {
+                        font-size: 30px;
+                        padding:0px;
+                        padding-top: 5px;
+                    }
+                }
+
+                padding: 3px;
+                @media screen and (max-width: 720px) {
+                    padding: 1px;
+                }
+
+                .subtitle {
+                    padding-bottom: 10px;
+                    color: #004267;
+                    text-align: center;
+                    font-family: 'Poppins';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    padding-bottom: 15px;
+                    @media screen and (max-width: 720px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    p.title {
+        color: #000;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        @media screen and (max-width: 720px) {
+            font-size: 40px;
+            margin-top: 50px;
+            margin-bottom: 0rem;
+        }
+    }
+
+    p.sub {
+        margin-top: 0px;
+        color: #000;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        @media screen and (max-width: 720px) {
+            font-size: 20px;
+            padding-top: 0px;
+        }
+    }
+}
+
+
