@@ -15,10 +15,10 @@
 
         @if($urutan <= 15)
             {{-- jumbotron early masih ada --}}
-            @include('cesc.slicing.form1-status2')
+            @include('cesc.slicing.form1-status')
         @else
             {{-- jumbotronkalo udah abis --}}
-            @include('cesc.slicing.form1-status')
+            @include('cesc.slicing.form1-status2')
         @endif
         @include('cesc.slicing.form1-formulir')
 
