@@ -14,30 +14,41 @@
             <div class="card-body">
                 <h5 class="title">Reset Password </h5>
                 <p class="subtitle mt-1">masukkan password baru anda.</p>
+                @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
                 <form method="POST" action="{{ route('password.update') }}">
                     @csrf
                     <input type="hidden" name="token" value="{{ $request->route('token') }}">
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1 formtitle" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="civex@its.ac.id" name="email" required>
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email"
+                            placeholder="civex@its.ac.id" name="email" required autofocus>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1 formtitle" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleFormControlInput1"
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password"
                             placeholder="civex@its.ac.id" name="password" required>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1 formtitle" class="form-label">Confirm Password</label>
-                        <input type="password" class="form-control" id="exampleFormControlInput1"
-                            placeholder="civex@its.ac.id" name="password_confirmation" required>
+                        <label for="password_confirmation" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="password_confirmation"
+                            placeholder="civex@its.ac.id" name="password_confirmation" oninput="validatePassword()" required>
+                        <div class="invalid-feedback" id="password_confirmation-false"></div>
                     </div>
                     <div class="actionfield mt-4">
-                        <button class="submitbutton">Reset Password</button>
+                        <button class="submitbutton" id="btnSubmit">Reset Password</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+<script src=" {{ asset('js/resetpassword.js') }} " ></script>
 @endsection

@@ -14,43 +14,40 @@
                         <h5 class="title">Register</h5>
                         <p class="subtitle mt-1">Daftarkan Akun Anda</p>
                         <form id="register_form" class="mt-2 " method="POST" action=" {{ route ('register')}} " enctype="multipart/form-data">
-                        @csrf
-                        @if ($errors->any())
-                        <div class="alert alert-danger">
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                        @endif
+                            @csrf
+                        
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1 formtitle" class="form-label">Nama Lengkap</label>
-                                <input type="TEXT" class="form-control" id="exampleFormControlInput1" name="name"
-                                    placeholder="Masukkan Nama Lengkapmu" required>
+                                <label for="name" class="form-label">Nama Lengkap</label>
+                                <input type="TEXT" class="form-control" id="name" name="name"
+                                    placeholder="Masukkan Nama Lengkapmu" required autofocus>
+                                <div class="invalid-feedback" id="name-false">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1 formtitle" class="form-label">email</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" name="email"
+                                <label for="email" class="form-label">email</label>
+                                <input type="email" class="form-control" id="email" name="email"
                                     placeholder="masukkan emailmu" required>
+                                <div class="invalid-feedback" id="email-false">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1 formtitle" class="form-label">password</label>
-                                <input type="password" class="form-control" id="exampleFormControlInput1" name="password"
+                                <label for="password" class="form-label">password</label>
+                                <input type="password" class="form-control" id="password" name="password"
                                     placeholder="masukkan password" required>
+                                <div class="invalid-feedback" id="password-false">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1 formtitle" class="form-label">confirm password</label>
-                                <input type="password" class="form-control" id="exampleFormControlInput1" name="password_confirmation"
-                                    placeholder="ulangipassword" required>
+                                <label for="password_confirmation" class="form-label">confirm password</label>
+                                <input type="password" class="form-control" id="password_confirmation" name="password_confirmation"
+                                    placeholder="ulangipassword" oninput="validatePassword()" required>
+                                <div class="invalid-feedback" id="password_confirmation-false">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1 formtitle" class="form-label">nomer telefon</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" name="no_telp"
+                                <label for="no_telp" class="form-label">nomer telefon</label>
+                                <input type="text" class="form-control" id="no_telp" name="no_telp"
                                     placeholder="masukkan nomer telefonmu" required>
+                                <div class="invalid-feedback" id="no_telp-false">
                             </div>
                             <div class="actionfield mt-4">
-                            <button type="submit" class="submitbutton">Daftar</button>
+                            <button type="submit" class="submitbutton" id="btnSubmit">Daftar</button>
                                 <a  href="#simpan" data-toggle="modal"  data-animation="effect-scale" style="width: 100%" id="btnModal" hidden>modal</a>
 
                                 <p class="mt-3">sudah punya akun ? <a href="/login"><span class="actiontext">Login
@@ -76,5 +73,5 @@
     <div id="overlay" class="overlay"></div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <script src=" {{ asset('assets/js/register.js') }} " ></script>
+    <script src=" {{ asset('js/register.js') }} " ></script>
 @endsection

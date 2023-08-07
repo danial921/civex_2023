@@ -13,12 +13,13 @@
                     Engineering Competition</h4>
             </div>
         </div>
-        {{-- jumbotron early masih ada --}}
-        @include('gec.slicing.form1-status2')
-
-        {{-- jumbotronkalo udah abis --}}
-        @include('gec.slicing.form1-status')
-
+        @if($urutan <= 15)
+            {{-- jumbotron early masih ada --}}
+            @include('gec.slicing.form1-status2')
+        @else
+            {{-- jumbotronkalo udah abis --}}
+            @include('gec.slicing.form1-status')
+        @endif
         @include('gec.slicing.form1-formulir')
     </div>
 @endsection

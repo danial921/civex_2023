@@ -4,14 +4,19 @@
     <div class="container verifikasi pt-5 mt-5">
         <div class="row">
             <div class="col-lg-8 col-12">
-                {{-- pendaftaran di verifikasi, timbelum melengkapi berkas --}}
-                @include('gec.slicing.dashboard-status')
-                {{-- proses verif --}}
-                @include('gec.slicing.dashboard-status2')
-                {{-- DiTolak --}}
-                @include('gec.slicing.dashboard-status3')
-                {{-- pendaftaran di verifikasi, tim sudah melengkapi berkas --}}
-                @include('gec.slicing.dashboard-status4')
+                @if($status == '1')
+                    {{-- pendaftaran di verifikasi, timbelum melengkapi berkas --}}
+                    @include('gec.slicing.dashboard-status')
+                @elseif($status == '12')
+                    {{-- proses verif --}}
+                    @include('gec.slicing.dashboard-status2')
+                @elseif($status == '11')
+                    {{-- DiTolak --}}
+                    @include('gec.slicing.dashboard-status3')
+                @elseif($status == '2')
+                    {{-- pendaftaran di verifikasi, tim sudah melengkapi berkas --}}
+                    @include('gec.slicing.dashboard-status4')
+                @endif    
             </div>
             <div class="col-lg-4 col-12">
                 @include('gec.slicing.timeline')
