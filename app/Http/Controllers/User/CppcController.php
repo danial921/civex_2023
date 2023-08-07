@@ -12,7 +12,7 @@ use App\Http\Controllers\GoogleDriveController;
 class CppcController extends Controller
 {
     public function CPPC(){
-        if(auth()->user()->status == '00' || auth()->user()->status == '01'){
+        if(auth()->user()->status == '00' || auth()->user()->status == '-1'){
             return redirect('/cppc/verifikasi');
         }
 
