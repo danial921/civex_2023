@@ -12,7 +12,7 @@ use App\Http\Controllers\GoogleDriveController;
 class CppcController extends Controller
 {
     public function CPPC(){
-        if(auth()->user()->status == '-' || auth()->user()->status == '00' || auth()->user()->status == '-1'){
+        if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
             return redirect('/cppc/verifikasi');
         }
 
@@ -23,6 +23,9 @@ class CppcController extends Controller
     }
 
     public function CPPC_verifikasi(){
+        if(auth()->user()->status === '2' || auth()->user()->status === '3' || auth()->user()->status === '31'){
+            return redirect('/cppc');
+        }
         return view('cpcc.verifikasi_1', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status
@@ -30,8 +33,8 @@ class CppcController extends Controller
     }
 
     public function CPPC_biodata(){
-        if(auth()->user()->status == '-' || auth()->user()->status == '00' || auth()->user()->status == '-1'){
-            return redirect('/CPPC/verifikasi');
+        if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
+            return redirect('/cppc/verifikasi');
         }
 
         $data = cppc_form::where('id_user', auth()->user()->id)->first();
