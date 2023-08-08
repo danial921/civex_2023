@@ -12,7 +12,7 @@ use App\Http\Controllers\GoogleDriveController;
 class CescController extends Controller
 {
     public function CESC(){
-        if(auth()->user()->status == '-' || auth()->user()->status == '00' || auth()->user()->status == '-1'){
+        if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
             return redirect('/cesc/verifikasi');
         }
 
@@ -23,6 +23,9 @@ class CescController extends Controller
     }
 
     public function CESC_verifikasi(){
+        if(auth()->user()->status === '2' || auth()->user()->status === '3' || auth()->user()->status === '31'){
+            return redirect('/cesc');
+        }
         return view('cesc.verifikasi_1', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status
@@ -30,7 +33,7 @@ class CescController extends Controller
     }
 
     public function CESC_biodata(){
-        if(auth()->user()->status == '-' || auth()->user()->status == '00' || auth()->user()->status == '-1'){
+        if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
             return redirect('/cesc/verifikasi');
         }
 

@@ -12,17 +12,23 @@ use App\Http\Controllers\GoogleDriveController;
 class GecController extends Controller
 {
     public function GEC(){
-        if(auth()->user()->status == '-' || auth()->user()->status == '00' || auth()->user()->status == '-1'){
+        if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
             return redirect('/gec/verifikasi');
         }
 
+        $data = gec_form::where('id_user', auth()->user()->id)->first();
+
         return view('gec.dashboard', [
             'username' => auth()->user()->name,
-            'status' => auth()->user()->status      
+            'status' => auth()->user()->status,
+            'status_proposal' => $data->status_proposal
         ]);
     }
 
     public function GEC_verifikasi(){
+        if(auth()->user()->status === '2' || auth()->user()->status === '3' || auth()->user()->status === '31'){
+            return redirect('/gec');
+        }
         return view('gec.verifikasi_1', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status
@@ -30,7 +36,7 @@ class GecController extends Controller
     }
 
     public function GEC_biodata(){
-        if(auth()->user()->status == '-' || auth()->user()->status == '00' || auth()->user()->status == '-1'){
+        if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
             return redirect('/gec/verifikasi');
         }
 

@@ -173,7 +173,7 @@ Route::get('/gec/submission', function () {
         'jawabanAanwijizing' => '1betul. 2.Betul',
     ]);
 });
-*/
+
 
 // Route::get('/cpcc/verifikasi', function () {return view('cpcc.verifikasi_1',
 //     [
@@ -206,7 +206,7 @@ Route::get('/gec/submission', function () {
 //     ]);
 // })->name('cppc');
 
-/*
+
 Route::get('/cpcc/soal', function () {return view('cpcc.soal',
     [
         'time' => Carbon::now()->addDays(3),
@@ -301,7 +301,7 @@ Route::get('/cesc', function () {return view('cesc.dashboard',
         'status'    => '1'
     ]);
 });
-*/
+
 
 // Route::get('/cesc/verifikasi', function () {return view('cesc.verifikasi_1',
 //     [
@@ -325,7 +325,7 @@ Route::get('/cesc', function () {return view('cesc.dashboard',
 //     ]);
 // });
 
-/*
+
 Route::get('/cesc/penyisihan', function () {return view('cesc.penyisihan',
     [
         'username' => 'Danial Farros',
