@@ -36,8 +36,8 @@ class GecController extends Controller
     }
 
     public function GEC_biodata(){
-        if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
-            return redirect('/gec/verifikasi');
+        if(auth()->user()->status === '2' || auth()->user()->status === '3' || auth()->user()->status === '31'){
+            return redirect('/gec');
         }
 
         $data = gec_form::where('id_user', auth()->user()->id)->first();

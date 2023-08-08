@@ -33,8 +33,8 @@ class CppcController extends Controller
     }
 
     public function CPPC_biodata(){
-        if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
-            return redirect('/cppc/verifikasi');
+        if(auth()->user()->status === '2' || auth()->user()->status === '3' || auth()->user()->status === '31'){
+            return redirect('/cppc');
         }
 
         $data = cppc_form::where('id_user', auth()->user()->id)->first();

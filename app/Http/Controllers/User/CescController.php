@@ -33,8 +33,8 @@ class CescController extends Controller
     }
 
     public function CESC_biodata(){
-        if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
-            return redirect('/cesc/verifikasi');
+        if(auth()->user()->status === '2' || auth()->user()->status === '3' || auth()->user()->status === '31'){
+            return redirect('/cesc');
         }
 
         $data = cesc_form::where('id_user', auth()->user()->id)->first();
