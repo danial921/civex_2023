@@ -77,15 +77,15 @@
                     <p class="limited">* limited quota</p>
                 </div>
                 <div class="col-4 col-md-6 col-12 button mt-md-0 mt-3">
-                    <a href="" target="_blank"> <button class="register">
+                    <a href="/pendaftaran-cesc" > <button class="register">
                             <p>Register Now!</p>
                         </button>
                     </a>
-                    <a href="" target="_blank"> <button class="cta">
+                    <a href="https://drive.google.com/file/d/1j_LyVBNM6YCUpSL_ctp1aD02l5ODfjUk/view?usp=drive_link" target="_blank"> <button class="cta">
                             <p>TOR</p>
                         </button>
                     </a>
-                    <a href="" target="_blank"> <button class="cta">
+                    <a href="https://drive.google.com/drive/folders/1NRwxl1okEdYnA27oTy--5brjnIa7gl_n?usp=sharing" target="_blank"> <button class="cta">
                             <p>Twibbon CESC</p>
                         </button>
                     </a>

@@ -81,15 +81,15 @@
                     <p class="limited">* limited quota</p>
                 </div>
                 <div class="col-4 col-md-6 col-12 button mt-md-0 mt-3">
-                    <a href="" target="_blank"> <button class="register">
+                    <a href="/pendaftaran-cpcc" target="_blank"> <button class="register">
                             <p>Register Now!</p>
                         </button>
                     </a>
-                    <a href="" target="_blank"> <button class="cta">
+                    <a href="https://drive.google.com/file/d/1Js4Y8g9qhigAVU-u_TRCwkHLMJJh1-8z/view?usp=sharing" target="_blank"> <button class="cta">
                             <p>TOR</p>
                         </button>
                     </a>
-                    <a href="" target="_blank"> <button class="cta">
+                    <a href="https://drive.google.com/file/d/1Fvl1fhaOrSVP78LaekkTeEP1WJK_XDJF/view?usp=drive_link" target="_blank"> <button class="cta">
                             <p>Registration Form</p>
                         </button>
                     </a>

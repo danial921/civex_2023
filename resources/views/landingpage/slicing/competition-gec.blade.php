@@ -77,15 +77,15 @@
                     <p class="limited">* limited quota</p>
                 </div>
                 <div class="col-4 col-md-6 col-12 button mt-md-0 mt-3">
-                    <a href="" target="_blank"> <button class="register">
+                    <a href="/pendaftaran-gec"> <button class="register">
                             <p>Register Now!</p>
                         </button>
                     </a>
-                    <a href="" target="_blank"> <button class="cta">
+                    <a href="https://drive.google.com/file/d/1rGtZOlRMd_uvp2bBMMIl90zh-hiK0FjR/view?usp=drive_link" target="_blank"> <button class="cta">
                             <p>TOR</p>
                         </button>
                     </a>
-                    <a href="" target="_blank"> <button class="cta">
+                    <a href="https://drive.google.com/file/d/1AJ5PPODHHp_rAajE6I-CsdP-ryl00VR4/view?usp=drive_link" target="_blank"> <button class="cta">
                             <p>Registration Form</p>
                         </button>
                     </a>
