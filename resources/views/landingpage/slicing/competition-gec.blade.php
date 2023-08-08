@@ -21,17 +21,33 @@
             <div class="col-lg-4 col-12 pt-lg-0 pt-4">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://via.placeholder.com/150" class="d-block w-100"
-                                alt="https://via.placeholder.com/150">
+                        <div class="carousel-item active" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/GEC/1.JPG') }}" class="d-block w-100"
+                                alt="Galery-GEC-1">
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://via.placeholder.com/150" class="d-block w-100"
-                                alt="https://via.placeholder.com/150">
+                        <div class="carousel-item" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/GEC/2.JPG') }}" class="d-block w-100"
+                                alt="Galery-GEC-2">
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://via.placeholder.com/150" class="d-block w-100"
-                                alt="https://via.placeholder.com/150">
+                        <div class="carousel-item" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/GEC/3.JPG') }}" class="d-block w-100"
+                                alt="Galery-GEC-3">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/GEC/4.JPG') }}" class="d-block w-100"
+                                alt="Galery-GEC-4">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/GEC/5.JPG') }}" class="d-block w-100"
+                                alt="Galery-GEC-5">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/GEC/6.JPG') }}" class="d-block w-100"
+                                alt="Galery-GEC-6">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/GEC/7.JPG') }}" class="d-block w-100"
+                                alt="Galery-GEC-7">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
