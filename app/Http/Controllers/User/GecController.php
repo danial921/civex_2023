@@ -12,7 +12,7 @@ use App\Http\Controllers\GoogleDriveController;
 class GecController extends Controller
 {
     public function GEC(){
-        if(auth()->user()->status == '00' || auth()->user()->status == '-1'){
+        if(auth()->user()->status == '-' || auth()->user()->status == '00' || auth()->user()->status == '-1'){
             return redirect('/gec/verifikasi');
         }
 
@@ -30,7 +30,7 @@ class GecController extends Controller
     }
 
     public function GEC_biodata(){
-        if(auth()->user()->status == '00' || auth()->user()->status == '-1'){
+        if(auth()->user()->status == '-' || auth()->user()->status == '00' || auth()->user()->status == '-1'){
             return redirect('/gec/verifikasi');
         }
 

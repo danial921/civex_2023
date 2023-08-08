@@ -63,10 +63,7 @@ class DashboardController extends Controller
     public function store_form_gec(GecFormRequest $request)
     {
         $gdriveController = new GoogleDriveController();
-        $c = curl_init();
-        curl_setopt($c, CURLOPT_SSL_VERIFYPEER, true); 
-        curl_setopt($c, CURLOPT_CAINFO, Storage::disk('other')->path("cacert-2020-01-01.pem")); 
-        $img = curl_exec($c);
+        
         gec_form::create([
             'id_user' => auth()->user()->id,
             'nama_tim' => $request->nama_tim, 
