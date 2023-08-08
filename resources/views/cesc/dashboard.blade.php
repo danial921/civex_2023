@@ -4,13 +4,13 @@
     <div class="container verifikasi pt-5 mt-5">
         <div class="row">
             <div class="col-lg-8 col-12">
-                @if($status == '1')
+                @if($status === '1')
                     {{-- pendaftaran di verifikasi --}}
                     @include('cesc.slicing.dashboard-status')
-                @elseif($status == '12')
+                @elseif($status === '12')
                     {{-- proses verif --}}
                     @include('cesc.slicing.dashboard-status2')
-                @elseif($status == '11')
+                @elseif($status === '11')
                     {{-- DiTolak --}}
                     @include('cesc.slicing.dashboard-status3')
                 @endif
