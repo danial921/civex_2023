@@ -8,7 +8,7 @@
                             class=" mg-l-10 mg-r-25 "></div>
                     <div class=" bd-highlight">
                         <p class=" tx-poppins tx-medium mb-1 tx-15 ">Pendaftaran</p>
-                        <p class="mb-1 danger text-center">Tim belum melengkapi berkas pendaftaran</p>
+                        <p class="mb-1 danger text-center">Berkas pendaftaran ditolak, silahkan mengisi ulang berkas pendaftaran</p>
                     </div>
                 </div>
             </div>
