@@ -15,16 +15,15 @@
                 <span onclick="slideRight()" style="box-shadow: none;" class="btn"><img
                         src="{{ asset('civex/img/landingpage/galeri-icon-prev.svg') }}" alt=""></span>
                 <div id="slider">
-                    <div class="slide"><img src="https://via.placeholder.com/234" alt="Image 1"></div>
-                    <div class="slide"><img src="https://via.placeholder.com/234" alt="Image 1"></div>
-                    <div class="slide"><img src="https://via.placeholder.com/234" alt="Image 1"></div>
-                    <div class="slide"><img src="https://via.placeholder.com/234" alt="Image 1"></div>
-                    <div class="slide"><img src="https://via.placeholder.com/234" alt="Image 1"></div>
-                    <div class="slide"><img src="https://via.placeholder.com/234" alt="Image 1"></div>
-                    <div class="slide"><img src="https://via.placeholder.com/234" alt="Image 1"></div>
-                    <div class="slide"><img src="https://via.placeholder.com/234" alt="Image 1"></div>
-                    <div class="slide"><img src="https://via.placeholder.com/234" alt="Image 1"></div>
-                    <div class="slide"><img src="https://via.placeholder.com/234" alt="Image 1"></div>
+                    <div class="slide"><img class="w-100" src="{{ asset('civex/galery/home/1.JPG') }}" alt="Image 1"></div>
+                    <div class="slide"><img class="w-100" src="{{ asset('civex/galery/home/2.JPG') }}" alt="Image 2"></div>
+                    <div class="slide"><img class="w-100" src="{{ asset('civex/galery/home/3.JPG') }}" alt="Image 3"></div>
+                    <div class="slide"><img class="w-100" src="{{ asset('civex/galery/home/4.JPG') }}" alt="Image 4"></div>
+                    <div class="slide"><img class="w-100" src="{{ asset('civex/galery/home/5.JPG') }}" alt="Image 5"></div>
+                    <div class="slide"><img class="w-100" src="{{ asset('civex/galery/home/6.JPG') }}" alt="Image 6"></div>
+                    <div class="slide"><img class="w-100" src="{{ asset('civex/galery/home/7.JPG') }}" alt="Image 7"></div>
+                    <div class="slide"><img class="w-100" src="{{ asset('civex/galery/home/8.JPG') }}" alt="Image 8"></div>
+                    <div class="slide"><img class="w-100" src="{{ asset('civex/galery/home/9.JPG') }}" alt="Image 9"></div>
                 </div>
                 <span onclick="slideLeft()" style="box-shadow: none;" class="btn"><img
                         src="{{ asset('civex/img/landingpage/galeri-icon-next.svg') }}" alt=""></span>

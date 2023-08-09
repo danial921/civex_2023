@@ -9,7 +9,7 @@
                     </div>
                     <div class=" bd-highlight">
                         <p class=" tx-poppins tx-medium mb-0 tx-15 ">Pendaftaran</p>
-                        <p class="mb-1 success text-center">Tim belum melengkapi berkas pendaftaran</p>
+                        <p class="mb-1 success text-center">Tim sudah melengkapi berkas pendaftaran</p>
                     </div>
                 </div>
             </div>

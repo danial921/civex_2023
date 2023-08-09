@@ -5,7 +5,7 @@
         <div class="welcome-hero pt-5 mt-5">
             <div class="row mt-3 d-flex align-items-end">
                 <div class="col-md-6 col-sm-12">
-                    <p class="title-1 mb-0">Hai, <span class="c-cpcc">Danial !!</span></p>
+                    <p class="title-1 mb-0">Hai, <span class="c-cpcc">{{ $username }} !!</span></p>
                     <p class="subtitle-1 mb-1">Selamat datang di dashboard Civex 2023</p>
                     <p class="subtitle-2 mb-4">silahkan pilih 1 lomba yang akan diikuti</p>
                 </div>
@@ -17,7 +17,7 @@
 
 
         <div class="card-competition row">
-            <a href="/form-gec" class="mt-4 col-lg-4 col-md-6 col-sm-12 gec">
+            <a href="/pendaftaran-gec" class="mt-4 col-lg-4 col-md-6 col-sm-12 gec">
                 <div class="card-gec p-3">
                     <div class="hero">
                         <img class="mx-auto d-block" src="{{ asset('civex/img/icon/icon-gec.svg') }}" alt="">
@@ -39,11 +39,11 @@
                     </div>
                 </div>
             </a>
-            <a href="/form-cpcc" class="mt-4 col-lg-4 col-md-6 col-sm-12 cpcc">
+            <a href="/pendaftaran-cppc" class="mt-4 col-lg-4 col-md-6 col-sm-12 cpcc">
                 <div class="card-cpcc p-3">
                     <div class="hero">
                         <img class="mx-auto d-block" src="{{ asset('civex/img/icon/icon-cpcc.svg') }}" alt="">
-                        <p class="mt-3 competitle"><span class="c-cpcc">CPCC</span> CONSTRUCTION PROJECT PLANNING COMPETITION</p>
+                        <p class="mt-3 competitle"><span class="c-cpcc">CPPC</span> CONSTRUCTION PROJECT PLANNING COMPETITION</p>
                     </div>
                 </div>
                 <div class="card-cpcc1 px-2 py-2 text-center">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </a>
-            <a href="/form-cesc" class="mt-4 col-lg-4 col-md-6 col-sm-12 cesc">
+            <a href="/pendaftaran-cesc" class="mt-4 col-lg-4 col-md-6 col-sm-12 cesc">
                 <div class="card-cesc p-3">
                     <div class="hero">
                         <img class="mx-auto d-block" src="{{ asset('civex/img/icon/icon-cesc.svg') }}" alt="">

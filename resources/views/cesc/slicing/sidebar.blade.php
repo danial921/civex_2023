@@ -12,9 +12,11 @@
                 <button class="btn btn-icon btn-its-custom-1 rounded-its-50p d-flex align-items-center" type="button" data-toggle="collapse" data-target="#collapse-menu-kelola-1" aria-expanded="false" aria-controls="collapse-menu-portofolio"><ion-icon name="chevron-down" class="mg-y-2 tx-18"></ion-icon></button>
             </li>
             <div class="collapse mg-l-35" id="collapse-menu-kelola-1">
-                <li class="nav-item"><a href="{{url('/cesc/penyisihan')}}" class="nav-link-its tx-poppins tx-medium text-truncate">Penyisihan</a></li>
-                <li class="nav-item"><a href="{{url('/cesc/semifinal')}}" class="nav-link-its tx-poppins tx-medium text-truncate"></span>Semifinal</a></li>
-                <li class="nav-item"><a href="{{url('/cesc/final')}}" class="nav-link-its tx-poppins tx-medium text-truncate"></span> Final</a></li>
+                @if(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-11-2 23:59:59'))
+                    <li class="nav-item"><a href="{{url('/cesc/penyisihan')}}" class="nav-link-its tx-poppins tx-medium text-truncate">Penyisihan</a></li>
+                    <li class="nav-item"><a href="{{url('/cesc/semifinal')}}" class="nav-link-its tx-poppins tx-medium text-truncate"></span>Semifinal</a></li>
+                    <li class="nav-item"><a href="{{url('/cesc/final')}}" class="nav-link-its tx-poppins tx-medium text-truncate"></span> Final</a></li>
+                @endif
             </div>
             <li class="nav-item mx-3"><img src="{{ asset('civex/img/line.svg') }}" alt=""></li>
             <li class="nav-item"><a href="{{url('/transfer-keluar-gudang')}}" class="nav-link-its d-flex justify-content-start align-items-center"><img src="{{ asset('civex/img/icon/logout.png') }}" class="wd-20 mg-r-15"><span class="tx-poppins tx-medium text-truncate">Keluar</span></a></li>

@@ -21,17 +21,29 @@
             <div class="col-lg-4 col-12 pt-lg-0 pt-4">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://via.placeholder.com/150" class="d-block w-100"
-                                alt="https://via.placeholder.com/150">
+                        <div class="carousel-item active" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/CESC/1.JPG') }}" class="d-block w-100"
+                                alt="Galery-CESC-1">
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://via.placeholder.com/150" class="d-block w-100"
-                                alt="https://via.placeholder.com/150">
+                        <div class="carousel-item" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/CESC/2.JPG') }}" class="d-block w-100"
+                                alt="Galery-CESC-2">
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://via.placeholder.com/150" class="d-block w-100"
-                                alt="https://via.placeholder.com/150">
+                        <div class="carousel-item" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/CESC/3.JPG') }}" class="d-block w-100"
+                                alt="Galery-CESC-3">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/CESC/4.JPG') }}" class="d-block w-100"
+                                alt="Galery-CESC-4">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/CESC/5.JPG') }}" class="d-block w-100"
+                                alt="Galery-CESC-5">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/CESC/6.JPG') }}" class="d-block w-100"
+                                alt="Galery-CESC-6">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -45,7 +57,7 @@
         </div>
     </div>
 
-    <div class="competition-gec-timeline">
+    <div class="competition-CESC-timeline">
         <div class="container"><p class="title">Timeline</p></div>
         <div class="container">
             <div class="scrollable">
@@ -77,15 +89,15 @@
                     <p class="limited">* limited quota</p>
                 </div>
                 <div class="col-4 col-md-6 col-12 button mt-md-0 mt-3">
-                    <a href="" target="_blank"> <button class="register">
+                    <a href="/pendaftaran-cesc" > <button class="register">
                             <p>Register Now!</p>
                         </button>
                     </a>
-                    <a href="" target="_blank"> <button class="cta">
+                    <a href="https://drive.google.com/file/d/1j_LyVBNM6YCUpSL_ctp1aD02l5ODfjUk/view?usp=drive_link" target="_blank"> <button class="cta">
                             <p>TOR</p>
                         </button>
                     </a>
-                    <a href="" target="_blank"> <button class="cta">
+                    <a href="https://drive.google.com/drive/folders/1NRwxl1okEdYnA27oTy--5brjnIa7gl_n?usp=sharing" target="_blank"> <button class="cta">
                             <p>Twibbon CESC</p>
                         </button>
                     </a>
