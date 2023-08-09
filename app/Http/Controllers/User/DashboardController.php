@@ -14,7 +14,7 @@ use App\Http\Requests\gec\GecFormRequest;
 use App\Http\Requests\cppc\CppcFormRequest;
 use App\Http\Requests\cesc\CescFormRequest;
 use App\Http\Controllers\GoogleDriveController;
-use Illuminate\Support\Facades\Storage;
+
 
 class DashboardController extends Controller
 {
@@ -71,7 +71,7 @@ class DashboardController extends Controller
             'institusi' => $request->institusi,
             'ketua_email' => auth()->user()->email,
             'ketua_notelp' => $request->ketua_notelp,
-            'bukti_bayar' => $gdriveController->uploadImageToGDrive($request->nama_tim."_testing_GEC_bukti-bayar", $request->file('bukti_bayar')),
+            'bukti_bayar' => $gdriveController->uploadImageToGDrive($request->nama_tim."_GEC_bukti-bayar", $request->file('bukti_bayar')),
             'status_tim' => '00'
         ]);  
 
