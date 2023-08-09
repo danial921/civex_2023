@@ -55,11 +55,11 @@
                             </td>
                             <td>
                                 <div class="dropdown">
-                                    <a href="\admin\detailteamcppc\{{ $team->id }}" class="btn btn-icon pd-0">
+                                    <a href="\admin\detailteamgec\{{ $team->id }}" class="btn btn-icon pd-0">
                                         <div class="avatar"><span
                                                 class="avatar-initial rounded-circle btn-its-custom-1 tx-color-01"
                                                 data-toggle="tooltip" data-placement="bottom"
-                                                title="detail tim"><ion-icon name="ellipsis-vertical"
+                                                title="detail Aaanwijizing"><ion-icon name="ellipsis-vertical"
                                                     class="tx-18"></ion-icon></span></div>
                                     </a>
                                 </div>

@@ -409,6 +409,14 @@ Route::get('/admin/gec',[AdminController::class, 'gec_dashboard']);
 Route::get('/admin/detailteamgec/{id}',[AdminController::class, 'gec_detailTeam']);
 Route::post('/admin/updatestatus/{id}',[AdminController::class, 'gec_updateStatus']);
 
+Route::get('/admin/cppc',[AdminController::class, 'cppc_dashboard']);
+Route::get('/admin/detailteamcppc/{id}',[AdminController::class, 'cppc_detailTeam']);
+Route::post('/admin/updatestatus/{id}',[AdminController::class, 'cppc_updateStatus']);
+
+Route::get('/admin/cesc',[AdminController::class, 'cesc_dashboard']);
+Route::get('/admin/detailteamcesc/{id}',[AdminController::class, 'cesc_detailTeam']);
+Route::post('/admin/updatestatus/{id}',[AdminController::class, 'cesc_updateStatus']);
+
 
 Route::get('/test', function () {
     return view('test');
