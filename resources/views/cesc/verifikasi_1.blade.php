@@ -10,10 +10,10 @@
                 @elseif($status === '12')
                     {{-- proses verif berkas--}}
                     @include('cesc.slicing.verif-status2')
-                @elseif($status === '10')
+                @elseif($status === '11')
                     {{-- tolak berkas--}}
                     @include('cesc.slicing.verif-status5')
-                @elseif($status === '-1')
+                @elseif($status === '01')
                     {{-- formulir DiTolak --}}
                     @include('cesc.slicing.verif-status3')
                 @elseif($status === '00')
