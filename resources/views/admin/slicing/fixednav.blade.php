@@ -7,7 +7,7 @@
             </a>
         </li>
         <li class="list-group-item-its">
-            <a href="{{ url('/admin/cpcc') }}" class="btn btn-icon btn-its-list rounded-its-10 active">
+            <a href="{{ url('/admin/cppc') }}" class="btn btn-icon btn-its-list rounded-its-10 active">
                 <img src="{{ asset('civex/img/icon/icon-cpcc.svg') }}" class="wd-20">
                 <span class="tx-poppins tx-medium mg-l-15 span-hide"><span class="c-cpcc">CPCC</span> Construction Project Planning Competition</span>
             </a>

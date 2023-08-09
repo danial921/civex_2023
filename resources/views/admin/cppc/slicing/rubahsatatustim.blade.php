@@ -1,4 +1,4 @@
-<form method="POST" action="{{ url('admin/updatestatus-gec/' . $dataPeserta->id) }}">
+<form method="POST" action="{{ url('admin/updatestatus-cppc/' . $dataPeserta->id) }}">
     @csrf
 
 <div class="row">

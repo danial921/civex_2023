@@ -8,19 +8,19 @@
     <div class="off-canvas-body pd-t-5 pd-md-t-10">
         <ul class="sidebar-nav">
             <li class="nav-item d-flex justify-content-between align-items-center"><a href="{{url('/cesc')}}" class="nav-link-its tx-poppins tx-medium text-truncate flex-grow-1"><img src="{{ asset('civex/img/icon/icon-gec.svg') }}" class="wd-20 mg-r-15">
-                <span class="c-gec">GEC</span> Geotechnical Engineering Competition</a>
+                <span class="c-gec">Admin</span> Admin</a>
                 <button class="btn btn-icon btn-its-custom-1 rounded-its-50p d-flex align-items-center" type="button" data-toggle="collapse" data-target="#collapse-gec" aria-expanded="false" aria-controls="collapse-menu-portofolio"><ion-icon name="chevron-down" class="mg-y-2 tx-18"></ion-icon></button>
             </li>
             <div class="collapse mg-l-35" id="collapse-gec">
                 <li class="nav-item"><a href="{{url('/admin/gec')}}" class="nav-link-its tx-poppins tx-medium text-truncate">Data Peserta</a></li>
-                <li class="nav-item"><a href="{{url('/admin/gec-aanwijizing')}}" class="nav-link-its tx-poppins tx-medium text-truncate"></span>Aanwijizing</a></li>
+                <!-- <li class="nav-item"><a href="{{url('/admin/gec-aanwijizing')}}" class="nav-link-its tx-poppins tx-medium text-truncate"></span>Aanwijizing</a></li> -->
             </div>
             <li class="nav-item d-flex justify-content-between align-items-center"><a href="{{url('/cesc')}}" class="nav-link-its tx-poppins tx-medium text-truncate flex-grow-1"><img src="{{ asset('civex/img/icon/icon-cpcc.svg') }}" class="wd-20 mg-r-15"><span class="c-cpcc">CPCC</span> Construction Project Planning Competition</a>
                 <button class="btn btn-icon btn-its-custom-1 rounded-its-50p d-flex align-items-center" type="button" data-toggle="collapse" data-target="#collapse-cpcc" aria-expanded="false" aria-controls="collapse-menu-portofolio"><ion-icon name="chevron-down" class="mg-y-2 tx-18"></ion-icon></button>
             </li>
             <div class="collapse mg-l-35" id="collapse-cpcc">
-                <li class="nav-item"><a href="{{url('/admin/cpcc')}}" class="nav-link-its tx-poppins tx-medium text-truncate">Data Peserta</a></li>
-                <li class="nav-item"><a href="{{url('/admin/cpcc-aanwijizing')}}" class="nav-link-its tx-poppins tx-medium text-truncate"></span>Aanwijizing</a></li>
+                <li class="nav-item"><a href="{{url('/admin/cppc')}}" class="nav-link-its tx-poppins tx-medium text-truncate">Data Peserta</a></li>
+                <!-- <li class="nav-item"><a href="{{url('/admin/cppc-aanwijizing')}}" class="nav-link-its tx-poppins tx-medium text-truncate"></span>Aanwijizing</a></li> -->
             </div>
             <li class="nav-item d-flex justify-content-between align-items-center"><a href="{{url('/cesc')}}" class="nav-link-its tx-poppins tx-medium text-truncate flex-grow-1"><img src="{{ asset('civex/img/icon/icon-cesc.svg') }}" class="wd-20 mg-r-15">
                 <span class="c-cesc">CESC</span> Civil Engginering Student Competition</a>

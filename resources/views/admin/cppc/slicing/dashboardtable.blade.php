@@ -1,6 +1,6 @@
 <div class="card mb-2">
     <div class="card-body">
-        <div class="title">Daftar Peserta GEC</div>
+        <div class="title">Daftar Peserta CPPC</div>
         <div class="table-responsive p-lg-2 p-1">
             <table id="myTable" class="table table-hover table-borderless" style="width:100%">
                 <thead>
@@ -59,7 +59,7 @@
                             </td>
                             <td>
                                 <div class="dropdown">
-                                    <a href="\admin\detailteam-gec\{{ $team->id }}" class="btn btn-icon pd-0">
+                                    <a href="\admin\detailteam-cppc\{{ $team->id }}" class="btn btn-icon pd-0">
                                         <div class="avatar"><span
                                                 class="avatar-initial rounded-circle btn-its-custom-1 tx-color-01"
                                                 data-toggle="tooltip" data-placement="bottom"

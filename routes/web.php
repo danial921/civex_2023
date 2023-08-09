@@ -7,6 +7,7 @@ use App\Http\Controllers\User\DashboardController;
 use App\Http\Controllers\User\GecController;
 use App\Http\Controllers\User\CppcController;
 use App\Http\Controllers\User\CescController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,7 @@ use App\Http\Controllers\User\CescController;
 |
 */
 
+//landing page
 Route::get('/', function () {$active = 'home'; return view('landingpage.home', compact('active'));});
 Route::get('/detail', function () {$active = 'home'; return view('landingpage.detail-civex', compact('active'));});
 Route::get('/competition', function () {$active = 'competition'; return view('landingpage.competition', compact('active'));});
@@ -29,7 +31,20 @@ Route::get('/opening', function () {$active = 'opening'; $time = "2023-09-10 15:
 Route::get('/closing', function () {$active = 'closing'; $time = "2023-09-10 15:00:00"; return view('landingpage.closing', compact('active', 'time'));});
 Route::get('/merchandise', function () {$active = 'opening'; $time = "2023-09-10 15:00:00"; return view('landingpage.merchandise', compact('active', 'time'));});
 
+
 Route::middleware(['auth', 'verified'])->group(function () {
+    Route::middleware('isAdmin')->group(function () {
+        Route::get('/admin/gec', [AdminController::class, 'gec_dashboard']);
+        Route::get('/admin/detailteam-gec/{id}', [AdminController::class, 'gec_detailTeam']);
+        Route::post('/admin/updatestatus-gec/{id}', [AdminController::class, 'gec_updateStatus']);
+        Route::get('/admin/cppc', [AdminController::class, 'cppc_dashboard']);
+        Route::get('/admin/detailteam-cppc/{id}', [AdminController::class, 'cppc_detailTeam']);
+        Route::post('/admin/updatestatus-cppc/{id}', [AdminController::class, 'cppc_updateStatus']);
+        Route::get('/admin/cesc', [AdminController::class, 'cesc_dashboard']);
+        Route::get('/admin/detailteam-cesc/{id}', [AdminController::class, 'cesc_detailTeam']);
+        Route::post('/admin/updatestatus-cesc/{id}', [AdminController::class, 'cesc_updateStatus']);
+    });
+    //user
     Route::middleware('notRegisterComp')->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'dashboard']);
         Route::get('/pendaftaran-gec', [DashboardController::class, 'form_gec']);

@@ -131,11 +131,11 @@
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <div class="mb-3">
-                        <label for="anggota1_nama" class="form-pendaftaran mb-1">Program
+                        <label for="anggota1_prodi" class="form-pendaftaran mb-1">Program
                             Studi</label>
-                        <input type="text" class="form-control" id="anggota1_nama"
-                            placeholder="Nama Anggota 1" name="anggota1_nama" required>
-                            @error('anggota1_nama')
+                        <input type="text" class="form-control" id="anggota1_prodi"
+                            placeholder="Nama Anggota 1" name="anggota1_prodi" required>
+                            @error('anggota1_prodi')
                                 <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
                     </div>
