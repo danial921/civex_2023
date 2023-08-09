@@ -37,6 +37,11 @@
                             value="{{ $dataPeserta->ketua_nama }}">
                     </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                        <label for="staticEmail" class="form-pendaftaran mb-0">Email Ketua</label>
+                        <input type="text" readonly disabled class="form-control" id="staticEmail"
+                            value="{{ $dataPeserta->ketua_email }}">
+                    </div>
+                    <div class="col-lg-6 col-12 mb-lg-3 mb-1">
                         <label for="staticEmail" class="form-pendaftaran mb-0">Prodi Ketua</label>
                         <input type="text" readonly disabled class="form-control" id="staticEmail"
                             value="{{ $dataPeserta->ketua_prodi }}">

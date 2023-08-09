@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
+use App\Notifications\FormNotification;
+use Illuminate\Support\Facades\Notification;
 
 class AdminController extends Controller
 {
@@ -42,6 +44,15 @@ class AdminController extends Controller
         ->where('id', $id)
         ->update(['status_tim' => $request->input('status_tim')]);
 
+        if($request->input('status_tim') === '1'){
+            $data = DB::table('gec_teams')->where('id', $id)->first();
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'nama_lomba' => 'Geotechnical Engineering Competition',
+                'link_lomba' => '/gec/verifikasi'
+            ]));
+        }
+
         return redirect('admin/detailteam-gec/'.$id);
     }
 
@@ -79,6 +90,15 @@ class AdminController extends Controller
         DB::table('cppc_teams')  // Ganti 'pesertas' dengan nama tabel Anda
         ->where('id', $id)
         ->update(['status_tim' => $request->input('status_tim')]);
+        
+        if($request->input('status_tim') === '1'){
+            $data = DB::table('cppc_teams')->where('id', $id)->first();
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'nama_lomba' => 'Construction Project Planning Competition',
+                'link_lomba' => '/cppc/verifikasi'
+            ]));
+        }
 
         return redirect('admin/detailteam-cppc/'.$id);
     }
@@ -117,6 +137,15 @@ class AdminController extends Controller
         DB::table('cesc_teams')  // Ganti 'pesertas' dengan nama tabel Anda
         ->where('id', $id)
         ->update(['status_tim' => $request->input('status_tim')]);
+        
+        if($request->input('status_tim') === '1'){
+            $data = DB::table('cesc_teams')->where('id', $id)->first();
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'nama_lomba' => 'Civil Engineering Student Competition',
+                'link_lomba' => '/cesc/verifikasi'
+            ]));
+        }
 
         return redirect('admin/detailteam-cesc/'.$id);
     }
