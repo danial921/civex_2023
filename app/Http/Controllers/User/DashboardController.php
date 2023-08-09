@@ -14,7 +14,7 @@ use App\Http\Requests\gec\GecFormRequest;
 use App\Http\Requests\cppc\CppcFormRequest;
 use App\Http\Requests\cesc\CescFormRequest;
 use App\Http\Controllers\GoogleDriveController;
-use Illuminate\Support\Facades\Storage;
+
 
 class DashboardController extends Controller
 {
@@ -36,10 +36,9 @@ class DashboardController extends Controller
         $count = gec_form::count();
         if($count){
             $urutan = $count;
+        }elseif($daftar_ke){
+            $urutan = $daftar_ke->id;
         }
-        // elseif($daftar_ke){
-        //     $urutan = $daftar_ke->id;
-        // }
         
         if($urutan <= 15){
             $harga = 'Rp.250,000,00';
@@ -55,8 +54,8 @@ class DashboardController extends Controller
             'biaya_daftar' => $harga,
             'rekening_transfer' => '12345678991 (BCA)',
             'urutan' => $urutan,
-            // 'id' => 0,
-            // 'count' => $count
+            'id' => 0,
+            'count' => $count
 
         ]);
     }
@@ -96,12 +95,11 @@ class DashboardController extends Controller
         $count = cppc_form::count();
         if($count){
             $urutan = $count;
+        }elseif($daftar_ke){
+            $urutan = $daftar_ke->id;
         }
-        // elseif($daftar_ke){
-        //     $urutan = $daftar_ke->id;
-        // }
 
-        if($urutan <= 15){
+        if($urutan <= 5){
             $harga = 'Rp.150,000,00';
         }else{
             $harga = 'Rp.180,000,00';
@@ -152,11 +150,9 @@ class DashboardController extends Controller
         $urutan = 0;
         $count = cesc_form::count();
         if($count){
-            $urutan = $count;
+            if($daftar_ke->id == $count) $urutan = $count;
+            else $urutan = $daftar_ke->id;
         }
-        // elseif($daftar_ke){
-        //     $urutan = $daftar_ke->id;
-        // }
 
         if($urutan <= 15){
             $harga = 'Rp.65,000,00';
