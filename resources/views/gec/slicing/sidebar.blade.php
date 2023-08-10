@@ -19,7 +19,7 @@
                 @endif
             </div>
             <li class="nav-item mx-3"><img src="{{ asset('civex/img/line.svg') }}" alt=""></li>
-            <li class="nav-item"><a href="{{url('/transfer-keluar-gudang')}}" class="nav-link-its d-flex justify-content-start align-items-center"><img src="{{ asset('civex/img/icon/logout.png') }}" class="wd-20 mg-r-15"><span class="tx-poppins tx-medium text-truncate">Keluar</span></a></li>
+            <li class="nav-item"><a href="{{url('/logout')}}" class="nav-link-its d-flex justify-content-start align-items-center"><img src="{{ asset('civex/img/icon/logout.png') }}" class="wd-20 mg-r-15"><span class="tx-poppins tx-medium text-truncate">Keluar</span></a></li>
         </ul>
     </div>
 </div><!-- off-canvas -->
