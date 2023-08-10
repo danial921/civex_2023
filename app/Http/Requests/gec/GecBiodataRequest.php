@@ -38,15 +38,16 @@ class GecBiodataRequest extends FormRequest
             'anggota2_nama' => 'required',
             'anggota2_prodi' => 'required',
             'anggota2_nim' => 'required',
-            'file_zip' => 'required|mimes:pdf|max:2048'
+            'file_zip' => 'required|max:2048'
         ];
     }
     public function messages()
     {
         return [
             'file_zip.required' => 'this berkas pdf is required',
-            'file_zip.mimes:pdf' => 'this berkas pdf must be a file of type:pdf',
-            'file_zip.max:2048' => 'this berkas pdf must be below 2 MB'
+            'file_zip.mimes' => 'this berkas pdf must be a file of type:pdf',
+            'file_zip.max' => 'this berkas pdf must be below 2 MB'
         ];
     }
 }
+//|mimes:pdf
