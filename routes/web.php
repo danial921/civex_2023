@@ -34,7 +34,7 @@ Route::get('/merchandise', function () {$active = 'opening'; $time = "2023-09-10
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::middleware('isAdmin')->group(function () {
-        Route::get('/admin/gec', [AdminController::class, 'gec_dashboard']);
+        Route::get('/admin/gec', [AdminController::class, 'gec_dashboard'])->name('/admin/gec');
         Route::get('/admin/detailteam-gec/{id}', [AdminController::class, 'gec_detailTeam']);
         Route::post('/admin/updatestatus-gec/{id}', [AdminController::class, 'gec_updateStatus']);
         Route::get('/admin/cppc', [AdminController::class, 'cppc_dashboard']);
@@ -46,7 +46,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     });
     //user
     Route::middleware('notRegisterComp')->group(function () {
-        Route::get('/dashboard', [DashboardController::class, 'dashboard']);
+        Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('/dashboard');
         Route::get('/pendaftaran-gec', [DashboardController::class, 'form_gec']);
         Route::post('/pendaftaran-gec', [DashboardController::class, 'store_form_gec'])->name('form-gec');
         Route::get('/pendaftaran-cppc', [DashboardController::class, 'form_cppc']);
@@ -56,21 +56,21 @@ Route::middleware(['auth', 'verified'])->group(function () {
     });
 
     Route::middleware('isGEC')->group(function () {
-        Route::get('/gec', [GecController::class, 'GEC'])->name('gec');
+        Route::get('/gec', [GecController::class, 'GEC'])->name('/gec');
         Route::get('/gec/verifikasi', [GecController::class, 'GEC_verifikasi']);
         Route::get('/gec/formulir-tim', [GecController::class, 'GEC_biodata']);
         Route::post('/gec/formulir-tim', [GecController::class, 'store_GEC_biodata'])->name('submit-berkas-gec');
     });
 
     Route::middleware('isCPPC')->group(function () {
-        Route::get('/cppc', [CppcController::class, 'CPPC'])->name('cppc');
+        Route::get('/cppc', [CppcController::class, 'CPPC'])->name('/cppc');
         Route::get('/cppc/verifikasi', [CppcController::class, 'CPPC_verifikasi']);
         Route::get('/cppc/formulir-tim', [CppcController::class, 'CPPC_biodata']);
         Route::post('/cppc/formulir-tim', [CppcController::class, 'store_CPPC_biodata'])->name('submit-berkas-cppc');
     });
 
     Route::middleware('isCESC')->group(function () {
-        Route::get('/cesc', [CescController::class, 'CESC'])->name('cesc');
+        Route::get('/cesc', [CescController::class, 'CESC'])->name('/cesc');
         Route::get('/cesc/verifikasi', [CescController::class, 'CESC_verifikasi']);
         Route::get('/cesc/formulir-tim', [CescController::class, 'CESC_biodata']);
         Route::post('/cesc/formulir-tim', [CescController::class, 'store_CESC_biodata'])->name('submit-berkas-cesc');
