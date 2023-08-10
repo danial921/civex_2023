@@ -19,7 +19,7 @@
                     <div class="mb-4 font-medium text-sm text-green-600">
                         {{ __('Link reset password telah terkirim.') }}
                     </div>
-                @endif
+                @else
                 <form method="POST" action="{{ route('password.email') }}">
                     @csrf
                     <div class="mb-3">
@@ -31,6 +31,7 @@
                         <button class="submitbutton">Reset Password</button>
                     </div>
                 </form>
+                @endif
             </div>
         </div>
     </div>

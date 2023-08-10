@@ -14,7 +14,7 @@
             </div>
             <div class="col-lg-5 col-12">
                 <p class="form mb-lg-2 mb-1">Lengkapi Berkas Pendaftaran Disini</p>
-                <a href="">
+                <a href="/cesc/formulir-tim">
                     <button type="button" class="btn btn-daftar w-100">
                         <img src="{{ asset('civex/img/icon/icon-daftar.svg') }}" alt="your_image" width="20"
                             height="20">

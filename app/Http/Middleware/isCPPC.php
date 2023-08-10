@@ -18,7 +18,9 @@ class isCPPC
     {
         if(auth()->user()->status_comp == "GEC") return redirect()->route('/gec');
         elseif(auth()->user()->status_comp == "CESC") return redirect()->route('/cesc');
-        
+        elseif(auth()->user()->status_comp == "-") return redirect()->route('/dashboard');
+
+
         return $next($request);
     }
 }

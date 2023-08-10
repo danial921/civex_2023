@@ -18,7 +18,8 @@ class isCESC
     {
         if(auth()->user()->status_comp == "GEC") return redirect()->route('/gec');
         elseif(auth()->user()->status_comp == "CPPC") return redirect()->route('/cppc');
-        
+        elseif(auth()->user()->status_comp == "-") return redirect()->route('/dashboard');
+
         return $next($request);
     }
 }

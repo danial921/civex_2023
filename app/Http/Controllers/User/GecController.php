@@ -12,17 +12,23 @@ use App\Http\Controllers\GoogleDriveController;
 class GecController extends Controller
 {
     public function GEC(){
-        if(auth()->user()->status == '00' || auth()->user()->status == '-1'){
+        if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
             return redirect('/gec/verifikasi');
         }
 
+        $data = gec_form::where('id_user', auth()->user()->id)->first();
+
         return view('gec.dashboard', [
             'username' => auth()->user()->name,
-            'status' => auth()->user()->status      
+            'status' => auth()->user()->status,
+            'status_proposal' => $data->status_proposal
         ]);
     }
 
     public function GEC_verifikasi(){
+        if(auth()->user()->status === '2' || auth()->user()->status === '3' || auth()->user()->status === '31'){
+            return redirect('/gec');
+        }
         return view('gec.verifikasi_1', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status
@@ -30,12 +36,12 @@ class GecController extends Controller
     }
 
     public function GEC_biodata(){
-        if(auth()->user()->status == '00' || auth()->user()->status == '-1'){
-            return redirect('/gec/verifikasi');
+        if(auth()->user()->status === '2' || auth()->user()->status === '3' || auth()->user()->status === '31'){
+            return redirect('/gec');
         }
 
         $data = gec_form::where('id_user', auth()->user()->id)->first();
-        
+
         return view('gec.form_lengkap', [
             'username' => auth()->user()->name,
             'ketua_nama' => $data->ketua_nama,
@@ -48,14 +54,14 @@ class GecController extends Controller
     public function store_GEC_biodata(GecBiodataRequest $request){
 
         $gdriveController = new GoogleDriveController();
-        
+
         gec_form::where('id_user', auth()->user()->id)->update([
-            'nama_tim' => $request->nama_tim, 
-            'institusi' => $request->institusi, 
+            'nama_tim' => $request->nama_tim,
+            'institusi' => $request->institusi,
             'alamat_institusi' => $request->alamat_institusi,
             'dosen_pembimbing' => $request->dosen_pembimbing,
             'ketua_nama' => $request->ketua_nama,
-            'ketua_prodi' => $request->ketua_prodi, 
+            'ketua_prodi' => $request->ketua_prodi,
             'ketua_notelp' => $request->ketua_notelp,
             'ketua_nim' => $request->ketua_nim,
             'anggota1_nama' => $request->anggota1_nama,

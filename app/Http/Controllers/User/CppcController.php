@@ -12,17 +12,20 @@ use App\Http\Controllers\GoogleDriveController;
 class CppcController extends Controller
 {
     public function CPPC(){
-        if(auth()->user()->status == '00' || auth()->user()->status == '-1'){
+        if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
             return redirect('/cppc/verifikasi');
         }
 
         return view('cpcc.dashboard', [
             'username' => auth()->user()->name,
-            'status' => auth()->user()->status      
+            'status' => auth()->user()->status
         ]);
     }
 
     public function CPPC_verifikasi(){
+        if(auth()->user()->status === '2' || auth()->user()->status === '3' || auth()->user()->status === '31'){
+            return redirect('/cppc');
+        }
         return view('cpcc.verifikasi_1', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status
@@ -30,8 +33,8 @@ class CppcController extends Controller
     }
 
     public function CPPC_biodata(){
-        if(auth()->user()->status == '00' || auth()->user()->status == '-1'){
-            return redirect('/CPPC/verifikasi');
+        if(auth()->user()->status === '2' || auth()->user()->status === '3' || auth()->user()->status === '31'){
+            return redirect('/cppc');
         }
 
         $data = cppc_form::where('id_user', auth()->user()->id)->first();
@@ -44,18 +47,18 @@ class CppcController extends Controller
             'email' => $data->ketua_email
         ]);
     }
-    
+
 
     public function store_CPPC_biodata(CppcBiodataRequest $request){
 
         $gdriveController = new GoogleDriveController();
 
         cppc_form::where('id_user', auth()->user()->id)->update([
-            'nama_tim' => $request->nama_tim, 
-            'institusi' => $request->institusi, 
+            'nama_tim' => $request->nama_tim,
+            'institusi' => $request->institusi,
             'alamat_institusi' => $request->alamat_institusi,
             'ketua_nama' => $request->ketua_nama,
-            'ketua_prodi' => $request->ketua_prodi, 
+            'ketua_prodi' => $request->ketua_prodi,
             'ketua_notelp' => $request->notelp,
             'ketua_email' => $request->email,
             'ketua_nim' => $request->ketua_nim,

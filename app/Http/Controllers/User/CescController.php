@@ -12,17 +12,20 @@ use App\Http\Controllers\GoogleDriveController;
 class CescController extends Controller
 {
     public function CESC(){
-        if(auth()->user()->status == '00' || auth()->user()->status == '-1'){
+        if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
             return redirect('/cesc/verifikasi');
         }
 
         return view('cesc.dashboard', [
             'username' => auth()->user()->name,
-            'status' => auth()->user()->status    
+            'status' => auth()->user()->status
         ]);
     }
 
     public function CESC_verifikasi(){
+        if(auth()->user()->status === '2' || auth()->user()->status === '3' || auth()->user()->status === '31'){
+            return redirect('/cesc');
+        }
         return view('cesc.verifikasi_1', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status
@@ -30,8 +33,8 @@ class CescController extends Controller
     }
 
     public function CESC_biodata(){
-        if(auth()->user()->status == '00' || auth()->user()->status == '-1'){
-            return redirect('/cesc/verifikasi');
+        if(auth()->user()->status === '2' || auth()->user()->status === '3' || auth()->user()->status === '31'){
+            return redirect('/cesc');
         }
 
         $data = cesc_form::where('id_user', auth()->user()->id)->first();
@@ -43,14 +46,14 @@ class CescController extends Controller
             'institusi' => $data->sekolah
         ]);
     }
-    
+
     public function store_CESC_biodata(CescBiodataRequest $request){
 
         $gdriveController = new GoogleDriveController();
 
         cesc_form::where('id_user', auth()->user()->id)->update([
-            'nama_tim' => $request->nama_tim, 
-            'sekolah' => $request->sekolah, 
+            'nama_tim' => $request->nama_tim,
+            'sekolah' => $request->sekolah,
             'ketua_nama' => $request->ketua_nama,
             'ketua_notelp' => $request->ketua_notelp,
             'ketua_kelas' => $request->ketua_kelas,

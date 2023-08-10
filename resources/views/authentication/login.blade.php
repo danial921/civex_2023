@@ -12,6 +12,11 @@
                 <div class="card-body">
                     <h5 class="title">Login</h5>
                     <p class="subtitle mt-1">Silahkan Masuk dengan akun anda</p>
+                    @if ($errors->any())
+                    <div class="alert alert-danger">
+                        Email atau Password yang anda masukan salah.
+                    </div>
+                    @endif
                     <form method="POST" action="{{route('login')}}" class="mt-2">
                         @csrf
                         <div class="mb-3">

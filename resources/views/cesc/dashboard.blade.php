@@ -4,18 +4,23 @@
     <div class="container verifikasi pt-5 mt-5">
         <div class="row">
             <div class="col-lg-8 col-12">
-                {{-- pendaftaran di verifikasi --}}
-                @include('cesc.slicing.dashboard-status')
-                {{-- proses verif --}}
-                @include('cesc.slicing.dashboard-status2')
-                {{-- DiTolak --}}
-                @include('cesc.slicing.dashboard-status3')
-
+                {{ $status }}
+                @if($status == '2')
+                    {{-- pendaftaran di verifikasi --}}
+                    @include('cesc.slicing.dashboard-status')
+                @elseif($status == '2')
+                    {{-- proses verif --}}
+                    @include('cesc.slicing.dashboard-status2')
+                @elseif($status == '2')
+                    {{-- DiTolak --}}
+                    @include('cesc.slicing.dashboard-status3')
+                @endif
                 {{-- video --}}
                 <div class="card mg-b-20">
                     <div class="card-body">
                         <p class="title">Video Tutorial Pendaftaran</p>
-                        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/ZM9RSg-ppOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <!-- <iframe width="100%" height="400px" src="https://www.youtube.com/embed/ZM9RSg-ppOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/ZM9RSg-ppOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>

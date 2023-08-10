@@ -4,7 +4,7 @@
     <div class="container pt-5 mt-5">
         <div class="back d-flex align-items-center justify-content-between mg-b-20 mg-sm-b-25 mg-lg-b-25">
             <div class="d-flex align-items-center justify-content-start">
-                <a href="/"
+                <a href="/dashboard"
                     class="btn btn-icon btn-its-custom-1 tx-poppins tx-medium rounded-its-50p d-flex align-items-center mg-r-5"
                     title="Kembali">
                     <ion-icon name="arrow-back-outline" class="mg-y-2 tx-22"></ion-icon>
@@ -13,12 +13,13 @@
                     Engineering Competition</h4>
             </div>
         </div>
-        {{-- jumbotron early masih ada --}}
-        @include('gec.slicing.form1-status2')
-
-        {{-- jumbotronkalo udah abis --}}
-        @include('gec.slicing.form1-status')
-
+        @if($urutan <= 15)
+            {{-- jumbotron early masih ada --}}
+            @include('gec.slicing.form1-status2')
+        @else
+            {{-- jumbotronkalo udah abis --}}
+            @include('gec.slicing.form1-status')
+        @endif
         @include('gec.slicing.form1-formulir')
     </div>
 @endsection

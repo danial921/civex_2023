@@ -15,26 +15,30 @@ class CreateGecTeamsTable extends Migration
     {
         Schema::create('gec_teams', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_tim');
-            $table->string('institusi');
-            $table->string('alamat_institusi');
-            $table->string('dosen_pembimbing');
-            $table->string('ketua_nama');
-            $table->string('ketua_prodi');
-            $table->string('ketua_nim');
-            $table->string('ketua_notelp');
-            $table->string('anggota1_nama');
-            $table->string('anggota1_prodi');
-            $table->string('anggota1_nim');
-            $table->string('anggota2_nama');
-            $table->string('anggota2_prodi');
-            $table->string('anggota2_nim');
-            $table->string('file_zip');
-            $table->string('status_tim');
+            $table->integer('id_user')->default(0);
+            $table->string('nama_tim')->default('-');
+            $table->string('institusi')->default('-');
+            $table->string('alamat_institusi')->default('-');
+            $table->string('dosen_pembimbing')->default('-');
+            $table->string('ketua_nama')->default('-');
+            $table->string('ketua_prodi')->default('-');
+            $table->string('ketua_nim')->default('-');
+            $table->string('ketua_notelp')->default('-');
+            $table->string('ketua_email')->default('-');
+            $table->string('anggota1_nama')->default('-');
+            $table->string('anggota1_prodi')->default('-');
+            $table->string('anggota1_nim')->default('-');
+            $table->string('anggota2_nama')->default('-');
+            $table->string('anggota2_prodi')->default('-');
+            $table->string('anggota2_nim')->default('-');
+            $table->string('file_zip')->default('-');
+            $table->string('status_tim')->default('-');
             $table->string('aanwijzing_tanya')->nullable();
             $table->string('aanwijzing_jawab')->nullable();
             $table->string('submission_proposal')->nullable();
-            $table->integer('status_proposal');
+            $table->integer('status_proposal')->default(0);
+            $table->string('bukti_bayar')->default('-');
+
             $table->timestamps();
         });
     }

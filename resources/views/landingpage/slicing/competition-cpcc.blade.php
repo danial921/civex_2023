@@ -25,17 +25,25 @@
             <div class="col-lg-4 col-12 pt-lg-0 pt-4">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://via.placeholder.com/150" class="d-block w-100"
-                                alt="https://via.placeholder.com/150">
+                        <div class="carousel-item active" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/CPCC/1.JPG') }}" class="d-block w-100"
+                                alt="Galery-CPCC-1">
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://via.placeholder.com/150" class="d-block w-100"
-                                alt="https://via.placeholder.com/150">
+                        <div class="carousel-item" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/CPCC/2.JPG') }}" class="d-block w-100"
+                                alt="Galery-CPCC-2">
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://via.placeholder.com/150" class="d-block w-100"
-                                alt="https://via.placeholder.com/150">
+                        <div class="carousel-item" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/CPCC/3.JPG') }}" class="d-block w-100"
+                                alt="Galery-CPCC-3">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/CPCC/4.JPG') }}" class="d-block w-100"
+                                alt="Galery-CPCC-4">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="500">
+                            <img src="{{ asset('civex/galery/CPCC/5.JPG') }}" class="d-block w-100"
+                                alt="Galery-CPCC-5">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -81,15 +89,15 @@
                     <p class="limited">* limited quota</p>
                 </div>
                 <div class="col-4 col-md-6 col-12 button mt-md-0 mt-3">
-                    <a href="" target="_blank"> <button class="register">
+                    <a href="/pendaftaran-cppc" target="_blank"> <button class="register">
                             <p>Register Now!</p>
                         </button>
                     </a>
-                    <a href="" target="_blank"> <button class="cta">
+                    <a href="https://drive.google.com/file/d/1Js4Y8g9qhigAVU-u_TRCwkHLMJJh1-8z/view?usp=sharing" target="_blank"> <button class="cta">
                             <p>TOR</p>
                         </button>
                     </a>
-                    <a href="" target="_blank"> <button class="cta">
+                    <a href="https://drive.google.com/file/d/1Fvl1fhaOrSVP78LaekkTeEP1WJK_XDJF/view?usp=drive_link" target="_blank"> <button class="cta">
                             <p>Registration Form</p>
                         </button>
                     </a>

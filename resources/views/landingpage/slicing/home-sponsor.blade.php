@@ -8,24 +8,20 @@
         <div class=" brand-sponsor">
             <div class="image-sponsor">
                 <div class="img-wrapper">
-                    <img src="https://via.placeholder.com/150" alt="Image 1">
+                    <img src="{{ asset('civex/galery/sponsor/1.svg') }}" alt="Image 1">
                 </div>
                 <div class="img-wrapper">
-                    <img src="https://via.placeholder.com/60" alt="Image 2">
+                    <img src="{{ asset('civex/galery/sponsor/2.svg') }}" alt="Image 3">
                 </div>
                 <div class="img-wrapper">
-                    <img src="https://via.placeholder.com/130" alt="Image 3">
+                    <img src="{{ asset('civex/galery/sponsor/3.svg') }}" alt="Image 3">
                 </div>
                 <div class="img-wrapper">
-                    <img src="https://via.placeholder.com/70" alt="Image 3">
+                    <img src="{{ asset('civex/galery/sponsor/4.svg') }}" alt="Image 3">
                 </div>
                 <div class="img-wrapper">
-                    <img src="https://via.placeholder.com/150" alt="Image 3">
+                    <img src="{{ asset('civex/galery/sponsor/5.svg') }}" alt="Image 3">
                 </div>
-                <div class="img-wrapper">
-                    <img src="https://via.placeholder.com/150" alt="Image 3">
-                </div>
-                <!-- tambahkan lebih banyak gambar jika diperlukan -->
             </div>
 
         </div>
