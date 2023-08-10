@@ -22,11 +22,11 @@
             <li class="nav-item {{ $active == 'closing' ? 'civex-active' : '' }}">
                 <a class="nav-link" href="/closing">Closing</a>
             </li>
-            <li class="nav-item  active">
-
-                <a class="nav-link" href="/login">Login</a>
-
-            </li>
+            @if(!auth()->check())
+                <li class="nav-item  active">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+            @endif
         </ul>
     </div>
 </nav>
