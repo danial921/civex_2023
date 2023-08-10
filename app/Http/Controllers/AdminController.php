@@ -51,7 +51,29 @@ class AdminController extends Controller
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
                 'nama_lomba' => 'Geotechnical Engineering Competition',
-                'link_lomba' => '/gec/verifikasi'
+                'link_lomba' => '/gec/verifikasi',
+                'status' => '1'
+            ]));
+        }elseif($request->input('status_tim') === '01'){
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'nama_lomba' => 'Civil Engineering Student Competition',
+                'link_lomba' => '/gec/verifikasi',
+                'status' => '01'
+            ]));
+        }elseif($request->input('status_tim') === '11'){
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'nama_lomba' => 'Civil Engineering Student Competition',
+                'link_lomba' => '/gec/verifikasi',
+                'status' => '11'
+            ]));
+        }elseif($request->input('status_tim') === '2'){
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'nama_lomba' => 'Civil Engineering Student Competition',
+                'link_lomba' => '/gec',
+                'status' => '2'
             ]));
         }
 
@@ -100,7 +122,29 @@ class AdminController extends Controller
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
                 'nama_lomba' => 'Construction Project Planning Competition',
-                'link_lomba' => '/cppc/verifikasi'
+                'link_lomba' => '/cppc/verifikasi',
+                'status' => '1'
+            ]));
+        }elseif($request->input('status_tim') === '01'){
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'nama_lomba' => 'Civil Engineering Student Competition',
+                'link_lomba' => '/cppc/verifikasi',
+                'status' => '01'
+            ]));
+        }elseif($request->input('status_tim') === '11'){
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'nama_lomba' => 'Civil Engineering Student Competition',
+                'link_lomba' => '/cppc/verifikasi',
+                'status' => '11'
+            ]));
+        }elseif($request->input('status_tim') === '2'){
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'nama_lomba' => 'Civil Engineering Student Competition',
+                'link_lomba' => '/cppc',
+                'status' => '2'
             ]));
         }
 
@@ -150,7 +194,29 @@ class AdminController extends Controller
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
                 'nama_lomba' => 'Civil Engineering Student Competition',
-                'link_lomba' => '/cesc/verifikasi'
+                'link_lomba' => '/cesc/verifikasi',
+                'status' => '1'
+            ]));
+        }elseif($request->input('status_tim') === '01'){
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'nama_lomba' => 'Civil Engineering Student Competition',
+                'link_lomba' => '/cesc/verifikasi',
+                'status' => '01'
+            ]));
+        }elseif($request->input('status_tim') === '11'){
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'nama_lomba' => 'Civil Engineering Student Competition',
+                'link_lomba' => '/cesc/verifikasi',
+                'status' => '11'
+            ]));
+        }elseif($request->input('status_tim') === '2'){
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'nama_lomba' => 'Civil Engineering Student Competition',
+                'link_lomba' => '/cesc',
+                'status' => '2'
             ]));
         }
 
