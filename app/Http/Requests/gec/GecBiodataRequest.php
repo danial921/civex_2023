@@ -50,4 +50,3 @@ class GecBiodataRequest extends FormRequest
         ];
     }
 }
-//|mimes:pdf
