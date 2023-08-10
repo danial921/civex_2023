@@ -22,7 +22,7 @@
                         <p class="tx-15 tx-poppins tx-semibold mg-b-0 crop-text-1">{{ $username }}</p>
                     </div>
                 </a>
-                <a href="page-signin.html" class="dropdown-item-its tx-poppins tx-medium"><div class="avatar mg-r-10"><span class="avatar-initial rounded-circle bg-black-1 tx-color-01"><ion-icon name="log-out-sharp" class="tx-18"></ion-icon></span></div> Keluar</a>
+                <a href="{{url('/logout')}}" class="dropdown-item-its tx-poppins tx-medium"><div class="avatar mg-r-10"><span class="avatar-initial rounded-circle bg-black-1 tx-color-01"><ion-icon name="log-out-sharp" class="tx-18"></ion-icon></span></div> Keluar</a>
             </div>
         </div>
     </div>
