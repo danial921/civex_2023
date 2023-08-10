@@ -44,8 +44,10 @@ class AdminController extends Controller
         ->where('id', $id)
         ->update(['status_tim' => $request->input('status_tim')]);
 
+        $data = DB::table('gec_teams')->where('id', $id)->first();
+        DB::table('users')->where('id', $data->id_user)->update(['status' => $request->input('status_tim')]);
+
         if($request->input('status_tim') === '1'){
-            $data = DB::table('gec_teams')->where('id', $id)->first();
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
                 'nama_lomba' => 'Geotechnical Engineering Competition',
@@ -91,8 +93,10 @@ class AdminController extends Controller
         ->where('id', $id)
         ->update(['status_tim' => $request->input('status_tim')]);
         
+        $data = DB::table('cppc_teams')->where('id', $id)->first();
+        DB::table('users')->where('id', $data->id_user)->update(['status' => $request->input('status_tim')]);
+
         if($request->input('status_tim') === '1'){
-            $data = DB::table('cppc_teams')->where('id', $id)->first();
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
                 'nama_lomba' => 'Construction Project Planning Competition',
@@ -138,8 +142,11 @@ class AdminController extends Controller
         ->where('id', $id)
         ->update(['status_tim' => $request->input('status_tim')]);
         
+        $data = DB::table('cesc_teams')->where('id', $id)->first();
+
+        DB::table('users')->where('id', $data->id_user)->update(['status' => $request->input('status_tim')]);
+
         if($request->input('status_tim') === '1'){
-            $data = DB::table('cesc_teams')->where('id', $id)->first();
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
                 'nama_lomba' => 'Civil Engineering Student Competition',
