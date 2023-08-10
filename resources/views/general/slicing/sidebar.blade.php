@@ -16,7 +16,7 @@
                 <li class="nav-item"><a href="{{url('/pendaftaran-cesc')}}" class="nav-link-its tx-poppins tx-medium text-truncate"><span class="c-cesc"><b>CESC</b></span> Civil Engginering Student Competition</a></li>
             </div>
             <li class="nav-item mx-3"><img src="{{ asset('civex/img/line.svg') }}" alt=""></li>
-            <li class="nav-item"><a href="{{url('/transfer-keluar-gudang')}}" class="nav-link-its d-flex justify-content-start align-items-center"><img src="{{ asset('civex/img/icon/logout.png') }}" class="wd-20 mg-r-15"><span class="tx-poppins tx-medium text-truncate">Keluar</span></a></li>
+            <li class="nav-item"><a href="{{url('/logout')}}" class="nav-link-its d-flex justify-content-start align-items-center"><img src="{{ asset('civex/img/icon/logout.png') }}" class="wd-20 mg-r-15"><span class="tx-poppins tx-medium text-truncate">Keluar</span></a></li>
         </ul>
     </div>
 </div><!-- off-canvas -->
