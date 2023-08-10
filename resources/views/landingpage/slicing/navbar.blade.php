@@ -26,6 +26,10 @@
                 <li class="nav-item  active">
                     <a class="nav-link" href="/login">Login</a>
                 </li>
+            @else
+            <li class="nav-item  active">
+                <a class="nav-link" href="/dashboard">Dashboard</a>
+            </li>
             @endif
         </ul>
     </div>
