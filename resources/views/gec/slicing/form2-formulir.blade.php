@@ -194,7 +194,7 @@
                 <div class="modal-footer">
                     <a class="btn btn-civex-danger tx-poppins tx-medium"
                         data-dismiss="modal">Batal</a>
-                    <a href="#" class="btn btn-civex tx-poppins tx-medium" onclick="submitForm()">Ya, Saya Yakin</a>
+                        <button href="#" class="btn btn-civex tx-poppins tx-medium" onclick="submitForm()" id="btnSubmit2">Ya, Saya Yakin</button>
                 </div>
             </div>
         </div>
