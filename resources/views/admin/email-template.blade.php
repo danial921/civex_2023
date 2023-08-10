@@ -48,20 +48,19 @@
                                         <br>
                                         <h1
                                             style="color:#1e1e2d; font-weight:700; margin:0;font-size:32px;font-family:'Rubik',sans-serif;">
-                                            Hallo, Nama Tim !!
+                                            Hallo, {{ $nama_tim }} !!
                                         </h1>
                                         <p style="font-size:15px; color:#455056; margin:8px 0 0; line-height:24px;">
-                                            Kami ingin memberitahu Anda bahwa data pendaftaran tim Anda telah
-                                            dikonfirmasi. Terima kasih atas partisipasi Anda dalam perlombaan
-                                            Geotechnical Engineering Competition</strong>.</p>
+                                            {{ $pesan }}    
+                                        </strong>.</p>
                                         <span
                                             style="display:inline-block; vertical-align:middle; margin:29px 0 26px; border-bottom:1px solid #cecece; width:100px;"></span>
                                         <p style="color:#455056; font-size:18px;line-height:20px; margin:0; font-weight: 500;">
                                             <strong
-                                                style="display: block;font-size: 13px; margin: 0 0 4px; color:rgba(0,0,0,.64); font-weight:normal;">Langkah berikutnya adalah untuk mengisi biodata di link berikut : </strong>
+                                                style="display: block;font-size: 13px; margin: 0 0 4px; color:rgba(0,0,0,.64); font-weight:normal;">{{ $pesan2 }}  </strong>
                                         </p>
 
-                                        <a href="login.html"
+                                        <a href="{{ url('/login') }}"
                                             style="background:#527AA4;text-decoration:none !important; display:inline-block; font-weight:500; margin-top:24px; color:#fff;text-transform:uppercase; font-size:14px;padding:15px 30px;display:inline-block;border-radius:50px;">Login
                                             to your Account</a>
                                     </td>

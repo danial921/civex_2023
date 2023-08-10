@@ -50,30 +50,38 @@ class AdminController extends Controller
         if($request->input('status_tim') === '1'){
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
-                'nama_lomba' => 'Geotechnical Engineering Competition',
-                'link_lomba' => '/gec/verifikasi',
-                'status' => '1'
+                'subject' => 'Konfirmasi Pendaftaran',
+                'pesan' => 'Kami ingin memberitahu Anda bahwa data pendaftaran tim Anda telah
+                dikonfirmasi. Terima kasih atas partisipasi Anda dalam perlombaan
+                Geotechnical Engineering Competition',
+                'pesan2' => 'Langkah berikutnya adalah untuk mengisi biodata di link berikut : ',
             ]));
         }elseif($request->input('status_tim') === '01'){
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
-                'nama_lomba' => 'Civil Engineering Student Competition',
-                'link_lomba' => '/gec/verifikasi',
-                'status' => '01'
+                'subject' => 'Konfirmasi Pendaftaran',
+                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Geotechnical Engineering Competition Kami 
+                ingin memberitahu Anda bahwa data pendaftaran tim Anda telah direview oleh tim. Akan tetapi 
+                terdapat kesalahan berkas atau data dalam pendaftaran anda',
+                'pesan2' => 'Silahkan menghubungi Contact Person',
             ]));
         }elseif($request->input('status_tim') === '11'){
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
-                'nama_lomba' => 'Civil Engineering Student Competition',
-                'link_lomba' => '/gec/verifikasi',
-                'status' => '11'
+                'subject' => 'Konfirmasi Biodata Tim',
+                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Geotechnical Engineering Competition Kami 
+                ingin memberitahu Anda bahwa biodata tim Anda telah direview oleh tim. Akan tetapi 
+                terdapat kesalahan berkas atau data dalam biodata tim anda',
+                'pesan2' => 'Silahkan mengisi ulang biodata tim anda atau menghubungi Contact Person',
             ]));
         }elseif($request->input('status_tim') === '2'){
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
-                'nama_lomba' => 'Civil Engineering Student Competition',
-                'link_lomba' => '/gec',
-                'status' => '2'
+                'subject' => 'Konfirmasi Biodata Tim',
+                'pesan' => 'Kami ingin memberitahu Anda bahwa biodata tim Anda telah
+                dikonfirmasi. Terima kasih atas partisipasi Anda dalam perlombaan
+                Geotechnical Engineering Competition',
+                'pesan2' => 'Langkah berikutnya adalah untuk mengisi biodata di link berikut : ',
             ]));
         }
 
@@ -121,30 +129,38 @@ class AdminController extends Controller
         if($request->input('status_tim') === '1'){
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
-                'nama_lomba' => 'Construction Project Planning Competition',
-                'link_lomba' => '/cppc/verifikasi',
-                'status' => '1'
+                'subject' => 'Konfirmasi Pendaftaran',
+                'pesan' => 'Kami ingin memberitahu Anda bahwa data pendaftaran tim Anda telah
+                dikonfirmasi. Terima kasih atas partisipasi Anda dalam perlombaan
+                Construction Project Planning Competition',
+                'pesan2' => 'Langkah berikutnya adalah untuk mengisi biodata di link berikut : ',
             ]));
         }elseif($request->input('status_tim') === '01'){
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
-                'nama_lomba' => 'Civil Engineering Student Competition',
-                'link_lomba' => '/cppc/verifikasi',
-                'status' => '01'
+                'subject' => 'Konfirmasi Pendaftaran',
+                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Construction Project Planning Competition Kami 
+                ingin memberitahu Anda bahwa data pendaftaran tim Anda telah direview oleh tim. Akan tetapi 
+                terdapat kesalahan berkas atau data dalam pendaftaran anda',
+                'pesan2' => 'Silahkan menghubungi Contact Person',
             ]));
         }elseif($request->input('status_tim') === '11'){
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
-                'nama_lomba' => 'Civil Engineering Student Competition',
-                'link_lomba' => '/cppc/verifikasi',
-                'status' => '11'
+                'subject' => 'Konfirmasi Biodata Tim',
+                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Construction Project Planning Competition Kami 
+                ingin memberitahu Anda bahwa biodata tim Anda telah direview oleh tim. Akan tetapi 
+                terdapat kesalahan berkas atau data dalam biodata tim anda',
+                'pesan2' => 'Silahkan mengisi ulang biodata tim anda atau menghubungi Contact Person',
             ]));
         }elseif($request->input('status_tim') === '2'){
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
-                'nama_lomba' => 'Civil Engineering Student Competition',
-                'link_lomba' => '/cppc',
-                'status' => '2'
+                'subject' => 'Konfirmasi Biodata Tim',
+                'pesan' => 'Kami ingin memberitahu Anda bahwa biodata tim Anda telah
+                dikonfirmasi. Terima kasih atas partisipasi Anda dalam perlombaan
+                Construction Project Planning Competition',
+                'pesan2' => 'Langkah berikutnya adalah untuk mengisi biodata di link berikut : ',
             ]));
         }
 
@@ -193,30 +209,38 @@ class AdminController extends Controller
         if($request->input('status_tim') === '1'){
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
-                'nama_lomba' => 'Civil Engineering Student Competition',
-                'link_lomba' => '/cesc/verifikasi',
-                'status' => '1'
+                'subject' => 'Konfirmasi Pendaftaran',
+                'pesan' => 'Kami ingin memberitahu Anda bahwa data pendaftaran tim Anda telah
+                dikonfirmasi. Terima kasih atas partisipasi Anda dalam perlombaan
+                Civil Engineering Student Competition',
+                'pesan2' => 'Langkah berikutnya adalah untuk mengisi biodata di link berikut : ',
             ]));
         }elseif($request->input('status_tim') === '01'){
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
-                'nama_lomba' => 'Civil Engineering Student Competition',
-                'link_lomba' => '/cesc/verifikasi',
-                'status' => '01'
+                'subject' => 'Konfirmasi Pendaftaran',
+                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Civil Engineering Student Competition Kami 
+                ingin memberitahu Anda bahwa data pendaftaran tim Anda telah direview oleh tim. Akan tetapi 
+                terdapat kesalahan berkas atau data dalam pendaftaran anda',
+                'pesan2' => 'Silahkan menghubungi Contact Person',
             ]));
         }elseif($request->input('status_tim') === '11'){
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
-                'nama_lomba' => 'Civil Engineering Student Competition',
-                'link_lomba' => '/cesc/verifikasi',
-                'status' => '11'
+                'subject' => 'Konfirmasi Biodata Tim',
+                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Civil Engineering Student Competition Kami 
+                ingin memberitahu Anda bahwa biodata tim Anda telah direview oleh tim. Akan tetapi 
+                terdapat kesalahan berkas atau data dalam biodata tim anda',
+                'pesan2' => 'Silahkan mengisi ulang biodata tim anda atau menghubungi Contact Person',
             ]));
         }elseif($request->input('status_tim') === '2'){
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
-                'nama_lomba' => 'Civil Engineering Student Competition',
-                'link_lomba' => '/cesc',
-                'status' => '2'
+                'subject' => 'Konfirmasi Biodata Tim',
+                'pesan' => 'Kami ingin memberitahu Anda bahwa biodata tim Anda telah
+                dikonfirmasi. Terima kasih atas partisipasi Anda dalam perlombaan
+                Civil Engineering Student Competition',
+                'pesan2' => 'Langkah berikutnya adalah untuk mengisi biodata di link berikut : ',
             ]));
         }
 
