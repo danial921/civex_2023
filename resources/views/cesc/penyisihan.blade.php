@@ -10,7 +10,7 @@
                 @elseif($status === "31")
                     {{--  Tidak Lolos --}}
                     @include('cesc.slicing.penyisihan-release-tidaklolos')
-                @elseif($status === "3")
+                @elseif($status === "3" || $status === "41" || $status === "4")
                     {{--  Lolos Penyisihan --}}
                     @include('cesc.slicing.penyisihan-release-lolos')
                 @endif    

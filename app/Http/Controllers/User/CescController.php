@@ -99,6 +99,10 @@ class CescController extends Controller
             return redirect('/cesc/verifikasi');
         }
         
+        if(auth()->user()->status !== '3' || auth()->user()->status !== '4'|| auth()->user()->status !== '41'){
+            return redirect('/cesc/penyisihan');
+        }
+
         $data = cesc_form::where('id_user', auth()->user()->id)->first();
 
         return view('cesc.semifinal', [
@@ -115,6 +119,10 @@ class CescController extends Controller
     {
         if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31' && auth()->user()->status !== '4' && auth()->user()->status !== '41'){
             return redirect('/cesc/verifikasi');
+        }
+
+        if(auth()->user()->status !== '3' || auth()->user()->status !== '4'|| auth()->user()->status !== '41'){
+            return redirect('/cesc/penyisihan');
         }
         
         $data = cesc_form::where('id_user', auth()->user()->id)->first();
@@ -149,6 +157,10 @@ class CescController extends Controller
     {
         if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31' && auth()->user()->status !== '4' && auth()->user()->status !== '41'){
             return redirect('/cesc/verifikasi');
+        }
+
+        if(auth()->user()->status !== '4'){
+            return redirect('/cesc/semifinal');
         }
 
         return view('cesc.final', [

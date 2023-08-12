@@ -12,7 +12,7 @@
                 <button class="btn btn-icon btn-its-custom-1 rounded-its-50p d-flex align-items-center" type="button" data-toggle="collapse" data-target="#collapse-menu-kelola-1" aria-expanded="false" aria-controls="collapse-menu-portofolio"><ion-icon name="chevron-down" class="mg-y-2 tx-18"></ion-icon></button>
             </li>
             <div class="collapse mg-l-35" id="collapse-menu-kelola-1">
-                @if(strtotime(date("Y-m-d H:i:s")) >= strtotime('2022-9-3 23:59:59'))
+                @if(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-9-3 23:59:59'))
                     @if($status === "2" || $status === '31')
                         <li class="nav-item"><a href="{{url('/cesc/penyisihan')}}" class="nav-link-its tx-poppins tx-medium text-truncate">Penyisihan</a></li>
                     @elseif($status === "3" || $status === '41')

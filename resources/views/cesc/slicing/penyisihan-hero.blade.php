@@ -12,7 +12,7 @@
                     </button>
                 </a>
                 {{-- Tunggu Release --}}
-                @if(strtotime(date("Y-m-d H:i:s")) >= strtotime('2022-10-24 23:59:59'))
+                @if(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-24 23:59:59'))
                 <div class="mb-2"></div>
                 <a href="">
                     <button type="button" class="btn btn-daftar  w-100">

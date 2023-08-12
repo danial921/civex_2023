@@ -10,17 +10,17 @@
                         <div class="col-12">
                             @include('cesc.slicing.semifinal-jumbotron-welcome')
                         </div>
-                        @if(strtotime(date("Y-m-d H:i:s")) >= strtotime('2022-11-12 23:59:59') && $status_proposal === '-')
+                        @if(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-11-12 23:59:59') && $status_proposal === '-')
                             <div class="col-12">
                                 {{--  Rilis Semifinal --}}
                                 @include('cesc.slicing.semifinal-rilis-soal')
                             </div>
-                        @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2022-11-12 23:59:59') && $status_proposal === '1')
+                        @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-11-12 23:59:59') && $status_proposal === '1')
                             <div class="col-12">
                                 {{--  sudah uplad file --}}
                                 @include('cesc.slicing.semifinal-past-upload')
                             </div>
-                        @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2022-11-18 23:59:59'))
+                        @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-11-18 23:59:59'))
                             <div class="col-12">
                                 {{--  Rilis Soal Semifinal --}}
                                 @include('cesc.slicing.semifinal-rilis-kisi-kisi')

@@ -38,7 +38,7 @@ class GecBiodataRequest extends FormRequest
             'anggota2_nama' => 'required',
             'anggota2_prodi' => 'required',
             'anggota2_nim' => 'required',
-            'file_zip' => 'required|max:2048'
+            'file_zip' => 'required|mimes:pdf|max:2048'
         ];
     }
     public function messages()

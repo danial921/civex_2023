@@ -12,12 +12,12 @@
                 <h4 class="tx-poppins tx-medium mg-b-0">Submission <span class="c-cpcc">CPCC</span> Berkas</h4>
             </div>
         </div>
-
-
-        {{-- hero submited --}}
-        @include('cpcc.slicing.submission-submited')
-
-        {{-- form submission --}}
-        @include('cpcc.slicing.submission-form')
+        @if($status_proposal === 0)
+            {{-- form submission --}}
+            @include('cpcc.slicing.submission-form')
+        @else
+            {{-- hero submit --}}
+            @include('cpcc.slicing.submission-submited')
+        @endif
     </div>
 @endsection

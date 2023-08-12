@@ -132,6 +132,11 @@
                             </a>
                         @endif
                     </div>
+                    <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                        <label for="staticEmail" class="form-pendaftaran mb-0">Video Pengumpulan</label>
+                        <input type="text" readonly disabled class="form-control" id="staticEmail"
+                            value="{{ $dataPeserta->url_video }}">
+                    </div>
                     <div class="titleheading mb-lg-3 mb-1">Status Tim</div>
                     @include('admin.gec.slicing.rubahsatatustim')
                 </div>
