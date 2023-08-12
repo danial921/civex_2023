@@ -1,26 +1,27 @@
 <div class="card mb-2">
     <div class="card-body aanwijizing">
         <p class="title">Detail Pertanyaan Aanjwizing</p>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran">Penanya</label>
-            <input type="text" readonly disabled class="form-control-plaintext" id="staticEmail"
+        <div class="mb-2">
+            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran mb-1">Penanya</label>
+            <input type="text" readonly disabled class="form-control-plaintext mb-0" id="staticEmail"
             value="{{ $username }}">
         </div>
-
-        <div class="mb-3">
-            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran">Judul Pertanyaan</label>
-            <input type="text" readonly disabled class="form-control-plaintext" id="staticEmail"
+        <div class="mb-2">
+            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran mb-1">Judul Pertanyaan</label>
+            <input type="text" readonly disabled class="form-control-plaintext mb-0" id="staticEmail"
             value="{{ $judulAanwijzing }}">
         </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran">Deskripsi Pertanyaan</label>
-            <input type="text" readonly disabled class="form-control-plaintext" id="staticEmail"
+        <div class="mb-2">
+            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran mb-1">Deskripsi Pertanyaan</label>
+            <input type="text" readonly disabled class="form-control-plaintext mb-0" id="staticEmail"
                 value="{{ $pertanyaanAanwijzing }}">
         </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran">Deskripsi Pertanyaan</label>
-            <input type="text" readonly disabled class="form-control-plaintext" id="staticEmail"
+        @if(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-16 23:59:59'))
+        <div class="mb-2">
+            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran mb-1">Deskripsi Pertanyaan</label>
+            <input type="text" readonly disabled class="form-control-plaintext mb-0" id="staticEmail"
                 value="{{ $jawabanAanwijizing }}">
         </div>
+        @endif
     </div>
 </div>

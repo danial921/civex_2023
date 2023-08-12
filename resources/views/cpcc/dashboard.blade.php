@@ -8,16 +8,10 @@
                 @if($status === '3')
                     @include('cpcc.slicing.jumbotron-welcome-final')
                 @endif    
-                @if($status === '2')
+                @if($status === '2' && $status_proposal == '0')
                     {{-- pendaftaran di verifikasi, timbelum melengkapi berkas --}}
                     @include('cpcc.slicing.dashboard-status')
-                @elseif($status === '2')
-                    {{-- proses verif --}}
-                    @include('cpcc.slicing.dashboard-status2')
-                @elseif($status === '2')
-                    {{-- DiTolak --}}
-                    @include('cpcc.slicing.dashboard-status3')
-                @elseif($status === '2')
+                @elseif($status === '2'&& $status_proposal == '1')
                     {{-- pendaftaran di verifikasi, tim sudah melengkapi berkas --}}
                     @include('cpcc.slicing.dashboard-status4')
                 @elseif($status === '3')

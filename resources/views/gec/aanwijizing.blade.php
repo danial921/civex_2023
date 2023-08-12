@@ -5,18 +5,25 @@
         <div class="row">
             <div class="col-lg-8 col-12 mb-lg-5 mb-2">
                 {{-- status bar --}}
-                @include('gec.slicing.aanwijizing-status')
-                @include('gec.slicing.aanwijizing-status2')
-                @include('gec.slicing.aanwijizing-status3')
+                @if($jawabanAanwijizing !== null)
+                    @include('gec.slicing.aanwijizing-status3')
+                @elseif($tanyaAanwijizing === null)
+                    @include('gec.slicing.aanwijizing-status')
+                @elseif($tanyaAanwijizing !== null)
+                    @include('gec.slicing.aanwijizing-status2')
+                @endif
 
                 {{-- saat belum bertanya --}}
-                @include('gec.slicing.aanwijizing-form')
-
-                {{-- preview sudah mengajukan --}}
-                @include('gec.slicing.aanwijizing-preview')
-
+                @if($aanwijizing_tanya === null && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-8 23:59:59') && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-10-11 23:59:59'))
+                    @include('gec.slicing.aanwijizing-form')
+                @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-16 23:59:59'))
                 {{-- hasil jawaban aanwijizing, ditampilkan jika sudah masuk waktunya --}}
-                @include('gec.slicing.aanwijizing-resultpreview')
+                    @include('gec.slicing.aanwijizing-resultpreview')
+                @else
+                    {{-- preview sudah mengajukan --}}
+                    @include('gec.slicing.aanwijizing-preview')
+                @endif
+
 
                 {{-- recap aanwijizing --}}
                 @include('gec.slicing.aanwijizing-resulttable')
@@ -37,14 +44,14 @@
                     <p class="mg-b-0">Apakah anda yakin ingin melakukan pendaftaran tim dengan data tim yang telah diisi?
                     </p>
                 </div>
-                <form>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-civex-danger tx-poppins tx-medium"
-                            data-dismiss="modal">Batal</button>
-                        <button type="submit" class="btn btn-civex tx-poppins tx-medium">Ya, Saya Yakin</button>
-                    </div>
-                </form>
+                <div class="modal-footer">
+                    <a class="btn btn-civex-danger tx-poppins tx-medium"
+                        data-dismiss="modal">Batal</a>
+                    <button href="#" class="btn btn-civex tx-poppins tx-medium" onclick="submitForm()" id="btnSubmit2">Ya, Saya Yakin</button>
+                </div>
             </div>
         </div>
     </div>
+
+    <script src=" {{ asset('js/form-gec.js') }} " ></script>
 @endsection

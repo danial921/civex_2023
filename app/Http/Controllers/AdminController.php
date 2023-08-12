@@ -83,6 +83,22 @@ class AdminController extends Controller
                 Geotechnical Engineering Competition',
                 'pesan2' => 'Langkah berikutnya adalah untuk mengisi biodata di link berikut : ',
             ]));
+        }elseif($request->input('status_tim') === '3'){
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'subject' => 'Pengumuman Lolos Penyisihan Tim',
+                'pesan' => 'Kami ingin memberitahu Anda bahwa Tim '.$data->nama_tim.' lolos babak penyisihan dan maju ke babak final. Terima kasih atas partisipasi Anda dalam perlombaan
+                Geotechnical Engineering Competition',
+                'pesan2' => 'Selamat atas perjuangannya dan tetap semangat',
+            ]));
+        }elseif($request->input('status_tim') === '31'){
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'subject' => 'Pengumuman Tidak Lolos Penyisihan Tim',
+                'pesan' => 'Kami ingin memberitahu Anda bahwa Tim '.$data->nama_tim.' tidak lolos babak penyisihan. Terima kasih atas partisipasi Anda dalam perlombaan
+                Geotechnical Engineering Competition',
+                'pesan2' => 'Tetap semangat dan terus berjuang',
+            ]));
         }
 
         return redirect('admin/detailteam-gec/'.$id);
@@ -125,7 +141,7 @@ class AdminController extends Controller
         
         $data = DB::table('cppc_teams')->where('id', $id)->first();
         DB::table('users')->where('id', $data->id_user)->update(['status' => $request->input('status_tim')]);
-
+        
         if($request->input('status_tim') === '1'){
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
@@ -161,6 +177,22 @@ class AdminController extends Controller
                 dikonfirmasi. Terima kasih atas partisipasi Anda dalam perlombaan
                 Construction Project Planning Competition',
                 'pesan2' => 'Langkah berikutnya adalah untuk mengisi biodata di link berikut : ',
+            ]));
+        }elseif($request->input('status_tim') === '3'){
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'subject' => 'Pengumuman Lolos Penyisihan Tim',
+                'pesan' => 'Kami ingin memberitahu Anda bahwa Tim '.$data->nama_tim.' lolos babak penyisihan dan maju ke babak final. Terima kasih atas partisipasi Anda dalam perlombaan
+                Construction Project Planning Competition',
+                'pesan2' => 'Selamat atas perjuangannya dan tetap semangat',
+            ]));
+        }elseif($request->input('status_tim') === '31'){
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'subject' => 'Pengumuman Tidak Lolos Penyisihan Tim',
+                'pesan' => 'Kami ingin memberitahu Anda bahwa Tim '.$data->nama_tim.' tidak lolos babak penyisihan. Terima kasih atas partisipasi Anda dalam perlombaan
+                Construction Project Planning Competition',
+                'pesan2' => 'Tetap semangat dan terus berjuang',
             ]));
         }
 
@@ -241,6 +273,40 @@ class AdminController extends Controller
                 dikonfirmasi. Terima kasih atas partisipasi Anda dalam perlombaan
                 Civil Engineering Student Competition',
                 'pesan2' => 'Langkah berikutnya adalah untuk mengisi biodata di link berikut : ',
+            ]));
+        }elseif($request->input('status_tim') === '3'){
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'subject' => 'Pengumuman Lolos Penyisihan Tim',
+                'pesan' => 'Kami ingin memberitahu Anda bahwa Tim '.$data->nama_tim.' lolos babak penyisihan dan maju ke babak semifinal. Terima kasih atas partisipasi Anda dalam perlombaan
+                Civil Engineering Student Competition',
+                'pesan2' => 'Selamat atas perjuangannya dan tetap semangat',
+            ]));
+        }elseif($request->input('status_tim') === '31'){
+            
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'subject' => 'Pengumuman Tidak Lolos Penyisihan Tim',
+                'pesan' => 'Kami ingin memberitahu Anda bahwa Tim '.$data->nama_tim.' tidak lolos babak penyisihan. Terima kasih atas partisipasi Anda dalam perlombaan
+                Civil Engineering Student Competition',
+                'pesan2' => 'Tetap semangat dan terus berjuang',
+            ]));
+        }
+        elseif($request->input('status_tim') === '4'){
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'subject' => 'Pengumuman Lolos Semifinal Tim',
+                'pesan' => 'Kami ingin memberitahu Anda bahwa Tim '.$data->nama_tim.' lolos babak semifinal dan maju ke babak final. Terima kasih atas partisipasi Anda dalam perlombaan
+                Civil Engineering Student Competition',
+                'pesan2' => 'Selamat atas perjuangannya dan tetap semangat',
+            ]));
+        }elseif($request->input('status_tim') === '41'){
+            Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
+                'nama_tim' => $data->nama_tim,
+                'subject' => 'Pengumuman Tidak Lolos Semifinal Tim',
+                'pesan' => 'Kami ingin memberitahu Anda bahwa Tim '.$data->nama_tim.' tidak lolos babak semifinal. Terima kasih atas partisipasi Anda dalam perlombaan
+                Civil Engineering Student Competition',
+                'pesan2' => 'Tetap semangat dan terus berjuang',
             ]));
         }
 
