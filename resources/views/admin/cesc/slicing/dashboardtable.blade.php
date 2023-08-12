@@ -43,15 +43,23 @@
                                 </div>
                             @elseif ($team->status_tim === '2')
                                 <div class="mb-2 admin-teamstatus gec-2">
-                                    <p>Biodata Terkonfirmasi</p>
+                                    <p>Biodata Terkonfirmasi, Peserta Penyisihan</p>
                                 </div>
                             @elseif ($team->status_tim === '3')
                                 <div class="mb-2 admin-teamstatus gec-3">
-                                    <p>Peserta Final</p>
+                                    <p>Peserta Semifinal</p>
                                 </div>
                             @elseif ($team->status_tim === '31')
                                 <div class="mb-2 admin-teamstatus gec-31">
-                                    <p>Tidak Lolos Final</p>
+                                    <p>Tidak Lolos Penyisihan</p>
+                                </div>
+                            @elseif ($team->status_tim === '4')
+                                <div class="mb-2 admin-teamstatus gec-3">
+                                    <p>Peserta Final</p>
+                                </div>
+                            @elseif ($team->status_tim === '41')
+                                <div class="mb-2 admin-teamstatus gec-31">
+                                    <p>Tidak Lolos Semifinal</p>
                                 </div>
                             @else
                                 <p>error</p>

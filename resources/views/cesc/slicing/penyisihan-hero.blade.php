@@ -12,14 +12,25 @@
                     </button>
                 </a>
                 {{-- Tunggu Release --}}
+                @if(strtotime(date("Y-m-d H:i:s")) >= strtotime('2022-10-24 23:59:59'))
                 <div class="mb-2"></div>
                 <a href="">
+                    <button type="button" class="btn btn-daftar  w-100">
+                        <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
+                            width="20" height="20">
+                        <b>Kisi Kisi</b> Tryout
+                    </button>
+                </a>
+                @else
+                <div class="mb-2"></div>
+                <a>
                     <button disabled type="button" class="btn btn-daftar  w-100">
                         <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                             width="20" height="20">
                         <b>Kisi Kisi</b> Tryout
                     </button>
                 </a>
+                @endif
             </div>
             <div class="col-lg-6 col-12">
                 <p class="tx-poppins tx-medium mb-lg-2 mb-0 tx-15"><b>Akun <span class="dark-blue">Penyisihan Peserta</span></b></p>

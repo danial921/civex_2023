@@ -4,12 +4,16 @@
     <div class="container verifikasi pt-5 mt-5">
         <div class="row">
             <div class="col-lg-8 col-12">
-                {{-- pendaftaran di verifikasi --}}
-                @include('cesc.slicing.penyisihan-hero')
-                {{--  Tidak Lolos --}}
-                @include('cesc.slicing.penyisihan-release-tidaklolos')
-                {{--  Lolos Penyisihan --}}
-                @include('cesc.slicing.penyisihan-release-lolos')
+                @if($status === "2")
+                    {{-- pendaftaran di verifikasi --}}
+                    @include('cesc.slicing.penyisihan-hero')
+                @elseif($status === "31")
+                    {{--  Tidak Lolos --}}
+                    @include('cesc.slicing.penyisihan-release-tidaklolos')
+                @elseif($status === "3")
+                    {{--  Lolos Penyisihan --}}
+                    @include('cesc.slicing.penyisihan-release-lolos')
+                @endif    
             </div>
             <div class="col-lg-4 col-12">
                 @include('cesc.slicing.timeline')
