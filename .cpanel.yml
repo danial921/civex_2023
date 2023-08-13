@@ -4,6 +4,7 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home2/civilexpoits/deployment/
     - /bin/cp -R .vscode $DEPLOYPATH
+    - /bin/cp -R README.md $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R fonts $DEPLOYPATH
