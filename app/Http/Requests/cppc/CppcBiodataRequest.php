@@ -48,7 +48,7 @@ class CppcBiodataRequest extends FormRequest
             'anggota2_email' => 'required|email',
             'anggota2_ktm' => 'required|file|max:2048',
             'anggota2_sk' => 'required|file|max:2048',
-            'form_pendaftaran' => 'required|file|max:2048'
+            'form_pendaftaran' => 'required|file|mimes:pdf|max:2048'
             
         ];
     }

@@ -13,9 +13,13 @@
             </div>
         </div>
 
-        {{-- hero submit --}}
-        @include('cpcc.slicing.berkasfinal-submited')
+        
+        @if($status_berkas_final === 0)
+            {{-- form submission --}}
+            @include('cpcc.slicing.berkasfinal-form')
+        @else
+            {{-- hero submit --}}
+            @include('cpcc.slicing.berkasfinal-submited')
+        @endif
 
-        {{-- form submission --}}
-        @include('cpcc.slicing.berkasfinal-form')
     @endsection

@@ -5,16 +5,14 @@
         <div class="row">
             <div class="col-lg-8 col-12">
                 @if($status === '2' && $status_proposal == '0')
-                    {{-- pendaftaran di verifikasi, timbelum melengkapi berkas --}}
+                    {{-- pendaftaran di verifikasi, tim belum mengumpulkan proposal --}}
                     @include('gec.slicing.dashboard-status')
                 @elseif($status === '2' && $status_proposal == '1')
-                    {{-- proses verif --}}
+                    {{-- sudah mengumpulkan proposal --}}
                     @include('gec.slicing.dashboard-status2')
-                @elseif($status === '2' && $status_proposal == '-1')
-                    {{-- DiTolak --}}
+                @elseif($status === '3')
                     @include('gec.slicing.dashboard-status3')
-                @elseif($status === '2' && $status_proposal == '2')
-                    {{-- pendaftaran di verifikasi, tim sudah melengkapi berkas --}}
+                @elseif($status === '31')
                     @include('gec.slicing.dashboard-status4')
                 @endif    
             </div>

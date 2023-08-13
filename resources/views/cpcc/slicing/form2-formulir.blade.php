@@ -39,7 +39,7 @@
             <div class="mb-3">
                 <label for="ketua_nama" class="form-pendaftaran mb-1">Nama Ketua Tim</label>
                 <input type="text" class="form-control" id="ketua_nama" 
-                    placeholder="Nama Ketua Tim" name="ketua_nama" required>
+                    placeholder="Nama Ketua Tim" name="ketua_nama" value="{{ $ketuatim }}" required>
                     @error('ketua_nama')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
