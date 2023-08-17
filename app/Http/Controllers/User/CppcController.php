@@ -53,7 +53,8 @@ class CppcController extends Controller
             'ketuatim' => $data->ketua_nama,
             'namatim' => $data->nama_tim,
             'institusi' => $data->institusi,
-            'email' => $data->ketua_email
+            'email' => $data->ketua_email,
+            'status' => auth()->user()->status,
         ]);
     }
     

@@ -42,6 +42,7 @@ class CescController extends Controller
         // dd(gettype($data));
         return view('cesc.form_lengkap', [
             'username' => auth()->user()->name,
+            'status' => auth()->user()->status,
             'nomerhp' => $data->ketua_notelp,
             'namatim' => $data->nama_tim,
             'institusi' => $data->sekolah
