@@ -2370,7 +2370,8 @@ p.hero-subtitle {
 }
 
 .competition-cesc {
-  margin-top: 5rem;
+  position: relative;
+  margin-top: 3rem;
   padding-bottom: 1rem;
 }
 .competition-cesc .compe-bg img.ornamen1 {
