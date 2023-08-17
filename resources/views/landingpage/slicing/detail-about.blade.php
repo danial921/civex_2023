@@ -1,4 +1,4 @@
-<div class="back-button pl-lg-4 pl-2"><a href="/" class="back"><img class="back" src="{{ asset('civex/img/icon/icon-back.svg') }}" alt=""><span>kembali ke home</span></a></div>
+<div class="back-button pl-lg-4 pl-2"><a href="/" class="back"><img class="back" src="{{ asset('civex/img/icon/icon-back.svg') }}" alt=""></a></div>
 <div class="container container-about-detail">
     <p class="about">About</p>
     <p class="title pt-0">Civil Expo ITS 2023 </p>
@@ -25,7 +25,7 @@
                     <img src="{{ asset('civex/img/icon/details-ourtheme.svg') }}" alt="" srcset="">
                     <p>“Preparing Youth Engineer for Golden Indonesia 2045 by Optimizing Technology Utilization”</p>
                     <button id="openButton">
-                        <p>Open</p>
+                        <p>See Details</p>
                     </button>
                 </span>
             </div>
@@ -48,7 +48,7 @@
                     <img src="{{ asset('civex/img/icon/details-ourtheme.svg') }}" alt="" srcset="">
                     <p>“Preparing Youth Engineer for Golden Indonesia 2045 by Optimizing Technology Utilization”</p>
                     <button id="closeButton">
-                        <p>Close</p>
+                        <p>See Details</p>
                     </button>
                     <img class="arrow d-lg-block d-none" src="{{ asset('civex/img/icon/details-arrow.svg') }}"
                         alt="">

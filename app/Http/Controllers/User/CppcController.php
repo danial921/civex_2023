@@ -26,7 +26,7 @@ class CppcController extends Controller
         return view('cpcc.dashboard', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
-            'status_proposal' => $data->status_proposal      
+            'status_proposal' => $data->status_proposal
         ]);
     }
 
@@ -57,20 +57,20 @@ class CppcController extends Controller
             'status' => auth()->user()->status,
         ]);
     }
-    
+
 
     public function store_CPPC_biodata(CppcBiodataRequest $request){
 
         $gdriveController = new GoogleDriveController();
 
         cppc_form::where('id_user', auth()->user()->id)->update([
-            'nama_tim' => $request->nama_tim, 
-            'institusi' => $request->institusi, 
+            'nama_tim' => $request->nama_tim,
+            'institusi' => $request->institusi,
             'alamat_institusi' => $request->alamat_institusi,
             'ketua_nama' => $request->ketua_nama,
-            'ketua_prodi' => $request->ketua_prodi, 
-            'ketua_notelp' => $request->ketua_notelp,
-            'ketua_email' => $request->ketua_email,
+            'ketua_prodi' => $request->ketua_prodi,
+            'ketua_notelp' => $request->notelp,
+            'ketua_email' => $request->email,
             'ketua_nim' => $request->ketua_nim,
             'ketua_ktm' => $gdriveController->uploadImageToGDrive($request->nama_tim."_CPPC_ketua_ktm", $request->file('ketua_ktm')),
             'ketua_sk' => $gdriveController->uploadImageToGDrive($request->nama_tim."_CPPC_ketua_sk", $request->file('ketua_sk')),
@@ -99,13 +99,13 @@ class CppcController extends Controller
         return redirect('/cppc/verifikasi');
     }
 
-    
+
     public function CPPC_soal()
     {
         if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
             return redirect('/cppc/verifikasi');
         }
-        
+
         return view('cpcc.soal', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
@@ -126,7 +126,7 @@ class CppcController extends Controller
 
         $data = DB::table('cppc_teams')->get();
         $dataTim = cppc_form::where('id_user', auth()->user()->id)->first();
-    
+
         return view('cpcc.aanwijizing', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
@@ -156,13 +156,13 @@ class CppcController extends Controller
 
     public function store_CPPC_aanwijizing(aanwizingRequest $request)
     {
-        
+
         if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
             return redirect('/cppc/verifikasi');
         }
 
         $data = cppc_form::where('id_user', auth()->user()->id)->first();
-        
+
         cppc_form::where('id_user', auth()->user()->id)->update([
             'aanwijzing_tanya' => $request->input('aanwijzing_tanya'),
             'aanwijzing_judul' => $request->input('aanwijzing_judul'),
@@ -178,7 +178,7 @@ class CppcController extends Controller
         }
 
         $data = cppc_form::where('id_user', auth()->user()->id)->first();
-        
+
         return view('cpcc.submission', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
@@ -187,7 +187,7 @@ class CppcController extends Controller
             'institusi' => $data->institusi,
             'ketuatim' => $data->ketua_nama,
             'dosenpembimbing' => $data->dosen_pembimbing,
-             
+
         ]);
     }
 
@@ -196,7 +196,7 @@ class CppcController extends Controller
         if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
             return redirect('/cppc/verifikasi');
         }
-        
+
         $data = cppc_form::where('id_user', auth()->user()->id)->first();
         $gdriveController = new GoogleDriveController();
         cppc_form::where('id_user', auth()->user()->id)->update([
@@ -214,7 +214,7 @@ class CppcController extends Controller
         }
 
         $data = cppc_form::where('id_user', auth()->user()->id)->first();
-        
+
         return view('cpcc.berkasfinal-form', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
@@ -223,7 +223,7 @@ class CppcController extends Controller
             'institusi' => $data->institusi,
             'ketuatim' => $data->ketua_nama,
             'dosenpembimbing' => $data->dosen_pembimbing,
-             
+
         ]);
     }
 
@@ -232,7 +232,7 @@ class CppcController extends Controller
         if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
             return redirect('/cppc/verifikasi');
         }
-        
+
         $data = cppc_form::where('id_user', auth()->user()->id)->first();
         $gdriveController = new GoogleDriveController();
         cppc_form::where('id_user', auth()->user()->id)->update([

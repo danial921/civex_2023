@@ -1,5 +1,6 @@
 <div class="competition-gec">
     <div class="compe-bg">
+        <div class="back-compebutton pt-5 pl-lg-4 pl-2"><a href="/competition" class="back" ><img style="height: 45px" class="back" src="{{ asset('civex/img/icon/back-compe.svg') }}" alt=""></a></div>
         <img class="ornamen1" src="{{ asset('civex/img/icon/gec-ornamen1.svg') }}" alt="">
         <img class="ornamen2" src="{{ asset('civex/img/icon/gec-ornamen2.svg') }}" alt="">
     </div>
