@@ -85,7 +85,9 @@
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <div class="mb-3">
-                        <label for="ketua_twibbon " class="form-pendaftaran">Upload Twibbon</label>
+                        <label for="ketua_twibbon " class="form-pendaftaran">Upload Twibbon
+                            <a class="c-blue bold" href="{{ ENV('TWIBBON_CESC') }}">CIVEX</a>
+                        </label>
                         <input type="file" class="form-control" id="ketua_twibbon" name="ketua_twibbon" required>
                         @error('ketua_twibbon')
                             <div class="alert alert-danger">{{ $message }}</div>
