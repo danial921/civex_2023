@@ -37,6 +37,11 @@
                             value="{{ $dataPeserta->ketua_nama }}">
                     </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                        <label for="staticEmail" class="form-pendaftaran mb-0">Email Ketua</label>
+                        <input type="text" readonly disabled class="form-control" id="staticEmail"
+                            value="{{ $dataPeserta->ketua_email }}">
+                    </div>
+                    <div class="col-lg-6 col-12 mb-lg-3 mb-1">
                         <label for="staticEmail" class="form-pendaftaran mb-0">Prodi Ketua</label>
                         <input type="text" readonly disabled class="form-control" id="staticEmail"
                             value="{{ $dataPeserta->ketua_prodi }}">
@@ -83,6 +88,20 @@
                         <input type="text" readonly disabled class="form-control" id="staticEmail"
                             value="{{ $dataPeserta->anggota1_nim }}">
                     </div>
+                    <div class="col-lg-6 col-12 mb-lg-3 mb-1 detail">
+                        <label for="staticEmail" class="form-pendaftaran mb-1">File Bukti Bayar</label>
+                        @if ($dataPeserta->bukti_bayar == null)
+                            <p class="w-100 text-center"><i>tim belum mengirimkan berkas</i></p>
+                        @elseif ($dataPeserta->bukti_bayar != null)
+                            <a href="{{ $dataPeserta->bukti_bayar }}" class="" target="_blank">
+                                <button type="button" class="w-100 btn btn-download">
+                                    <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
+                                        width="20" height="20">
+                                        Bukti Bayar
+                                </button>
+                            </a>
+                        @endif
+                    </div>
 
                     <div class="titleheading mb-lg-3 mb-1">Berkas Tim</div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1 detail">
@@ -101,14 +120,14 @@
                     </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1 detail">
                         <label for="staticEmail" class="form-pendaftaran mb-1">File Berkas Tim</label>
-                        @if ($dataPeserta->file_zip == null)
+                        @if ($dataPeserta->file_zip == '-')
                             <p class="w-100 text-center"><i>tim belum mengirimkan berkas</i></p>
-                        @elseif ($dataPeserta->file_zip != null)
+                        @elseif ($dataPeserta->file_zip != '-')
                             <a href="{{ $dataPeserta->file_zip }}" class="" target="_blank">
                                 <button type="button" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
-                                    Submission Berkas Tim
+                                    File Berkas Tim
                                 </button>
                             </a>
                         @endif
@@ -126,6 +145,11 @@
                                 </button>
                             </a>
                         @endif
+                    </div>
+                    <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                        <label for="staticEmail" class="form-pendaftaran mb-0">Video Pengumpulan</label>
+                        <input type="text" readonly disabled class="form-control" id="staticEmail"
+                            value="{{ $dataPeserta->url_video }}">
                     </div>
                     <div class="titleheading mb-lg-3 mb-1">Status Tim</div>
                     @include('admin.gec.slicing.rubahsatatustim')

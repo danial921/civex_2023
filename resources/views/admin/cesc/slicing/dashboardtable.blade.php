@@ -1,12 +1,12 @@
 <div class="card mb-2">
     <div class="card-body">
-        <div class="title">Daftar Peserta GEC</div>
+        <div class="title">Daftar Peserta CESC</div>
         <div class="table-responsive p-lg-2 p-1">
             <table id="myTable" class="table table-hover table-borderless" style="width:100%">
                 <thead>
                     <tr>
                         <th class="text-center wd-40p">nama tim</th>
-                        <th class="text-center wd-35">institusi</th>
+                        <th class="text-center wd-35">Sekolah</th>
                         <th class="text-center wd-20">status</th>
                         <th class="text-center wd-5p">Menu</th>
                     </tr>
@@ -18,7 +18,7 @@
                                 <p class="mg-b-0">{{ $team->nama_tim }}</p>
                             </td>
                             <td>
-                                <p class="mg-b-0">{{ $team->institusi }}</p>
+                                <p class="mg-b-0">{{ $team->sekolah }}</p>
                             </td>
                             <td class="text-center">
                                 @if ($team->status_tim === '00')
@@ -37,17 +37,29 @@
                                 <div class="mb-2 admin-teamstatus gec-11">
                                     <p>Biodata Ditolak</p>
                                 </div>
+                            @elseif ($team->status_tim === '12')
+                                <div class="mb-2 admin-teamstatus gec-00">
+                                    <p>Biodata Belum Dikonfirmasi</p>
+                                </div>
                             @elseif ($team->status_tim === '2')
                                 <div class="mb-2 admin-teamstatus gec-2">
-                                    <p>Biodata Terkonfirmasi</p>
+                                    <p>Biodata Terkonfirmasi, Peserta Penyisihan</p>
                                 </div>
                             @elseif ($team->status_tim === '3')
                                 <div class="mb-2 admin-teamstatus gec-3">
-                                    <p>Peserta Final</p>
+                                    <p>Peserta Semifinal</p>
                                 </div>
                             @elseif ($team->status_tim === '31')
                                 <div class="mb-2 admin-teamstatus gec-31">
-                                    <p>Tidak Lolos Final</p>
+                                    <p>Tidak Lolos Penyisihan</p>
+                                </div>
+                            @elseif ($team->status_tim === '4')
+                                <div class="mb-2 admin-teamstatus gec-3">
+                                    <p>Peserta Final</p>
+                                </div>
+                            @elseif ($team->status_tim === '41')
+                                <div class="mb-2 admin-teamstatus gec-31">
+                                    <p>Tidak Lolos Semifinal</p>
                                 </div>
                             @else
                                 <p>error</p>
@@ -55,7 +67,7 @@
                             </td>
                             <td>
                                 <div class="dropdown">
-                                    <a href="\admin\detailteamgec\{{ $team->id }}" class="btn btn-icon pd-0">
+                                    <a href="\admin\detailteam-cesc\{{ $team->id }}" class="btn btn-icon pd-0">
                                         <div class="avatar"><span
                                                 class="avatar-initial rounded-circle btn-its-custom-1 tx-color-01"
                                                 data-toggle="tooltip" data-placement="bottom"

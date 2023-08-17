@@ -1,17 +1,16 @@
 <div class="container-detail">
     <div class="container-bg">
-        <img class="ornemen1" src="{{ asset('civex/img/landingpage/detail-ornamen.svg') }}" alt="" srcset="">
-        <img class="ornemen2" src="{{ asset('civex/img/landingpage/detail-blur.svg') }}" alt="" srcset="">
-        <img class="ornemen3" src="{{ asset('civex/img/landingpage/detail-ornamen2.svg') }}" alt=""
-            srcset="">
+        <img class="ornemen1" data-entrance="from-bottom" src="{{ asset('civex/img/landingpage/detail-ornamen.svg') }}" alt="" srcset="">
+        <img class="ornemen2" data-entrance="from-bottom" src="{{ asset('civex/img/landingpage/detail-blur.svg') }}" alt="" srcset="">
+        <img class="ornemen3" src="{{ asset('civex/img/landingpage/detail-ornamen2.svg') }}" alt="" srcset="">
     </div>
     <div class="container container-content">
         <div class="row">
             <div class="col-lg-6 col-12 mb-lg-0 mb-5 content-hero align-items-center">
-                <img class="hero" src="{{ asset('civex/img/landingpage/detail-hero.svg') }}" alt="">
+                <img class="hero" data-entrance="from-left" src="{{ asset('civex/img/landingpage/detail-hero.svg') }}" alt="">
             </div>
             <div class="col-lg-6 col-12">
-                <div class="content">
+                <div class="content" data-entrance="from-right">
                     <p><span>&ensp; Civil Expo ITS 2023</span> is a series of <span>national</span> and
                         <span>international events</span> organized by <span>LE-HMS FTSPK ITS</span> in
                         the form of <span>seminars, competitions</span> in the field of civil engineering, and
@@ -28,7 +27,7 @@
 
                 </div>
                 <a href="\detail">
-                    <button class="mt-lg-4 mt-3 detail-button">
+                    <button class="mt-lg-4 mt-3 detail-button" data-entrance="fade">
                         <p>Get to know more</p>
                     </button>
                 </a>

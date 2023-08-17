@@ -5,32 +5,38 @@
         <div class="row">
             <div class="col-lg-8 col-12">
                 <div class="row">
-                    {{-- pendaftaran di verifikasi --}}
-                    <div class="col-12">
-                        @include('cesc.slicing.semifinal-jumbotron-welcome')
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        {{--  Rilis Semifinal --}}
-                        @include('cesc.slicing.semifinal-rilis-kisi-kisi')
-                    </div>
-                    <div class="col-12">
-                        {{--  Rilis Soal Semifinal --}}
-                        @include('cesc.slicing.semifinal-rilis-soal')
-                    </div>
-                    <div class="col-12">
-                        {{--  sudah uplad file --}}
-                        @include('cesc.slicing.semifinal-past-upload')
-                    </div>
-
-                    <div class="col-12">
-                        {{--  Jumbotron lolos final --}}
-                        @include('cesc.slicing.semifinal-release-lolos')
-                    </div>
-
-                    <div class="col-12">
-                        {{--  Jumbotron tidaklolos final --}}
-                        @include('cesc.slicing.semifinal-release-tidaklolos')
-                    </div>
+                    @if($status === "3")
+                        {{-- pendaftaran di verifikasi --}}
+                        <div class="col-12">
+                            @include('cesc.slicing.semifinal-jumbotron-welcome')
+                        </div>
+                        @if(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-11-12 23:59:59') && $status_proposal === '-')
+                            <div class="col-12">
+                                {{--  Rilis Semifinal --}}
+                                @include('cesc.slicing.semifinal-rilis-soal')
+                            </div>
+                        @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-11-12 23:59:59') && $status_proposal === '1')
+                            <div class="col-12">
+                                {{--  sudah uplad file --}}
+                                @include('cesc.slicing.semifinal-past-upload')
+                            </div>
+                        @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-11-18 23:59:59'))
+                            <div class="col-12">
+                                {{--  Rilis Soal Semifinal --}}
+                                @include('cesc.slicing.semifinal-rilis-kisi-kisi')
+                            </div>
+                        @endif
+                    @elseif($status === '4')
+                        <div class="col-12">
+                            {{--  Jumbotron lolos final --}}
+                            @include('cesc.slicing.semifinal-release-lolos')
+                        </div>
+                    @elseif($status === '41')
+                        <div class="col-12">
+                            {{--  Jumbotron tidaklolos final --}}
+                            @include('cesc.slicing.semifinal-release-tidaklolos')
+                        </div>
+                    @endif
 
                 </div>
             </div>

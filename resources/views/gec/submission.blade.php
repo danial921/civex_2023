@@ -13,10 +13,12 @@
             </div>
         </div>
 
-        {{-- hero submit --}}
-        @include('gec.slicing.submission-submited')
-
-        {{-- form submission --}}
-        @include('gec.slicing.submission-form')
+        @if($status_proposal === 1)
+            {{-- hero submit --}}
+            @include('gec.slicing.submission-submited')
+        @elseif($status_proposal === 0)
+            {{-- form submission --}}
+            @include('gec.slicing.submission-form')
+        @endif
     </div>
 @endsection

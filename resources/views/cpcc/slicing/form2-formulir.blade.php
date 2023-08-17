@@ -39,7 +39,7 @@
             <div class="mb-3">
                 <label for="ketua_nama" class="form-pendaftaran mb-1">Nama Ketua Tim</label>
                 <input type="text" class="form-control" id="ketua_nama" 
-                    placeholder="Nama Ketua Tim" name="ketua_nama" required>
+                    placeholder="Nama Ketua Tim" name="ketua_nama" value="{{ $ketuatim }}" required>
                     @error('ketua_nama')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -131,11 +131,11 @@
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <div class="mb-3">
-                        <label for="anggota1_nama" class="form-pendaftaran mb-1">Program
+                        <label for="anggota1_prodi" class="form-pendaftaran mb-1">Program
                             Studi</label>
-                        <input type="text" class="form-control" id="anggota1_nama"
-                            placeholder="Nama Anggota 1" name="anggota1_nama" required>
-                            @error('anggota1_nama')
+                        <input type="text" class="form-control" id="anggota1_prodi"
+                            placeholder="Nama Anggota 1" name="anggota1_prodi" required>
+                            @error('anggota1_prodi')
                                 <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
                     </div>
@@ -296,7 +296,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <a href="" class="">
+                    <a href="{{ ENV('REGIST_FORM_CPPC')}}" class="">
                         <button type="button" class="w-100 btn btn-download">
                             <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image" width="20"
                                 height="20">
@@ -326,7 +326,7 @@
             <div class="modal-footer">
                 <a class="btn btn-civex-danger tx-poppins tx-medium"
                     data-dismiss="modal">Batal</a>
-                <a href="#" class="btn btn-civex tx-poppins tx-medium" onclick="submitForm()">Ya, Saya Yakin</a>
+                    <button href="#" class="btn btn-civex tx-poppins tx-medium" onclick="submitForm()" id="btnSubmit2">Ya, Saya Yakin</button>
             </div>
         </div>
     </div>

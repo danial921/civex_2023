@@ -37,6 +37,10 @@
                                 <div class="mb-2 admin-teamstatus gec-11">
                                     <p>Biodata Ditolak</p>
                                 </div>
+                            @elseif ($team->status_tim === '12')
+                                <div class="mb-2 admin-teamstatus gec-00">
+                                    <p>Biodata Belum Dikonfirmasi</p>
+                                </div>
                             @elseif ($team->status_tim === '2')
                                 <div class="mb-2 admin-teamstatus gec-2">
                                     <p>Biodata Terkonfirmasi</p>
@@ -55,7 +59,7 @@
                             </td>
                             <td>
                                 <div class="dropdown">
-                                    <a href="\admin\detailteamcppc\{{ $team->id }}" class="btn btn-icon pd-0">
+                                    <a href="\admin\detailteam-gec\{{ $team->id }}" class="btn btn-icon pd-0">
                                         <div class="avatar"><span
                                                 class="avatar-initial rounded-circle btn-its-custom-1 tx-color-01"
                                                 data-toggle="tooltip" data-placement="bottom"

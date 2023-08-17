@@ -1,10 +1,10 @@
 <div class="container-sponsor">
-    <div class="container d-flex justify-content-center align-items-center">
+    <div class="container d-flex justify-content-center align-items-center" data-entrance="from-bottom">
         <div class="title">
             <p>Sponsored by</p>
         </div>
     </div>
-    <div class="container pt-2 pt-lg-4">
+    <div data-entrance="from-bottom" class="container pt-2 pt-lg-4">
         <div class=" brand-sponsor">
             <div class="image-sponsor">
                 <div class="img-wrapper">

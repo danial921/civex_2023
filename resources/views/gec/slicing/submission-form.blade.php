@@ -1,44 +1,60 @@
 <div class="card container">
     <div class="card-body">
-        <div class="row">
-            <div class="col-lg-6 col-12 mb-lg-3 mb-1">
-                <label for="staticEmail" class="form-pendaftaran mb-1">Nama Tim</label>
-                <div class="">
-                    <input type="text" readonly disabled class="form-control mb-0" id="staticEmail"
-                        value="{{ $namatim }}">
+        <form id="gec_form" class="mt-2 " method="post" route="{{ route('submit-proposal-gec') }}" enctype="multipart/form-data">
+        @csrf
+            <div class="row">
+                <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                    <label for="staticEmail" class="form-pendaftaran mb-1">Nama Tim</label>
+                    <div class="">
+                        <input type="text" readonly disabled class="form-control mb-0" id="staticEmail"
+                            value="{{ $namatim }}">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                    <label for="staticEmail" class="form-pendaftaran mb-1">Institusi Asal</label>
+                    <div class="">
+                        <input type="text" readonly disabled class="form-control mb-0" id="staticEmail"
+                            value="{{ $institusi }}">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                    <label for="staticEmail" class="form-pendaftaran mb-1">Nama Ketua Tim</label>
+                    <div class="">
+                        <input type="text" readonly disabled class="form-control mb-0" id="staticEmail"
+                            value="{{ $ketuatim }}">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                    <label for="staticEmail" class="form-pendaftaran mb-1">Nama Dosen Pembimbing</label>
+                    <div class="">
+                        <input type="text" readonly disabled class="form-control mb-0" id="staticEmail"
+                            value="{{ $dosenpembimbing }}">
+                    </div>
+                </div>
+                @if(strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-11-8 23:59:59'))
+                <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                    <label for="submission_proposal" class="form-pendaftaran mb-2">Unggah Proposal</label>
+                    <input type="file" class="form-control" id="submission_proposal" name="submission_proposal">
+                    @error('submission_proposal')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+                @endif
+                @if(strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-11-15 23:59:59'))
+                <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                    <label for="url_video" class="form-pendaftaran mb-2">Unggah Video (URL)</label>
+                    <input type="text" class="form-control" id="url_video" name="url_video">
+                    @error('url_video')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div class="subtitleform">* video dapat di upload di youtube, dan pastikan video tidak di private</div>
+                @endif
+                <div class="mt-3 d-flex justify-content-end align-items-center">
+                    <input type="button" value="submit" class="btn btn-civex  mg-b-20 mg-r-20" id="btnSubmit" data-toggle="modal" data-animation="effect-scale" data-target="#simpan"></input>
                 </div>
             </div>
-            <div class="col-lg-6 col-12 mb-lg-3 mb-1">
-                <label for="staticEmail" class="form-pendaftaran mb-1">Institusi Asal</label>
-                <div class="">
-                    <input type="text" readonly disabled class="form-control mb-0" id="staticEmail"
-                        value="{{ $institusi }}">
-                </div>
-            </div>
-            <div class="col-lg-6 col-12 mb-lg-3 mb-1">
-                <label for="staticEmail" class="form-pendaftaran mb-1">Nama Ketua Tim</label>
-                <div class="">
-                    <input type="text" readonly disabled class="form-control mb-0" id="staticEmail"
-                        value="{{ $ketuatim }}">
-                </div>
-            </div>
-            <div class="col-lg-6 col-12 mb-lg-3 mb-1">
-                <label for="staticEmail" class="form-pendaftaran mb-1">Nama Dosen Pembimbing</label>
-                <div class="">
-                    <input type="text" readonly disabled class="form-control mb-0" id="staticEmail"
-                        value="{{ $dosenpembimbing }}">
-                </div>
-            </div>
-            <div class="col-lg-6 col-12 mb-lg-3 mb-1">
-                <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran mb-2">Unggah Proposal</label>
-                <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="Nama Tim">
-            </div>
-            <div class="d-flex justify-content-end align-items-center">
-                <a href="#simpan" data-toggle="modal" data-animation="effect-scale">
-                    <button type="submit" class="btn btn-civex mt-2">Submit</button>
-                </a>
-            </div>
-        </div>
+        </form>    
     </div>
 </div>
 <!-- Modal simpan -->
@@ -51,13 +67,12 @@
                 <p class="mg-b-0">Apakah anda yakin ingin melakukan pendaftaran tim dengan data tim yang telah
                     diisi?</p>
             </div>
-            <form>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-civex-danger tx-poppins tx-medium"
-                        data-dismiss="modal">Batal</button>
-                    <button type="submit" class="btn btn-civex tx-poppins tx-medium">Ya, Saya Yakin</button>
-                </div>
-            </form>
+            <div class="modal-footer">
+                <a class="btn btn-civex-danger tx-poppins tx-medium"
+                    data-dismiss="modal">Batal</a>
+                <button href="#" class="btn btn-civex tx-poppins tx-medium" onclick="submitForm()" id="btnSubmit2">Ya, Saya Yakin</button>
+            </div>
         </div>
     </div>
 </div>
+<script src=" {{ asset('js/form-gec.js') }} " ></script>

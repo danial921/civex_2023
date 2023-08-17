@@ -19,6 +19,7 @@ class cppc_form extends Model
         'institusi',
         'ketua_email',
         'ketua_notelp',
-        'bukti_bayar'
+        'bukti_bayar',
+        'status_tim'
     ];
 }

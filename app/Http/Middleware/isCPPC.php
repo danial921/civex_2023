@@ -16,6 +16,8 @@ class isCPPC
      */
     public function handle(Request $request, Closure $next)
     {
+        if(auth()->user()->is_admin == true) return redirect()->route('/admin/gec');
+        
         if(auth()->user()->status_comp == "GEC") return redirect()->route('/gec');
         elseif(auth()->user()->status_comp == "CESC") return redirect()->route('/cesc');
         elseif(auth()->user()->status_comp == "-") return redirect()->route('/dashboard');

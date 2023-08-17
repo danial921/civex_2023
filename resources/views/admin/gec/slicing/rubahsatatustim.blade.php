@@ -1,4 +1,4 @@
-<form method="POST" action="{{ url('admin/updatestatus/' . $dataPeserta->id) }}">
+<form method="POST" action="{{ url('admin/updatestatus-gec/' . $dataPeserta->id) }}">
     @csrf
 
 <div class="row">
@@ -14,6 +14,10 @@
     @elseif ($dataPeserta->status_tim === '1')
         <div class="mb-2 w-100 text-center admin-teamstatus gec-1">
             <p>Pembayaran Terkonfirmasi</p>
+        </div>
+    @elseif ($dataPeserta->status_tim === '12')
+        <div class="mb-2 w-100 text-center admin-teamstatus gec-00">
+            <p>Biodata Belum Dikonfirmasi</p>
         </div>
     @elseif ($dataPeserta->status_tim === '11')
         <div class="mb-2 w-100 text-center admin-teamstatus gec-11">
@@ -71,7 +75,7 @@
                 Tolak Konfirmasi Pembayaran
             </label>
         </div>
-    @elseif ($dataPeserta->status_tim === '11' || $dataPeserta->status_tim === '1')
+    @elseif ($dataPeserta->status_tim === '11' || $dataPeserta->status_tim === '1' || $dataPeserta->status_tim === '12')
         <div class="form-check">
             @if ($dataPeserta->status_tim === '1')
                 <input checked class="form-check-input" type="radio" name="status_tim" id="exampleRadios1"
@@ -90,6 +94,7 @@
             @else
                 <input class="form-check-input" type="radio" name="status_tim" id="exampleRadios2" value="11">
             @endif
+           
 
             <label class="form-check-label c-red" for="exampleRadios2">
                 Tolak Biodata

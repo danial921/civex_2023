@@ -85,7 +85,9 @@
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <div class="mb-3">
-                        <label for="ketua_twibbon " class="form-pendaftaran">Upload Twibbon</label>
+                        <label for="ketua_twibbon " class="form-pendaftaran">Upload Twibbon
+                            <a class="c-blue bold" href="{{ ENV('TWIBBON_CESC') }}">CIVEX</a>
+                        </label>
                         <input type="file" class="form-control" id="ketua_twibbon" name="ketua_twibbon" required>
                         @error('ketua_twibbon')
                             <div class="alert alert-danger">{{ $message }}</div>
@@ -204,7 +206,7 @@
             <div class="modal-footer">
                 <a class="btn btn-civex-danger tx-poppins tx-medium"
                     data-dismiss="modal">Batal</a>
-                <a href="#" class="btn btn-civex tx-poppins tx-medium" onclick="submitForm()">Ya, Saya Yakin</a>
+                <button href="#" class="btn btn-civex tx-poppins tx-medium" onclick="submitForm()" id="btnSubmit2">Ya, Saya Yakin</button>
             </div>
         </div>
     </div>
