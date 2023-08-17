@@ -64,7 +64,7 @@
                         <label for="staticEmail" class="form-pendaftaran mb-1">Foto Ketua</label>
                         @if ($dataPeserta->ketua_foto == '-')
                             <p class="w-100 text-center"><i>tidak ada berkas</i></p>
-                        @elseif ($dataPeserta->ketketua_fotoua_sk != '-')
+                        @elseif ($dataPeserta->ketua_foto != '-')
                             <a href="{{ $dataPeserta->ketua_foto }}" class="" target="_blank">
                                 <button type="button" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
