@@ -896,6 +896,10 @@ p.hero-subtitle {
   color: #527AA4;
 }
 
+.disabble-nav {
+  color: rgba(0, 0, 0, 0.3843137255);
+}
+
 .monitoring .card .card-header {
   color: #000;
   font-family: "Poppins";
