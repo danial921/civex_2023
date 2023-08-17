@@ -19,7 +19,7 @@ class CescController extends Controller
 
         return view('cesc.dashboard', [
             'username' => auth()->user()->name,
-            'status' => auth()->user()->status    
+            'status' => auth()->user()->status
         ]);
     }
 
@@ -42,19 +42,20 @@ class CescController extends Controller
         // dd(gettype($data));
         return view('cesc.form_lengkap', [
             'username' => auth()->user()->name,
+            'status' => auth()->user()->status,
             'nomerhp' => $data->ketua_notelp,
             'namatim' => $data->nama_tim,
             'institusi' => $data->sekolah
         ]);
     }
-    
+
     public function store_CESC_biodata(CescBiodataRequest $request){
 
         $gdriveController = new GoogleDriveController();
 
         cesc_form::where('id_user', auth()->user()->id)->update([
-            'nama_tim' => $request->nama_tim, 
-            'sekolah' => $request->sekolah, 
+            'nama_tim' => $request->nama_tim,
+            'sekolah' => $request->sekolah,
             'ketua_nama' => $request->ketua_nama,
             'ketua_notelp' => $request->ketua_notelp,
             'ketua_kelas' => $request->ketua_kelas,

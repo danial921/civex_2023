@@ -29,7 +29,7 @@
                 </p>
             </div>
             <div class="col-lg-6 col-12 mb-2">
-                <a href="">
+                <a href="{{ ENV('GUIDEBOOK_GEC') }}">
                     <button type="button" class="btn btn-daftar w-100">
                         <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                             width="20" height="20">

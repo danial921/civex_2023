@@ -296,7 +296,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <a href="" class="">
+                    <a href="{{ ENV('REGIST_FORM_CPPC')}}" class="">
                         <button type="button" class="w-100 btn btn-download">
                             <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image" width="20"
                                 height="20">

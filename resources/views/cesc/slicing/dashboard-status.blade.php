@@ -17,7 +17,7 @@
                 <p class="form mb-1">Pendaftaran telah berhasil dilakukan, silahkan melakukan pendaftaran pada website CBT. Abaikan pesan ini jika merasa sudah mendaftar</p>
             </div>
             <div class="col-lg-6 col-12 mb-lg-0 mb-2">
-                <a href="">
+                <a href="{{ ENV('GUIDEBOOK_CESC') }}">
                     <button type="button" class="btn btn-daftar  w-100">
                         <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                             width="20" height="20">

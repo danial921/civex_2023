@@ -64,7 +64,7 @@
                         <label for="staticEmail" class="form-pendaftaran mb-1">Foto Ketua</label>
                         @if ($dataPeserta->ketua_foto == '-')
                             <p class="w-100 text-center"><i>tidak ada berkas</i></p>
-                        @elseif ($dataPeserta->ketketua_fotoua_sk != '-')
+                        @elseif ($dataPeserta->ketua_foto != '-')
                             <a href="{{ $dataPeserta->ketua_foto }}" class="" target="_blank">
                                 <button type="button" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
@@ -101,7 +101,7 @@
                             </a>
                         @endif
                     </div>
-                    
+
                     <div class="titleheading mb-lg-3 mb-1">Identitas Anggota</div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1">
                         <label for="staticEmail" class="form-pendaftaran mb-0">Nama Anggota </label>
@@ -136,7 +136,7 @@
                         <label for="staticEmail" class="form-pendaftaran mb-1">Foto Anggota</label>
                         @if ($dataPeserta->anggota_foto == '-')
                             <p class="w-100 text-center"><i>tidak ada berkas</i></p>
-                        @elseif ($dataPeserta->ketanggota_fotoua_sk != '-')
+                        @elseif ($dataPeserta->anggota_foto != '-')
                             <a href="{{ $dataPeserta->anggota_foto }}" class="" target="_blank">
                                 <button type="button" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
@@ -173,7 +173,7 @@
                             </a>
                         @endif
                     </div>
-                    
+
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1 detail">
                         <label for="staticEmail" class="form-pendaftaran mb-1">File Bukti Bayar</label>
                         @if ($dataPeserta->bukti_bayar == '-')
