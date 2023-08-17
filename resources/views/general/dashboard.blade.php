@@ -25,8 +25,7 @@
                     </div>
                 </div>
                 <div class="card-gec1 px-2 py-2 text-center">
-                    Ajang kompetisi mahasiswa sipil menyelesaikan masalah tanah dan batuan, menahan beban struktur di
-                    atasnya.
+                    {{ ENV('DESKRIPSI_GEC') }}
                 </div>
                 <div class="row details mx-0">
                     <div class="col-6 detailpendaftaran py-2">
