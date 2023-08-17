@@ -113,7 +113,7 @@
                                 <button type="button" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
-                                    Submission Proposal
+                                    File Berkas Tim
                                 </button>
                             </a>
                         @endif
