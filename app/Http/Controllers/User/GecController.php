@@ -51,7 +51,8 @@ class GecController extends Controller
             'ketua_nama' => $data->ketua_nama,
             'nomerhp' => $data->ketua_notelp,
             'namatim' => $data->nama_tim,
-            'institusi' => $data->institusi
+            'institusi' => $data->institusi,
+            'status' => auth()->user()->status
         ]);
     }
 
