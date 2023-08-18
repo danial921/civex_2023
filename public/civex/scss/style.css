@@ -1877,6 +1877,16 @@ p.hero-subtitle {
   letter-spacing: 0.75px;
 }
 
+.back-compebutton {
+  position: absolute;
+  top: 5rem;
+}
+@media screen and (max-width: 920px) {
+  .back-compebutton {
+    top: 1rem;
+  }
+}
+
 .competition-cpcc {
   margin-top: 5rem;
   padding-bottom: 1rem;
@@ -1886,12 +1896,14 @@ p.hero-subtitle {
   right: 0px;
   top: 0px;
   max-width: 100%;
+  z-index: -2;
 }
 .competition-cpcc .compe-bg img.ornamen2 {
   position: absolute;
   left: 0px;
   bottom: 0px;
   max-width: 100%;
+  z-index: -2;
 }
 @media screen and (max-width: 720px) {
   .competition-cpcc .compe-bg img.ornamen2 {
@@ -1962,6 +1974,12 @@ p.hero-subtitle {
   /* Mengubah penampilan track/trek scrollbar */
   /* Mengubah penampilan handle/pegangan scrollbar */
   /* Mengubah penampilan handle/pegangan scrollbar saat dihover */
+}
+@media screen and (max-width: 920px) {
+  .competition-cpcc .competition-gec-timeline {
+    margin-top: 75px;
+    padding-bottom: 150px;
+  }
 }
 .competition-cpcc .competition-gec-timeline .container p.title {
   text-align: left !important;
