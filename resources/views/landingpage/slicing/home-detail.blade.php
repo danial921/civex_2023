@@ -11,8 +11,8 @@
             </div>
             <div class="col-lg-6 col-12">
                 <div class="content" data-entrance="from-right">
-                    <p><span>&ensp; Civil Expo ITS 2023</span> is a series of <span>national</span> and
-                        <span>international events</span> organized by <span>LE-HMS FTSPK ITS</span> in
+                    <p><span>&ensp; Civil Expo ITS 2023</span> is a series of <span>national events</span> organized by
+                        <span>LE-HMS FTSPK ITS</span> in
                         the form of <span>seminars, competitions</span> in the field of civil engineering, and
                         <span>talkshow</span> will be held from
                         October to December 2023. <br>

@@ -14,7 +14,8 @@
                             <span>About Competition <img src="{{ asset('civex/img/icon/icon-arrow-down.svg') }}"
                                     alt=""></span>
                         </a>
-                        <p class="detail pt-4">Construction Project Planning Competition Civil Expo ITS 2023 is competition in the field of geotechnical that will bring the theme <span>“MSE Wall Challenge: Designing Sustainable Mechanically Stabilized Earth Walls for a Resilient Future”</span>.</p>
+                        <p class="detail pt-4">
+                            Geotechnical Engineering Competition Civil Expo ITS 2023 is competition in the field of geotechnical that will bring the theme <span>“MSE Wall Challenge: Designing Sustainable Mechanically Stabilized Earth Walls for a Resilient Future”</span>.</p>
                     </div>
                 </div>
             </div>
@@ -93,7 +94,7 @@
                     </table>
                     <p class="limited">* limited quota</p>
                 </div>
-                <div class="col-4 col-md-6 col-12 button mt-md-0 mt-3">
+                <div class="col-4 col-md-6 col-12 button-compe mt-md-0 mt-3">
                     <a href="/pendaftaran-gec"> <button class="register">
                             <p>Register Now!</p>
                         </button>

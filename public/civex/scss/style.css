@@ -1421,7 +1421,7 @@ p.hero-subtitle {
   margin-top: 120px;
   height: -moz-max-content;
   height: max-content;
-  margin-bottom: 170px;
+  margin-bottom: 100px;
 }
 .landing-page .container-galery .container-bg {
   background-color: #fff;
@@ -1498,7 +1498,7 @@ p.hero-subtitle {
 
 .landing-page .container-galery #slider-container {
   margin-top: 20px;
-  height: 350px;
+  padding: 30px 20px;
   width: 85vw;
   max-width: 1400px;
   background: #EBEBEB;
@@ -1577,7 +1577,7 @@ p.hero-subtitle {
   padding: 10px 15px;
 }
 .container-sponsor .container .brand-sponsor {
-  width: 80%;
+  width: 100%;
   margin: auto;
   border-radius: 20px 20px 20px 20px;
   border: 1px solid #D6D3D3;
@@ -1588,13 +1588,16 @@ p.hero-subtitle {
 .container-sponsor .container .image-sponsor {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  text-align: center;
+  justify-content: center;
   margin: 20 auto;
 }
 .container-sponsor .container .image-sponsor .img-wrapper {
   flex: 1 0 auto;
-  /* flex-grow flex-shrink flex-basis */
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  margin: auto;
   display: flex;
 }
 .container-sponsor .container .image-sponsor .img-wrapper img {
@@ -2101,10 +2104,10 @@ p.hero-subtitle {
   line-height: normal;
   letter-spacing: 0.6px;
 }
-.competition-cpcc .competition-term .container .button {
+.competition-cpcc .competition-term .container .button-compe {
   align-items: center;
 }
-.competition-cpcc .competition-term .container .button p {
+.competition-cpcc .competition-term .container .button-compe p {
   padding: 14px 15px;
   margin: 0px;
   color: #FFF;
@@ -2115,34 +2118,34 @@ p.hero-subtitle {
   line-height: normal;
   letter-spacing: 1.2px;
 }
-.competition-cpcc .competition-term .container .button .register {
+.competition-cpcc .competition-term .container .button-compe .register {
   width: 100%;
   border-radius: 100px;
   background: #466496;
 }
-.competition-cpcc .competition-term .container .button .register:hover {
+.competition-cpcc .competition-term .container .button-compe .register:hover {
   transition: background-color 0.5s ease;
   width: 100%;
   border-radius: 100px;
   background: #fff;
 }
-.competition-cpcc .competition-term .container .button .register:hover p {
+.competition-cpcc .competition-term .container .button-compe .register:hover p {
   color: #466496;
 }
-.competition-cpcc .competition-term .container .button .cta {
+.competition-cpcc .competition-term .container .button-compe .cta {
   margin-top: 20px;
   width: 100%;
   border-radius: 100px;
   background: #fff;
 }
-.competition-cpcc .competition-term .container .button .cta p {
+.competition-cpcc .competition-term .container .button-compe .cta p {
   color: #466496;
 }
-.competition-cpcc .competition-term .container .button .cta:hover {
+.competition-cpcc .competition-term .container .button-compe .cta:hover {
   transition: background-color 0.5s ease;
   background: #466496;
 }
-.competition-cpcc .competition-term .container .button .cta:hover p {
+.competition-cpcc .competition-term .container .button-compe .cta:hover p {
   color: #fff;
 }
 
@@ -2349,10 +2352,10 @@ p.hero-subtitle {
   line-height: normal;
   letter-spacing: 0.6px;
 }
-.competition-gec .competition-term .container .button {
+.competition-gec .competition-term .container .button-compe {
   align-items: center;
 }
-.competition-gec .competition-term .container .button p {
+.competition-gec .competition-term .container .button-compe p {
   padding: 14px 15px;
   margin: 0px;
   color: #FFF;
@@ -2363,34 +2366,34 @@ p.hero-subtitle {
   line-height: normal;
   letter-spacing: 1.2px;
 }
-.competition-gec .competition-term .container .button .register {
+.competition-gec .competition-term .container .button-compe .register {
   width: 100%;
   border-radius: 100px;
   background: #79DC82;
 }
-.competition-gec .competition-term .container .button .register:hover {
+.competition-gec .competition-term .container .button-compe .register:hover {
   transition: background-color 0.5s ease;
   width: 100%;
   border-radius: 100px;
   background: #fff;
 }
-.competition-gec .competition-term .container .button .register:hover p {
+.competition-gec .competition-term .container .button-compe .register:hover p {
   color: #79DC82;
 }
-.competition-gec .competition-term .container .button .cta {
+.competition-gec .competition-term .container .button-compe .cta {
   margin-top: 20px;
   width: 100%;
   border-radius: 100px;
   background: #fff;
 }
-.competition-gec .competition-term .container .button .cta p {
+.competition-gec .competition-term .container .button-compe .cta p {
   color: #79DC82;
 }
-.competition-gec .competition-term .container .button .cta:hover {
+.competition-gec .competition-term .container .button-compe .cta:hover {
   transition: background-color 0.5s ease;
   background: #79DC82;
 }
-.competition-gec .competition-term .container .button .cta:hover p {
+.competition-gec .competition-term .container .button-compe .cta:hover p {
   color: #fff;
 }
 
@@ -2597,10 +2600,10 @@ p.hero-subtitle {
   line-height: normal;
   letter-spacing: 0.6px;
 }
-.competition-cesc .competition-term .container .button {
+.competition-cesc .competition-term .container .button-compe {
   align-items: center;
 }
-.competition-cesc .competition-term .container .button p {
+.competition-cesc .competition-term .container .button-compe p {
   padding: 14px 15px;
   margin: 0px;
   color: #FFF;
@@ -2611,34 +2614,34 @@ p.hero-subtitle {
   line-height: normal;
   letter-spacing: 1.2px;
 }
-.competition-cesc .competition-term .container .button .register {
+.competition-cesc .competition-term .container .button-compe .register {
   width: 100%;
   border-radius: 100px;
   background: #CDB8D4;
 }
-.competition-cesc .competition-term .container .button .register:hover {
+.competition-cesc .competition-term .container .button-compe .register:hover {
   transition: background-color 0.5s ease;
   width: 100%;
   border-radius: 100px;
   background: #fff;
 }
-.competition-cesc .competition-term .container .button .register:hover p {
+.competition-cesc .competition-term .container .button-compe .register:hover p {
   color: #CDB8D4;
 }
-.competition-cesc .competition-term .container .button .cta {
+.competition-cesc .competition-term .container .button-compe .cta {
   margin-top: 20px;
   width: 100%;
   border-radius: 100px;
   background: #fff;
 }
-.competition-cesc .competition-term .container .button .cta p {
+.competition-cesc .competition-term .container .button-compe .cta p {
   color: #CDB8D4;
 }
-.competition-cesc .competition-term .container .button .cta:hover {
+.competition-cesc .competition-term .container .button-compe .cta:hover {
   transition: background-color 0.5s ease;
   background: #CDB8D4;
 }
-.competition-cesc .competition-term .container .button .cta:hover p {
+.competition-cesc .competition-term .container .button-compe .cta:hover p {
   color: #fff;
 }
 
