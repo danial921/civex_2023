@@ -101,7 +101,7 @@
                             </a>
                         @endif
                     </div>
-                    
+
                     <div class="titleheading mb-lg-3 mb-1">Identitas Anggota</div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1">
                         <label for="staticEmail" class="form-pendaftaran mb-0">Nama Anggota </label>
@@ -173,7 +173,7 @@
                             </a>
                         @endif
                     </div>
-                    
+
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1 detail">
                         <label for="staticEmail" class="form-pendaftaran mb-1">File Bukti Bayar</label>
                         @if ($dataPeserta->bukti_bayar == '-')

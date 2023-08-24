@@ -102,7 +102,7 @@
             @else
                 <input class="form-check-input" type="radio" name="status_tim" id="exampleRadios2" value="11">
             @endif
-           
+
 
             <label class="form-check-label c-red" for="exampleRadios2">
                 Tolak Biodata
