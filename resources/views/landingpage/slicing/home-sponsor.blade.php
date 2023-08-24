@@ -4,7 +4,7 @@
             <p>Sponsored by</p>
         </div>
     </div>
-    <div data-entrance="from-bottom" class="container pt-2 pt-lg-4">
+    <div data-entrance="from-bottom" class="container pt-4 pt-lg-4">
         <div class="brand-sponsor">
             <div class="image-sponsor">
                 <div class="img-wrapper">
