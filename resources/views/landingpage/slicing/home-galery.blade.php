@@ -4,13 +4,13 @@
         <img class="ornamen2" src="{{ asset('civex/img/landingpage/activity-ornamen5.svg') }}" alt="">
     </div>
     <div class="container">
-        <p class="title">Event Gallery
-            <img src="{{ asset('civex/img/landingpage/galery-miracle.svg') }}" alt="">
+        <p class="title" data-entrance="from-left">Event Gallery
+            <img  src="{{ asset('civex/img/landingpage/galery-miracle.svg') }}" alt="">
         </p>
-        <div class="sub">
+        <div class="sub" data-entrance="from-right">
             <p>from the past</p>
         </div>
-        <div id="container">
+        <div id="container" data-entrance="from-bottom">
             <div id="slider-container">
                 <span onclick="slideRight()" style="box-shadow: none;" class="btn"><img
                         src="{{ asset('civex/img/landingpage/galeri-icon-prev.svg') }}" alt=""></span>

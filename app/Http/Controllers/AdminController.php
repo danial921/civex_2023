@@ -60,8 +60,8 @@ class AdminController extends Controller
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
                 'subject' => 'Konfirmasi Pendaftaran',
-                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Geotechnical Engineering Competition Kami 
-                ingin memberitahu Anda bahwa data pendaftaran tim Anda telah direview oleh tim. Akan tetapi 
+                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Geotechnical Engineering Competition Kami
+                ingin memberitahu Anda bahwa data pendaftaran tim Anda telah direview oleh tim. Akan tetapi
                 terdapat kesalahan berkas atau data dalam pendaftaran anda',
                 'pesan2' => 'Silahkan menghubungi Contact Person',
             ]));
@@ -69,8 +69,8 @@ class AdminController extends Controller
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
                 'subject' => 'Konfirmasi Biodata Tim',
-                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Geotechnical Engineering Competition Kami 
-                ingin memberitahu Anda bahwa biodata tim Anda telah direview oleh tim. Akan tetapi 
+                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Geotechnical Engineering Competition Kami
+                ingin memberitahu Anda bahwa biodata tim Anda telah direview oleh tim. Akan tetapi
                 terdapat kesalahan berkas atau data dalam biodata tim anda',
                 'pesan2' => 'Silahkan mengisi ulang biodata tim anda atau menghubungi Contact Person',
             ]));
@@ -138,10 +138,10 @@ class AdminController extends Controller
         DB::table('cppc_teams')  // Ganti 'pesertas' dengan nama tabel Anda
         ->where('id', $id)
         ->update(['status_tim' => $request->input('status_tim')]);
-        
+
         $data = DB::table('cppc_teams')->where('id', $id)->first();
         DB::table('users')->where('id', $data->id_user)->update(['status' => $request->input('status_tim')]);
-        
+
         if($request->input('status_tim') === '1'){
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
@@ -155,8 +155,8 @@ class AdminController extends Controller
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
                 'subject' => 'Konfirmasi Pendaftaran',
-                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Construction Project Planning Competition Kami 
-                ingin memberitahu Anda bahwa data pendaftaran tim Anda telah direview oleh tim. Akan tetapi 
+                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Construction Project Planning Competition Kami
+                ingin memberitahu Anda bahwa data pendaftaran tim Anda telah direview oleh tim. Akan tetapi
                 terdapat kesalahan berkas atau data dalam pendaftaran anda',
                 'pesan2' => 'Silahkan menghubungi Contact Person',
             ]));
@@ -164,8 +164,8 @@ class AdminController extends Controller
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
                 'subject' => 'Konfirmasi Biodata Tim',
-                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Construction Project Planning Competition Kami 
-                ingin memberitahu Anda bahwa biodata tim Anda telah direview oleh tim. Akan tetapi 
+                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Construction Project Planning Competition Kami
+                ingin memberitahu Anda bahwa biodata tim Anda telah direview oleh tim. Akan tetapi
                 terdapat kesalahan berkas atau data dalam biodata tim anda',
                 'pesan2' => 'Silahkan mengisi ulang biodata tim anda atau menghubungi Contact Person',
             ]));
@@ -233,7 +233,7 @@ class AdminController extends Controller
         DB::table('cesc_teams')  // Ganti 'pesertas' dengan nama tabel Anda
         ->where('id', $id)
         ->update(['status_tim' => $request->input('status_tim')]);
-        
+
         $data = DB::table('cesc_teams')->where('id', $id)->first();
 
         DB::table('users')->where('id', $data->id_user)->update(['status' => $request->input('status_tim')]);
@@ -251,8 +251,8 @@ class AdminController extends Controller
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
                 'subject' => 'Konfirmasi Pendaftaran',
-                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Civil Engineering Student Competition Kami 
-                ingin memberitahu Anda bahwa data pendaftaran tim Anda telah direview oleh tim. Akan tetapi 
+                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Civil Engineering Student Competition Kami
+                ingin memberitahu Anda bahwa data pendaftaran tim Anda telah direview oleh tim. Akan tetapi
                 terdapat kesalahan berkas atau data dalam pendaftaran anda',
                 'pesan2' => 'Silahkan menghubungi Contact Person',
             ]));
@@ -260,8 +260,8 @@ class AdminController extends Controller
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
                 'subject' => 'Konfirmasi Biodata Tim',
-                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Civil Engineering Student Competition Kami 
-                ingin memberitahu Anda bahwa biodata tim Anda telah direview oleh tim. Akan tetapi 
+                'pesan' => 'Terima kasih atas partisipasi Anda dalam perlombaan Civil Engineering Student Competition Kami
+                ingin memberitahu Anda bahwa biodata tim Anda telah direview oleh tim. Akan tetapi
                 terdapat kesalahan berkas atau data dalam biodata tim anda',
                 'pesan2' => 'Silahkan mengisi ulang biodata tim anda atau menghubungi Contact Person',
             ]));
@@ -283,7 +283,7 @@ class AdminController extends Controller
                 'pesan2' => 'Selamat atas perjuangannya dan tetap semangat',
             ]));
         }elseif($request->input('status_tim') === '31'){
-            
+
             Notification::route('mail', $data->ketua_email)->notify(new FormNotification([
                 'nama_tim' => $data->nama_tim,
                 'subject' => 'Pengumuman Tidak Lolos Penyisihan Tim',

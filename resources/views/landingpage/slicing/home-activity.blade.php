@@ -6,9 +6,9 @@
     </div>
     <div class="container">
         <div class="title-home">
-            <img src="{{ asset('civex/img/landingpage/activity-title.svg') }}" alt="" class="mx-auto d-block bigtitle">
+            <img data-entrance="from-bottom" src="{{ asset('civex/img/landingpage/activity-title.svg') }}" alt="" class="mx-auto d-block bigtitle">
             <div class="row event">
-                <div class="col-lg-4 col-md-6 col-12 px-4 pb-4">
+                <div data-entrance="from-left" class="col-lg-4 col-md-6 col-12 px-4 pb-4">
                     <div class="opening">
                         <img class="logo" src="{{ asset('civex/img/landingpage/activity-icon-opening.svg') }}"
                             alt="">
@@ -19,7 +19,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12 px-4 pb-4">
+                <div data-entrance="from-bottom" class="col-lg-4 col-md-6 col-12 px-4 pb-4">
                     <div class="competition">
                         <img class="logo" src="{{ asset('civex/img/landingpage/activity-icon-competition.svg') }}"
                             alt="">
@@ -30,7 +30,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12 px-4 pb-4">
+                <div data-entrance="from-right" class="col-lg-4 col-md-6 col-12 px-4 pb-4">
                     <div class="closing">
                         <img class="logo" src="{{ asset('civex/img/landingpage/activity-icon-closing.svg') }}"
                             alt="">
