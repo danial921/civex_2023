@@ -36,9 +36,10 @@ class DashboardController extends Controller
         $count = gec_form::count();
         if($count){
             $urutan = $count;
-        }elseif($daftar_ke){
-            $urutan = $daftar_ke->id;
         }
+        // elseif($daftar_ke){
+        //     $urutan = $daftar_ke->id;
+        // }
         
         if($urutan <= 15){
             $harga = 'Rp.250,000,00';
@@ -52,7 +53,7 @@ class DashboardController extends Controller
             "email" => auth()->user()->email,
             'nomerhp' => auth()->user()->no_telp,
             'biaya_daftar' => $harga,
-            'rekening_transfer' => '12345678991 (BCA)',
+            'rekening_transfer' => '8175547581 (BCA)',
             'urutan' => $urutan,
             'id' => 0,
             'count' => $count
@@ -95,11 +96,12 @@ class DashboardController extends Controller
         $count = cppc_form::count();
         if($count){
             $urutan = $count;
-        }elseif($daftar_ke){
-            $urutan = $daftar_ke->id;
         }
+        // elseif($daftar_ke){
+        //     $urutan = $daftar_ke->id;
+        // }
 
-        if($urutan <= 5){
+        if($urutan <= 15){
             $harga = 'Rp.150,000,00';
         }else{
             $harga = 'Rp.180,000,00';
@@ -111,7 +113,7 @@ class DashboardController extends Controller
             "email" => auth()->user()->email,
             'nomerhp' => auth()->user()->no_telp,
             'biaya_daftar' => $harga,
-            'rekening_transfer' => '12345678991 (BCA)',
+            'rekening_transfer' => '8175547581 (BCA)',
             'urutan' => $urutan
         ]);
     }
@@ -149,10 +151,11 @@ class DashboardController extends Controller
         $daftar_ke = cesc_form::where('id_user', auth()->user()->id)->first(); 
         $urutan = 0;
         $count = cesc_form::count();
-        if($count){
-            if($daftar_ke->id == $count) $urutan = $count;
-            else $urutan = $daftar_ke->id;
-        }
+        // if($count){
+        //     if($daftar_ke->id == $count) $urutan = $count;
+        //     else $urutan = $daftar_ke->id;
+        // }
+        $urutan = $count;
 
         if($urutan <= 15){
             $harga = 'Rp.65,000,00';
@@ -166,7 +169,7 @@ class DashboardController extends Controller
             "email" => auth()->user()->email,
             'nomerhp' => auth()->user()->no_telp,
             'biaya_daftar' => $harga,
-            'rekening_transfer' => '12345678991 (BCA)',
+            'rekening_transfer' => '8175547581 (BCA)',
             'urutan' => $urutan
         ]);
     }
