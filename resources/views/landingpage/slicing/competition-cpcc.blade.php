@@ -89,7 +89,7 @@
                     </table>
                     <p class="limited">* limited quota</p>
                 </div>
-                <div class="col-4 col-md-6 col-12 button mt-md-0 mt-3">
+                <div class="col-4 col-md-6 col-12 button-compe mt-md-0 mt-3">
                     <a href="/pendaftaran-cppc" target="_blank"> <button class="register">
                             <p>Register Now!</p>
                         </button>

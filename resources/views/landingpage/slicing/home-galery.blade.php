@@ -10,7 +10,7 @@
         <div class="sub" data-entrance="from-right">
             <p>from the past</p>
         </div>
-        <div id="container" data-entrance="from-bottom">
+        <div id="container m-0" data-entrance="from-bottom">
             <div id="slider-container">
                 <span onclick="slideRight()" style="box-shadow: none;" class="btn"><img
                         src="{{ asset('civex/img/landingpage/galeri-icon-prev.svg') }}" alt=""></span>

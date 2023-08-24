@@ -7,7 +7,7 @@
     <div class="container d-flex align-items-center justify-content-center">
         <div>
             <p class="text-center title">Launching Soon</p>
-            <p class="text-center sub">Opening</p>
+            <p class="text-center sub">Merchandise</p>
         </div>
     </div>
     <div class="container pt-0">
