@@ -76,17 +76,17 @@
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1">
                         <label for="staticEmail" class="form-pendaftaran mb-0">Nama Anggota 2</label>
                         <input type="text" readonly disabled class="form-control" id="staticEmail"
-                            value="{{ $dataPeserta->anggota1_nama }}">
+                            value="{{ $dataPeserta->anggota2_nama }}">
                     </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1">
                         <label for="staticEmail" class="form-pendaftaran mb-0">Prodi Anggota 2</label>
                         <input type="text" readonly disabled class="form-control" id="staticEmail"
-                            value="{{ $dataPeserta->anggota1_prodi }}">
+                            value="{{ $dataPeserta->anggota2_prodi }}">
                     </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1">
                         <label for="staticEmail" class="form-pendaftaran mb-0">NIM/NRP Anggota 2</label>
                         <input type="text" readonly disabled class="form-control" id="staticEmail"
-                            value="{{ $dataPeserta->anggota1_nim }}">
+                            value="{{ $dataPeserta->anggota2_nim }}">
                     </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1 detail">
                         <label for="staticEmail" class="form-pendaftaran mb-1">File Bukti Bayar</label>
