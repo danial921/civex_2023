@@ -32,6 +32,10 @@ Route::get('/closing', function () {$active = 'closing'; $time = "2023-11-1 10:0
 Route::get('/merchandise', function () {$active = 'merchandise'; $time = "2023-09-12 12:00:00"; return view('landingpage.merchandise', compact('active', 'time'));});
 Route::get('/webinar-test', function () {$active = 'merchandise'; return view('landingpage.webinar-show', compact('active'));});
 
+// documentPreview
+Route::get('/pdf', function () {return view('general.documentPreview.pdf');});
+Route::get('/image', function () {return view('general.documentPreview.image');});
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::middleware('isAdmin')->group(function () {
         Route::get('/admin/gec', [AdminController::class, 'gec_dashboard'])->name('/admin/gec');
