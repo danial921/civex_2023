@@ -134,7 +134,7 @@
                         name="anggota2_nama" placeholder="Nama Anggota 2" required>
                         @error('anggota2_nama')
                             <div class="alert alert-danger">{{ $message }}</div>
-                        @enderror                    
+                        @enderror
                 </div>
                 <div class="row">
                     <div class="col-lg-6 col-12 mb-0">
@@ -145,7 +145,7 @@
                                 placeholder="Anggota 2 Program Studi" name="anggota2_prodi" required>
                                 @error('anggota2_prodi')
                                     <div class="alert alert-danger">{{ $message }}</div>
-                                @enderror 
+                                @enderror
                         </div>
                     </div>
                     <div class="col-lg-6 col-12 mb-0">
@@ -156,7 +156,7 @@
                                 placeholder="Anggota 2 Nomer Induk Mahasiswa" name="anggota2_nim" required>
                                 @error('anggota2_nim')
                                     <div class="alert alert-danger">{{ $message }}</div>
-                                @enderror 
+                                @enderror
                         </div>
                     </div>
                 </div>
@@ -172,7 +172,7 @@
                         </div>
                     </div>
                 </div>
-                <label for="exampleFormControlInput1 formtitle" class="image-sub-label mb-1 mt-1">Upload SK Mahasiswa Aktif, Scan KTM Ketua dan Anggota (Dalam 1 berkas PDF)</label>
+                <label for="exampleFormControlInput1 formtitle" class="image-sub-label mb-1 mt-1">Upload SK Mahasiswa Aktif, Scan KTM Ketua, Scan KTM Anggota dan Formulir Pendaftaran (Dalam 1 berkas PDF)</label>
                 <div class="d-flex justify-content-end align-items-center mt-2">
                     <input type="button" value="submit" class="btn btn-civex  mg-b-20 mg-r-20" id="btnSubmit" data-toggle="modal" data-animation="effect-scale" data-target="#simpan"></input>
                 </div>
@@ -200,5 +200,5 @@
         </div>
     </div>
 
-    
+
 <script src=" {{ asset('js/form-gec.js') }} " ></script>

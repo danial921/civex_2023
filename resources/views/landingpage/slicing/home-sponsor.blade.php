@@ -4,16 +4,16 @@
             <p>Sponsored by</p>
         </div>
     </div>
-    <div data-entrance="from-bottom" class="container pt-2 pt-lg-4">
-        <div class=" brand-sponsor">
+    <div data-entrance="from-bottom" class="container pt-4 pt-lg-4">
+        <div class="brand-sponsor">
             <div class="image-sponsor">
                 <div class="img-wrapper">
-                    <img src="{{ asset('civex/galery/sponsor/1.svg') }}" alt="Image 1">
+                    <img src="{{ asset('civex/img/icon/logo-geosistem.png') }}" alt="Image 1">
                 </div>
                 <div class="img-wrapper">
-                    <img src="{{ asset('civex/galery/sponsor/2.svg') }}" alt="Image 3">
+                    <img src="{{ asset('civex/img/icon/logo-hatti.png') }}" alt="Image 3">
                 </div>
-                <div class="img-wrapper">
+                {{-- <div class="img-wrapper">
                     <img src="{{ asset('civex/galery/sponsor/3.svg') }}" alt="Image 3">
                 </div>
                 <div class="img-wrapper">
@@ -21,7 +21,7 @@
                 </div>
                 <div class="img-wrapper">
                     <img src="{{ asset('civex/galery/sponsor/5.svg') }}" alt="Image 3">
-                </div>
+                </div> --}}
             </div>
 
         </div>
