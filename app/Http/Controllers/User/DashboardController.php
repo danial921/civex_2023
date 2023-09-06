@@ -135,7 +135,7 @@ class DashboardController extends Controller
             'institusi' => $request->institusi,
             'ketua_email' => auth()->user()->email,
             'ketua_notelp' => $request->ketua_notelp,
-            'bukti_bayar' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CPPC_bukti-bayar".$request->file('bukti_bayar')->extension(), $request->file('bukti_bayar')),
+            'bukti_bayar' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CPPC_bukti-bayar.".$request->file('bukti_bayar')->extension(), $request->file('bukti_bayar')),
             'status_tim' => '00'
         ]);  
 
@@ -191,7 +191,7 @@ class DashboardController extends Controller
             'sekolah' => $request->sekolah,
             'ketua_email' => auth()->user()->email,
             'ketua_notelp' => $request->ketua_notelp,
-            'bukti_bayar' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CESC_bukti-bayar".$request->file('bukti_bayar')->extension(), $request->file('bukti_bayar')),
+            'bukti_bayar' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CESC_bukti-bayar.".$request->file('bukti_bayar')->extension(), $request->file('bukti_bayar')),
             'status_tim' => '00'
         ]);  
 

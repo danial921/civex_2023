@@ -77,23 +77,23 @@ class CppcController extends Controller
             'ketua_notelp' => $request->notelp,
             'ketua_email' => $request->email,
             'ketua_nim' => $request->ketua_nim,
-            'ketua_ktm' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CPPC_ketua_ktm".$request->file('ketua_ktm')->extension(), $request->file('ketua_ktm')),
-            'ketua_sk' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CPPC_ketua_sk".$request->file('ketua_sk')->extension(), $request->file('ketua_sk')),
+            'ketua_ktm' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CPPC_ketua_ktm.".$request->file('ketua_ktm')->extension(), $request->file('ketua_ktm')),
+            'ketua_sk' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CPPC_ketua_sk.".$request->file('ketua_sk')->extension(), $request->file('ketua_sk')),
             'anggota1_nama' => 'required',
             'anggota1_prodi' => 'required',
             'anggota1_nim' => 'required',
             'anggota1_notelp' => 'required|numeric',
             'anggota1_email' => 'required|email',
-            'anggota1_ktm' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CPPC_anggota1_ktm".$request->file('anggota1_ktm')->extension(), $request->file('anggota1_ktm')),
-            'anggota1_sk' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CPPC_anggota1_sk".$request->file('anggota1_sk')->extension(), $request->file('anggota1_sk')),
+            'anggota1_ktm' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CPPC_anggota1_ktm.".$request->file('anggota1_ktm')->extension(), $request->file('anggota1_ktm')),
+            'anggota1_sk' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CPPC_anggota1_sk.".$request->file('anggota1_sk')->extension(), $request->file('anggota1_sk')),
             'anggota2_nama' => 'required',
             'anggota2_prodi' => 'required',
             'anggota2_nim' => 'required',
             'anggota2_notelp' => 'required|numeric',
             'anggota2_email' => 'required|email',
-            'anggota2_ktm' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CPPC_anggota2_ktm".$request->file('anggota2_ktm')->extension(), $request->file('anggota2_ktm')),
-            'anggota2_sk' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CPPC_anggota2_sk".$request->file('anggota2_sk')->extension(), $request->file('anggota2_sk')),
-            'form_pendaftaran' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CPPC_form_pendaftaran".$request->file('form_pendaftaran')->extension(), $request->file('form_pendaftaran')),
+            'anggota2_ktm' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CPPC_anggota2_ktm.".$request->file('anggota2_ktm')->extension(), $request->file('anggota2_ktm')),
+            'anggota2_sk' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CPPC_anggota2_sk.".$request->file('anggota2_sk')->extension(), $request->file('anggota2_sk')),
+            'form_pendaftaran' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CPPC_form_pendaftaran.".$request->file('form_pendaftaran')->extension(), $request->file('form_pendaftaran')),
             'status_tim' => '12'
         ]);
 
@@ -205,7 +205,7 @@ class CppcController extends Controller
         $data = cppc_form::where('id_user', auth()->user()->id)->first();
         $gdriveController = new GoogleDriveController();
         cppc_form::where('id_user', auth()->user()->id)->update([
-            'submission_proposal' => $this->FetchApiController->uploadToAPI($request->nama_tim."_cppc_proposal".$request->file('submission_proposal')->extension(), $request->file('submission_proposal')),
+            'submission_proposal' => $this->FetchApiController->uploadToAPI($request->nama_tim."_cppc_proposal.".$request->file('submission_proposal')->extension(), $request->file('submission_proposal')),
             'status_proposal' => '1'
         ]);
 
@@ -241,7 +241,7 @@ class CppcController extends Controller
         $data = cppc_form::where('id_user', auth()->user()->id)->first();
         $gdriveController = new GoogleDriveController();
         cppc_form::where('id_user', auth()->user()->id)->update([
-            'ppt' => $this->FetchApiController->uploadToAPI($request->nama_tim."_cppc_ppt".$request->file('ppt')->extension(), $request->file('ppt')),
+            'ppt' => $this->FetchApiController->uploadToAPI($request->nama_tim."_cppc_ppt.".$request->file('ppt')->extension(), $request->file('ppt')),
             'url_video' => $request->input('url_video')
         ]);
 

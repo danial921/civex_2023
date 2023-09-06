@@ -80,7 +80,7 @@ class GecController extends Controller
             'anggota2_nama' => $request->anggota2_nama,
             'anggota2_prodi' => $request->anggota2_prodi,
             'anggota2_nim' => $request->anggota2_nim,
-            'file_zip' => $this->FetchApiController->uploadToAPI($request->nama_tim."_GEC_dokumen".$request->file('file_zip')->extension(), $request->file('file_zip')),
+            'file_zip' => $this->FetchApiController->uploadToAPI($request->nama_tim."_GEC_dokumen.".$request->file('file_zip')->extension(), $request->file('file_zip')),
             'status_tim' => "12"
         ]);
 
@@ -191,7 +191,7 @@ class GecController extends Controller
         $data = gec_form::where('id_user', auth()->user()->id)->first();
         $gdriveController = new GoogleDriveController();
         gec_form::where('id_user', auth()->user()->id)->update([
-            'submission_proposal' => $this->FetchApiController->uploadToAPI($request->nama_tim."_GEC_proposal".$request->file('submission_proposal')->extension(), $request->file('submission_proposal')),
+            'submission_proposal' => $this->FetchApiController->uploadToAPI($request->nama_tim."_GEC_proposal.".$request->file('submission_proposal')->extension(), $request->file('submission_proposal')),
             'status_proposal' => '1',
             'url_video' => $request->input('url_video')
         ]);
