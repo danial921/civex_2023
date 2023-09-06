@@ -9,9 +9,14 @@ use App\Http\Requests\cesc\ProposalRequest;
 use App\Models\cesc_form;
 use App\Models\User;
 use App\Http\Controllers\GoogleDriveController;
+use App\Http\Controllers\FetchApiController;
 
 class CescController extends Controller
 {
+    public function __construct(){
+        $this->FetchApiController = new FetchApiController();
+    }
+    
     public function CESC(){
         if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31' && auth()->user()->status !== '4' && auth()->user()->status !== '41'){
             return redirect('/cesc/verifikasi');
@@ -59,17 +64,17 @@ class CescController extends Controller
             'ketua_nama' => $request->ketua_nama,
             'ketua_notelp' => $request->ketua_notelp,
             'ketua_kelas' => $request->ketua_kelas,
-            'ketua_kartu' => $gdriveController->uploadImageToGDrive($request->nama_tim."_CESC_ketua_ktm", $request->file('ketua_kartu')),
-            'ketua_foto' => $gdriveController->uploadImageToGDrive($request->nama_tim."_CESC_ketua_foto", $request->file('ketua_foto')),
-            'ketua_follow' => $gdriveController->uploadImageToGDrive($request->nama_tim."_CESC_ketua_follow", $request->file('ketua_follow')),
-            'ketua_twibbon' => $gdriveController->uploadImageToGDrive($request->nama_tim."_CESC_ketua_twibbon", $request->file('ketua_twibbon')),
+            'ketua_kartu' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CESC_ketua_ktm".$request->file('ketua_kartu')->extension(), $request->file('ketua_kartu')),
+            'ketua_foto' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CESC_ketua_foto".$request->file('ketua_foto')->extension(), $request->file('ketua_foto')),
+            'ketua_follow' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CESC_ketua_follow".$request->file('ketua_follow')->extension(), $request->file('ketua_follow')),
+            'ketua_twibbon' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CESC_ketua_twibbon".$request->file('ketua_twibbon')->extension(), $request->file('ketua_twibbon')),
             'anggota_nama' => $request->anggota_nama,
             'anggota_notelp' => $request->anggota_notelp,
             'anggota_kelas' => $request->anggota_kelas,
-            'anggota_kartu' => $gdriveController->uploadImageToGDrive($request->nama_tim."_CESC_anggota_ktm", $request->file('anggota_kartu')),
-            'anggota_foto' => $gdriveController->uploadImageToGDrive($request->nama_tim."_CESC_anggota_foto", $request->file('anggota_foto')),
-            'anggota_follow' => $gdriveController->uploadImageToGDrive($request->nama_tim."_CESC_anggota_follow", $request->file('anggota_follow')),
-            'anggota_twibbon' => $gdriveController->uploadImageToGDrive($request->nama_tim."_CESC_anggota_twibbon", $request->file('anggota_twibbon')),
+            'anggota_kartu' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CESC_anggota_ktm".$request->file('anggota_kartu')->extension(), $request->file('anggota_kartu')),
+            'anggota_foto' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CESC_anggota_foto".$request->file('anggota_foto')->extension(), $request->file('anggota_foto')),
+            'anggota_follow' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CESC_anggota_follow".$request->file('anggota_follow')->extension(), $request->file('anggota_follow')),
+            'anggota_twibbon' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CESC_anggota_twibbon".$request->file('anggota_twibbon')->extension(), $request->file('anggota_twibbon')),
             'status_tim' => '12'
         ]);
 
@@ -147,7 +152,7 @@ class CescController extends Controller
         $gdriveController = new GoogleDriveController();
 
         cesc_form::where('id_user', auth()->user()->id)->update([
-            'submission_proposal' => $gdriveController->uploadImageToGDrive($request->nama_tim."_CESC_proposal", $request->file('submission_proposal')),
+            'submission_proposal' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CESC_proposal".$request->file('submission_proposal')->extension(), $request->file('submission_proposal')),
             'status_proposal' => '1'
         ]);
 

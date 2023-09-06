@@ -44,7 +44,7 @@
     <header class="header">
         <img src="{{ asset('civex/img/documentLogo.svg') }}" alt="Logo Perusahaan" class="logo">
     </header>
-    <iframe src="https://pii.or.id/uploads/dummies.pdf"></iframe>
+    <iframe src="{{ $url }}"></iframe>
 </body>
 
 </html>
