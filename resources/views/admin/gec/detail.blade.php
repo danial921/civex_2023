@@ -88,34 +88,22 @@
                         <input type="text" readonly disabled class="form-control" id="staticEmail"
                             value="{{ $dataPeserta->anggota2_nim }}">
                     </div>
-                    <div class="col-lg-6 col-12 mb-lg-3 mb-1 detail">
-                        <label for="staticEmail" class="form-pendaftaran mb-1">File Bukti Bayar</label>
-                        @if ($dataPeserta->bukti_bayar == null)
-                            <p class="w-100 text-center"><i>tim belum mengirimkan berkas</i></p>
-                        @elseif ($dataPeserta->bukti_bayar != null)
-                            <a href="{{ $dataPeserta->bukti_bayar }}" class="" target="_blank">
-                                <button type="button" class="w-100 btn btn-download">
-                                    <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
-                                        width="20" height="20">
-                                        Bukti Bayar
-                                </button>
-                            </a>
-                        @endif
-                    </div>
 
                     <div class="titleheading mb-lg-3 mb-1">Berkas Tim</div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1 detail">
                         <label for="staticEmail" class="form-pendaftaran mb-1">File Pembayaran Tim</label>
-                        @if ($dataPeserta->submission_proposal == null)
+                        @if ($dataPeserta->bukti_bayar == null)
                             <p class="w-100 text-center"><i>tim belum mengirimkan berkas</i></p>
-                        @elseif ($dataPeserta->submission_proposal != null)
-                            <a href="{{ $dataPeserta->submission_proposal }}" class="" target="_blank">
-                                <button type="button" class="w-100 btn btn-download">
+                        @elseif ($dataPeserta->bukti_bayar != null)
+                            <form method="POST" action="{{ route('show-image') }}" target="_blank">
+                                @csrf
+                                <input type="hidden" name="url" value=" {{ $dataPeserta->bukti_bayar }} ">
+                                <button type="submit" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
-                                    File Pembayaran Tim
+                                        Bukti Bayar
                                 </button>
-                            </a>
+                            </form>
                         @endif
                     </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1 detail">
@@ -123,13 +111,15 @@
                         @if ($dataPeserta->file_zip == '-')
                             <p class="w-100 text-center"><i>tim belum mengirimkan berkas</i></p>
                         @elseif ($dataPeserta->file_zip != '-')
-                            <a href="{{ $dataPeserta->file_zip }}" class="" target="_blank">
-                                <button type="button" class="w-100 btn btn-download">
+                            <form method="POST" action="{{ route('show-pdf') }}" target="_blank">
+                                @csrf
+                                <input type="hidden" name="url" value=" {{ $dataPeserta->file_zip }} ">
+                                <button type="submit" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
-                                    File Berkas Tim
+                                        File Berkas Tim
                                 </button>
-                            </a>
+                            </form>
                         @endif
                     </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1 detail">
@@ -137,13 +127,15 @@
                         @if ($dataPeserta->submission_proposal == null)
                             <p class="w-100 text-center"><i>tim belum mengirimkan berkas</i></p>
                         @elseif ($dataPeserta->submission_proposal != null)
-                            <a href="{{ $dataPeserta->submission_proposal }}" class="" target="_blank">
-                                <button type="button" class="w-100 btn btn-download">
+                            <form method="POST" action="{{ route('show-pdf') }}" target="_blank">
+                                @csrf
+                                <input type="hidden" name="url" value=" {{ $dataPeserta->submission_proposal }} ">
+                                <button type="submit" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
-                                    Submission Proposal
+                                        File Proposal Tim
                                 </button>
-                            </a>
+                            </form>
                         @endif
                     </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1">

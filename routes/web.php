@@ -8,6 +8,7 @@ use App\Http\Controllers\User\GecController;
 use App\Http\Controllers\User\CppcController;
 use App\Http\Controllers\User\CescController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\showFileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,10 @@ Route::get('/opening', function () {$active = 'opening'; $time = "2023-09-20 12:
 Route::get('/closing', function () {$active = 'closing'; $time = "2023-11-1 10:00:00"; return view('landingpage.closing', compact('active', 'time'));});
 Route::get('/merchandise', function () {$active = 'merchandise'; $time = "2023-09-12 12:00:00"; return view('landingpage.merchandise', compact('active', 'time'));});
 Route::get('/webinar-test', function () {$active = 'merchandise'; return view('landingpage.webinar-show', compact('active'));});
+
+// documentPreview
+Route::post('/pdf', [showFileController::class, 'pdf'])->name('show-pdf');
+Route::post('/image', [showFileController::class, 'image'])->name('show-image');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::middleware('isAdmin')->group(function () {
