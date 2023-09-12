@@ -44,8 +44,8 @@ class CreateCppcTeamsTable extends Migration
             $table->string('status_tim')->default('-');
             $table->string('submission_proposal')->default('-');
             $table->integer('status_proposal')->default(0);
-            $table->string('aanwijzing_tanya')->default('-');
-            $table->string('aanwijzing_jawab')->default('-');
+            $table->string('aanwijzing_tanya')->nullable();
+            $table->string('aanwijzing_jawab')->nullable();
             $table->string('bukti_bayar')->default('-');
             $table->timestamps();
         });
