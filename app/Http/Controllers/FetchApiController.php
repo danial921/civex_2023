@@ -18,6 +18,11 @@ class FetchApiController extends Controller
             'filename' => $filename,
         ]);
 
-        return $response->json()['url'];
+        if(isset($response->json()['error'])){
+            dd($response->json()['error']);
+        }else{
+            return $response->json()['url'];
+        }
+        
     }
 }
