@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Notifications\FormNotification;
 use Illuminate\Support\Facades\Notification;
+use App\Models\gec_team;
+use App\Models\cppc_team;
 
 class AdminController extends Controller
 {
@@ -104,6 +106,38 @@ class AdminController extends Controller
         return redirect('admin/detailteam-gec/'.$id);
     }
 
+    public function gec_aanwijizing_table()
+    {
+        $totalPertanyaan = gec_team::whereNotNull('aanwijzing_tanya')->count();
+        $pertanyaanSudahdijawab = gec_team::whereNotNull('aanwijzing_tanya')->whereNotNull('aanwijzing_jawab')->count();
+        $pertanyaanBelumTerjawab = gec_team::whereNotNull('aanwijzing_tanya')->whereNull('aanwijzing_jawab')->count();
+        $teams = gec_team::whereNotNull('aanwijzing_tanya')->get();
+
+
+        return view('admin.gec.aanwijizing',
+        [
+            "username" => "Admin CIVEX 2023",
+            "totalPertanyaan" => $totalPertanyaan,
+            "pertanyaanSudahdijawab" => $pertanyaanSudahdijawab,
+            "pertanyaanBelumTerjawab" => $pertanyaanBelumTerjawab,
+            "teams" => $teams,
+        ]);
+    }
+
+    public function gec_aanwijizing_detail($id)
+    {
+        {
+            $dataPeserta = DB::table('gec_teams')->where('id',$id)->first();
+
+            return view('admin.gec.detail_aanwijizing',
+            [
+                'username' => 'Admin CIVEX 2023',
+                'dataPeserta' => $dataPeserta,
+
+            ]);
+        }
+    }
+
     public function cppc_dashboard()
     {
         $peserta = DB::table('cppc_teams')->get();
@@ -197,6 +231,38 @@ class AdminController extends Controller
         }
 
         return redirect('admin/detailteam-cppc/'.$id);
+    }
+
+    public function cppc_aanwijizing_table()
+    {
+        $totalPertanyaan = cppc_team::whereNotNull('aanwijzing_tanya')->count();
+        $pertanyaanSudahdijawab = cppc_team::whereNotNull('aanwijzing_tanya')->whereNotNull('aanwijzing_jawab')->count();
+        $pertanyaanBelumTerjawab = cppc_team::whereNotNull('aanwijzing_tanya')->whereNull('aanwijzing_jawab')->count();
+        $teams = cppc_team::whereNotNull('aanwijzing_tanya')->get();
+
+
+        return view('admin.cppc.aanwijizing',
+        [
+            "username" => "Admin CIVEX 2023",
+            "totalPertanyaan" => $totalPertanyaan,
+            "pertanyaanSudahdijawab" => $pertanyaanSudahdijawab,
+            "pertanyaanBelumTerjawab" => $pertanyaanBelumTerjawab,
+            "teams" => $teams,
+        ]);
+    }
+
+    public function cppc_aanwijizing_detail($id)
+    {
+        {
+            $dataPeserta = DB::table('cppc_teams')->where('id',$id)->first();
+
+            return view('admin.cppc.detail_aanwijizing',
+            [
+                'username' => 'Admin CIVEX 2023',
+                'dataPeserta' => $dataPeserta,
+
+            ]);
+        }
     }
 
     public function cesc_dashboard()
@@ -312,4 +378,5 @@ class AdminController extends Controller
 
         return redirect('admin/detailteam-cesc/'.$id);
     }
+
 }

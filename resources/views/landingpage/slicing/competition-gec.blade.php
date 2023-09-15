@@ -83,8 +83,8 @@
                     </div>
                     <table>
                         <tr>
-                            <td>Early Bird*</td>
-                            <td>: Rp 250.000</td>
+                            <td><s>Early Bird*</s></td>
+                            <td><s>: Rp 250.000</s><span class="c-red"><b>&nbsp; (kuota habis)</b></span></td>
                         </tr>
                         <tr>
                             <td>Normal Price</td>
