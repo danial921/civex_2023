@@ -22,10 +22,10 @@ use App\Http\Controllers\showFileController;
 */
 
 // route baru ada disini
-Route::get('/admin/gec-aanwijizing', [AdminController::class, 'gec_aanwijizing_table']);
-Route::get('/admin/detailpertanyaan-gec/{id}', [AdminController::class, 'gec_aanwijizing_detail']);
-Route::get('/admin/cppc-aanwijizing', [AdminController::class, 'cppc_aanwijizing_table']);
-Route::get('/admin/detailpertanyaan-cppc/{id}', [AdminController::class, 'cppc_aanwijizing_detail']);
+// Route::get('/admin/gec-aanwijizing', [AdminController::class, 'gec_aanwijizing_table']);
+// Route::get('/admin/detailpertanyaan-gec/{id}', [AdminController::class, 'gec_aanwijizing_detail']);
+// Route::get('/admin/cppc-aanwijizing', [AdminController::class, 'cppc_aanwijizing_table']);
+// Route::get('/admin/detailpertanyaan-cppc/{id}', [AdminController::class, 'cppc_aanwijizing_detail']);
 
 
 //landing page
