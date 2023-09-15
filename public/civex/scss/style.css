@@ -922,6 +922,9 @@ p.hero-subtitle {
 .monitoring .card .bg-yellow {
   background: rgba(255, 232, 152, 0.62);
 }
+.monitoring .card .bg-blue {
+  background: rgba(82, 122, 164, 0.42);
+}
 .monitoring .card .bg-green {
   background: rgb(219, 244, 167);
 }
