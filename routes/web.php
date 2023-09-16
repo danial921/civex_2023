@@ -9,6 +9,7 @@ use App\Http\Controllers\User\CppcController;
 use App\Http\Controllers\User\CescController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\showFileController;
+use App\Http\Controllers\workshopController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,7 +39,7 @@ Route::get('/competition-cesc', function () {$active = 'competition';return view
 Route::get('/opening', function () {$active = 'opening'; $time = "2023-09-20 12:00:00"; return view('landingpage.opening', compact('active', 'time'));});
 Route::get('/workshop', function () {$active = 'opening'; return view('landingpage.workshop', compact('active'));});
 Route::get('/registration-workshop', function () {$active = 'opening'; return view('landingpage.registration-workshop', compact('active'));});
-
+Route::post('/register-workshop', [workshopController::class, 'store_regist'])->name('register-workshop');
 
 
 Route::get('/closing', function () {$active = 'closing'; $time = "2023-11-1 10:00:00"; return view('landingpage.closing', compact('active', 'time'));});

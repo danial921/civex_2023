@@ -1,47 +1,47 @@
 <div class="card mt-2">
-    <div class="row m-4 pr-4">
+    <!-- <form id="gec_form" class="row m-4 pr-4" method="post" route="{{ route('register-workshop') }}" enctype="multipart/form-data"> -->
         <div class="col-12 mb-0 mb-lg-2 mb-1">
-            <label for="nama_tim" class="form-pendaftaran">Nama</label>
-            <input type="text" class="form-control" id="nama_tim" name="nama_tim" required autofocus>
+            <label for="nama" class="form-pendaftaran">Nama</label>
+            <input type="text" class="form-control" id="nama" name="nama[]" required autofocus>
         </div>
         <div class="col-12 mb-0 mb-lg-2 mb-1 mt-2">
 
-            <label for="nama_tim" class="form-pendaftaran">Asal Instansi</label>
-            <input type="text" class="form-control" id="nama_tim" name="nama_tim" required autofocus>
+            <label for="instansi" class="form-pendaftaran">Asal Instansi</label>
+            <input type="text" class="form-control" id="instansi" name="instansi[]" required autofocus>
 
         </div>
         <div class="col-lg-6 col-12 mb-0 mb-lg-2 mb-1 mt-2">
 
-            <label for="nama_tim" class="form-pendaftaran">Email</label>
-            <input type="text" class="form-control" id="nama_tim" name="nama_tim" required autofocus>
+            <label for="email" class="form-pendaftaran">Email</label>
+            <input type="text" class="form-control" id="email" name="email[]" required autofocus>
 
         </div>
         <div class="col-lg-6 col-12 mb-0 mb-lg-2 mb-1 mt-2">
 
-            <label for="nama_tim" class="form-pendaftaran">Nomor Telefon</label>
-            <input type="text" class="form-control" id="nama_tim" name="nama_tim" required autofocus>
+            <label for="notelp" class="form-pendaftaran">Nomor Telefon</label>
+            <input type="text" class="form-control" id="notelp" name="notelp[]" required autofocus>
 
         </div>
         <div class="col-12 mb-0 mb-lg-2 mb-1">
-            <label for="nama_tim" class="form-pendaftaran">Nama</label>
-            <input type="text" class="form-control" id="nama_tim" name="nama_tim" required autofocus>
+            <label for="nama" class="form-pendaftaran">Nama</label>
+            <input type="text" class="form-control" id="nama" name="nama[]" required autofocus>
         </div>
         <div class="col-12 mb-0 mb-lg-2 mb-1 mt-2">
 
-            <label for="nama_tim" class="form-pendaftaran">Asal Instansi</label>
-            <input type="text" class="form-control" id="nama_tim" name="nama_tim" required autofocus>
+            <label for="instansi" class="form-pendaftaran">Asal Instansi</label>
+            <input type="text" class="form-control" id="instansi" name="instansi[]" required autofocus>
 
         </div>
         <div class="col-lg-6 col-12 mb-0 mb-lg-2 mb-1 mt-2">
 
-            <label for="nama_tim" class="form-pendaftaran">Email</label>
-            <input type="text" class="form-control" id="nama_tim" name="nama_tim" required autofocus>
+            <label for="email" class="form-pendaftaran">Email</label>
+            <input type="text" class="form-control" id="email" name="email[]" required autofocus>
 
         </div>
         <div class="col-lg-6 col-12 mb-0 mb-lg-2 mb-1 mt-2">
 
-            <label for="nama_tim" class="form-pendaftaran">Nomor Telefon</label>
-            <input type="text" class="form-control" id="nama_tim" name="nama_tim" required autofocus>
+            <label for="notelp" class="form-pendaftaran">Nomor Telefon</label>
+            <input type="text" class="form-control" id="notelp" name="notelp[]" required autofocus>
 
         </div>
         <div class="col-12 mb-0 mb-lg-2 mb-1 mt-2">
@@ -72,7 +72,7 @@
                 data-toggle="modal" data-animation="effect-scale" data-target="#simpan">
         </div>
 
-    </div>
+    </form>
 </div>
 
 <!-- Modal simpan -->
@@ -101,7 +101,7 @@
         <div class="modal-content text-center">
             <img src="{{ asset('civex/img/landingpage/paper-plane.gif') }}" alt="">
             <h1>Woo hoo!</h1>
-            <p>Your registration has been successfully submitted. Please check your email for further information.</p>
+            <p>Your registration has been successfully submitted. Please check your email[] for further information.</p>
             <div class="justify-content-center pb-3 pt-4">
                 <button type="button" class="btn btn-civex tx-poppins tx-medium" data-dismiss="modal">Close</button>
             </div>
@@ -111,29 +111,3 @@
 </div>
 
 
-<script>
-    function submitForm() {
-        $('#simpan').modal('hide');
-        setTimeout(() => $('#successModal').modal('show'), 500); // Delay is used to ensure a smoother transition
-    }
-
-    jQuery(($) => {
-        $('.attachment input[type="file"]')
-            .on('change', (event) => {
-                let el = $(event.target).closest('.attachment').find('.btn-file');
-
-                el
-                    .find('.btn-file__actions__item')
-                    .css({
-                        'padding': '135px'
-                    });
-
-                el
-                    .find('.btn-file__preview')
-                    .css({
-                        'background-image': 'url(' + window.URL.createObjectURL(event.target.files[0]) +
-                            ')'
-                    });
-            });
-    });
-</script>

@@ -25,7 +25,7 @@
                         <label for="option3">3 Person</label>
                     </div>
                 </div>
-
+                
                 <div id="div1" class="fade-form visible">
                     @include('landingpage.slicing.reg-workshop-1person')
                 </div>
@@ -42,6 +42,39 @@
     </div>
 
 </div>
+
+<script>
+  
+    const gecForm = document.getElementById('gec_form');
+    const btnSubmit2 = document.getElementById('btnSubmit2');
+    function submitForm() {
+        // $('#simpan').modal('hide');
+        // setTimeout(() => $('#successModal').modal('show'), 500); // Delay is used to ensure a smoother transition
+        btnSubmit2.setAttribute("disabled", "disabled");
+        // alert(gecForm.action);
+        gecForm.submit();
+    }
+
+    jQuery(($) => {
+        $('.attachment input[type="file"]')
+            .on('change', (event) => {
+                let el = $(event.target).closest('.attachment').find('.btn-file');
+
+                el
+                    .find('.btn-file__actions__item')
+                    .css({
+                        'padding': '135px'
+                    });
+
+                el
+                    .find('.btn-file__preview')
+                    .css({
+                        'background-image': 'url(' + window.URL.createObjectURL(event.target.files[0]) +
+                            ')'
+                    });
+            });
+    });
+</script>
 
 <script>
     $('input[type="radio"]').on('change', function() {
