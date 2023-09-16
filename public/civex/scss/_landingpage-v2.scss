@@ -261,7 +261,7 @@
         }
     }
 
-    .webinar-hero {
+    .workshop-hero {
         height: calc(100vh - 6rem);
         margin-top: 6rem;
 
@@ -315,8 +315,8 @@
         }
     }
 
-    .webinar-instructor {
-        .webinar-title {
+    .workshop-instructor {
+        .workshop-title {
             h1 {
                 color: #000;
                 text-align: center;
@@ -492,7 +492,7 @@
     }
 }
 
-.registration-webinar-background{
+.registration-workshop-background{
     position: absolute;
     top: 15%;
     right: 0;
@@ -503,7 +503,7 @@
     }
 }
 
-.registration-webinar{
+.registration-workshop{
     padding-top: 7rem;
     min-height: calc(100vh - 7rem);
 
@@ -639,7 +639,7 @@
 }
 
 
-.fileupload-webinar {
+.fileupload-workshop {
     width: 100%;
 
     .btn-file {

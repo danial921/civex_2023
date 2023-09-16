@@ -43,7 +43,7 @@
                 </a>
             </div>
             <div class="col-6 ">
-                <a href="" class="workshop">
+                <a href="/workshop" class="workshop">
                     <img class="bg-card" src="{{ asset('civex/img/landingpage/background-card-workshop.svg') }}">
                     <div class="event-card d-flex align-items-center">
                         <img class="ornamen1" src="{{ asset('civex/img/landingpage/vector-workshop.svg') }}"

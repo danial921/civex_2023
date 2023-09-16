@@ -1,10 +1,10 @@
-<div class="registration-webinar-background">
+<div class="registration-workshop-background">
     <h1 class="d-none d-lg-block">Hello, Friend!</h1>
     <p class="d-none d-lg-block">Fill up personal information and start your journey with us.</p>
-    <img src="{{ asset('civex/img/landingpage/background-registration-webinar.svg') }}" alt="">
+    <img src="{{ asset('civex/img/landingpage/background-registration-workshop.svg') }}" alt="">
 </div>
 
-<div class="registration-webinar">
+<div class="registration-workshop">
     <div class="container">
         <h1 class="d-block d-lg-none">Hello, Friend!</h1>
         <p class="d-block d-lg-none">Fill up personal information and start your journey with us.</p>
@@ -27,13 +27,13 @@
                 </div>
 
                 <div id="div1" class="fade-form visible">
-                    @include('landingpage.slicing.reg-webinar-1person')
+                    @include('landingpage.slicing.reg-workshop-1person')
                 </div>
                 <div id="div2" class="fade-form">
-                    @include('landingpage.slicing.reg-webinar-2person')
+                    @include('landingpage.slicing.reg-workshop-2person')
                 </div>
                 <div id="div3" class="fade-form">
-                    @include('landingpage.slicing.reg-webinar-3person')
+                    @include('landingpage.slicing.reg-workshop-3person')
                 </div>
             </div>
         </div>

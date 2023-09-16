@@ -1,11 +1,11 @@
-<div class="webinar-instructor">
+<div class="workshop-instructor">
     <div class="container w-100">
         <div class="back-openingbutton"><a href="/competition" class="back"><img style="height: 45px" class="back"
                     src="{{ asset('civex/img/icon/back-compe.svg') }}" alt=""></a></div>
         <div class="row d-flex align-items-center h-100">
-            <div class="col-lg-7 pr-lg-5 pr-3 col-12 text-center webinar-title">
+            <div class="col-lg-7 pr-lg-5 pr-3 col-12 text-center workshop-title">
                 <h1>Instructor</h1>
-                <img class="mt-2" src="{{ asset('civex/img/landingpage/instructor-webinar.svg') }}" alt=""
+                <img class="mt-2" src="{{ asset('civex/img/landingpage/instructor-workshop.svg') }}" alt=""
                     srcset="">
                 <h2 class="pt-3">Rendy Moneta</h2>
                 <h3 class="pb-4">Structural Engineer</h3>
@@ -64,7 +64,7 @@
                         </tbody>
                     </table>
                 </div>
-                <a class="btn-register w-100" href="/registration-webinar"><p>REGISTER NOW</p></a>
+                <a class="btn-register w-100" href="/registration-workshop"><p>REGISTER NOW</p></a>
             </div>
         </div>
     </div>

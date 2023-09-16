@@ -26,7 +26,7 @@
     <main>
 
         <!--MDB Navbars-->
-        @include('landingpage.slicing.registration-webinar')
+        @include('landingpage.slicing.registration-workshop')
         @include('landingpage.slicing.copyright')
         {{-- </div> --}}
 

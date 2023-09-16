@@ -1,6 +1,6 @@
 <div class="webinar-hero">
     <div class="container w-100">
-        <div class="back-openingbutton"><a href="/competition" class="back"><img style="height: 45px" class="back"
+        <div class="back-openingbutton"><a href="/opening" class="back"><img style="height: 45px" class="back"
                     src="{{ asset('civex/img/icon/back-compe.svg') }}" alt=""></a></div>
         <div class="row d-flex align-items-center h-100">
             <div class="col-lg-7 pr-lg-5 pr-3 col-12 text">

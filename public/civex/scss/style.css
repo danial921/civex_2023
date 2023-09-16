@@ -5917,11 +5917,11 @@ html {
   opacity: 0;
   pointer-events: none;
 }
-.landing-page .webinar-hero {
+.landing-page .workshop-hero {
   height: calc(100vh - 6rem);
   margin-top: 6rem;
 }
-.landing-page .webinar-hero .text h2 {
+.landing-page .workshop-hero .text h2 {
   color: #000;
   font-family: Inter;
   font-size: 60px;
@@ -5930,7 +5930,7 @@ html {
   line-height: normal;
   letter-spacing: 1.8px;
 }
-.landing-page .webinar-hero .text P {
+.landing-page .workshop-hero .text P {
   color: #000;
   text-align: justify;
   font-family: Inter;
@@ -5940,7 +5940,7 @@ html {
   line-height: 130%;
   /* 31.2px */
 }
-.landing-page .webinar-hero .text a {
+.landing-page .workshop-hero .text a {
   border-radius: 15.778px;
   padding: 12px 30px;
   border: 0.789px solid #FFF;
@@ -5954,15 +5954,15 @@ html {
   letter-spacing: 0.6px;
   transition: all 0.3s ease;
 }
-.landing-page .webinar-hero .text a:hover {
+.landing-page .workshop-hero .text a:hover {
   background-color: FFF;
   color: #3C5483;
   border: 1px solid #3C5483;
 }
-.landing-page .webinar-hero img {
+.landing-page .workshop-hero img {
   width: 90%;
 }
-.landing-page .webinar-instructor .webinar-title h1 {
+.landing-page .workshop-instructor .workshop-title h1 {
   color: #000;
   text-align: center;
   font-family: Inter;
@@ -5972,7 +5972,7 @@ html {
   line-height: normal;
   letter-spacing: 0.9px;
 }
-.landing-page .webinar-instructor .webinar-title h2 {
+.landing-page .workshop-instructor .workshop-title h2 {
   color: #000;
   text-align: center;
   font-family: Inter;
@@ -5982,7 +5982,7 @@ html {
   line-height: normal;
   letter-spacing: 0.75px;
 }
-.landing-page .webinar-instructor .webinar-title h3 {
+.landing-page .workshop-instructor .workshop-title h3 {
   color: #000;
   text-align: center;
   font-family: Inter;
@@ -5992,11 +5992,11 @@ html {
   line-height: normal;
   letter-spacing: 0.75px;
 }
-.landing-page .webinar-instructor .webinar-title img {
+.landing-page .workshop-instructor .workshop-title img {
   width: 100%;
   max-width: 392px;
 }
-.landing-page .webinar-instructor .information {
+.landing-page .workshop-instructor .information {
   width: 100%;
   max-width: 392px;
   margin: 0px auto;
@@ -6006,7 +6006,7 @@ html {
   display: flex;
   justify-content: left;
 }
-.landing-page .webinar-instructor .information table td {
+.landing-page .workshop-instructor .information table td {
   padding-top: 8px;
   padding-bottom: 8px;
   color: #000;
@@ -6017,11 +6017,11 @@ html {
   line-height: normal;
   letter-spacing: 1.029px;
 }
-.landing-page .webinar-instructor .information-detail .title-heading-black {
+.landing-page .workshop-instructor .information-detail .title-heading-black {
   width: 90%;
   border: 1px solid black;
 }
-.landing-page .webinar-instructor .information-detail .title-heading-black h1 {
+.landing-page .workshop-instructor .information-detail .title-heading-black h1 {
   margin: 4px auto;
   color: #000;
   text-align: center;
@@ -6032,7 +6032,7 @@ html {
   line-height: normal;
   letter-spacing: 1.25px;
 }
-.landing-page .webinar-instructor .information-detail .facility {
+.landing-page .workshop-instructor .information-detail .facility {
   margin-top: 40px;
   color: #000;
   font-family: Inter;
@@ -6044,12 +6044,12 @@ html {
   /* 32.5px */
   letter-spacing: 1.25px;
 }
-.landing-page .webinar-instructor .information-detail .title-heading-white {
+.landing-page .workshop-instructor .information-detail .title-heading-white {
   margin-top: 70px;
   width: 90% !important;
   background-color: black;
 }
-.landing-page .webinar-instructor .information-detail .title-heading-white h1 {
+.landing-page .workshop-instructor .information-detail .title-heading-white h1 {
   padding: 4px 0px;
   margin: auto auto;
   color: white;
@@ -6061,10 +6061,10 @@ html {
   line-height: normal;
   letter-spacing: 1.25px;
 }
-.landing-page .webinar-instructor .information-detail .bundling {
+.landing-page .workshop-instructor .information-detail .bundling {
   margin-bottom: 70px;
 }
-.landing-page .webinar-instructor .information-detail .bundling h5 {
+.landing-page .workshop-instructor .information-detail .bundling h5 {
   color: #000;
   text-align: left;
   font-family: Inter;
@@ -6074,7 +6074,7 @@ html {
   line-height: normal;
   letter-spacing: 1.25px;
 }
-.landing-page .webinar-instructor .information-detail .bundling td {
+.landing-page .workshop-instructor .information-detail .bundling td {
   color: #000;
   font-family: Inter;
   font-size: 20px;
@@ -6083,11 +6083,11 @@ html {
   line-height: 130%;
   letter-spacing: 1.25px;
 }
-.landing-page .webinar-instructor .information-detail a {
+.landing-page .workshop-instructor .information-detail a {
   width: 90% !important;
   transition: background-color 0.5s ease;
 }
-.landing-page .webinar-instructor .information-detail a p {
+.landing-page .workshop-instructor .information-detail a p {
   transition: background-color 0.5s ease;
   border-radius: 2px;
   width: 90% !important;
@@ -6102,26 +6102,26 @@ html {
   line-height: normal;
   letter-spacing: 1.5px;
 }
-.landing-page .webinar-instructor .information-detail a:hover {
+.landing-page .workshop-instructor .information-detail a:hover {
   border: 2px solid #000;
 }
-.landing-page .webinar-instructor .information-detail a:hover p {
+.landing-page .workshop-instructor .information-detail a:hover p {
   background-color: #FFF;
   color: #3C5483;
   border: 2px solid #000;
 }
 
-.registration-webinar-background {
+.registration-workshop-background {
   position: absolute;
   top: 15%;
   right: 0;
 }
-.registration-webinar-background img {
+.registration-workshop-background img {
   margin-top: 30px;
   margin-right: -50px;
 }
 
-.registration-webinar {
+.registration-workshop {
   padding-top: 7rem;
   min-height: calc(100vh - 7rem);
   /* Hide default radio button */
@@ -6129,7 +6129,7 @@ html {
   /* Unchecked state */
   /* Checked state */
 }
-.registration-webinar p {
+.registration-workshop p {
   color: #000;
   font-family: Inter;
   font-size: 18px;
@@ -6138,7 +6138,7 @@ html {
   line-height: normal;
   letter-spacing: 0.54px;
 }
-.registration-webinar label {
+.registration-workshop label {
   color: #000;
   font-family: Inter;
   font-size: 18px;
@@ -6147,16 +6147,16 @@ html {
   line-height: normal;
   letter-spacing: 0.54px;
 }
-.registration-webinar input[type=radio] {
+.registration-workshop input[type=radio] {
   display: none;
 }
-.registration-webinar input[type=radio] + label {
+.registration-workshop input[type=radio] + label {
   position: relative;
   padding-left: 30px;
   /* Space for the custom radio */
   cursor: pointer;
 }
-.registration-webinar input[type=radio] + label::before {
+.registration-workshop input[type=radio] + label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -6172,12 +6172,12 @@ html {
   /* Set the background color */
   transition: background-color 0.2s;
 }
-.registration-webinar input[type=radio]:checked + label::before {
+.registration-workshop input[type=radio]:checked + label::before {
   background-color: #1F4682;
   border: 1px solid white;
   /* Color when radio is checked */
 }
-.registration-webinar .card {
+.registration-workshop .card {
   border: 1px solid black;
   border-radius: 5px;
 }
@@ -6248,16 +6248,16 @@ html {
     height: calc(100vh - 7rem);
   }
 }
-.fileupload-webinar {
+.fileupload-workshop {
   width: 100%;
 }
-.fileupload-webinar .btn-file {
+.fileupload-workshop .btn-file {
   margin: 0;
   padding: 0;
   position: relative;
   z-index: 1;
 }
-.fileupload-webinar .btn-file p.imagetitle {
+.fileupload-workshop .btn-file p.imagetitle {
   color: #0F172A;
   font-family: "Inter";
   font-size: 20px;
@@ -6266,10 +6266,10 @@ html {
   line-height: normal;
   text-transform: capitalize;
 }
-.fileupload-webinar .btn-file p.imagetitle span {
+.fileupload-workshop .btn-file p.imagetitle span {
   color: #527AA4;
 }
-.fileupload-webinar .btn-file p.imagesubtitle {
+.fileupload-workshop .btn-file p.imagesubtitle {
   color: #6A738F;
   font-family: "Inter";
   font-size: 16px;
@@ -6278,11 +6278,11 @@ html {
   line-height: normal;
   text-transform: capitalize;
 }
-.fileupload-webinar .btn-file__actions {
+.fileupload-workshop .btn-file__actions {
   margin: 0;
   padding: 0;
 }
-.fileupload-webinar .btn-file__actions__item {
+.fileupload-workshop .btn-file__actions__item {
   padding: 35px;
   font-size: 1.5em;
   color: rgba(82, 121, 163, 0.62);
@@ -6292,30 +6292,30 @@ html {
   border-left: 3px dashed rgba(82, 121, 163, 0.62);
   border-bottom: 3px dashed rgba(82, 121, 163, 0.62);
 }
-.fileupload-webinar .btn-file__actions__item:first-child {
+.fileupload-workshop .btn-file__actions__item:first-child {
   border-top-left-radius: 35px;
   border-bottom-left-radius: 35px;
 }
-.fileupload-webinar .btn-file__actions__item:last-child {
+.fileupload-workshop .btn-file__actions__item:last-child {
   border-top-right-radius: 35px;
   border-bottom-right-radius: 35px;
   border-right: 3px dashed rgba(82, 121, 163, 0.62);
 }
-.fileupload-webinar .btn-file__actions__item:hover,
-.fileupload-webinar .btn-file__actions__item:focus {
+.fileupload-workshop .btn-file__actions__item:hover,
+.fileupload-workshop .btn-file__actions__item:focus {
   color: #636b6f;
   background-color: rgba(211, 224, 233, 0.1);
 }
-.fileupload-webinar .btn-file__actions__item:hover--shadow,
-.fileupload-webinar .btn-file__actions__item:focus--shadow {
+.fileupload-workshop .btn-file__actions__item:hover--shadow,
+.fileupload-workshop .btn-file__actions__item:focus--shadow {
   box-shadow: rgba(82, 121, 163, 0.62) 0 0 60px 15px;
 }
-.fileupload-webinar .btn-file__actions__item--shadow {
+.fileupload-workshop .btn-file__actions__item--shadow {
   display: inline-block;
   position: relative;
   z-index: 1;
 }
-.fileupload-webinar .btn-file__actions__item--shadow::before {
+.fileupload-workshop .btn-file__actions__item--shadow::before {
   content: " ";
   box-shadow: #fff 0 0 60px 40px;
   display: inline-block;
@@ -6325,7 +6325,7 @@ html {
   width: 100%;
   z-index: -1;
 }
-.fileupload-webinar .btn-file__preview {
+.fileupload-workshop .btn-file__preview {
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -6337,14 +6337,14 @@ html {
   background-size: cover;
   background-position: center;
 }
-.fileupload-webinar .form-group label.attachment {
+.fileupload-workshop .form-group label.attachment {
   width: 100%;
 }
-.fileupload-webinar .form-group label.attachment .btn-create > a,
-.fileupload-webinar .form-group label.attachment .btn-create > div {
+.fileupload-workshop .form-group label.attachment .btn-create > a,
+.fileupload-workshop .form-group label.attachment .btn-create > div {
   margin-top: 5px;
 }
-.fileupload-webinar .form-group label.attachment input[type=file] {
+.fileupload-workshop .form-group label.attachment input[type=file] {
   display: none;
 }
 
