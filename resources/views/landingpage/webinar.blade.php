@@ -24,7 +24,8 @@
     <main>
 
         <!--MDB Navbars-->
-        @include('landingpage.slicing.opening')
+        @include('landingpage.slicing.webinar-hero-new')
+        @include('landingpage.slicing.webinar-instructor')
         @include('landingpage.slicing.copyright')
         {{-- </div> --}}
 
