@@ -69,7 +69,7 @@
         <div class="col-12 mb-0 mb-lg-2 mb-1 mt-2">
             <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran">Unggah Bukti Bayar</label>
             <p class="image-sub-label"></span></p>
-            <div class="fileupload-webinar">
+            <div class="fileupload-opening">
                 <label for="fileField" class="attachment w-100">
                     <div class="w-100 row btn-file">
                         <div class="w-100 btn-file__preview"></div>

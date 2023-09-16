@@ -6,25 +6,32 @@
     color: #213D73;
 }
 
-.back-openingbutton {
-    position: absolute;
-    top: 5rem;
+.c-webinar {
+    color: #2E487B
+}
 
+.back-openingbutton {
+    top: 5%;
     @media screen and (max-width: 920px) {
         top: 1rem;
     }
 
 }
 
+.p-parent {
+    height: max-content;
+    overflow: hidden;
+    position: relative;
+}
+
 .landing-page {
     background-color: #F7F7F7;
 
     .navbar-opening {
-        background-color: rgba(144, 124, 182, 0.50) !important;
+        background-color: rgba(195, 185, 215, ) !important;
         box-shadow: none !important;
 
-
-        a {
+        over a {
             padding: 15px 0px 15px 30px;
 
             img.nav-icon {
@@ -262,8 +269,12 @@
     }
 
     .workshop-hero {
-        height: calc(100vh - 6rem);
+        min-height: calc(100vh - 6rem);
         margin-top: 6rem;
+
+        @media (max-width: 992px) {
+            margin-top: 4rem;
+        }
 
         .text {
             h2 {
@@ -276,6 +287,7 @@
                 letter-spacing: 1.8px;
             }
 
+
             P {
                 color: #000;
                 text-align: justify;
@@ -285,6 +297,18 @@
                 font-weight: 500;
                 line-height: 130%;
                 /* 31.2px */
+            }
+
+            @media (max-width: 992px) {
+                h2 {
+                    font-size: 40px;
+                }
+                p {
+                    font-size: 18px;
+                }
+                a{
+                    font-size: 16px;
+                }
             }
 
             a {
@@ -315,7 +339,81 @@
         }
     }
 
+    .webinar-hero {
+        height: calc(100vh - 6rem);
+        margin-top: 6rem;
+
+        @media (max-width: 992px) {
+            height: calc(100vh - 5rem);
+            margin-top: 5rem;
+        }
+
+
+
+        .text {
+            h2 {
+                color: #000;
+                font-family: Inter;
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 1.8px;
+                @media (max-width: 992px) {
+                    font-size: 40px;
+                }
+            }
+
+
+            P {
+                color: #000;
+                text-align: justify;
+                font-family: Inter;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%;
+                @media (max-width: 992px) {
+                    font-size: 18px;
+                }
+            }
+
+            a {
+                border-radius: 15.778px;
+                padding: 12px 30px;
+                border: 0.789px solid #FFF;
+                background: #9BB6C5;
+                border: 1px solid #000;
+                color: #FFF;
+                font-family: Inter;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.6px;
+                transition: all 0.3s ease;
+                @media (max-width: 992px) {
+                    font-size: 18px;
+                }
+            }
+
+            a:hover {
+                background-color: FFF;
+                color: #9BB6C5;
+                border: 1px solid #9BB6C5;
+            }
+
+        }
+
+        img {
+            width: 90%;
+        }
+    }
+
     .workshop-instructor {
+        @media (max-width: 992px) {
+            margin-top: 5rem;
+        }
         .workshop-title {
             h1 {
                 color: #000;
@@ -326,6 +424,9 @@
                 font-weight: 600;
                 line-height: normal;
                 letter-spacing: 0.9px;
+                @media (max-width: 992px) {
+                    font-size: 25px;
+                }
             }
 
             h2 {
@@ -337,6 +438,9 @@
                 font-weight: 500;
                 line-height: normal;
                 letter-spacing: 0.75px;
+                @media (max-width: 992px) {
+                    font-size: 23px;
+                }
             }
 
             h3 {
@@ -348,12 +452,19 @@
                 font-weight: 400;
                 line-height: normal;
                 letter-spacing: 0.75px;
+                @media (max-width: 992px) {
+                    font-size: 20px;
+                }
             }
 
             img {
                 width: 100%;
                 max-width: 392px;
+                @media (max-width: 992px) {
+                    width: 60%;
+                }
             }
+
         }
 
         .information {
@@ -377,6 +488,9 @@
                     font-weight: 500;
                     line-height: normal;
                     letter-spacing: 1.029px;
+                    @media (max-width: 992px) {
+                        font-size: 15px;
+                    }
                 }
             }
         }
@@ -385,7 +499,9 @@
             .title-heading-black {
                 width: 90%;
                 border: 1px solid black;
-
+                @media (max-width: 992px) {
+                    width: 100%;
+                }
                 h1 {
                     margin: 4px auto;
                     color: #000;
@@ -396,6 +512,9 @@
                     font-weight: 600;
                     line-height: normal;
                     letter-spacing: 1.25px;
+                    @media (max-width: 992px) {
+                        margin: 2px auto;
+                    }
                 }
             }
 
@@ -408,14 +527,20 @@
                 text-align: left;
                 font-weight: 400;
                 line-height: 130%;
-                /* 32.5px */
                 letter-spacing: 1.25px;
+                @media (max-width: 992px) {
+                    margin-top: 20px;
+                }
             }
 
             .title-heading-white {
                 margin-top: 70px;
-                width: 90% !important;
+                width: 90%;
                 background-color: black;
+                @media (max-width: 992px) {
+                    margin-top: 40px;
+                    width: 100%;
+                }
 
                 h1 {
                     padding: 4px 0px;
@@ -428,14 +553,20 @@
                     font-weight: 600;
                     line-height: normal;
                     letter-spacing: 1.25px;
+                    @media (max-width: 992px) {
+                        font-size: 20px;
+                        padding: 4px 0px;
+                    }
                 }
             }
 
             .bundling {
                 margin-bottom: 70px;
+                @media (max-width: 992px) {
+                    margin-bottom: 40px;
+                }
 
                 h5 {
-
                     color: #000;
                     text-align: left;
                     font-family: Inter;
@@ -444,6 +575,9 @@
                     font-weight: 600;
                     line-height: normal;
                     letter-spacing: 1.25px;
+                    @media (max-width: 992px) {
+                        font-size: 20px;
+                    }
                 }
 
                 td {
@@ -454,17 +588,24 @@
                     font-weight: 400;
                     line-height: 130%;
                     letter-spacing: 1.25px;
+                    @media (max-width: 992px) {
+                        font-size: 18px;
+                    }
                 }
             }
 
             a {
-                width: 90% !important;
+                width: 90% ;
                 transition: background-color 0.5s ease;
+                @media (max-width: 992px) {
+                    width: 100%;
+                    margin-right: 0px;
+                }
 
                 p {
                     transition: background-color 0.5s ease;
                     border-radius: 2px;
-                    width: 90% !important;
+                    width: 90%;
                     padding: 5px 0px;
                     background-color: #3C5483;
                     color: #FFF;
@@ -475,6 +616,10 @@
                     font-weight: 600;
                     line-height: normal;
                     letter-spacing: 1.5px;
+                    @media (max-width: 992px) {
+                        width: 100%;
+                        margin-right: 0px;
+                    }
                 }
             }
 
@@ -492,20 +637,21 @@
     }
 }
 
-.registration-workshop-background{
+.registration-workshop-background {
     position: absolute;
     top: 15%;
     right: 0;
-    img{
+
+    img {
 
         margin-top: 30px;
         margin-right: -50px;
     }
 }
 
-.registration-workshop{
+.registration-workshop {
     padding-top: 7rem;
-    min-height: calc(100vh - 7rem);
+    min-height: calc(100vh - 9rem);
 
 
     p {
@@ -639,7 +785,7 @@
 }
 
 
-.fileupload-workshop {
+.fileupload-opening {
     width: 100%;
 
     .btn-file {
@@ -760,15 +906,17 @@
     max-width: 766px;
     padding-right: 0px;
 
-    .modal-content{
+    .modal-content {
         border: 2px solid #000;
-        img{
+
+        img {
             width: 100%;
             max-width: 300px;
             margin: auto;
         }
 
         padding: 20px 60 20px 60;
+
         h1 {
             color: #000;
             text-align: center;
@@ -790,12 +938,210 @@
             letter-spacing: 0.54px;
             width: 100%;
         }
-        button{
-            background-color: #99D1FE!important;
+
+        button {
+            background-color: #99D1FE !important;
         }
 
-        button:hover{
-            background-color: white!important;
+        button:hover {
+            background-color: white !important;
         }
     }
+}
+
+.register-now-webinar {
+    background: linear-gradient(90deg, #9BB6C5 0%, rgba(82, 122, 164, 0.00) 112.5%);
+
+    .table-container {
+        background: white;
+
+        table {
+            padding: 3rem;
+
+            td {
+                padding-top: 8px;
+                padding-bottom: 8px;
+                color: #000;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 1.029px;
+            }
+        }
+    }
+
+    .registration-coloumn {
+        a {
+            transition: background-color 0.5s ease;
+            border: 1px solid #000;
+            background: #9BB6C5;
+            padding: 10px 20px;
+            color: #000;
+            text-align: center;
+            font-family: Inter;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 2px;
+            @media (max-width: 992px) {
+                font-size: 30px;
+            }
+        }
+
+        a:hover {
+            background: white;
+
+        }
+        p{
+            color: #000;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 1px;
+            @media (max-width: 992px) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.webinar-speaker-new{
+    padding-top: 70px;
+    h1{
+        color: #000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.9px;
+    }
+    .container{
+        margin-top: 50px;
+        background-color: transparent;
+        img{
+            width: 80%;
+        }
+        h2{
+            color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.75px;
+        }
+        h3{
+            color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 18px;
+font-style: italic;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.6px;
+        }
+    }
+}
+
+/* Awalnya, tetapkan elemen dengan posisi statis */
+.position-lg-relative {
+    position: relative;
+}
+
+/* Saat layar berukuran LG atau lebih besar, ganti menjadi posisi absolut */
+@media (min-width: 992px) { /* 992px adalah titik putus untuk layar LG di Bootstrap 4 */
+    .position-lg-absolute {
+        position: absolute;
+    }
+}
+
+.registration-webinar-background {
+    position: absolute;
+    top: 15%;
+    right: 0;
+
+    img {
+
+        margin-top: 30px;
+        margin-right: -50px;
+    }
+}
+
+.registration-webinar {
+    padding-top: 7rem;
+    min-height: calc(100vh - 9rem);
+
+
+    p {
+        color: #000;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.54px;
+    }
+
+    label {
+        color: #000;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.54px;
+    }
+
+    /* Hide default radio button */
+    input[type="radio"] {
+        display: none;
+    }
+
+    /* Style the label representing the radio button */
+    input[type="radio"]+label {
+        position: relative;
+        padding-left: 30px;
+        /* Space for the custom radio */
+        cursor: pointer;
+    }
+
+    /* Unchecked state */
+    input[type="radio"]+label::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        /* Set the size */
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #333;
+        /* Set the border color */
+        background-color: transparent;
+        /* Set the background color */
+        transition: background-color 0.2s;
+    }
+
+    /* Checked state */
+    input[type="radio"]:checked+label::before {
+        background-color: #1F4682;
+        border: 1px solid white;
+        /* Color when radio is checked */
+    }
+
+    .card {
+        border: 1px solid black;
+        border-radius: 5px;
+
+    }
+
 }
