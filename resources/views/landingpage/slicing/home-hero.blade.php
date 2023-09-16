@@ -1,8 +1,8 @@
 <div class="container container-home">
     <div class="container-bg">
-        <img class="footer" data-entrance="from-top" src="{{ asset('civex/img/landingpage/hero-footer.svg') }}" alt="" srcset="">
-        <img class="mhs-hero" data-entrance="from-bottom" src="{{ asset('civex/img/landingpage/hero-mhs.svg') }}" alt="">
-        <img class="bullet-hero" data-entrance="from-bottom" src="{{ asset('civex/img/landingpage/bullet-hero.svg') }}" alt="" srcset="">
+        <img class="footer" src="{{ asset('civex/img/landingpage/hero-footer.svg') }}" alt="" srcset="">
+        <img class="mhs-hero" src="{{ asset('civex/img/landingpage/hero-mhs.svg') }}" alt="">
+        <img class="bullet-hero" src="{{ asset('civex/img/landingpage/bullet-hero.svg') }}" alt="" srcset="">
     </div>
     <div class="row title-home">
         <div class="col-lg-6 col-12">

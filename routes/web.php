@@ -36,6 +36,11 @@ Route::get('/competition-cpcc', function () {$active = 'competition';return view
 Route::get('/competition-gec', function () {$active = 'competition';return view('landingpage.competition-gec', compact('active'));});
 Route::get('/competition-cesc', function () {$active = 'competition';return view('landingpage.competition-cesc', compact('active'));});
 Route::get('/opening', function () {$active = 'opening'; $time = "2023-09-20 12:00:00"; return view('landingpage.opening', compact('active', 'time'));});
+Route::get('/workshop', function () {$active = 'opening'; return view('landingpage.workshop', compact('active'));});
+Route::get('/registration-workshop', function () {$active = 'opening'; return view('landingpage.registration-workshop', compact('active'));});
+
+
+
 Route::get('/closing', function () {$active = 'closing'; $time = "2023-11-1 10:00:00"; return view('landingpage.closing', compact('active', 'time'));});
 Route::get('/merchandise', function () {$active = 'merchandise'; $time = "2023-09-12 12:00:00"; return view('landingpage.merchandise', compact('active', 'time'));});
 Route::get('/webinar-test', function () {$active = 'merchandise'; return view('landingpage.webinar-show', compact('active'));});

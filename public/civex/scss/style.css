@@ -941,7 +941,7 @@ p.hero-subtitle {
   box-shadow: none !important;
   background: rgba(70, 99, 150, 0) !important;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 990px) {
   .landing-page .navbar-countdown {
     background: #ffffff !important;
   }
@@ -5693,4 +5693,697 @@ html {
 .webinar-speaker .cta a.cpbtn:hover p {
   background: #000000;
   color: #FFFFFF;
+}
+
+.c-opening {
+  color: #907CB6;
+}
+
+.c-workshop {
+  color: #213D73;
+}
+
+.back-openingbutton {
+  position: absolute;
+  top: 5rem;
+}
+@media screen and (max-width: 920px) {
+  .back-openingbutton {
+    top: 1rem;
+  }
+}
+
+.landing-page {
+  background-color: #F7F7F7;
+}
+.landing-page .navbar-opening {
+  background-color: rgba(144, 124, 182, 0.5) !important;
+  box-shadow: none !important;
+}
+.landing-page .navbar-opening a {
+  padding: 15px 0px 15px 30px;
+}
+.landing-page .navbar-opening a img.nav-icon {
+  height: 35px !important;
+}
+.landing-page .navbar-opening .nav-item {
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+.landing-page .navbar-opening .nav-item a {
+  color: #000 !important;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  margin-right: 20px;
+}
+.landing-page .navbar-opening .nav-item.civex-active {
+  background-color: rgba(255, 0, 0, 0) !important;
+}
+.landing-page .navbar-opening .nav-item.civex-active a {
+  color: #000 !important;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  margin-right: 20px;
+}
+.landing-page .navbar-opening .active {
+  height: 40px;
+  display: inline-block;
+  padding: 0px 15px;
+  margin: auto 0;
+  border-radius: 28px;
+  border: 2px solid #000 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-page .navbar-opening .active a {
+  background-color: rgba(0, 0, 0, 0) !important;
+  margin: 0px 10px;
+  padding: 0px;
+}
+.landing-page .navbar-opening .active:hover {
+  background-color: black !important;
+  transition: background-color 0.5s ease;
+  border: 2px solid rgba(0, 0, 0, 0) !important;
+  color: #fff;
+}
+.landing-page .navbar-opening .active:hover a {
+  color: #fff !important;
+  font-weight: 800 !important;
+}
+.landing-page .opening {
+  background: #F7F7F7;
+}
+@media (min-width: 1200px) {
+  .landing-page .opening .container {
+    max-width: 1300px !important;
+  }
+}
+.landing-page .opening .container .text h2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.8px;
+}
+.landing-page .opening .container .text P {
+  color: #000;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  /* 31.2px */
+}
+.landing-page .opening .container .text a {
+  border-radius: 15.778px;
+  padding: 12px 21px;
+  border: 0.789px solid #FFF;
+  background: #907CB6;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  transition: all 0.3s ease;
+}
+.landing-page .opening .container .text a:hover {
+  background-color: FFF;
+  color: #907CB6;
+  border: 1px solid #907CB6;
+}
+.landing-page .opening .container img {
+  width: 90%;
+}
+.landing-page .our-sub {
+  background: #F7F7F7;
+  padding-bottom: 10rem;
+}
+.landing-page .our-sub h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.landing-page .our-sub p {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+.landing-page .our-sub .row {
+  margin-top: 7rem;
+}
+.landing-page .our-sub .row .bg-card {
+  position: absolute;
+  z-index: 0;
+  bottom: 5%;
+}
+@media (min-width: 920px) {
+  .landing-page .our-sub .row {
+    margin-top: 5rem;
+  }
+}
+.landing-page .our-sub .row .ornamen1 {
+  position: absolute;
+  top: 38px;
+  right: 38px;
+}
+.landing-page .our-sub .row .ornamen2 {
+  position: absolute;
+  bottom: 29px;
+  left: 29px;
+}
+.landing-page .our-sub .row .ornamen3 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.landing-page .our-sub .row .event-card {
+  overflow: hidden !important;
+  position: relative;
+  height: 450px !important;
+  border-radius: 20px;
+  background: #FFF;
+  transition: border 0.3s ease;
+}
+.landing-page .our-sub .row .col-6 {
+  padding-bottom: 10rem;
+}
+.landing-page .our-sub .row .bg-card {
+  transition: opacity 0.3s ease;
+  /* Adjust the time as needed */
+  opacity: 1;
+}
+.landing-page .our-sub .row .workshop:hover {
+  transition: opacity 0.3s ease;
+}
+.landing-page .our-sub .row .workshop:hover .event-card {
+  border: 3px solid #E7BD52;
+}
+.landing-page .our-sub .row .workshop:hover .bg-card {
+  opacity: 0;
+  pointer-events: none;
+}
+.landing-page .our-sub .row .webinar:hover {
+  transition: opacity 0.3s ease;
+}
+.landing-page .our-sub .row .webinar:hover .event-card {
+  border: 3px solid #B55658;
+}
+.landing-page .our-sub .row .webinar:hover .bg-card {
+  opacity: 0;
+  pointer-events: none;
+}
+.landing-page .workshop-hero {
+  height: calc(100vh - 6rem);
+  margin-top: 6rem;
+}
+.landing-page .workshop-hero .text h2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.8px;
+}
+.landing-page .workshop-hero .text P {
+  color: #000;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  /* 31.2px */
+}
+.landing-page .workshop-hero .text a {
+  border-radius: 15.778px;
+  padding: 12px 30px;
+  border: 0.789px solid #FFF;
+  background: #3C5483;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  transition: all 0.3s ease;
+}
+.landing-page .workshop-hero .text a:hover {
+  background-color: FFF;
+  color: #3C5483;
+  border: 1px solid #3C5483;
+}
+.landing-page .workshop-hero img {
+  width: 90%;
+}
+.landing-page .workshop-instructor .workshop-title h1 {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+.landing-page .workshop-instructor .workshop-title h2 {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.75px;
+}
+.landing-page .workshop-instructor .workshop-title h3 {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.75px;
+}
+.landing-page .workshop-instructor .workshop-title img {
+  width: 100%;
+  max-width: 392px;
+}
+.landing-page .workshop-instructor .information {
+  width: 100%;
+  max-width: 392px;
+  margin: 0px auto;
+  background-color: #ffffff;
+  border: 2px solid #000;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: left;
+}
+.landing-page .workshop-instructor .information table td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.029px;
+}
+.landing-page .workshop-instructor .information-detail .title-heading-black {
+  width: 90%;
+  border: 1px solid black;
+}
+.landing-page .workshop-instructor .information-detail .title-heading-black h1 {
+  margin: 4px auto;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.25px;
+}
+.landing-page .workshop-instructor .information-detail .facility {
+  margin-top: 40px;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  text-align: left;
+  font-weight: 400;
+  line-height: 130%;
+  /* 32.5px */
+  letter-spacing: 1.25px;
+}
+.landing-page .workshop-instructor .information-detail .title-heading-white {
+  margin-top: 70px;
+  width: 90% !important;
+  background-color: black;
+}
+.landing-page .workshop-instructor .information-detail .title-heading-white h1 {
+  padding: 4px 0px;
+  margin: auto auto;
+  color: white;
+  text-align: center;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.25px;
+}
+.landing-page .workshop-instructor .information-detail .bundling {
+  margin-bottom: 70px;
+}
+.landing-page .workshop-instructor .information-detail .bundling h5 {
+  color: #000;
+  text-align: left;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.25px;
+}
+.landing-page .workshop-instructor .information-detail .bundling td {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 1.25px;
+}
+.landing-page .workshop-instructor .information-detail a {
+  width: 90% !important;
+  transition: background-color 0.5s ease;
+}
+.landing-page .workshop-instructor .information-detail a p {
+  transition: background-color 0.5s ease;
+  border-radius: 2px;
+  width: 90% !important;
+  padding: 5px 0px;
+  background-color: #3C5483;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.5px;
+}
+.landing-page .workshop-instructor .information-detail a:hover {
+  border: 2px solid #000;
+}
+.landing-page .workshop-instructor .information-detail a:hover p {
+  background-color: #FFF;
+  color: #3C5483;
+  border: 2px solid #000;
+}
+
+.registration-workshop-background {
+  position: absolute;
+  top: 15%;
+  right: 0;
+}
+.registration-workshop-background img {
+  margin-top: 30px;
+  margin-right: -50px;
+}
+
+.registration-workshop {
+  padding-top: 7rem;
+  min-height: calc(100vh - 7rem);
+  /* Hide default radio button */
+  /* Style the label representing the radio button */
+  /* Unchecked state */
+  /* Checked state */
+}
+.registration-workshop p {
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+.registration-workshop label {
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+.registration-workshop input[type=radio] {
+  display: none;
+}
+.registration-workshop input[type=radio] + label {
+  position: relative;
+  padding-left: 30px;
+  /* Space for the custom radio */
+  cursor: pointer;
+}
+.registration-workshop input[type=radio] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  /* Set the size */
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  /* Set the border color */
+  background-color: transparent;
+  /* Set the background color */
+  transition: background-color 0.2s;
+}
+.registration-workshop input[type=radio]:checked + label::before {
+  background-color: #1F4682;
+  border: 1px solid white;
+  /* Color when radio is checked */
+}
+.registration-workshop .card {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.custom-form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  border-radius: 50px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.custom-form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Optional: Placeholder styles */
+.custom-form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.custom-form-control::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.fade-form {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+  /* This provides the smooth transition effect */
+  height: 0;
+  overflow: hidden;
+}
+
+.fade-form.visible {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 3.5rem);
+}
+
+.modal-dialog-centered::before {
+  display: block;
+  height: calc(100vh - 3.5rem);
+  content: "";
+}
+
+@media (min-width: 576px) {
+  .modal-dialog-centered {
+    min-height: calc(100% - 7rem);
+  }
+  .modal-dialog-centered::before {
+    height: calc(100vh - 7rem);
+  }
+}
+.fileupload-workshop {
+  width: 100%;
+}
+.fileupload-workshop .btn-file {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+.fileupload-workshop .btn-file p.imagetitle {
+  color: #0F172A;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.fileupload-workshop .btn-file p.imagetitle span {
+  color: #527AA4;
+}
+.fileupload-workshop .btn-file p.imagesubtitle {
+  color: #6A738F;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.fileupload-workshop .btn-file__actions {
+  margin: 0;
+  padding: 0;
+}
+.fileupload-workshop .btn-file__actions__item {
+  padding: 35px;
+  font-size: 1.5em;
+  color: rgba(82, 121, 163, 0.62);
+  cursor: pointer;
+  text-decoration: none;
+  border-top: 3px dashed rgba(82, 121, 163, 0.62);
+  border-left: 3px dashed rgba(82, 121, 163, 0.62);
+  border-bottom: 3px dashed rgba(82, 121, 163, 0.62);
+}
+.fileupload-workshop .btn-file__actions__item:first-child {
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
+.fileupload-workshop .btn-file__actions__item:last-child {
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  border-right: 3px dashed rgba(82, 121, 163, 0.62);
+}
+.fileupload-workshop .btn-file__actions__item:hover,
+.fileupload-workshop .btn-file__actions__item:focus {
+  color: #636b6f;
+  background-color: rgba(211, 224, 233, 0.1);
+}
+.fileupload-workshop .btn-file__actions__item:hover--shadow,
+.fileupload-workshop .btn-file__actions__item:focus--shadow {
+  box-shadow: rgba(82, 121, 163, 0.62) 0 0 60px 15px;
+}
+.fileupload-workshop .btn-file__actions__item--shadow {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.fileupload-workshop .btn-file__actions__item--shadow::before {
+  content: " ";
+  box-shadow: #fff 0 0 60px 40px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+.fileupload-workshop .btn-file__preview {
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 35px;
+  background-size: cover;
+  background-position: center;
+}
+.fileupload-workshop .form-group label.attachment {
+  width: 100%;
+}
+.fileupload-workshop .form-group label.attachment .btn-create > a,
+.fileupload-workshop .form-group label.attachment .btn-create > div {
+  margin-top: 5px;
+}
+.fileupload-workshop .form-group label.attachment input[type=file] {
+  display: none;
+}
+
+.modal-dialog-centered {
+  max-width: 766px;
+  padding-right: 0px;
+}
+.modal-dialog-centered .modal-content {
+  border: 2px solid #000;
+  padding: 20px 60 20px 60;
+}
+.modal-dialog-centered .modal-content img {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+.modal-dialog-centered .modal-content h1 {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.75px;
+}
+.modal-dialog-centered .modal-content p {
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+  width: 100%;
+}
+.modal-dialog-centered .modal-content button {
+  background-color: #99D1FE !important;
+}
+.modal-dialog-centered .modal-content button:hover {
+  background-color: white !important;
 }/*# sourceMappingURL=style.css.map */
