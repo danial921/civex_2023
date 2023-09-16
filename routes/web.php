@@ -40,6 +40,8 @@ Route::get('/opening', function () {$active = 'opening'; $time = "2023-09-20 12:
 Route::get('/workshop', function () {$active = 'opening'; return view('landingpage.workshop', compact('active'));});
 Route::get('/registration-workshop', function () {$active = 'opening'; return view('landingpage.registration-workshop', compact('active'));});
 Route::post('/register-workshop', [workshopController::class, 'store_regist'])->name('register-workshop');
+Route::get('/webinar', function () {$active = 'opening'; return view('landingpage.webinar', compact('active'));});
+Route::get('/registration-webinar', function () {$active = 'opening'; return view('landingpage.registration-webinar-new', compact('active'));});
 
 
 Route::get('/closing', function () {$active = 'closing'; $time = "2023-11-1 10:00:00"; return view('landingpage.closing', compact('active', 'time'));});
