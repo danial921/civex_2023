@@ -24,7 +24,8 @@
     <main>
 
         <!--MDB Navbars-->
-        @include('landingpage.slicing.opening')
+        @include('landingpage.slicing.workshop-hero-new')
+        @include('landingpage.slicing.workshop-instructor')
         @include('landingpage.slicing.copyright')
         {{-- </div> --}}
 

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css">
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css"> --}}
 
     <link href="{{ asset('civex/img/landingpage/shortcut-logo.svg') }}" rel="icon">
 
@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+
+
 </head>
 
 <body class="hm-gradient landing-page">
@@ -24,8 +26,10 @@
     <main>
 
         <!--MDB Navbars-->
-        @include('landingpage.slicing.opening')
+        <div class="p-parent">
+        @include('landingpage.slicing.registration-workshop')
         @include('landingpage.slicing.copyright')
+        </div>
         {{-- </div> --}}
 
 
