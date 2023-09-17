@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menampilkan PDF di Halaman Web</title>
+    <title>Menampilkan Image di Halaman Web</title>
     <style>
         body{
             height: calc(100vh - 16px);
@@ -38,7 +38,7 @@
     <header class="header">
         <img src="{{ asset('civex/img/documentLogo.svg') }}" alt="Logo Perusahaan" class="logo">
     </header>
-    <img class="img" src="https://picsum.photos/200/300"/>
+    <img class="img" src="{{ $url }}"/>
 </body>
 
 </html>

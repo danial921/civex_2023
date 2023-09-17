@@ -5,10 +5,12 @@
             <table id="myTable" class="table table-hover table-borderless" style="width:100%">
                 <thead>
                     <tr>
-                        <th class="text-center wd-40p">nama tim</th>
+                        <th class="text-center wd-30p">nama tim</th>
                         <th class="text-center wd-35">institusi</th>
                         <th class="text-center wd-20">status</th>
                         <th class="text-center wd-5p">Menu</th>
+                        <th class="text-center wd-5p">Created at</th>
+                        <th class="text-center wd-5p">Updated at</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -67,6 +69,12 @@
                                                     class="tx-18"></ion-icon></span></div>
                                     </a>
                                 </div>
+                            </td>
+                            <td>
+                                <p class="mg-b-0">{{ $team->created_at }}</p>
+                            </td>
+                            <td>
+                                <p class="mg-b-0">{{ $team->updated_at }}</p>
                             </td>
                         </tr>
                     @endforeach

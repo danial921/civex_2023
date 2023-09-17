@@ -61,13 +61,15 @@
                         @if ($dataPeserta->ketua_ktm == '-')
                             <p class="w-100 text-center"><i>tidak ada berkas</i></p>
                         @elseif ($dataPeserta->ketua_ktm != '-')
-                            <a href="{{ $dataPeserta->ketua_ktm }}" class="" target="_blank">
-                                <button type="button" class="w-100 btn btn-download">
+                            <form method="POST" action="{{ route('show-image') }}" target="_blank">
+                                @csrf
+                                <input type="hidden" name="url" value=" {{ $dataPeserta->ketua_ktm }} ">
+                                <button type="submit" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
                                         KTM Ketua
                                 </button>
-                            </a>
+                            </form>
                         @endif
                     </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1 detail">
@@ -75,12 +77,15 @@
                         @if ($dataPeserta->ketua_sk == '-')
                             <p class="w-100 text-center"><i>tidak ada berkas</i></p>
                         @elseif ($dataPeserta->ketua_sk != '-')
-                            <a href="{{ $dataPeserta->ketua_sk }}" class="" target="_blank">
-                                <button type="button" class="w-100 btn btn-download">
+                            <form method="POST" action="{{ route('show-pdf') }}" target="_blank">
+                                @csrf
+                                <input type="hidden" name="url" value=" {{ $dataPeserta->ketua_sk }} ">
+                                <button type="submit" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
                                         SK Ketua
                                 </button>
+                            </form>
                             </a>
                         @endif
                     </div>
@@ -115,13 +120,15 @@
                         @if ($dataPeserta->anggota1_ktm == '-')
                             <p class="w-100 text-center"><i>tidak ada berkas</i></p>
                         @elseif ($dataPeserta->anggota1_ktm != '-')
-                            <a href="{{ $dataPeserta->anggota1_ktm }}" class="" target="_blank">
-                                <button type="button" class="w-100 btn btn-download">
+                            <form method="POST" action="{{ route('show-image') }}" target="_blank">
+                                @csrf
+                                <input type="hidden" name="url" value=" {{ $dataPeserta->anggota1_ktm }} ">
+                                <button type="submit" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
                                         KTM Anggota 1
                                 </button>
-                            </a>
+                            </form>
                         @endif
                     </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1 detail">
@@ -129,30 +136,32 @@
                         @if ($dataPeserta->anggota1_sk == '-')
                             <p class="w-100 text-center"><i>tidak ada berkas</i></p>
                         @elseif ($dataPeserta->anggota1_sk != '-')
-                            <a href="{{ $dataPeserta->anggota1_sk }}" class="" target="_blank">
-                                <button type="button" class="w-100 btn btn-download">
+                            <form method="POST" action="{{ route('show-pdf') }}" target="_blank">
+                                @csrf
+                                <input type="hidden" name="url" value=" {{ $dataPeserta->anggota1_sk }} ">
+                                <button type="submit" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
-                                        SK Anggota
+                                        SK Anggota 1
                                 </button>
-                            </a>
+                            </form>
                         @endif
                     </div>
                     <div class="titleheading mb-lg-3 mb-1">Identitas Anggota 2</div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1">
                         <label for="staticEmail" class="form-pendaftaran mb-0">Nama Anggota 2</label>
                         <input type="text" readonly disabled class="form-control" id="staticEmail"
-                            value="{{ $dataPeserta->anggota1_nama }}">
+                            value="{{ $dataPeserta->anggota2_nama }}">
                     </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1">
                         <label for="staticEmail" class="form-pendaftaran mb-0">Prodi Anggota 2</label>
                         <input type="text" readonly disabled class="form-control" id="staticEmail"
-                            value="{{ $dataPeserta->anggota1_prodi }}">
+                            value="{{ $dataPeserta->anggota2_prodi }}">
                     </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1">
                         <label for="staticEmail" class="form-pendaftaran mb-0">NIM/NRP Anggota 2</label>
                         <input type="text" readonly disabled class="form-control" id="staticEmail"
-                            value="{{ $dataPeserta->anggota1_nim }}">
+                            value="{{ $dataPeserta->anggota2_nim }}">
                     </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1">
                         <label for="staticEmail" class="form-pendaftaran mb-0">Email Anggota 2</label>
@@ -169,13 +178,15 @@
                         @if ($dataPeserta->anggota2_ktm == '-')
                             <p class="w-100 text-center"><i>tidak ada berkas</i></p>
                         @elseif ($dataPeserta->anggota2_ktm != '-')
-                            <a href="{{ $dataPeserta->anggota2_ktm }}" class="" target="_blank">
-                                <button type="button" class="w-100 btn btn-download">
+                            <form method="POST" action="{{ route('show-image') }}" target="_blank">
+                                @csrf
+                                <input type="hidden" name="url" value=" {{ $dataPeserta->anggota2_ktm }} ">
+                                <button type="submit" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
                                         KTM Anggota 2
                                 </button>
-                            </a>
+                            </form>
                         @endif
                     </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1 detail">
@@ -183,13 +194,15 @@
                         @if ($dataPeserta->anggota2_sk == '-')
                             <p class="w-100 text-center"><i>tidak ada berkas</i></p>
                         @elseif ($dataPeserta->anggota2_sk != '-')
-                            <a href="{{ $dataPeserta->anggota2_sk }}" class="" target="_blank">
-                                <button type="button" class="w-100 btn btn-download">
+                            <form method="POST" action="{{ route('show-pdf') }}" target="_blank">
+                                @csrf
+                                <input type="hidden" name="url" value=" {{ $dataPeserta->anggota2_sk }} ">
+                                <button type="submit" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
-                                        SK anggota 2
+                                        SK Anggota 2
                                 </button>
-                            </a>
+                            </form>
                         @endif
                     </div>
 
