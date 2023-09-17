@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Http\Exceptions\HttpResponseException;
 
 class workshopRegisterRequest extends FormRequest
 {
@@ -28,7 +30,14 @@ class workshopRegisterRequest extends FormRequest
             'instansi.*' => 'required',
             'email.*' => 'required|email',
             'notelp.*' => 'required',
-            'bukti_bayar' => 'required|files|max:2048'
+            'bukti_bayar' => 'required|file|max:2048'
         ];
+    }
+
+    protected function failedValidation(Validator $validator)
+    {
+        throw new HttpResponseException(
+            response()->json(['errors' => $validator->errors()], 422)
+        );
     }
 }

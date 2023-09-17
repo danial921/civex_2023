@@ -10,6 +10,7 @@ use App\Http\Controllers\User\CescController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\showFileController;
 use App\Http\Controllers\workshopController;
+use App\Http\Controllers\webinarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,12 +38,14 @@ Route::get('/competition-cpcc', function () {$active = 'competition';return view
 Route::get('/competition-gec', function () {$active = 'competition';return view('landingpage.competition-gec', compact('active'));});
 Route::get('/competition-cesc', function () {$active = 'competition';return view('landingpage.competition-cesc', compact('active'));});
 Route::get('/opening', function () {$active = 'opening'; $time = "2023-09-20 12:00:00"; return view('landingpage.opening', compact('active', 'time'));});
-Route::get('/workshop', function () {$active = 'opening'; return view('landingpage.workshop', compact('active'));});
-Route::get('/registration-workshop', function () {$active = 'opening'; return view('landingpage.registration-workshop', compact('active'));});
+
+Route::get('/workshop', function () {$active = 'opening'; return view('landingpage.workshop', compact('active'));})->name('workshop');
+Route::get('/registration-workshop', function () {$active = 'opening'; return view('landingpage.registration-workshop-new', compact('active'));});
 Route::post('/register-workshop', [workshopController::class, 'store_regist'])->name('register-workshop');
+
 Route::get('/webinar', function () {$active = 'opening'; return view('landingpage.webinar', compact('active'));});
 Route::get('/registration-webinar', function () {$active = 'opening'; return view('landingpage.registration-webinar-new', compact('active'));});
-
+Route::post('/register-workshop', [webinarController::class, 'store_regist'])->name('register-webinar');
 
 Route::get('/closing', function () {$active = 'closing'; $time = "2023-11-1 10:00:00"; return view('landingpage.closing', compact('active', 'time'));});
 Route::get('/merchandise', function () {$active = 'merchandise'; $time = "2023-09-12 12:00:00"; return view('landingpage.merchandise', compact('active', 'time'));});
