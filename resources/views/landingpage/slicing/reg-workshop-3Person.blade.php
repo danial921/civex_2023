@@ -111,8 +111,8 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <h5 class="tx-poppins tx-medium">Pendaftaran TIM</h5>
-                <p class="mg-b-0">Apakah anda yakin ingin melakukan pendaftaran tim dengan data tim yang telah diisi?
+                <h5 class="tx-poppins tx-medium">Pendaftaran Workshop</h5>
+                <p class="mg-b-0">Apakah anda yakin ingin melakukan pendaftaran Workshop dengan data yang telah diisi?
                 </p>
             </div>
             <div class="modal-footer">
