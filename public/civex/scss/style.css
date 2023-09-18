@@ -5703,9 +5703,12 @@ html {
   color: #213D73;
 }
 
+.c-webinar {
+  color: #2E487B;
+}
+
 .back-openingbutton {
-  position: absolute;
-  top: 5rem;
+  top: 5%;
 }
 @media screen and (max-width: 920px) {
   .back-openingbutton {
@@ -5713,17 +5716,24 @@ html {
   }
 }
 
+.p-parent {
+  height: -moz-max-content;
+  height: max-content;
+  overflow: hidden;
+  position: relative;
+}
+
 .landing-page {
   background-color: #F7F7F7;
 }
 .landing-page .navbar-opening {
-  background-color: rgba(144, 124, 182, 0.5) !important;
+  background-color: rgb(195, 185, 215) !important;
   box-shadow: none !important;
 }
-.landing-page .navbar-opening a {
+.landing-page .navbar-opening over a {
   padding: 15px 0px 15px 30px;
 }
-.landing-page .navbar-opening a img.nav-icon {
+.landing-page .navbar-opening over a img.nav-icon {
   height: 35px !important;
 }
 .landing-page .navbar-opening .nav-item {
@@ -5918,8 +5928,13 @@ html {
   pointer-events: none;
 }
 .landing-page .workshop-hero {
-  height: calc(100vh - 6rem);
+  min-height: calc(100vh - 6rem);
   margin-top: 6rem;
+}
+@media (max-width: 992px) {
+  .landing-page .workshop-hero {
+    margin-top: 4rem;
+  }
 }
 .landing-page .workshop-hero .text h2 {
   color: #000;
@@ -5939,6 +5954,17 @@ html {
   font-weight: 500;
   line-height: 130%;
   /* 31.2px */
+}
+@media (max-width: 992px) {
+  .landing-page .workshop-hero .text h2 {
+    font-size: 40px;
+  }
+  .landing-page .workshop-hero .text p {
+    font-size: 18px;
+  }
+  .landing-page .workshop-hero .text a {
+    font-size: 16px;
+  }
 }
 .landing-page .workshop-hero .text a {
   border-radius: 15.778px;
@@ -5962,6 +5988,77 @@ html {
 .landing-page .workshop-hero img {
   width: 90%;
 }
+.landing-page .webinar-hero {
+  height: calc(100vh - 6rem);
+  margin-top: 6rem;
+}
+@media (max-width: 992px) {
+  .landing-page .webinar-hero {
+    height: calc(100vh - 5rem);
+    margin-top: 5rem;
+  }
+}
+.landing-page .webinar-hero .text h2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.8px;
+}
+@media (max-width: 992px) {
+  .landing-page .webinar-hero .text h2 {
+    font-size: 40px;
+  }
+}
+.landing-page .webinar-hero .text P {
+  color: #000;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+@media (max-width: 992px) {
+  .landing-page .webinar-hero .text P {
+    font-size: 18px;
+  }
+}
+.landing-page .webinar-hero .text a {
+  border-radius: 15.778px;
+  padding: 12px 30px;
+  border: 0.789px solid #FFF;
+  background: #9BB6C5;
+  border: 1px solid #000;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  transition: all 0.3s ease;
+}
+@media (max-width: 992px) {
+  .landing-page .webinar-hero .text a {
+    font-size: 18px;
+  }
+}
+.landing-page .webinar-hero .text a:hover {
+  background-color: FFF;
+  color: #9BB6C5;
+  border: 1px solid #9BB6C5;
+}
+.landing-page .webinar-hero img {
+  width: 90%;
+}
+@media (max-width: 992px) {
+  .landing-page .workshop-instructor {
+    margin-top: 5rem;
+  }
+}
 .landing-page .workshop-instructor .workshop-title h1 {
   color: #000;
   text-align: center;
@@ -5971,6 +6068,11 @@ html {
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.9px;
+}
+@media (max-width: 992px) {
+  .landing-page .workshop-instructor .workshop-title h1 {
+    font-size: 25px;
+  }
 }
 .landing-page .workshop-instructor .workshop-title h2 {
   color: #000;
@@ -5982,6 +6084,11 @@ html {
   line-height: normal;
   letter-spacing: 0.75px;
 }
+@media (max-width: 992px) {
+  .landing-page .workshop-instructor .workshop-title h2 {
+    font-size: 23px;
+  }
+}
 .landing-page .workshop-instructor .workshop-title h3 {
   color: #000;
   text-align: center;
@@ -5992,9 +6099,19 @@ html {
   line-height: normal;
   letter-spacing: 0.75px;
 }
+@media (max-width: 992px) {
+  .landing-page .workshop-instructor .workshop-title h3 {
+    font-size: 20px;
+  }
+}
 .landing-page .workshop-instructor .workshop-title img {
   width: 100%;
   max-width: 392px;
+}
+@media (max-width: 992px) {
+  .landing-page .workshop-instructor .workshop-title img {
+    width: 60%;
+  }
 }
 .landing-page .workshop-instructor .information {
   width: 100%;
@@ -6017,9 +6134,19 @@ html {
   line-height: normal;
   letter-spacing: 1.029px;
 }
+@media (max-width: 992px) {
+  .landing-page .workshop-instructor .information table td {
+    font-size: 15px;
+  }
+}
 .landing-page .workshop-instructor .information-detail .title-heading-black {
   width: 90%;
   border: 1px solid black;
+}
+@media (max-width: 992px) {
+  .landing-page .workshop-instructor .information-detail .title-heading-black {
+    width: 100%;
+  }
 }
 .landing-page .workshop-instructor .information-detail .title-heading-black h1 {
   margin: 4px auto;
@@ -6032,6 +6159,11 @@ html {
   line-height: normal;
   letter-spacing: 1.25px;
 }
+@media (max-width: 992px) {
+  .landing-page .workshop-instructor .information-detail .title-heading-black h1 {
+    margin: 2px auto;
+  }
+}
 .landing-page .workshop-instructor .information-detail .facility {
   margin-top: 40px;
   color: #000;
@@ -6041,13 +6173,23 @@ html {
   text-align: left;
   font-weight: 400;
   line-height: 130%;
-  /* 32.5px */
   letter-spacing: 1.25px;
+}
+@media (max-width: 992px) {
+  .landing-page .workshop-instructor .information-detail .facility {
+    margin-top: 20px;
+  }
 }
 .landing-page .workshop-instructor .information-detail .title-heading-white {
   margin-top: 70px;
-  width: 90% !important;
+  width: 90%;
   background-color: black;
+}
+@media (max-width: 992px) {
+  .landing-page .workshop-instructor .information-detail .title-heading-white {
+    margin-top: 40px;
+    width: 100%;
+  }
 }
 .landing-page .workshop-instructor .information-detail .title-heading-white h1 {
   padding: 4px 0px;
@@ -6061,8 +6203,19 @@ html {
   line-height: normal;
   letter-spacing: 1.25px;
 }
+@media (max-width: 992px) {
+  .landing-page .workshop-instructor .information-detail .title-heading-white h1 {
+    font-size: 20px;
+    padding: 4px 0px;
+  }
+}
 .landing-page .workshop-instructor .information-detail .bundling {
   margin-bottom: 70px;
+}
+@media (max-width: 992px) {
+  .landing-page .workshop-instructor .information-detail .bundling {
+    margin-bottom: 40px;
+  }
 }
 .landing-page .workshop-instructor .information-detail .bundling h5 {
   color: #000;
@@ -6074,6 +6227,11 @@ html {
   line-height: normal;
   letter-spacing: 1.25px;
 }
+@media (max-width: 992px) {
+  .landing-page .workshop-instructor .information-detail .bundling h5 {
+    font-size: 20px;
+  }
+}
 .landing-page .workshop-instructor .information-detail .bundling td {
   color: #000;
   font-family: Inter;
@@ -6083,14 +6241,25 @@ html {
   line-height: 130%;
   letter-spacing: 1.25px;
 }
+@media (max-width: 992px) {
+  .landing-page .workshop-instructor .information-detail .bundling td {
+    font-size: 18px;
+  }
+}
 .landing-page .workshop-instructor .information-detail a {
-  width: 90% !important;
+  width: 90%;
   transition: background-color 0.5s ease;
+}
+@media (max-width: 992px) {
+  .landing-page .workshop-instructor .information-detail a {
+    width: 100%;
+    margin-right: 0px;
+  }
 }
 .landing-page .workshop-instructor .information-detail a p {
   transition: background-color 0.5s ease;
   border-radius: 2px;
-  width: 90% !important;
+  width: 90%;
   padding: 5px 0px;
   background-color: #3C5483;
   color: #FFF;
@@ -6101,6 +6270,12 @@ html {
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.5px;
+}
+@media (max-width: 992px) {
+  .landing-page .workshop-instructor .information-detail a p {
+    width: 100%;
+    margin-right: 0px;
+  }
 }
 .landing-page .workshop-instructor .information-detail a:hover {
   border: 2px solid #000;
@@ -6123,7 +6298,7 @@ html {
 
 .registration-workshop {
   padding-top: 7rem;
-  min-height: calc(100vh - 7rem);
+  min-height: calc(100vh - 9rem);
   /* Hide default radio button */
   /* Style the label representing the radio button */
   /* Unchecked state */
@@ -6248,16 +6423,16 @@ html {
     height: calc(100vh - 7rem);
   }
 }
-.fileupload-workshop {
+.fileupload-opening {
   width: 100%;
 }
-.fileupload-workshop .btn-file {
+.fileupload-opening .btn-file {
   margin: 0;
   padding: 0;
   position: relative;
   z-index: 1;
 }
-.fileupload-workshop .btn-file p.imagetitle {
+.fileupload-opening .btn-file p.imagetitle {
   color: #0F172A;
   font-family: "Inter";
   font-size: 20px;
@@ -6266,10 +6441,10 @@ html {
   line-height: normal;
   text-transform: capitalize;
 }
-.fileupload-workshop .btn-file p.imagetitle span {
+.fileupload-opening .btn-file p.imagetitle span {
   color: #527AA4;
 }
-.fileupload-workshop .btn-file p.imagesubtitle {
+.fileupload-opening .btn-file p.imagesubtitle {
   color: #6A738F;
   font-family: "Inter";
   font-size: 16px;
@@ -6278,11 +6453,11 @@ html {
   line-height: normal;
   text-transform: capitalize;
 }
-.fileupload-workshop .btn-file__actions {
+.fileupload-opening .btn-file__actions {
   margin: 0;
   padding: 0;
 }
-.fileupload-workshop .btn-file__actions__item {
+.fileupload-opening .btn-file__actions__item {
   padding: 35px;
   font-size: 1.5em;
   color: rgba(82, 121, 163, 0.62);
@@ -6292,30 +6467,30 @@ html {
   border-left: 3px dashed rgba(82, 121, 163, 0.62);
   border-bottom: 3px dashed rgba(82, 121, 163, 0.62);
 }
-.fileupload-workshop .btn-file__actions__item:first-child {
+.fileupload-opening .btn-file__actions__item:first-child {
   border-top-left-radius: 35px;
   border-bottom-left-radius: 35px;
 }
-.fileupload-workshop .btn-file__actions__item:last-child {
+.fileupload-opening .btn-file__actions__item:last-child {
   border-top-right-radius: 35px;
   border-bottom-right-radius: 35px;
   border-right: 3px dashed rgba(82, 121, 163, 0.62);
 }
-.fileupload-workshop .btn-file__actions__item:hover,
-.fileupload-workshop .btn-file__actions__item:focus {
+.fileupload-opening .btn-file__actions__item:hover,
+.fileupload-opening .btn-file__actions__item:focus {
   color: #636b6f;
   background-color: rgba(211, 224, 233, 0.1);
 }
-.fileupload-workshop .btn-file__actions__item:hover--shadow,
-.fileupload-workshop .btn-file__actions__item:focus--shadow {
+.fileupload-opening .btn-file__actions__item:hover--shadow,
+.fileupload-opening .btn-file__actions__item:focus--shadow {
   box-shadow: rgba(82, 121, 163, 0.62) 0 0 60px 15px;
 }
-.fileupload-workshop .btn-file__actions__item--shadow {
+.fileupload-opening .btn-file__actions__item--shadow {
   display: inline-block;
   position: relative;
   z-index: 1;
 }
-.fileupload-workshop .btn-file__actions__item--shadow::before {
+.fileupload-opening .btn-file__actions__item--shadow::before {
   content: " ";
   box-shadow: #fff 0 0 60px 40px;
   display: inline-block;
@@ -6325,7 +6500,7 @@ html {
   width: 100%;
   z-index: -1;
 }
-.fileupload-workshop .btn-file__preview {
+.fileupload-opening .btn-file__preview {
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -6337,14 +6512,14 @@ html {
   background-size: cover;
   background-position: center;
 }
-.fileupload-workshop .form-group label.attachment {
+.fileupload-opening .form-group label.attachment {
   width: 100%;
 }
-.fileupload-workshop .form-group label.attachment .btn-create > a,
-.fileupload-workshop .form-group label.attachment .btn-create > div {
+.fileupload-opening .form-group label.attachment .btn-create > a,
+.fileupload-opening .form-group label.attachment .btn-create > div {
   margin-top: 5px;
 }
-.fileupload-workshop .form-group label.attachment input[type=file] {
+.fileupload-opening .form-group label.attachment input[type=file] {
   display: none;
 }
 
@@ -6386,4 +6561,184 @@ html {
 }
 .modal-dialog-centered .modal-content button:hover {
   background-color: white !important;
+}
+
+.register-now-webinar {
+  background: linear-gradient(90deg, #9BB6C5 0%, rgba(82, 122, 164, 0) 112.5%);
+}
+.register-now-webinar .table-container {
+  background: white;
+}
+.register-now-webinar .table-container table {
+  padding: 3rem;
+}
+.register-now-webinar .table-container table td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.029px;
+}
+.register-now-webinar .registration-coloumn a {
+  transition: background-color 0.5s ease;
+  border: 1px solid #000;
+  background: #9BB6C5;
+  padding: 10px 20px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+@media (max-width: 992px) {
+  .register-now-webinar .registration-coloumn a {
+    font-size: 30px;
+  }
+}
+.register-now-webinar .registration-coloumn a:hover {
+  background: white;
+}
+.register-now-webinar .registration-coloumn p {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+@media (max-width: 992px) {
+  .register-now-webinar .registration-coloumn p {
+    font-size: 16px;
+  }
+}
+
+.webinar-speaker-new {
+  padding-top: 70px;
+}
+.webinar-speaker-new h1 {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+.webinar-speaker-new .container {
+  margin-top: 50px;
+  background-color: transparent;
+}
+.webinar-speaker-new .container img {
+  width: 80%;
+}
+.webinar-speaker-new .container h2 {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.75px;
+}
+.webinar-speaker-new .container h3 {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+/* Awalnya, tetapkan elemen dengan posisi statis */
+.position-lg-relative {
+  position: relative;
+}
+
+/* Saat layar berukuran LG atau lebih besar, ganti menjadi posisi absolut */
+@media (min-width: 992px) { /* 992px adalah titik putus untuk layar LG di Bootstrap 4 */
+  .position-lg-absolute {
+    position: absolute;
+  }
+}
+.registration-webinar-background {
+  position: absolute;
+  top: 15%;
+  right: 0;
+}
+.registration-webinar-background img {
+  margin-top: 30px;
+  margin-right: -50px;
+}
+
+.registration-webinar {
+  padding-top: 7rem;
+  min-height: calc(100vh - 9rem);
+  /* Hide default radio button */
+  /* Style the label representing the radio button */
+  /* Unchecked state */
+  /* Checked state */
+}
+.registration-webinar p {
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+.registration-webinar label {
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+.registration-webinar input[type=radio] {
+  display: none;
+}
+.registration-webinar input[type=radio] + label {
+  position: relative;
+  padding-left: 30px;
+  /* Space for the custom radio */
+  cursor: pointer;
+}
+.registration-webinar input[type=radio] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  /* Set the size */
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  /* Set the border color */
+  background-color: transparent;
+  /* Set the background color */
+  transition: background-color 0.2s;
+}
+.registration-webinar input[type=radio]:checked + label::before {
+  background-color: #1F4682;
+  border: 1px solid white;
+  /* Color when radio is checked */
+}
+.registration-webinar .card {
+  border: 1px solid black;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

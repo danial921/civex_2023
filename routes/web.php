@@ -9,6 +9,8 @@ use App\Http\Controllers\User\CppcController;
 use App\Http\Controllers\User\CescController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\showFileController;
+use App\Http\Controllers\workshopController;
+use App\Http\Controllers\webinarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +30,7 @@ use App\Http\Controllers\showFileController;
 // Route::get('/admin/detailpertanyaan-cppc/{id}', [AdminController::class, 'cppc_aanwijizing_detail']);
 
 
+
 //landing page
 Route::get('/', function () {$active = 'home'; return view('landingpage.home', compact('active'));});
 Route::get('/detail', function () {$active = 'home'; return view('landingpage.detail-civex', compact('active'));});
@@ -36,10 +39,14 @@ Route::get('/competition-cpcc', function () {$active = 'competition';return view
 Route::get('/competition-gec', function () {$active = 'competition';return view('landingpage.competition-gec', compact('active'));});
 Route::get('/competition-cesc', function () {$active = 'competition';return view('landingpage.competition-cesc', compact('active'));});
 Route::get('/opening', function () {$active = 'opening'; $time = "2023-09-20 12:00:00"; return view('landingpage.opening', compact('active', 'time'));});
-Route::get('/workshop', function () {$active = 'opening'; return view('landingpage.workshop', compact('active'));});
-Route::get('/registration-workshop', function () {$active = 'opening'; return view('landingpage.registration-workshop', compact('active'));});
 
+Route::get('/workshop', function () {$active = 'opening'; return view('landingpage.workshop', compact('active'));})->name('workshop');
+Route::get('/registration-workshop', function () {$active = 'opening'; return view('landingpage.registration-workshop-new', compact('active'));});
+Route::post('/register-workshop', [workshopController::class, 'store_regist'])->name('register-workshop');
 
+Route::get('/webinar', function () {$active = 'opening'; return view('landingpage.webinar', compact('active'));})->name('webinar');
+Route::get('/registration-webinar', function () {$active = 'opening'; return view('landingpage.registration-webinar-new', compact('active'));});
+Route::post('/register-webinar', [webinarController::class, 'store_regist'])->name('register-webinar');
 
 Route::get('/closing', function () {$active = 'closing'; $time = "2023-11-1 10:00:00"; return view('landingpage.closing', compact('active', 'time'));});
 Route::get('/merchandise', function () {$active = 'merchandise'; $time = "2023-09-12 12:00:00"; return view('landingpage.merchandise', compact('active', 'time'));});
@@ -60,6 +67,12 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/admin/cesc', [AdminController::class, 'cesc_dashboard']);
         Route::get('/admin/detailteam-cesc/{id}', [AdminController::class, 'cesc_detailTeam']);
         Route::post('/admin/updatestatus-cesc/{id}', [AdminController::class, 'cesc_updateStatus']);
+
+        Route::get('/admin/workshop', [AdminController::class, 'workshop_dashboard']);
+        Route::get('/admin/detailpendaftar-workshop/{id}', [AdminController::class, 'detailpendaftar_workshop']);
+
+        Route::get('/admin/webinar', [AdminController::class, 'webinar_dashboard']);
+        Route::get('/admin/detailpendaftar-webinar/{id}', [AdminController::class, 'detailpendaftar_webinar']);
     });
     //user
     Route::middleware('notRegisterComp')->group(function () {

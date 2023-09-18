@@ -11,6 +11,68 @@ use App\Models\cppc_team;
 
 class AdminController extends Controller
 {
+
+    public function workshop_dashboard()
+    {
+        $peserta = DB::table('workshop_registrants')->get();
+        $totalPendaftar = DB::table('workshop_registrants')->count();
+        // $belumdiReview = DB::table('gec_teams')->where('status_tim','00')->count() + DB::table('gec_teams')->where('status_tim','12')->count();
+        // $pembayaranDitolak = DB::table('gec_teams')->where('status_tim','11')->count() + DB::table('gec_teams')->where('status_tim','01')->count();
+
+        return view('admin.workshop.dashboard',
+        [
+            "username" => "Admin CIVEX 2023",
+            "teams" => $peserta,
+            'totalPendaftar' => $totalPendaftar,
+            // 'belumdiReview' =>$belumdiReview,
+            // 'pembayaranDitolak' => $pembayaranDitolak
+        ]);
+
+    }
+
+    public function detailpendaftar_workshop($id)
+    {
+        $dataPeserta = DB::table('workshop_registrants')->where('id',$id)->first();
+
+        return view('admin.workshop.detail',
+        [
+            'username' => 'Admin CIVEX 2023',
+            'dataPeserta' => $dataPeserta,
+
+        ]);
+    }
+
+    public function webinar_dashboard()
+    {
+        $peserta = DB::table('webinar_registrants')->get();
+        $totalPendaftar = DB::table('webinar_registrants')->count();
+        // $belumdiReview = DB::table('gec_teams')->where('status_tim','00')->count() + DB::table('gec_teams')->where('status_tim','12')->count();
+        // $pembayaranDitolak = DB::table('gec_teams')->where('status_tim','11')->count() + DB::table('gec_teams')->where('status_tim','01')->count();
+
+        return view('admin.webinar.dashboard',
+        [
+            "username" => "Admin CIVEX 2023",
+            "teams" => $peserta,
+            'totalPendaftar' => $totalPendaftar,
+            // 'belumdiReview' =>$belumdiReview,
+            // 'pembayaranDitolak' => $pembayaranDitolak
+        ]);
+
+    }
+
+    public function detailpendaftar_webinar($id)
+    {
+        $dataPeserta = DB::table('webinar_registrants')->where('id',$id)->first();
+
+        return view('admin.webinar.detail',
+        [
+            'username' => 'Admin CIVEX 2023',
+            'dataPeserta' => $dataPeserta,
+
+        ]);
+    }
+
+
     public function gec_dashboard()
     {
         $peserta = DB::table('gec_teams')->get();

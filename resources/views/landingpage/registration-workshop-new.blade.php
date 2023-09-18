@@ -21,13 +21,15 @@
 
 </head>
 
-<body class="hm-gradient landing-page" style="overflow: hidden;">
+<body class="hm-gradient landing-page">
     @include('landingpage.slicing.purple-navbar')
     <main>
 
         <!--MDB Navbars-->
+        <div class="p-parent">
         @include('landingpage.slicing.registration-workshop')
         @include('landingpage.slicing.copyright')
+        </div>
         {{-- </div> --}}
 
 
