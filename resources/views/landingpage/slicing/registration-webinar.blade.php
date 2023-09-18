@@ -13,6 +13,11 @@
                 <div class="card mt-2">
                     <form id="form-webinar" class="row m-4 pr-4" method="post" action="{{ route('register-webinar') }}" enctype="multipart/form-data">
                         <div class="col-12 mb-0 mb-lg-2 mb-1">
+                            <label for="email" class="form-pendaftaran">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required autofocus>
+                            <div class="invalid-feedback" id="email-false"></div>
+                        </div>
+                        <div class="col-12 mb-0 mb-lg-2 mb-1">
                             <label for="nama" class="form-pendaftaran">Nama</label>
                             <input type="text" class="form-control" id="nama" name="nama" required autofocus>
                             <div class="invalid-feedback" id="nama-false"></div>

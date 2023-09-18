@@ -1,15 +1,18 @@
-<div class="registration-workshop-background">
-    <h1 class="d-none d-lg-block">Hello, Friend!</h1>
-    <p class="d-none d-lg-block">Fill up personal information and start your journey with us.</p>
+<div class="registration-webinar-background text-end mr-xxl-3 mr-1" style="text-align: right;">
+    <div class="text">
+        <h1 class="d-none d-xl-block">Hello, Friend!</h1>
+        <p class="d-none d-xl-block">Fill up personal information and start <br>  your journey  with us.</p>
+    </div>
     <img src="{{ asset('civex/img/landingpage/background-registration-workshop.svg') }}" alt="">
 </div>
 
 <div class="registration-workshop">
     <div class="container">
-        <h1 class="d-block d-lg-none">Hello, Friend!</h1>
-        <p class="d-block d-lg-none">Fill up personal information and start your journey with us.</p>
+
         <div class="row">
             <div class="col-lg-10 col-12">
+                <h1 class="d-block d-lg-none">Hello, Friend!</h1>
+                <p class="d-block d-lg-none">Fill up personal information and start your journey with us.</p>
                 <p>Chose your bundling</p>
                 <div class="row">
                     <div class="col-4">
@@ -25,7 +28,7 @@
                         <label for="option3">3 Person</label>
                     </div>
                 </div>
-                
+
                 <div id="div1" class="fade-form visible">
                     @include('landingpage.slicing.reg-workshop-1person')
                 </div>
@@ -45,23 +48,23 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    
+
     function submitForm(form) {
         const btnSubmit2 = document.getElementById('btnSubmit2-'+form);
 
         const Form_workshop = document.getElementById(form);
         form_obj = new FormData(Form_workshop);
         btnSubmit2.setAttribute("disabled", "disabled");
-        
+
 
         $.ajax({
             headers: {
                     'X-CSRF-TOKEN': "{{ csrf_token() }}"
                 },
-            url: "{{ route('register-workshop') }}", 
-            method: "POST", 
-            dataType: "json", 
-            data: form_obj, 
+            url: "{{ route('register-workshop') }}",
+            method: "POST",
+            dataType: "json",
+            data: form_obj,
             processData: false, // Jangan memproses data
             contentType: false, // Jangan mengatur tipe konten
             success: function (data) {
@@ -76,7 +79,7 @@
                 // var errorMessage = xhr.responseJSON && xhr.responseJSON.errors ? xhr.responseJSON.errors : "Terjadi kesalahan dalam permintaan.";
                 errorMessage = xhr.responseJSON.error
                 errorRequest = xhr.responseJSON.errors
-                
+
                 if(errorMessage){
                     console.error(errorMessage);
                 }else if(errorRequest){
@@ -107,10 +110,10 @@
                 }else{
                     console.error("Terjadi kesalahan: " + error);
                 }
-                
+
             }
         });
-        
+
     }
 
     jQuery(($) => {
@@ -118,7 +121,7 @@
             .on('change', (event) => {
                 let el = $(event.target).closest('.attachment').find('.btn-file');
                 let id = $(event.target).data('id');
-                
+
                 // console.log(event.target)
                 // console.log(id)
 

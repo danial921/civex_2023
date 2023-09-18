@@ -26,7 +26,7 @@
     <div class="container">
         <h1 class="text-center">Our Sub Events</h1>
         <div class="row">
-            <div class="col-6">
+            <div class="col-lg-6 col-12">
                 <a class="webinar" href="\webinar">
                     <img class="bg-card" src="{{ asset('civex/img/landingpage/background-card-webinar.svg') }}">
                     <div class="event-card d-flex align-items-center">
@@ -42,7 +42,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-6 ">
+            <div class="col-lg-6 col-12 pt-lg-0 pt-3">
                 <a href="/workshop" class="workshop">
                     <img class="bg-card" src="{{ asset('civex/img/landingpage/background-card-workshop.svg') }}">
                     <div class="event-card d-flex align-items-center">
