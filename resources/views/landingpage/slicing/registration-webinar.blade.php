@@ -90,7 +90,7 @@
             <h1>Woo hoo!</h1>
             <p>Your registration has been successfully submitted. Please check your email for further information.</p>
             <div class="justify-content-center pb-3 pt-4">
-                <button type="button" class="btn btn-civex tx-poppins tx-medium" data-dismiss="modal">Close</button>
+                <a href="{{ route('webinar') }}" type="button" class="btn btn-civex tx-poppins tx-medium">Close</a>
             </div>
 
         </div>
