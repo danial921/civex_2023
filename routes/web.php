@@ -48,7 +48,7 @@ Route::get('/workshop', function () {$active = 'opening'; return view('landingpa
 Route::get('/registration-workshop', function () {$active = 'opening'; return view('landingpage.registration-workshop-new', compact('active'));});
 Route::post('/register-workshop', [workshopController::class, 'store_regist'])->name('register-workshop');
 
-Route::get('/webinar', function () {$active = 'opening'; return view('landingpage.webinar', compact('active'));});
+Route::get('/webinar', function () {$active = 'opening'; return view('landingpage.webinar', compact('active'));})->name('webinar');
 Route::get('/registration-webinar', function () {$active = 'opening'; return view('landingpage.registration-webinar-new', compact('active'));});
 Route::post('/register-workshop', [webinarController::class, 'store_regist'])->name('register-webinar');
 
