@@ -3,6 +3,11 @@
         @csrf
         <input type="text" id="bundle" name="bundle" hidden value="2">
         <div class="col-12 mb-0 mb-lg-2 mb-1">
+            <label for="nama" class="form-pendaftaran">Email</label>
+            <input type="text" class="form-control" id="nama.0-form1" name="nama[]" required autofocus>
+            <div class="invalid-feedback" id="nama.0-false-form1"></div>
+        </div>
+        <div class="col-12 mb-0 mb-lg-2 mb-1">
             <label for="nama" class="form-pendaftaran">Nama</label>
             <input type="text" class="form-control" id="nama.0-form2" name="nama[]" required autofocus>
             <div class="invalid-feedback" id="nama.0-false-form2"></div>

@@ -15,6 +15,10 @@
                 <div class="card mt-2">
                     <div class="row m-4 pr-4">
                         <div class="col-12 mb-0 mb-lg-2 mb-1">
+                            <label for="nama_tim" class="form-pendaftaran">Email</label>
+                            <input type="text" class="form-control" id="nama_tim" name="nama_tim" required autofocus>
+                        </div>
+                        <div class="col-12 mb-0 mb-lg-2 mb-1">
                             <label for="nama_tim" class="form-pendaftaran">Nama</label>
                             <input type="text" class="form-control" id="nama_tim" name="nama_tim" required autofocus>
                         </div>
