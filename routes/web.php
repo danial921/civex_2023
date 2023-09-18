@@ -30,6 +30,7 @@ use App\Http\Controllers\webinarController;
 // Route::get('/admin/detailpertanyaan-cppc/{id}', [AdminController::class, 'cppc_aanwijizing_detail']);
 
 
+
 //landing page
 Route::get('/', function () {$active = 'home'; return view('landingpage.home', compact('active'));});
 Route::get('/detail', function () {$active = 'home'; return view('landingpage.detail-civex', compact('active'));});
@@ -43,7 +44,7 @@ Route::get('/workshop', function () {$active = 'opening'; return view('landingpa
 Route::get('/registration-workshop', function () {$active = 'opening'; return view('landingpage.registration-workshop-new', compact('active'));});
 Route::post('/register-workshop', [workshopController::class, 'store_regist'])->name('register-workshop');
 
-Route::get('/webinar', function () {$active = 'opening'; return view('landingpage.webinar', compact('active'));});
+Route::get('/webinar', function () {$active = 'opening'; return view('landingpage.webinar', compact('active'));})->name('webinar');
 Route::get('/registration-webinar', function () {$active = 'opening'; return view('landingpage.registration-webinar-new', compact('active'));});
 Route::post('/register-workshop', [webinarController::class, 'store_regist'])->name('register-webinar');
 
@@ -66,6 +67,12 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/admin/cesc', [AdminController::class, 'cesc_dashboard']);
         Route::get('/admin/detailteam-cesc/{id}', [AdminController::class, 'cesc_detailTeam']);
         Route::post('/admin/updatestatus-cesc/{id}', [AdminController::class, 'cesc_updateStatus']);
+
+        Route::get('/admin/workshop', [AdminController::class, 'workshop_dashboard']);
+        Route::get('/admin/detailpendaftar-workshop/{id}', [AdminController::class, 'detailpendaftar_workshop']);
+
+        Route::get('/admin/webinar', [AdminController::class, 'webinar_dashboard']);
+        Route::get('/admin/detailpendaftar-webinar/{id}', [AdminController::class, 'detailpendaftar_webinar']);
     });
     //user
     Route::middleware('notRegisterComp')->group(function () {
