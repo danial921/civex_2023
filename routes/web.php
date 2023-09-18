@@ -28,11 +28,7 @@ use App\Http\Controllers\webinarController;
 // Route::get('/admin/detailpertanyaan-gec/{id}', [AdminController::class, 'gec_aanwijizing_detail']);
 // Route::get('/admin/cppc-aanwijizing', [AdminController::class, 'cppc_aanwijizing_table']);
 // Route::get('/admin/detailpertanyaan-cppc/{id}', [AdminController::class, 'cppc_aanwijizing_detail']);
-Route::get('/admin/workshop', [AdminController::class, 'workshop_dashboard'])->name('/admin/gec');
-Route::get('/admin/detailpendaftar-workshop/{id}', [AdminController::class, 'detailpendaftar_workshop']);
 
-Route::get('/admin/webinar', [AdminController::class, 'webinar_dashboard'])->name('/admin/gec');
-Route::get('/admin/detailpendaftar-webinar/{id}', [AdminController::class, 'detailpendaftar_webinar']);
 
 
 //landing page
@@ -71,6 +67,12 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/admin/cesc', [AdminController::class, 'cesc_dashboard']);
         Route::get('/admin/detailteam-cesc/{id}', [AdminController::class, 'cesc_detailTeam']);
         Route::post('/admin/updatestatus-cesc/{id}', [AdminController::class, 'cesc_updateStatus']);
+
+        Route::get('/admin/workshop', [AdminController::class, 'workshop_dashboard']);
+        Route::get('/admin/detailpendaftar-workshop/{id}', [AdminController::class, 'detailpendaftar_workshop']);
+
+        Route::get('/admin/webinar', [AdminController::class, 'webinar_dashboard']);
+        Route::get('/admin/detailpendaftar-webinar/{id}', [AdminController::class, 'detailpendaftar_webinar']);
     });
     //user
     Route::middleware('notRegisterComp')->group(function () {
