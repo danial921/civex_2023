@@ -24,6 +24,7 @@ class webinarController extends Controller
             $data = $request->all();
             $registrants = [];
             $registrants['nama'] = $data['nama'];
+            $registrants['email'] = $data['email'];
             $registrants['instansi'] = $data['instansi'];      
             
             $file = $request->file('bukti_bayar');

@@ -25,6 +25,7 @@ class webinarRequest extends FormRequest
     {
         return [
             'nama' => 'required',
+            'email' => 'required|email',
             'instansi' => 'required',
             'bukti_bayar' => 'required|file|max:2048'
         ];

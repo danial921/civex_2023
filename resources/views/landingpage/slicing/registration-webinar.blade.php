@@ -1,31 +1,32 @@
-<div class="registration-webinar-background text-end mr-xxl-3 mr-1" style="text-align: right;">
-    <div class="text">
-        <h1 class="d-none d-xl-block">Hello, Friend!</h1>
-        <p class="d-none d-xl-block">Fill up personal information and start <br>  your journey  with us.</p>
-    </div>
+<div class="registration-webinar-background">
+    <h1 class="d-none d-lg-block">Hello, Friend!</h1>
+    <p class="d-none d-lg-block">Fill up personal information and start your journey with us.</p>
     <img src="{{ asset('civex/img/landingpage/background-registration-workshop.svg') }}" alt="">
 </div>
 
 <div class="registration-webinar">
     <div class="container">
+        <h1 class="d-block d-lg-none">Hello, Friend!</h1>
+        <p class="d-block d-lg-none">Fill up personal information and start your journey with us.</p>
         <div class="row">
-            <div class="col-xl-10 col-12">
-                <h1 class="d-block d-xl-none">Hello, Friend!</h1>
-                <p class="d-block d-xl-none">Fill up personal information and start your journey with us.</p>
+            <div class="col-lg-10 col-12">
                 <div class="card mt-2">
-                    <div class="row m-4 pr-4">
+                    <form id="form-webinar" class="row m-4 pr-4" method="post" action="{{ route('register-webinar') }}" enctype="multipart/form-data">
                         <div class="col-12 mb-0 mb-lg-2 mb-1">
-                            <label for="nama_tim" class="form-pendaftaran">Email</label>
-                            <input type="text" class="form-control" id="nama_tim" name="nama_tim" required autofocus>
+                            <label for="email" class="form-pendaftaran">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required autofocus>
+                            <div class="invalid-feedback" id="email-false"></div>
                         </div>
                         <div class="col-12 mb-0 mb-lg-2 mb-1">
-                            <label for="nama_tim" class="form-pendaftaran">Nama</label>
-                            <input type="text" class="form-control" id="nama_tim" name="nama_tim" required autofocus>
+                            <label for="nama" class="form-pendaftaran">Nama</label>
+                            <input type="text" class="form-control" id="nama" name="nama" required autofocus>
+                            <div class="invalid-feedback" id="nama-false"></div>
                         </div>
                         <div class="col-12 mb-0 mb-lg-2 mb-1 mt-2">
 
-                            <label for="nama_tim" class="form-pendaftaran">Asal Instansi</label>
-                            <input type="text" class="form-control" id="nama_tim" name="nama_tim" required autofocus>
+                            <label for="instansi" class="form-pendaftaran">Asal Instansi</label>
+                            <input type="text" class="form-control" id="instansi" name="instansi" required autofocus>
+                            <div class="invalid-feedback" id="instansi-false"></div>
 
                         </div>
                         <div class="col-12 mb-0 mb-lg-2 mb-1 mt-2">
@@ -47,6 +48,7 @@
                                     </div>
                                     <input name="bukti_bayar" type="file" id="fileField" style="display: none"
                                         accept="image/jpeg, image/png" required>
+                                        <div class="alert alert-danger" id="bukti_bayar-false" hidden></div>
                                 </label>
                             </div>
                         </div>
@@ -56,7 +58,7 @@
                                 data-toggle="modal" data-animation="effect-scale" data-target="#simpan">
                         </div>
 
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -103,8 +105,68 @@
 
 <script>
     function submitForm() {
-        $('#simpan').modal('hide');
-        setTimeout(() => $('#successModal').modal('show'), 500); // Delay is used to ensure a smoother transition
+        const btnSubmit2 = document.getElementById('btnSubmit2');
+
+        const Form_webinar = document.getElementById('form-webinar');
+        form_obj = new FormData(Form_webinar);
+        btnSubmit2.setAttribute("disabled", "disabled");
+        
+
+        $.ajax({
+            headers: {
+                    'X-CSRF-TOKEN': "{{ csrf_token() }}"
+                },
+            url: "{{ route('register-webinar') }}", 
+            method: "POST", 
+            dataType: "json", 
+            data: form_obj, 
+            processData: false, // Jangan memproses data
+            contentType: false, // Jangan mengatur tipe konten
+            success: function (data) {
+                // Tangani respons dari server
+                // console.log("bisa")
+                console.log(data)
+                $('#simpan').modal('hide');
+                setTimeout(() => $('#successModal').modal('show'), 500); // Delay is used to ensure a smoother transition
+            },
+            error: function (xhr, status, error) {
+                // Tangani kesalahan jika ada
+                // var errorMessage = xhr.responseJSON && xhr.responseJSON.errors ? xhr.responseJSON.errors : "Terjadi kesalahan dalam permintaan.";
+                errorMessage = xhr.responseJSON.error
+                errorRequest = xhr.responseJSON.errors
+                
+                if(errorMessage){
+                    console.error(errorMessage);
+                }else if(errorRequest){
+                    console.log(errorRequest)
+                    // console.error("Terjadi kesalahan: " + error);
+                    var elements_false = Array.from(document.querySelectorAll(".is-invalid"));
+                    elements_false.forEach(function(element) {
+                        element.classList.remove("is-invalid");
+                    });
+
+                    document.getElementById("bukti_bayar-false").setAttribute('hidden', 'hidden')
+                    
+                    for(const [key_resp, value_resp] of Object.entries(errorRequest) ){
+                        console.log(key_resp, value_resp[0])
+                        if(key_resp == "bukti_bayar"){
+                            document.getElementById(key_resp+"-false").classList.add("is-invalid");
+                            document.getElementById(key_resp+"-false").innerHTML = value_resp[0]
+                            document.getElementById(key_resp+"-false").removeAttribute('hidden')
+                        }else if(value_resp[0] != ""){
+                            document.getElementById(key_resp).classList.add("is-invalid");
+                            document.getElementById(key_resp+"-false").innerHTML = value_resp[0]
+
+                        }
+                    }
+                    btnSubmit2.removeAttribute("disabled");
+                }else{
+                    console.error("Terjadi kesalahan: " + error);
+                }
+                
+            }
+        });
+        
     }
 
     jQuery(($) => {
