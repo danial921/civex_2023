@@ -30,13 +30,13 @@
                 </div>
 
                 <div id="div1" class="fade-form visible">
-                    @include('landingpage.slicing.reg-workshop-1person')
+                    @include('landingpage.slicing.reg-workshop-1Person')
                 </div>
                 <div id="div2" class="fade-form">
-                    @include('landingpage.slicing.reg-workshop-2person')
+                    @include('landingpage.slicing.reg-workshop-2Person')
                 </div>
                 <div id="div3" class="fade-form">
-                    @include('landingpage.slicing.reg-workshop-3person')
+                    @include('landingpage.slicing.reg-workshop-3Person')
                 </div>
             </div>
         </div>
