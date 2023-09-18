@@ -1,15 +1,17 @@
-<div class="registration-webinar-background">
-    <h1 class="d-none d-lg-block">Hello, Friend!</h1>
-    <p class="d-none d-lg-block">Fill up personal information and start your journey with us.</p>
+<div class="registration-webinar-background text-end mr-xxl-3 mr-1" style="text-align: right;">
+    <div class="text">
+        <h1 class="d-none d-xl-block">Hello, Friend!</h1>
+        <p class="d-none d-xl-block">Fill up personal information and start <br>  your journey  with us.</p>
+    </div>
     <img src="{{ asset('civex/img/landingpage/background-registration-workshop.svg') }}" alt="">
 </div>
 
 <div class="registration-webinar">
     <div class="container">
-        <h1 class="d-block d-lg-none">Hello, Friend!</h1>
-        <p class="d-block d-lg-none">Fill up personal information and start your journey with us.</p>
         <div class="row">
-            <div class="col-lg-10 col-12">
+            <div class="col-xl-10 col-12">
+                <h1 class="d-block d-xl-none">Hello, Friend!</h1>
+                <p class="d-block d-xl-none">Fill up personal information and start your journey with us.</p>
                 <div class="card mt-2">
                     <form id="form-webinar" class="row m-4 pr-4" method="post" action="{{ route('register-webinar') }}" enctype="multipart/form-data">
                         <div class="col-12 mb-0 mb-lg-2 mb-1">
