@@ -48,11 +48,14 @@
                                         <br>
                                         <h1
                                             style="color:#1e1e2d; font-weight:700; margin:0;font-size:32px;font-family:'Rubik',sans-serif;">
-                                            Hallo, {{ $nama_tim }} !!
+                                            Dear, {{ $nama_tim }} !!
                                         </h1>
                                         <p style="font-size:15px; color:#455056; margin:8px 0 0; line-height:24px;">
                                             {{ $pesan }}    
                                         </strong>.</p>
+                                        <p><strong> {{ $nama_tim }} </strong></p>
+                                        <p><strong> {{ $kode }} </strong></p>
+                                        
                                         <span
                                             style="display:inline-block; vertical-align:middle; margin:29px 0 26px; border-bottom:1px solid #cecece; width:100px;"></span>
                                         <p style="color:#455056; font-size:18px;line-height:20px; margin:0; font-weight: 500;">

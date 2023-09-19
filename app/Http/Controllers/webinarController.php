@@ -53,8 +53,9 @@ class webinarController extends Controller
             Notification::route('mail', $webinarNew->email)->notify(new webworkNotification([
                 'nama_tim' => $webinarNew->nama,
                 'subject' => 'Webinar Civil Expo',
-                'pesan' => 'Your Registration Number is ' . $webinarNew->unique_code,
+                'pesan' => 'Your Registration Number is ' ,
                 'pesan2' => "The National Seminar will be held via ZOOM so please be prepared to avoid any issues. Other Following information will be added later through email",
+                'kode' => $webinarNew->unique_code
             ]));
 
             return response()->json([

@@ -40,9 +40,9 @@ class workshopController extends Controller
                 }
             }
             $file = $request->file('bukti_bayar');
-            $registrants['bukti_bayar'] = $this->FetchApiController->uploadToAPI($request->input('nama')[0]."-".$request->input('bundle')."-workshop." . $file->extension(), $file);
+            // $registrants['bukti_bayar'] = $this->FetchApiController->uploadToAPI($request->input('nama')[0]."-".$request->input('bundle')."-workshop." . $file->extension(), $file);
             $registrants['bundle'] = $request->input('bundle');
-            // $registrants['bukti_bayar'] = $request->input('nama')[0];
+            $registrants['bukti_bayar'] = $request->input('nama')[0];
         
             $workshop = workshop_registrants::create($registrants);
 
@@ -64,9 +64,17 @@ class workshopController extends Controller
             foreach($request->input('nama') as $key => $nama){
                 Notification::route('mail', $data['email'][$key])->notify(new webworkNotification([
                     'nama_tim' => $nama,
-                    'subject' => 'Workshop Civil Expo',
-                    'pesan' => 'Your Registration Number is ' . $workshopNew->unique_code,
-                    'pesan2' => "The National Seminar will be held via ZOOM so please be prepared to avoid any issues. Other Following information will be added later through email",
+                    'subject' => '[WORKSHOP CIVIL EXPO ITS 2023]',
+                    'pesan' => 'Your registration is confirmed! Thanks for your enthusiasm in participating in the Workshop Revit Civil Engineering Expo (CIVEX) 2023.',
+                    'pesan2' => "For further information, please join us via the link below ⬇ 
+                    https://chat.whatsapp.com/GfT1kZVkBAl2lHXBLFclpS
+                    
+                    If you have any inquiries, do not hesitate to contact us
+                    Daffa
+                    +6285780772605 ,
+                    Satria
+                    ‪+6281339765730 ",
+                    'kode' => $workshopNew->unique_code
                 ]));
             }
             
