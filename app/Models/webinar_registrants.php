@@ -15,6 +15,7 @@ class webinar_registrants extends Model
         'nama',
         'email',
         'instansi',
+        // 'unique_code',
         'bukti_bayar'
     ];
 }
