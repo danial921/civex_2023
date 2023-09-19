@@ -164,7 +164,7 @@ class DashboardController extends Controller
         // }
         $urutan = $count;
 
-        if($urutan <= 15){
+        if($urutan <= 14){
             $harga = 'Rp.65,000,00';
         }else{
             $harga = 'Rp.75,000,00';
