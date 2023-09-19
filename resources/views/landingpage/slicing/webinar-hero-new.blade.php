@@ -16,7 +16,7 @@
                     digital
                     construction is to create an innovative breakthrough in the new era.
                 </p>
-                <a href="">
+                <a href="{{env('GUIDEBOOK_WEBINAR_WORKSHOP')}}">
                     GuideBook
                 </a>
             </div>
