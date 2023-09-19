@@ -12,7 +12,7 @@
                     Scale Construction Projects for Efficiency and Sustainable Collaboration to Accelerate
                     Infrastructure Development with Building Information Modelling (BIM): Autodesk Revit”.</span>
                 </p>
-                <a href="">
+                <a href="{{env('GUIDEBOOK_WEBINAR_WORKSHOP')}}">
                     GuideBook
                 </a>
             </div>
