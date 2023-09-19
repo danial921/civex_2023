@@ -44,6 +44,7 @@ class webworkNotification extends Notification
             'nama_tim' => $this->data['nama_tim'],
             'pesan' => $this->data['pesan'],
             'pesan2' => $this->data['pesan2'],
+            'kode' => $this->data['kode']
         ])->subject($this->data['subject']);
     }
 
