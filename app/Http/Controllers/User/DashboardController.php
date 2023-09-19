@@ -108,7 +108,7 @@ class DashboardController extends Controller
         //     $urutan = $daftar_ke->id;
         // }
 
-        if($urutan <= 10){
+        if($urutan <= 0){
             $harga = 'Rp.150,000,00';
         }else{
             $harga = 'Rp.180,000,00';
