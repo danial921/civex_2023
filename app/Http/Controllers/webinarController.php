@@ -52,9 +52,19 @@ class webinarController extends Controller
 
             Notification::route('mail', $webinarNew->email)->notify(new webworkNotification([
                 'nama_tim' => $webinarNew->nama,
-                'subject' => 'Webinar Civil Expo',
-                'pesan' => 'Your Registration Number is ' ,
-                'pesan2' => "The National Seminar will be held via ZOOM so please be prepared to avoid any issues. Other Following information will be added later through email",
+                'subject' => '*[CIVIL EXPO ITS 2022]*',
+                'pesan' => 'Your registration is confirmed! Thanks for your enthusiasm in participating in Webinar ITS Civil Engineering Expo (CIVEX) 2023.' ,
+                'pesan2' => "For further information, please join us via the link below ⬇ 
+                https://chat.whatsapp.com/BWiLpEDFJVBBTI3V06z174
+                
+                If you have any inquiries, do not hesitate to contact us
+                Nathan
+                dg1344
+                087729772745 ,
+                
+                Ica
+                chachaa7_
+                085369346806",
                 'kode' => $webinarNew->unique_code
             ]));
 
