@@ -40,9 +40,9 @@ class workshopController extends Controller
                 }
             }
             $file = $request->file('bukti_bayar');
-            // $registrants['bukti_bayar'] = $this->FetchApiController->uploadToAPI($request->input('nama')[0]."-".$request->input('bundle')."-workshop." . $file->extension(), $file);
+            $registrants['bukti_bayar'] = $this->FetchApiController->uploadToAPI($request->input('nama')[0]."-".$request->input('bundle')."-workshop." . $file->extension(), $file);
             $registrants['bundle'] = $request->input('bundle');
-            $registrants['bukti_bayar'] = $request->input('nama')[0];
+            // $registrants['bukti_bayar'] = $request->input('nama')[0];
         
             $workshop = workshop_registrants::create($registrants);
 
