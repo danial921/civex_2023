@@ -50,7 +50,7 @@
             <div class="invalid-feedback" id="notelp.1-false-form2"></div>
         </div>
         <div class="col-12 mb-0 mb-lg-2 mb-1 mt-2">
-            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran">Unggah Story</label>
+            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran">Unggah Bukti Bayar</label>
             <p class="image-sub-label"></span></p>
             <div class="fileupload-opening">
                 <label for="fileField-form2" class="attachment w-100">
