@@ -23,12 +23,6 @@ use App\Http\Controllers\webinarController;
 |
 */
 
-// route baru ada disini
-// Route::get('/admin/gec-aanwijizing', [AdminController::class, 'gec_aanwijizing_table']);
-// Route::get('/admin/detailpertanyaan-gec/{id}', [AdminController::class, 'gec_aanwijizing_detail']);
-// Route::get('/admin/cppc-aanwijizing', [AdminController::class, 'cppc_aanwijizing_table']);
-// Route::get('/admin/detailpertanyaan-cppc/{id}', [AdminController::class, 'cppc_aanwijizing_detail']);
-
 
 
 //landing page
@@ -67,6 +61,14 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/admin/cesc', [AdminController::class, 'cesc_dashboard']);
         Route::get('/admin/detailteam-cesc/{id}', [AdminController::class, 'cesc_detailTeam']);
         Route::post('/admin/updatestatus-cesc/{id}', [AdminController::class, 'cesc_updateStatus']);
+
+        Route::get('/admin/gec-aanwijizing', [AdminController::class, 'gec_aanwijizing_table']);
+        Route::get('/admin/detailpertanyaan-gec/{id}', [AdminController::class, 'gec_aanwijizing_detail'])->name('admin.detailpertanyaan-gec');
+        Route::post('/admin/update-jawaban-gec', [AdminController::class, 'gec_aanwijizing_update_jawaban'])->name('admin.jawaban-gec');
+
+        Route::get('/admin/cppc-aanwijizing', [AdminController::class, 'cppc_aanwijizing_table']);
+        Route::get('/admin/detailpertanyaan-cppc/{id}', [AdminController::class, 'cppc_aanwijizing_detail'])->name('admin.detailpertanyaan-cppc');
+        Route::post('/admin/update-jawaban-cppc', [AdminController::class, 'cppc_aanwijizing_update_jawaban'])->name('admin.jawaban-cppc');
 
         Route::get('/admin/workshop', [AdminController::class, 'workshop_dashboard']);
         Route::get('/admin/detailpendaftar-workshop/{id}', [AdminController::class, 'detailpendaftar_workshop']);

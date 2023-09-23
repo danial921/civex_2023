@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        @if($urutan <= 15)
+        @if($urutan <= 14)
             {{-- jumbotron early masih ada --}}
             @include('cesc.slicing.form1-status')
         @else

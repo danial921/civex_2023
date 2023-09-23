@@ -17,6 +17,7 @@ class workshop_registrants extends Model
         'email',
         'notelp',
         'bundle',
+        // 'unique_code',
         'bukti_bayar'
     ];
 }

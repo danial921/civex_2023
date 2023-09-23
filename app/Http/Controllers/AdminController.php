@@ -200,6 +200,23 @@ class AdminController extends Controller
         }
     }
 
+    public function gec_aanwijizing_update_jawaban(Request $request)
+    {
+        $request->validate([
+            'id' => 'required'
+        ]);
+
+        try{
+            gec_team::where('id', $request->id)->update([
+                'aanwijzing_jawab' => $request->aanwijzing_jawab
+            ]);
+
+            return redirect()->route('admin.detailpertanyaan-gec', ['id' => $request->id])->with('success', 'Data successful updated');
+        }catch(\Exception $e){
+            return redirect()->route('admin.detailpertanyaan-gec', ['id' => $request->id])->withErrors('Error: ' . $e->getMessage());
+        }
+    }
+
     public function cppc_dashboard()
     {
         $peserta = DB::table('cppc_teams')->get();
@@ -324,6 +341,23 @@ class AdminController extends Controller
                 'dataPeserta' => $dataPeserta,
 
             ]);
+        }
+    }
+
+    public function cppc_aanwijizing_update_jawaban(Request $request)
+    {
+        $request->validate([
+            'id' => 'required'
+        ]);
+
+        try{
+            cppc_team::where('id', $request->id)->update([
+                'aanwijzing_jawab' => $request->aanwijzing_jawab
+            ]);
+
+            return redirect()->route('admin.detailpertanyaan-cppc', ['id' => $request->id])->with('success', 'Data successful updated');
+        }catch(\Exception $e){
+            return redirect()->route('admin.detailpertanyaan-cppc', ['id' => $request->id])->withErrors('Error: ' . $e->getMessage());
         }
     }
 
