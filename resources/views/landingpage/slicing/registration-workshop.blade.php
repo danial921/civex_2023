@@ -30,6 +30,15 @@
                 </div>
 
                 <div id="div1" class="fade-form visible">
+<<<<<<< HEAD
+                    @include('landingpage.slicing.reg-workshop-1Person')
+                </div>
+                <div id="div2" class="fade-form">
+                    @include('landingpage.slicing.reg-workshop-2Person')
+                </div>
+                <div id="div3" class="fade-form">
+                    @include('landingpage.slicing.reg-workshop-3Person')
+=======
                     @include('landingpage.slicing.reg-workshop-1person')
                 </div>
                 <div id="div2" class="fade-form">
@@ -37,6 +46,7 @@
                 </div>
                 <div id="div3" class="fade-form">
                     @include('landingpage.slicing.reg-workshop-3person')
+>>>>>>> parent of b25896e (update fe)
                 </div>
             </div>
         </div>

@@ -13,6 +13,7 @@ class webinar_registrants extends Model
 
     protected $fillable = [
         'nama',
+        'email',
         'instansi',
         'bukti_bayar'
     ];
