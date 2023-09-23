@@ -23,12 +23,6 @@ use App\Http\Controllers\webinarController;
 |
 */
 
-// route baru ada disini
-// Route::get('/admin/gec-aanwijizing', [AdminController::class, 'gec_aanwijizing_table']);
-// Route::get('/admin/detailpertanyaan-gec/{id}', [AdminController::class, 'gec_aanwijizing_detail']);
-// Route::get('/admin/cppc-aanwijizing', [AdminController::class, 'cppc_aanwijizing_table']);
-// Route::get('/admin/detailpertanyaan-cppc/{id}', [AdminController::class, 'cppc_aanwijizing_detail']);
-
 
 
 //landing page
@@ -46,7 +40,7 @@ Route::post('/register-workshop', [workshopController::class, 'store_regist'])->
 
 Route::get('/webinar', function () {$active = 'opening'; return view('landingpage.webinar', compact('active'));})->name('webinar');
 Route::get('/registration-webinar', function () {$active = 'opening'; return view('landingpage.registration-webinar-new', compact('active'));});
-Route::post('/register-workshop', [webinarController::class, 'store_regist'])->name('register-webinar');
+Route::post('/register-webinar', [webinarController::class, 'store_regist'])->name('register-webinar');
 
 Route::get('/closing', function () {$active = 'closing'; $time = "2023-11-1 10:00:00"; return view('landingpage.closing', compact('active', 'time'));});
 Route::get('/merchandise', function () {$active = 'merchandise'; $time = "2023-09-12 12:00:00"; return view('landingpage.merchandise', compact('active', 'time'));});
@@ -67,6 +61,14 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/admin/cesc', [AdminController::class, 'cesc_dashboard']);
         Route::get('/admin/detailteam-cesc/{id}', [AdminController::class, 'cesc_detailTeam']);
         Route::post('/admin/updatestatus-cesc/{id}', [AdminController::class, 'cesc_updateStatus']);
+
+        Route::get('/admin/gec-aanwijizing', [AdminController::class, 'gec_aanwijizing_table']);
+        Route::get('/admin/detailpertanyaan-gec/{id}', [AdminController::class, 'gec_aanwijizing_detail'])->name('admin.detailpertanyaan-gec');
+        Route::post('/admin/update-jawaban-gec', [AdminController::class, 'gec_aanwijizing_update_jawaban'])->name('admin.jawaban-gec');
+
+        Route::get('/admin/cppc-aanwijizing', [AdminController::class, 'cppc_aanwijizing_table']);
+        Route::get('/admin/detailpertanyaan-cppc/{id}', [AdminController::class, 'cppc_aanwijizing_detail'])->name('admin.detailpertanyaan-cppc');
+        Route::post('/admin/update-jawaban-cppc', [AdminController::class, 'cppc_aanwijizing_update_jawaban'])->name('admin.jawaban-cppc');
 
         Route::get('/admin/workshop', [AdminController::class, 'workshop_dashboard']);
         Route::get('/admin/detailpendaftar-workshop/{id}', [AdminController::class, 'detailpendaftar_workshop']);

@@ -2,11 +2,7 @@
     <form id="form3" class="row m-4 pr-4" method="post" action="{{ route('register-workshop') }}" enctype="multipart/form-data">
         @csrf
         <input type="text" id="bundle" name="bundle" hidden value="3">
-        <div class="col-12 mb-0 mb-lg-2 mb-1">
-            <label for="nama" class="form-pendaftaran">Email</label>
-            <input type="text" class="form-control" id="nama.0-form1" name="nama[]" required autofocus>
-            <div class="invalid-feedback" id="nama.0-false-form1"></div>
-        </div>
+
         <div class="col-12 mb-0 mb-lg-2 mb-1">
             <label for="nama" class="form-pendaftaran">Nama</label>
             <input type="text" class="form-control" id="nama.0-form3" name="nama[]" required autofocus>
@@ -115,8 +111,8 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <h5 class="tx-poppins tx-medium">Pendaftaran TIM</h5>
-                <p class="mg-b-0">Apakah anda yakin ingin melakukan pendaftaran tim dengan data tim yang telah diisi?
+                <h5 class="tx-poppins tx-medium">Pendaftaran Workshop</h5>
+                <p class="mg-b-0">Apakah anda yakin ingin melakukan pendaftaran Workshop dengan data yang telah diisi?
                 </p>
             </div>
             <div class="modal-footer">
