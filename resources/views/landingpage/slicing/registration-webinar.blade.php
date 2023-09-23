@@ -32,7 +32,7 @@
 
                         </div>
                         <div class="col-12 mb-0 mb-lg-2 mb-1 mt-2">
-                            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran">Unggah Bukti Bayar</label>
+                            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran">Unggah Story</label>
                             <p class="image-sub-label"></span></p>
                             <div class="fileupload-opening">
                                 <label for="fileField" class="attachment w-100">
