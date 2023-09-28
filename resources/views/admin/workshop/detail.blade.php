@@ -21,14 +21,16 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1">
-                        <label for="staticEmail" class="form-pendaftaran mb-0">Institusi</label>
-                        <input type="text" readonly disabled class="form-control" id="staticEmail"
-                            value="{{ $dataPeserta->nama }}">
+                        <label for="staticEmail" class="form-pendaftaran mb-0">Nama</label>
+                        <textarea type="text" readonly disabled class="form-control" id="staticEmail1" style="min-height: 100px">{!! $dataPeserta->nama !!}</textarea>
+                    </div>
+                    <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                        <label for="staticEmail" class="form-pendaftaran mb-0">Email</label>
+                        <textarea type="text" readonly disabled class="form-control" id="staticEmail2" style="min-height: 100px">{!! $dataPeserta->email !!}</textarea>
                     </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1">
                         <label for="staticEmail" class="form-pendaftaran mb-0">Instansi</label>
-                        <input type="text" readonly disabled class="form-control" id="staticEmail"
-                            value="{{ $dataPeserta->instansi }}">
+                        <textarea type="text" readonly disabled class="form-control" id="staticEmail3" style="min-height: 100px">{!! $dataPeserta->instansi !!}</textarea>
                     </div>
                     <div class="titleheading mb-lg-3 mb-1">Berkas Pembayaran</div>
                     <div class="col-lg-12 col-12 mb-lg-3 mb-1 detail">
@@ -41,12 +43,13 @@
                                 <button type="submit" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
-                                        Bukti Bayar
+                                        Bukti story
                                 </button>
                             </form>
                         @endif
                     </div>
                 </div>
+
             </div>
         </div>
     </div>

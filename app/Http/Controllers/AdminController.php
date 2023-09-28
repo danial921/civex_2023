@@ -33,7 +33,9 @@ class AdminController extends Controller
     public function detailpendaftar_workshop($id)
     {
         $dataPeserta = DB::table('workshop_registrants')->where('id',$id)->first();
-
+        $dataPeserta->nama = str_replace("- ", "", $dataPeserta->nama);
+        $dataPeserta->email = str_replace("- ", "", $dataPeserta->email);
+        $dataPeserta->instansi = str_replace("- ", "", $dataPeserta->instansi);
         return view('admin.workshop.detail',
         [
             'username' => 'Admin CIVEX 2023',
