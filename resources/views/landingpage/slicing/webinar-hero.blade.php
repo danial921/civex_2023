@@ -5,7 +5,7 @@
             <img class="ornamen1" src="{{ asset('civex/img/icon/webinar-hero2.svg') }}" alt="">
             <img src="{{ asset('civex/img/icon/webinar-icon.svg') }}" alt="">
             <p class="title pt-lg-4 pt-1">Civil Expo Webinar</p>
-            <p class="sub-title">As the opening event of the entire series of Civil Expo ITS 2022 events which present an international Webinar with the theme <strong>"IKN Nusantara Smart City Concept Analysis"</strong>.</p>
+            <p class="sub-title">As the opening event of the entire series of Civil Expo ITS 2023 events which present an international Webinar with the theme <strong>"IKN Nusantara Smart City Concept Analysis"</strong>.</p>
             <button class="mt-lg-3 mt-1"><a href=""><p>Register</p></a></button>
         </div>
     </div>

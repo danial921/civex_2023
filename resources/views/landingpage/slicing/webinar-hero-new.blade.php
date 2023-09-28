@@ -34,7 +34,7 @@
                     <tbody>
                         <tr>
                             <td><img src="{{ asset('civex/img/landingpage/calender-icon.svg') }}" alt=""></td>
-                            <td class="pl-2">13<sup>th</sup> - 14<sup>th</sup> October 2023</td>
+                            <td class="pl-2">7<sup>th</sup> October 2023</td>
                         </tr>
                         <tr>
                             <td><img src="{{ asset('civex/img/landingpage/clock-icon.svg') }}" alt=""></td>

@@ -64,7 +64,7 @@
                                         <div class="avatar"><span
                                                 class="avatar-initial rounded-circle btn-its-custom-1 tx-color-01"
                                                 data-toggle="tooltip" data-placement="bottom"
-                                                title="detail tim"><ion-icon name="ellipsis-vertical"
+                                                title="detail pendaftar"><ion-icon name="ellipsis-vertical"
                                                     class="tx-18"></ion-icon></span></div>
                                     </a>
                                 </div>
