@@ -35,7 +35,7 @@
                         <input type="text" readonly disabled class="form-control" id="staticEmail"
                             value="{{ $dataPeserta->instansi }}">
                     </div>
-                    <div class="titleheading mb-lg-3 mb-1">Berkas Pembayaran</div>
+                    <div class="titleheading mb-lg-3 mb-1">Berkas Unggahan Story</div>
                     <div class="col-lg-12 col-12 mb-lg-3 mb-1 detail">
                         @if ($dataPeserta->bukti_bayar == null)
                             <p class="w-100 text-center"><i>tim belum mengirimkan berkas</i></p>
