@@ -5,28 +5,29 @@
         <div class="row">
             <div class="col-lg-8 col-12 mb-lg-5 mb-2">
                 {{-- status bar --}}
-                @if($jawabanAanwijizing !== null)
-                    @include('gec.slicing.aanwijizing-status3')
-                @elseif($pertanyaanAanwijzing === null)
-                    @include('gec.slicing.aanwijizing-status')
-                @elseif($pertanyaanAanwijzing !== null)
-                    @include('gec.slicing.aanwijizing-status2')
+                @if($pertanyaanAanwijzing === null )
+                    @include('gec.slicing.aanwijzing-status')
+                @elseif(($pertanyaanAanwijzing !== null && $jawabanAanwijizing === null ) || strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-9-30 23:59:59'))
+                    @include('gec.slicing.aanwijzing-status2')
+                @elseif($jawabanAanwijizing !== null && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-9-30 23:59:59'))
+                    @include('gec.slicing.aanwijzing-status3')
                 @endif
 
                 {{-- saat belum bertanya --}}
                 @if($aanwijizing_tanya === null && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-9-28 23:59:59') && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-9-30 23:59:59'))
-                    @include('gec.slicing.aanwijizing-form')
-                @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-9-29 23:59:59'))
-                {{-- hasil jawaban aanwijizing, ditampilkan jika sudah masuk waktunya --}}
-                    @include('gec.slicing.aanwijizing-resultpreview')
+                    @include('gec.slicing.aanwijzing-form')
+                @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-9-30 23:59:59'))
+                {{-- hasil jawaban aanwijzing, ditampilkan jika sudah masuk waktunya --}}
+                    @include('gec.slicing.aanwijzing-resultpreview')
+                {{-- recap aanwijzing --}}
+                    @include('gec.slicing.aanwijzing-resulttable')
                 @else
                     {{-- preview sudah mengajukan --}}
-                    @include('gec.slicing.aanwijizing-preview')
+                    @include('gec.slicing.aanwijzing-preview')
                 @endif
 
 
-                {{-- recap aanwijizing --}}
-                @include('gec.slicing.aanwijizing-resulttable')
+                
             </div>
             <div class="col-lg-4 col-12">
                 @include('gec.slicing.timeline')
@@ -40,9 +41,8 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">
-                    <h5 class="tx-poppins tx-medium">Pendaftaran TIM</h5>
-                    <p class="mg-b-0">Apakah anda yakin ingin melakukan pendaftaran tim dengan data tim yang telah diisi?
-                    </p>
+                    <h5 class="tx-poppins tx-medium">Submit Jawaban Aanwijizing</h5>
+                    <p class="mg-b-0">Anda memiliki kesempatan sekali untuk bertanya, Apakah anda yakin ingin bertanya?</p>
                 </div>
                 <div class="modal-footer">
                     <a class="btn btn-civex-danger tx-poppins tx-medium"

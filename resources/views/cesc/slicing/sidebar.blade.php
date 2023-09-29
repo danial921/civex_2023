@@ -15,12 +15,12 @@
                 @if(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-9-3 23:59:59'))
                     @if($status === "2" || $status === '31')
                         <li class="nav-item"><a href="{{url('/cesc/penyisihan')}}" class="nav-link-its tx-poppins tx-medium text-truncate">Penyisihan</a></li>
-                        <li class="nav-item"><a class="nav-link-its tx-poppins tx-medium text-truncate disable"></span>Semifinal</a></li>
-                        <li class="nav-item"><a class="nav-link-its tx-poppins tx-medium text-truncate disable"></span> Final</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link-its tx-poppins tx-medium text-truncate disable"></span>Semifinal</a></li>
+                        <li class="nav-item"><a class="nav-link-its tx-poppins tx-medium text-truncate disable"></span> Final</a></li> -->
                     @elseif($status === "3" || $status === '41')
                         <li class="nav-item"><a href="{{url('/cesc/penyisihan')}}" class="nav-link-its tx-poppins tx-medium text-truncate">Penyisihan</a></li>
                         <li class="nav-item"><a href="{{url('/cesc/semifinal')}}" class="nav-link-its tx-poppins tx-medium text-truncate"></span>Semifinal</a></li>
-                        <li class="nav-item"><a class="nav-link-its tx-poppins tx-medium text-truncate disable"></span> Final</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link-its tx-poppins tx-medium text-truncate disable"></span> Final</a></li> -->
                     @elseif($status === "4")    
                         <li class="nav-item"><a href="{{url('/cesc/penyisihan')}}" class="nav-link-its tx-poppins tx-medium text-truncate">Penyisihan</a></li>
                         <li class="nav-item"><a href="{{url('/cesc/semifinal')}}" class="nav-link-its tx-poppins tx-medium text-truncate"></span>Semifinal</a></li>

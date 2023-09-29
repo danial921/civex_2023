@@ -211,13 +211,15 @@
                         @if ($dataPeserta->bukti_bayar == '-')
                             <p class="w-100 text-center"><i>tim belum mengirimkan berkas</i></p>
                         @elseif ($dataPeserta->bukti_bayar != '-')
-                            <a href="{{ $dataPeserta->bukti_bayar }}" class="" target="_blank">
-                                <button type="button" class="w-100 btn btn-download">
+                            <form method="POST" action="{{ route('show-image') }}" target="_blank">
+                                @csrf
+                                <input type="hidden" name="url" value="{{ $dataPeserta->bukti_bayar }}">
+                                <button type="submit" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
-                                        Bukti Bayar
+                                        File Submission Proposal
                                 </button>
-                            </a>
+                            </form>
                         @endif
                     </div>
 
@@ -227,13 +229,15 @@
                         @if ($dataPeserta->submission_proposal == '-')
                             <p class="w-100 text-center"><i>tim belum mengirimkan berkas</i></p>
                         @elseif ($dataPeserta->submission_proposal != '-')
-                            <a href="{{ $dataPeserta->submission_proposal }}" class="" target="_blank">
-                                <button type="button" class="w-100 btn btn-download">
+                            <form method="POST" action="{{ route('show-pdf') }}" target="_blank">
+                                @csrf
+                                <input type="hidden" name="url" value="{{ $dataPeserta->submission_proposal }}">
+                                <button type="submit" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
-                                    Submission Proposal
+                                        File Submission Proposal
                                 </button>
-                            </a>
+                            </form>
                         @endif
                     </div>
                     <div class="titleheading mb-lg-3 mb-1">Status Tim</div>

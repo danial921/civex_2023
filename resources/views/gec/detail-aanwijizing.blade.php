@@ -4,7 +4,7 @@
 <div class="container pt-5 mt-3 mb-lg-3 mb-1">
     <div class="back d-flex align-items-center justify-content-between">
         <div class="d-flex align-items-center justify-content-start">
-            <a href="{{ url('gec/aanwijizing') }}"
+            <a href="{{ url('gec/aanwijzing') }}"
                 class="btn btn-icon btn-its-custom-1 tx-poppins tx-medium rounded-its-50p d-flex align-items-center mg-r-5"
                 title="Kembali">
                 <ion-icon name="arrow-back-outline" class="mg-y-2 tx-22"></ion-icon>
@@ -15,8 +15,8 @@
     <div class="container verifikasi">
         <div class="row">
             <div class="col-lg-8 col-12 mb-lg-5 mb-2">
-                {{-- hasil jawaban aanwijizing, ditampilkan jika sudah masuk waktunya --}}
-                @include('gec.slicing.aanwijizing-detailquestion')
+                {{-- hasil jawaban aanwijzing, ditampilkan jika sudah masuk waktunya --}}
+                @include('gec.slicing.aanwijzing-detailquestion')
 
             </div>
             <div class="col-lg-4 col-12">
