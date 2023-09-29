@@ -5,27 +5,30 @@
         <div class="row">
             <div class="col-lg-8 col-12 mb-lg-5 mb-2">
                 {{-- status bar --}}
-                @if($jawabanAanwijizing !== null)
-                    @include('cpcc.slicing.aanwijzing-status3')
-                @elseif($tanyaAanwijizing === null)
+                @if($pertanyaanAanwijzing === "-")
                     @include('cpcc.slicing.aanwijzing-status')
-                @elseif($tanyaAanwijizing !== null)
+                @elseif(($pertanyaanAanwijzing !== "-" && $jawabanAanwijizing === "-" ) || strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-10-16 23:59:59'))
                     @include('cpcc.slicing.aanwijzing-status2')
+                    {{ strtotime(date("Y-m-d H:i:s")) }}
+                    {{ strtotime('2023-9-28 23:59:59') }}
+                @elseif($jawabanAanwijizing !== "-" && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-16 23:59:59'))
+                    @include('cpcc.slicing.aanwijzing-status3')    
                 @endif
 
                 {{-- saat belum bertanya --}}
-                @if($aanwijizing_tanya === null && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-8 23:59:59') && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-10-13 23:59:59'))
+                @if($aanwijizing_tanya === "-" && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-8 23:59:59') && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-10-14 23:59:59'))
                     @include('cpcc.slicing.aanwijzing-form')
                 @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-16 23:59:59'))
                 {{-- hasil jawaban aanwijzing, ditampilkan jika sudah masuk waktunya --}}
                     @include('cpcc.slicing.aanwijzing-resultpreview')
+                {{-- recap aanwijzing --}}
+                    @include('cpcc.slicing.aanwijzing-resulttable')
                 @else
                     {{-- preview sudah mengajukan --}}
                     @include('cpcc.slicing.aanwijzing-preview')
                 @endif
 
-                {{-- recap aanwijzing --}}
-                @include('cpcc.slicing.aanwijzing-resulttable')
+                
             </div>
             <div class="col-lg-4 col-12">
                 @include('cpcc.slicing.timeline')
@@ -43,14 +46,14 @@
                     <p class="mg-b-0">Apakah anda yakin ingin melakukan pendaftaran tim dengan data tim yang telah diisi?
                     </p>
                 </div>
-                <form>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-civex-danger tx-poppins tx-medium"
-                            data-dismiss="modal">Batal</button>
-                        <button type="submit" class="btn btn-civex tx-poppins tx-medium">Ya, Saya Yakin</button>
-                    </div>
-                </form>
+                <div class="modal-footer">
+                    <a class="btn btn-civex-danger tx-poppins tx-medium"
+                        data-dismiss="modal">Batal</a>
+                    <button href="#" class="btn btn-civex tx-poppins tx-medium" onclick="submitForm()" id="btnSubmit2">Ya, Saya Yakin</button>
+                </div>
             </div>
         </div>
     </div>
+
+    <script src=" {{ asset('js/form-gec.js') }} " ></script>
 @endsection

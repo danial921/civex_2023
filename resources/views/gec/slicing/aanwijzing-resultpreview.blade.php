@@ -13,7 +13,7 @@
                 value="{{ $pertanyaanAanwijzing }}">
         </div>
         <div class="mb-2">
-            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran mb-0">Deskripsi Pertanyaan</label>
+            <label for="exampleFormControlInput1 formtitle" class="form-pendaftaran mb-0">Deskripsi Jawaban</label>
             <input type="text" readonly disabled class="form-control-plaintext" id="staticEmail"
                 value="{{ $jawabanAanwijizing }}">
         </div>

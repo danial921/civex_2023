@@ -105,7 +105,7 @@ class CescController extends Controller
             return redirect('/cesc/verifikasi');
         }
         
-        if(auth()->user()->status !== '3' || auth()->user()->status !== '4'|| auth()->user()->status !== '41'){
+        if(auth()->user()->status !== '3' && auth()->user()->status !== '4' && auth()->user()->status !== '41'){
             return redirect('/cesc/penyisihan');
         }
 
