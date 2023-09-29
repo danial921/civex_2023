@@ -29,7 +29,7 @@ class webinarController extends Controller
             $registrants['email'] = $data['email'];
             $registrants['instansi'] = $data['instansi'];
 
-            $file = $request->file('bukti_bayar');
+            $file = $request->file('bukti_story');
             $registrants['bukti_bayar'] = $this->FetchApiController->uploadToAPI($request->input('nama')."-webinar." . $file->extension(), $file);
 
             // $registrants['bukti_bayar'] = "aaa";
