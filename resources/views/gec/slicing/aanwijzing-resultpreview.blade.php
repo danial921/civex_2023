@@ -1,5 +1,5 @@
 <div class="card mb-2">
-    <div class="card-body aanwijizing">
+    <div class="card-body aanwijzing">
         <p class="title mb-2">Detail Pertanyaan Aanjwizing</p>
 
         <div class="mb-2">

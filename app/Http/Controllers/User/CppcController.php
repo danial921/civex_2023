@@ -132,7 +132,7 @@ class CppcController extends Controller
         $data = DB::table('cppc_teams')->get();
         $dataTim = cppc_form::where('id_user', auth()->user()->id)->first();
 
-        return view('cpcc.aanwijizing', [
+        return view('cpcc.aanwijzing', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
             'questions' => $data,
@@ -150,7 +150,7 @@ class CppcController extends Controller
         }
         $dataPeserta = DB::table('cppc_teams')->where('id',$id)->first();
 
-        return view('cpcc.detail-aanwijizing', [
+        return view('cpcc.detail-aanwijzing', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
             'judulAanwijzing' => $dataPeserta->aanwijzing_judul,
@@ -173,7 +173,7 @@ class CppcController extends Controller
             'aanwijzing_judul' => $request->input('aanwijzing_judul'),
         ]);
 
-        return redirect('/cppc/aanwijizing');
+        return redirect('/cppc/aanwijzing');
     }
 
     public function CPPC_submission()

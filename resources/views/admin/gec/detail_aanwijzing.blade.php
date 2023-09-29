@@ -4,7 +4,7 @@
     <div class="container pt-5 mt-5 mb-lg-3 mb-1">
         <div class="back d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center justify-content-start">
-                <a href="/admin/gec-aanwijizing"
+                <a href="/admin/gec-aanwijzing"
                     class="btn btn-icon btn-its-custom-1 tx-poppins tx-medium rounded-its-50p d-flex align-items-center mg-r-5"
                     title="Kembali">
                     <ion-icon name="arrow-back-outline" class="mg-y-2 tx-22"></ion-icon>
@@ -45,13 +45,13 @@
                     <input type="text" name="id" value="{{ $dataPeserta->id }}" hidden>
                     @if ( $dataPeserta->aanwijzing_jawab == null)
                         <div class="col-12 mb-lg-3 mb-1">
-                            <label for="aanwijzing_jawab" class="form-pendaftaran mb-0">Jawab Aanwijizing</label>
+                            <label for="aanwijzing_jawab" class="form-pendaftaran mb-0">Jawab Aanwijzing</label>
                             <input type="text" class="form-control" id="aanwijzing_jawab" name="aanwijzing_jawab"
                             placeholder = "pertanyaan belum di jawab">
                         </div>
                     @else
                         <div class="col-12 mb-lg-3 mb-1">
-                            <label for="aanwijzing_jawab" class="form-pendaftaran mb-0">Jawab Aanwijizing</label>
+                            <label for="aanwijzing_jawab" class="form-pendaftaran mb-0">Jawab Aanwijzing</label>
                             <input type="text" class="form-control" id="aanwijzing_jawab" name="aanwijzing_jawab"
                                 value="{{ $dataPeserta->aanwijzing_jawab }}">
                         </div>
@@ -72,8 +72,8 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <h5 class="tx-poppins tx-medium">Simpan Perubahana Aanwijizing</h5>
-                <p class="mg-b-0">Apakah anda yakin ingin melakukan perubahan pada aanwijizing peserta</p>
+                <h5 class="tx-poppins tx-medium">Simpan Perubahana Aanwijzing</h5>
+                <p class="mg-b-0">Apakah anda yakin ingin melakukan perubahan pada aanwijzing peserta</p>
             </div>
             <div class="modal-footer">
                 <a class="btn btn-civex-danger tx-poppins tx-medium" data-dismiss="modal">Batal</a>

@@ -62,11 +62,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/admin/detailteam-cesc/{id}', [AdminController::class, 'cesc_detailTeam']);
         Route::post('/admin/updatestatus-cesc/{id}', [AdminController::class, 'cesc_updateStatus']);
 
-        Route::get('/admin/gec-aanwijizing', [AdminController::class, 'gec_aanwijizing_table']);
+        Route::get('/admin/gec-aanwijzing', [AdminController::class, 'gec_aanwijizing_table']);
         Route::get('/admin/detailpertanyaan-gec/{id}', [AdminController::class, 'gec_aanwijizing_detail'])->name('admin.detailpertanyaan-gec');
         Route::post('/admin/update-jawaban-gec', [AdminController::class, 'gec_aanwijizing_update_jawaban'])->name('admin.jawaban-gec');
 
-        Route::get('/admin/cppc-aanwijizing', [AdminController::class, 'cppc_aanwijizing_table']);
+        Route::get('/admin/cppc-aanwijzing', [AdminController::class, 'cppc_aanwijizing_table']);
         Route::get('/admin/detailpertanyaan-cppc/{id}', [AdminController::class, 'cppc_aanwijizing_detail'])->name('admin.detailpertanyaan-cppc');
         Route::post('/admin/update-jawaban-cppc', [AdminController::class, 'cppc_aanwijizing_update_jawaban'])->name('admin.jawaban-cppc');
 
@@ -93,9 +93,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/gec/formulir-tim', [GecController::class, 'GEC_biodata']);
         Route::post('/gec/formulir-tim', [GecController::class, 'store_GEC_biodata'])->name('submit-berkas-gec');
         Route::get('/gec/soal', [GecController::class, 'GEC_soal']);
-        Route::get('/gec/aanwijizing', [GecController::class, 'GEC_aanwijizing']);
-        Route::post('/gec/aanwijizing', [GecController::class, 'store_GEC_aanwijizing'])->name('submit-aanwizing-gec');
-        Route::get('/gec/detail-aanwijizing/{id}', [GecController::class, 'GEC_detail_aanwijizing']);
+        Route::get('/gec/aanwijzing', [GecController::class, 'GEC_aanwijizing']);
+        Route::post('/gec/aanwijzing', [GecController::class, 'store_GEC_aanwijizing'])->name('submit-aanwizing-gec');
+        Route::get('/gec/detail-aanwijzing/{id}', [GecController::class, 'GEC_detail_aanwijizing']);
         Route::get('/gec/submission', [GecController::class, 'GEC_submission']);
         Route::post('/gec/submission', [GecController::class, 'store_GEC_submission'])->name('submit-proposal-gec');
     });
@@ -106,9 +106,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/cppc/formulir-tim', [CppcController::class, 'CPPC_biodata']);
         Route::post('/cppc/formulir-tim', [CppcController::class, 'store_CPPC_biodata'])->name('submit-berkas-cppc');
         Route::get('/cppc/soal', [CppcController::class, 'CPPC_soal']);
-        Route::get('/cppc/aanwijizing', [CppcController::class, 'CPPC_aanwijizing']);
-        Route::post('/cppc/aanwijizing', [CppcController::class, 'store_CPPC_aanwijizing'])->name('submit-aanwizing-cppc');
-        Route::get('/cppc/detail-aanwijizing/{id}', [CppcController::class, 'CPPC_detail_aanwijizing']);
+        Route::get('/cppc/aanwijzing', [CppcController::class, 'CPPC_aanwijizing']);
+        Route::post('/cppc/aanwijzing', [CppcController::class, 'store_CPPC_aanwijizing'])->name('submit-aanwizing-cppc');
+        Route::get('/cppc/detail-aanwijzing/{id}', [CppcController::class, 'CPPC_detail_aanwijizing']);
         Route::get('/cppc/submission', [CppcController::class, 'CPPC_submission']);
         Route::post('/cppc/submission', [CppcController::class, 'store_CPPC_submission'])->name('submit-proposal-cppc');
         Route::get('/cppc/submission-final', [CppcController::class, 'CPPC_berkas_final']);

@@ -684,7 +684,7 @@ input.form-control:hover {
   background: linear-gradient(0deg, #CDB8D4 0%, #CDB8D4 100%), #FFF;
 }
 
-.aanwijizing .title {
+.aanwijzing .title {
   color: #003459;
   font-family: "Poppins";
   font-size: 24px;
@@ -692,7 +692,7 @@ input.form-control:hover {
   font-weight: 600;
   line-height: normal;
 }
-.aanwijizing .subtitle {
+.aanwijzing .subtitle {
   color: #000;
   font-family: "Poppins";
   font-size: 14px;
@@ -701,11 +701,11 @@ input.form-control:hover {
   line-height: normal;
 }
 @media screen and (max-width: 720px) {
-  .aanwijizing .subtitle {
+  .aanwijzing .subtitle {
     font-size: 12px !important;
   }
 }
-.aanwijizing label.form-pendaftaran {
+.aanwijzing label.form-pendaftaran {
   color: #000;
   font-family: "Poppins";
   font-size: 12px;
@@ -713,7 +713,7 @@ input.form-control:hover {
   font-weight: 600 !important;
   line-height: normal;
 }
-.aanwijizing .sublabel {
+.aanwijzing .sublabel {
   color: #BC4749;
   font-family: "Poppins";
   font-size: 15px;
@@ -722,7 +722,7 @@ input.form-control:hover {
   line-height: normal;
 }
 @media screen and (max-width: 720px) {
-  .aanwijizing .sublabel {
+  .aanwijzing .sublabel {
     font-size: 12px;
   }
 }

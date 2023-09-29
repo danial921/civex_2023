@@ -1,4 +1,4 @@
-@extends('gec.master')
+@extends('cpcc.master')
 
 @section('content')
     <div class="container verifikasi pt-5 mt-5">
@@ -6,30 +6,29 @@
             <div class="col-lg-8 col-12 mb-lg-5 mb-2">
                 {{-- status bar --}}
                 @if($jawabanAanwijizing !== null)
-                    @include('gec.slicing.aanwijizing-status3')
+                    @include('cpcc.slicing.aanwijzing-status3')
                 @elseif($tanyaAanwijizing === null)
-                    @include('gec.slicing.aanwijizing-status')
+                    @include('cpcc.slicing.aanwijzing-status')
                 @elseif($tanyaAanwijizing !== null)
-                    @include('gec.slicing.aanwijizing-status2')
+                    @include('cpcc.slicing.aanwijzing-status2')
                 @endif
 
                 {{-- saat belum bertanya --}}
-                @if($aanwijizing_tanya === null && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-8 23:59:59') && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-10-11 23:59:59'))
-                    @include('gec.slicing.aanwijizing-form')
+                @if($aanwijizing_tanya === null && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-8 23:59:59') && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-10-13 23:59:59'))
+                    @include('cpcc.slicing.aanwijzing-form')
                 @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-16 23:59:59'))
-                {{-- hasil jawaban aanwijizing, ditampilkan jika sudah masuk waktunya --}}
-                    @include('gec.slicing.aanwijizing-resultpreview')
+                {{-- hasil jawaban aanwijzing, ditampilkan jika sudah masuk waktunya --}}
+                    @include('cpcc.slicing.aanwijzing-resultpreview')
                 @else
                     {{-- preview sudah mengajukan --}}
-                    @include('gec.slicing.aanwijizing-preview')
+                    @include('cpcc.slicing.aanwijzing-preview')
                 @endif
 
-
-                {{-- recap aanwijizing --}}
-                @include('gec.slicing.aanwijizing-resulttable')
+                {{-- recap aanwijzing --}}
+                @include('cpcc.slicing.aanwijzing-resulttable')
             </div>
             <div class="col-lg-4 col-12">
-                @include('gec.slicing.timeline')
+                @include('cpcc.slicing.timeline')
             </div>
         </div>
     </div>
@@ -44,14 +43,14 @@
                     <p class="mg-b-0">Apakah anda yakin ingin melakukan pendaftaran tim dengan data tim yang telah diisi?
                     </p>
                 </div>
-                <div class="modal-footer">
-                    <a class="btn btn-civex-danger tx-poppins tx-medium"
-                        data-dismiss="modal">Batal</a>
-                    <button href="#" class="btn btn-civex tx-poppins tx-medium" onclick="submitForm()" id="btnSubmit2">Ya, Saya Yakin</button>
-                </div>
+                <form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-civex-danger tx-poppins tx-medium"
+                            data-dismiss="modal">Batal</button>
+                        <button type="submit" class="btn btn-civex tx-poppins tx-medium">Ya, Saya Yakin</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-
-    <script src=" {{ asset('js/form-gec.js') }} " ></script>
 @endsection

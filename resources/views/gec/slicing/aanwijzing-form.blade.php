@@ -1,7 +1,7 @@
 <div class="card mb-2">
     <form id="gec_form" class="mt-2 " method="post" route="{{ route('submit-aanwizing-gec') }}" enctype="multipart/form-data">
         @csrf
-        <div class="card-body aanwijizing">
+        <div class="card-body aanwijzing">
             <p class="title mb-lg-2 mb-1">Tahap Aanwijzing</p>
             <p class="subtitle mb-2">Setiap tim diberikan kesempatan untuk bertanya dalam 1 x submit, diperbolehkan bertanya lebih dari 1 pertanyaan dalam setiap submissionnya</p>
 
