@@ -24,7 +24,7 @@
                     </td>
                     <td class="table-its">
                       <div class="dropdown">
-                        <a href="\cppc\detail-aanwijizing\{{ $question->id }}" class="btn btn-icon pd-0">
+                        <a href="\gec\detail-aanwijzing\{{ $question->id }}" class="btn btn-icon pd-0">
                           <div class="avatar"><span class="avatar-initial rounded-circle btn-its-custom-1 tx-color-01" data-toggle="tooltip" data-placement="bottom" title="detail Aaanwijizing"><ion-icon name="ellipsis-vertical" class="tx-18"></ion-icon></span></div>
                         </a>
                       </div>

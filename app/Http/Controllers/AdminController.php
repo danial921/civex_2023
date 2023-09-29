@@ -178,7 +178,7 @@ class AdminController extends Controller
         $teams = gec_team::whereNotNull('aanwijzing_tanya')->get();
 
 
-        return view('admin.gec.aanwijizing',
+        return view('admin.gec.aanwijzing',
         [
             "username" => "Admin CIVEX 2023",
             "totalPertanyaan" => $totalPertanyaan,
@@ -193,7 +193,7 @@ class AdminController extends Controller
         {
             $dataPeserta = DB::table('gec_teams')->where('id',$id)->first();
 
-            return view('admin.gec.detail_aanwijizing',
+            return view('admin.gec.detail_aanwijzing',
             [
                 'username' => 'Admin CIVEX 2023',
                 'dataPeserta' => $dataPeserta,
@@ -322,7 +322,7 @@ class AdminController extends Controller
         $teams = cppc_team::whereNotNull('aanwijzing_tanya')->get();
 
 
-        return view('admin.cppc.aanwijizing',
+        return view('admin.cppc.aanwijzing',
         [
             "username" => "Admin CIVEX 2023",
             "totalPertanyaan" => $totalPertanyaan,
@@ -337,7 +337,7 @@ class AdminController extends Controller
         {
             $dataPeserta = DB::table('cppc_teams')->where('id',$id)->first();
 
-            return view('admin.cppc.detail_aanwijizing',
+            return view('admin.cppc.detail_aanwijzing',
             [
                 'username' => 'Admin CIVEX 2023',
                 'dataPeserta' => $dataPeserta,

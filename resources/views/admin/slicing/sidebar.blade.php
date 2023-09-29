@@ -19,8 +19,8 @@
             <div class="collapse mg-l-35" id="collapse-gec">
                 <li class="nav-item"><a href="{{ url('/admin/gec') }}"
                         class="nav-link-its tx-poppins tx-medium text-truncate">data peserta</a></li>
-                <li class="nav-item"><a href="{{ url('/admin/gec-aanwijizing') }}"
-                        class="nav-link-its tx-poppins tx-medium text-truncate"></span>data aanwijizing</a></li>
+                <li class="nav-item"><a href="{{ url('/admin/gec-aanwijzing') }}"
+                        class="nav-link-its tx-poppins tx-medium text-truncate"></span>data aanwijzing</a></li>
             </div>
             <li class="nav-item d-flex justify-content-between align-items-center"><a href="{{ url('/admin/cppc') }}"
                     class="nav-link-its tx-poppins tx-medium text-truncate flex-grow-1"><img
@@ -34,7 +34,7 @@
             <div class="collapse mg-l-35" id="collapse-cpcc">
                 <li class="nav-item"><a href="{{ url('/admin/cppc') }}"
                         class="nav-link-its tx-poppins tx-medium text-truncate">data peserta</a></li>
-                <li class="nav-item"><a href="{{ url('/admin/cppc-aanwijizing') }}"
+                <li class="nav-item"><a href="{{ url('/admin/cppc-aanwijzing') }}"
                         class="nav-link-its tx-poppins tx-medium text-truncate"></span>data aawijizing</a></li>
             </div>
             <li class="nav-item d-flex justify-content-between align-items-center"><a href="{{ url('/admin/cesc') }}"
