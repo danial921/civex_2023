@@ -7,9 +7,9 @@
                 {{-- status bar --}}
                 @if($jawabanAanwijizing !== null)
                     @include('gec.slicing.aanwijizing-status3')
-                @elseif($tanyaAanwijizing === null)
+                @elseif($pertanyaanAanwijzing === null)
                     @include('gec.slicing.aanwijizing-status')
-                @elseif($tanyaAanwijizing !== null)
+                @elseif($pertanyaanAanwijzing !== null)
                     @include('gec.slicing.aanwijizing-status2')
                 @endif
 
