@@ -40,9 +40,8 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">
-                    <h5 class="tx-poppins tx-medium">Pendaftaran TIM</h5>
-                    <p class="mg-b-0">Apakah anda yakin ingin melakukan pendaftaran tim dengan data tim yang telah diisi?
-                    </p>
+                    <h5 class="tx-poppins tx-medium">Submit Jawaban Aanwijizing</h5>
+                    <p class="mg-b-0">Anda memiliki kesempatan sekali untuk bertanya, Apakah anda yakin ingin bertanya?</p>
                 </div>
                 <div class="modal-footer">
                     <a class="btn btn-civex-danger tx-poppins tx-medium"

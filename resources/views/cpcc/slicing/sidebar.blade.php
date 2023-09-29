@@ -1,6 +1,6 @@
 <div id="menu-sidebar" class="off-canvas off-canvas-overlay wd-300 wd-md-400 shadow">
     <div class="off-canvas-header bd-b-0">
-    <a href="{{url('/')}}" class="d-flex justify-content-center align-items-center">
+    <a href="{{url('/cpcc')}}" class="d-flex justify-content-center align-items-center">
         <img src="{{ asset('civex/img/Logo.svg') }}" class="ht-35">
     </a>
         <a href="#" class="close"><i data-feather="x"></i></a>
