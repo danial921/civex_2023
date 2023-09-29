@@ -48,9 +48,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <input name="bukti_bayar" type="file" id="fileField" style="display: none"
+                                    <input name="bukti_story" type="file" id="fileField" style="display: none"
                                         accept="image/jpeg, image/png" required>
-                                        <div class="alert alert-danger" id="bukti_bayar-false" hidden></div>
+                                        <div class="alert alert-danger" id="bukti_story-false" hidden></div>
                                 </label>
                             </div>
                         </div>
@@ -147,11 +147,11 @@
                         element.classList.remove("is-invalid");
                     });
 
-                    document.getElementById("bukti_bayar-false").setAttribute('hidden', 'hidden')
+                    document.getElementById("bukti_story-false").setAttribute('hidden', 'hidden')
 
                     for(const [key_resp, value_resp] of Object.entries(errorRequest) ){
                         console.log(key_resp, value_resp[0])
-                        if(key_resp == "bukti_bayar"){
+                        if(key_resp == "bukti_story"){
                             document.getElementById(key_resp+"-false").classList.add("is-invalid");
                             document.getElementById(key_resp+"-false").innerHTML = value_resp[0]
                             document.getElementById(key_resp+"-false").removeAttribute('hidden')
