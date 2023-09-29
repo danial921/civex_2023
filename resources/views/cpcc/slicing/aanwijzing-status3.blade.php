@@ -8,7 +8,7 @@
                             src="{{  asset('civex/img/icon/icon-paper.png') }}" class=" mg-l-10 mg-r-25 ">
                     </div>
                     <div class=" bd-highlight">
-                        <p class=" tx-poppins tx-medium mb-1 tx-15 ">Aanwijizing</p>
+                        <p class=" tx-poppins tx-medium mb-1 tx-15 ">Aanwijzing</p>
                         <p class="mg-b-1 success text-center">Tim Sudah Mengajukan Pertanyaan</p>
                     </div>
                 </div>

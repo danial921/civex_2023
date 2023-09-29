@@ -15,8 +15,8 @@
     <div class="container verifikasi">
         <div class="row">
             <div class="col-lg-8 col-12 mb-lg-5 mb-2">
-                {{-- hasil jawaban aanwijizing, ditampilkan jika sudah masuk waktunya --}}
-                @include('cpcc.slicing.aanwijizing-detailquestion')
+                {{-- hasil jawaban aanwijzing, ditampilkan jika sudah masuk waktunya --}}
+                @include('cpcc.slicing.aanwijzing-detailquestion')
 
             </div>
             <div class="col-lg-4 col-12">

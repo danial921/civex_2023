@@ -6,26 +6,26 @@
             <div class="col-lg-8 col-12 mb-lg-5 mb-2">
                 {{-- status bar --}}
                 @if($jawabanAanwijizing !== null)
-                    @include('cpcc.slicing.aanwijizing-status3')
-                @elseif($pertanyaanAanwijzing === null)
-                    @include('cpcc.slicing.aanwijizing-status')
-                @elseif($pertanyaanAanwijzing !== null)
-                    @include('cpcc.slicing.aanwijizing-status2')
+                    @include('cpcc.slicing.aanwijzing-status3')
+                @elseif($tanyaAanwijizing === null)
+                    @include('cpcc.slicing.aanwijzing-status')
+                @elseif($tanyaAanwijizing !== null)
+                    @include('cpcc.slicing.aanwijzing-status2')
                 @endif
 
                 {{-- saat belum bertanya --}}
-                @if($aanwijizing_tanya === null && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-9-28 23:59:59') && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-9-30 23:59:59'))
-                    @include('cpcc.slicing.aanwijizing-form')
-                @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-9-29 23:59:59'))
-                {{-- hasil jawaban aanwijizing, ditampilkan jika sudah masuk waktunya --}}
-                    @include('cpcc.slicing.aanwijizing-resultpreview')
+                @if($aanwijizing_tanya === null && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-8 23:59:59') && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-10-13 23:59:59'))
+                    @include('cpcc.slicing.aanwijzing-form')
+                @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-16 23:59:59'))
+                {{-- hasil jawaban aanwijzing, ditampilkan jika sudah masuk waktunya --}}
+                    @include('cpcc.slicing.aanwijzing-resultpreview')
                 @else
                     {{-- preview sudah mengajukan --}}
-                    @include('cpcc.slicing.aanwijizing-preview')
+                    @include('cpcc.slicing.aanwijzing-preview')
                 @endif
 
-                {{-- recap aanwijizing --}}
-                @include('cpcc.slicing.aanwijizing-resulttable')
+                {{-- recap aanwijzing --}}
+                @include('cpcc.slicing.aanwijzing-resulttable')
             </div>
             <div class="col-lg-4 col-12">
                 @include('cpcc.slicing.timeline')
