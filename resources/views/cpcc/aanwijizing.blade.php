@@ -7,9 +7,9 @@
                 {{-- status bar --}}
                 @if($jawabanAanwijizing !== null)
                     @include('cpcc.slicing.aanwijizing-status3')
-                @elseif($tanyaAanwijizing === null)
+                @elseif($pertanyaanAanwijzing === null)
                     @include('cpcc.slicing.aanwijizing-status')
-                @elseif($tanyaAanwijizing !== null)
+                @elseif($pertanyaanAanwijzing !== null)
                     @include('cpcc.slicing.aanwijizing-status2')
                 @endif
 
