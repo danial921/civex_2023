@@ -14,7 +14,7 @@
                 @endif
 
                 {{-- saat belum bertanya --}}
-                @if($aanwijizing_tanya === null && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-8 23:59:59') && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-10-13 23:59:59'))
+                @if($aanwijizing_tanya === null && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-8 23:59:59') && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-10-11 23:59:59'))
                     @include('cpcc.slicing.aanwijizing-form')
                 @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-16 23:59:59'))
                 {{-- hasil jawaban aanwijizing, ditampilkan jika sudah masuk waktunya --}}
