@@ -7,11 +7,9 @@
                 {{-- status bar --}}
                 @if($pertanyaanAanwijzing === "-")
                     @include('cpcc.slicing.aanwijzing-status')
-                @elseif(($pertanyaanAanwijzing !== "-" && $jawabanAanwijizing === "-" ) || strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-9-30 23:59:59'))
+                @elseif(($pertanyaanAanwijzing !== "-") && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-9-30 23:59:59'))
                     @include('cpcc.slicing.aanwijzing-status2')
-                    {{ strtotime(date("Y-m-d H:i:s")) }}
-                    {{ strtotime('2023-9-28 23:59:59') }}
-                @elseif($jawabanAanwijizing !== "-" && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-9-30 23:59:59'))
+                @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-9-30 23:59:59'))
                     @include('cpcc.slicing.aanwijzing-status3')    
                 @endif
 
