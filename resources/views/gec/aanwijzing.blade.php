@@ -7,9 +7,9 @@
                 {{-- status bar --}}
                 @if($pertanyaanAanwijzing === null )
                     @include('gec.slicing.aanwijzing-status')
-                @elseif(($pertanyaanAanwijzing !== null && $jawabanAanwijizing === null ) || strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-9-30 23:59:59'))
+                @elseif(($pertanyaanAanwijzing !== null) && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-9-30 23:59:59'))
                     @include('gec.slicing.aanwijzing-status2')
-                @elseif($jawabanAanwijizing !== null && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-9-30 23:59:59'))
+                @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-9-30 23:59:59'))
                     @include('gec.slicing.aanwijzing-status3')
                 @endif
 
