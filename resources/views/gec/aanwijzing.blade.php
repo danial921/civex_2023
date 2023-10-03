@@ -7,16 +7,16 @@
                 {{-- status bar --}}
                 @if($pertanyaanAanwijzing === null )
                     @include('gec.slicing.aanwijzing-status')
-                @elseif(($pertanyaanAanwijzing !== null) && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-9-30 23:59:59'))
+                @elseif(($pertanyaanAanwijzing !== null) && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-10-11 23:59:59'))
                     @include('gec.slicing.aanwijzing-status2')
-                @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-9-30 23:59:59'))
+                @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-11 23:59:59'))
                     @include('gec.slicing.aanwijzing-status3')
                 @endif
 
                 {{-- saat belum bertanya --}}
-                @if($aanwijizing_tanya === null && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-9-28 23:59:59') && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-9-30 23:59:59'))
+                @if($aanwijizing_tanya === null && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-8 23:59:59') && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-10-11 23:59:59'))
                     @include('gec.slicing.aanwijzing-form')
-                @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-9-29 23:59:59'))
+                @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-11 23:59:59'))
                 {{-- hasil jawaban aanwijzing, ditampilkan jika sudah masuk waktunya --}}
                     @include('gec.slicing.aanwijzing-resultpreview')
                 {{-- recap aanwijzing --}}
