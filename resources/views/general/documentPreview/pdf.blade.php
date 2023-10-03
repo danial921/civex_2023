@@ -19,6 +19,10 @@
             border: none;
         }
 
+        .img{
+            width: 100%;
+        }
+
         .header {
             margin-bottom: 10px;
             padding: 10px 20px;
@@ -44,7 +48,14 @@
     <header class="header">
         <img src="{{ asset('civex/img/documentLogo.svg') }}" alt="Logo Perusahaan" class="logo">
     </header>
-    <iframe src="{{ $url }}"></iframe>
+    @php
+    $fileExtension = pathinfo($url, PATHINFO_EXTENSION);
+    @endphp
+    @if (strtolower($fileExtension) === 'pdf')
+        <iframe src="{{ $url }}"></iframe>
+    @else
+        <img class="img" src="{{ $url }}"/>
+    @endif
 </body>
 
 </html>

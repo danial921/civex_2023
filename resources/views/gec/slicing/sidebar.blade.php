@@ -21,7 +21,7 @@
                     <!-- <li class="nav-item"><a class="nav-link-its tx-poppins tx-medium text-truncate disable">Pembagian Soal</a></li> -->
                     <li class="nav-item"><a class="nav-link-its tx-poppins tx-medium text-truncate disable"></span>Aanwijzing</a></li>
                 @endif
-                @if(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-9-28 23:59:59'))
+                @if(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-8 23:59:59'))
                     <li class="nav-item"><a href="{{url('/gec/submission')}}" class="nav-link-its tx-poppins tx-medium text-truncate"></span> Submission</a></li>
                 @else
                     <li class="nav-item"><a class="nav-link-its tx-poppins tx-medium text-truncate disable"></span> Submission</a></li>
