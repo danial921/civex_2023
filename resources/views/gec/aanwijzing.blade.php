@@ -14,8 +14,8 @@
                 @endif
 
 
-                @include('gec.slicing.aanwijzing-form')
-                @include('gec.slicing.aanwijzing-resulttable')
+            {{-- @include('gec.slicing.aanwijzing-form')
+            @include('gec.slicing.aanwijzing-resulttable') --}}
 
 
                 @if($aanwijizing_tanya === null && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-8 23:59:59') && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-10-11 23:59:59'))

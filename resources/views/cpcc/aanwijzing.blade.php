@@ -13,8 +13,8 @@
                     @include('cpcc.slicing.aanwijzing-status3')
                 @endif
 
-                @include('cpcc.slicing.aanwijzing-form')
-                @include('cpcc.slicing.aanwijzing-resulttable')
+                {{-- @include('cpcc.slicing.aanwijzing-form')
+                @include('cpcc.slicing.aanwijzing-resulttable') --}}
 
                 @if($aanwijizing_tanya === "-" && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-8 23:59:59') && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-10-13 23:59:59'))
                     @include('cpcc.slicing.aanwijzing-form')
