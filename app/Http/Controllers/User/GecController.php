@@ -121,6 +121,7 @@ class GecController extends Controller
         return view('gec.aanwijzing', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
+            'status' => '1',
             'questions' => $data,
             'aanwijizing_tanya' => $dataTim->aanwijzing_tanya,
             'pertanyaanAanwijzing' => $dataTim->aanwijzing_tanya,

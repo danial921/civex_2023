@@ -20,7 +20,7 @@
                             class=" mg-l-10 mg-r-25 "></div>
                     <div class=" bd-highlight">
                         <p class=" tx-poppins tx-medium mb-0 tx-15 ">Pertanyaan Terjawab</p>
-                        <p class="mg-b-1 success text-center">Pernyataan sudah dijawan Admin</p>
+                        <p class="mg-b-1 success text-center">Pernyataan sudah dijawab Admin</p>
                     </div>
                 </div>
             </div>

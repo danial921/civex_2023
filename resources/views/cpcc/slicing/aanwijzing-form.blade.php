@@ -3,7 +3,7 @@
         @csrf
         <div class="card-body aanwijzing">
             <p class="title mb-lg-2 mb-1">Tahap Aanwijzing</p>
-            <p class="subtitle mb-2">Setiap tim diberikan kesempatan untuk bertanya dalam 1 x submit, diperbolehkan bertanya lebih dari 1 pertanyaan dalam setiap submissionnya</p>
+            <p class="subtitle mb-2">Anda dapat mengajukan <b>beberapa pertanyaan</b> sekaligus dalam satu kali submit dengan kesempatan untuk submit hanya <b>1 kali</b></p>
 
             <div class="mb-2">
                 <label for="aanwijzing_judul" class="form-pendaftaran mb-1">Judul Pertanyaan</label>
