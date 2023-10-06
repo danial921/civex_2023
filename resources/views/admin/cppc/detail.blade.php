@@ -240,6 +240,29 @@
                             </form>
                         @endif
                     </div>
+                    
+                    <div class="col-lg-6 col-12 mb-lg-3 mb-1 detail">
+                        <label for="staticEmail" class="form-pendaftaran mb-1">File Berkas Final</label>
+                        @if ($dataPeserta->status_berkas_final == '0')
+                            <p class="w-100 text-center"><i>tim belum mengirimkan berkas</i></p>
+                        @elseif ($dataPeserta->status_berkas_final == '1')
+                            <form method="POST" action="{{ route('show-pdf') }}" target="_blank">
+                                @csrf
+                                <input type="hidden" name="url" value="{{ $dataPeserta->ppt }}">
+                                <button type="submit" class="w-100 btn btn-download">
+                                    <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
+                                        width="20" height="20">
+                                        File Powerpoint
+                                </button>
+                            </form>
+                            <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                                <label for="staticEmail" class="form-pendaftaran mb-0">Url Video</label>
+                                <input type="text" readonly disabled class="form-control" id="staticEmail"
+                                    value="{{ $dataPeserta->url_video }}">
+                            </div>
+                        @endif
+                    </div>
+
                     <div class="titleheading mb-lg-3 mb-1">Status Tim</div>
                     @include('admin.cppc.slicing.rubahsatatustim')
                 </div>

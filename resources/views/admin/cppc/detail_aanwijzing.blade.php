@@ -30,17 +30,16 @@
                 </div>
                 @endif
                 <div class="row">
-                    <div class="col-12 mb-lg-3 mb-1">
+                    <!-- <div class="col-12 mb-lg-3 mb-1">
                         <label for="staticEmail" class="form-pendaftaran mb-0">Judul Pertanyaan</label>
                         <input type="text" readonly disabled class="form-control" id="staticEmail"
                             value="{{ $dataPeserta->aanwijzing_judul }}">
-                    </div>
+                    </div> -->
                     <div class="col-12 mb-lg-3 mb-1">
                         <label for="staticEmail" class="form-pendaftaran mb-0">Pertanyaan</label>
-                        <input type="text" readonly disabled class="form-control" id="staticEmail"
-                            value="{{ $dataPeserta->aanwijzing_tanya }}">
+                        <textarea type="text" readonly disabled class="form-control" id="staticEmail">{{ $dataPeserta->aanwijzing_tanya }}</textarea>
                     </div>
-                    <form id="jawab-cppc" action="{{ route('admin.jawaban-cppc') }}" method="post" enctype="multipart/form-data">
+                    <!-- <form id="jawab-cppc" action="{{ route('admin.jawaban-cppc') }}" method="post" enctype="multipart/form-data">
                     @csrf
                     <input type="text" name="id" value="{{ $dataPeserta->id }}" hidden>
                     @if ( $dataPeserta->aanwijzing_jawab == null)
@@ -60,7 +59,7 @@
                         <div class="mt-3 d-flex justify-content-end align-items-center">
                             <input type="button" value="submit" class="btn btn-civex  mg-b-20 mg-r-20" id="btnSubmit" data-toggle="modal" data-animation="effect-scale" data-target="#simpan"></input>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>

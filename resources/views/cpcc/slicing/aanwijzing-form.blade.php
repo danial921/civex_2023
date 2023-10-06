@@ -5,14 +5,14 @@
             <p class="title mb-lg-2 mb-1">Tahap Aanwijzing</p>
             <p class="subtitle mb-2">Anda dapat mengajukan <b>beberapa pertanyaan</b> sekaligus dalam satu kali submit dengan kesempatan untuk submit hanya <b>1 kali</b></p>
 
-            <div class="mb-2">
+            <!-- <div class="mb-2">
                 <label for="aanwijzing_judul" class="form-pendaftaran mb-1">Judul Pertanyaan</label>
                 <input type="email" class="form-control" id="aanwijzing_judul"
                     placeholder="Judul Pertanyaanmu" name="aanwijzing_judul">
                     @error('aanwijzing_judul')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
-            </div>
+            </div> -->
             <div class="mb-2">
                 <label for="aanwijzing_tanya" class="form-pendaftaran mb-1">Deskripsi Pertanyaan</label>
                 <textarea type="text" class="mb-2 form-control" id="aanwijzing_tanya"

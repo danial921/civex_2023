@@ -170,7 +170,7 @@ class CppcController extends Controller
 
         cppc_form::where('id_user', auth()->user()->id)->update([
             'aanwijzing_tanya' => $request->input('aanwijzing_tanya'),
-            'aanwijzing_judul' => $request->input('aanwijzing_judul'),
+            // 'aanwijzing_judul' => $request->input('aanwijzing_judul'),
         ]);
 
         return redirect('/cppc/aanwijzing');
@@ -203,9 +203,9 @@ class CppcController extends Controller
         }
 
         $data = cppc_form::where('id_user', auth()->user()->id)->first();
-        $gdriveController = new GoogleDriveController();
+        // $gdriveController = new GoogleDriveController();
         cppc_form::where('id_user', auth()->user()->id)->update([
-            'submission_proposal' => $this->FetchApiController->uploadToAPI($request->nama_tim."_cppc_proposal.".$request->file('submission_proposal')->extension(), $request->file('submission_proposal')),
+            'submission_proposal' => $this->FetchApiController->uploadToAPI($data->nama_tim."_CPPC_proposal.".$request->file('submission_proposal')->extension(), $request->file('submission_proposal')),
             'status_proposal' => '1'
         ]);
 
@@ -220,10 +220,10 @@ class CppcController extends Controller
 
         $data = cppc_form::where('id_user', auth()->user()->id)->first();
 
-        return view('cpcc.berkasfinal-form', [
+        return view('cpcc.berkasfinal', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
-            'status_proposal' => $data->status_proposal,
+            'status_berkas_final' => $data->status_berkas_final,
             'namatim' => $data->nama_tim,
             'institusi' => $data->institusi,
             'ketuatim' => $data->ketua_nama,
@@ -239,10 +239,11 @@ class CppcController extends Controller
         }
 
         $data = cppc_form::where('id_user', auth()->user()->id)->first();
-        $gdriveController = new GoogleDriveController();
+        // $gdriveController = new GoogleDriveController();
         cppc_form::where('id_user', auth()->user()->id)->update([
-            'ppt' => $this->FetchApiController->uploadToAPI($request->nama_tim."_cppc_ppt.".$request->file('ppt')->extension(), $request->file('ppt')),
-            'url_video' => $request->input('url_video')
+            'ppt' => $this->FetchApiController->uploadToAPI($data->nama_tim."_CPPC_ppt.".$request->file('ppt')->extension(), $request->file('ppt')),
+            'url_video' => $request->input('url_video'),
+            'status_berkas_final' => 1
         ]);
 
         return redirect('/cppc/submission-final');
