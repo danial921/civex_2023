@@ -121,6 +121,7 @@ class GecController extends Controller
         return view('gec.aanwijzing', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
+            // 'status' => '1',
             'questions' => $data,
             'aanwijizing_tanya' => $dataTim->aanwijzing_tanya,
             'pertanyaanAanwijzing' => $dataTim->aanwijzing_tanya,
@@ -156,7 +157,7 @@ class GecController extends Controller
 
         gec_form::where('id_user', auth()->user()->id)->update([
             'aanwijzing_tanya' => $request->input('aanwijzing_tanya'),
-            'aanwijzing_judul' => $request->input('aanwijzing_judul'),
+            // 'aanwijzing_judul' => $request->input('aanwijzing_judul'),
         ]);
 
         return redirect('/gec/aanwijzing');
@@ -189,9 +190,9 @@ class GecController extends Controller
         }
 
         $data = gec_form::where('id_user', auth()->user()->id)->first();
-        $gdriveController = new GoogleDriveController();
+        // $gdriveController = new GoogleDriveController();
         gec_form::where('id_user', auth()->user()->id)->update([
-            'submission_proposal' => $this->FetchApiController->uploadToAPI($request->nama_tim."_GEC_proposal.".$request->file('submission_proposal')->extension(), $request->file('submission_proposal')),
+            'submission_proposal' => $this->FetchApiController->uploadToAPI($data->nama_tim."_GEC_proposal.".$request->file('submission_proposal')->extension(), $request->file('submission_proposal')),
             'status_proposal' => '1',
             'url_video' => $request->input('url_video')
         ]);

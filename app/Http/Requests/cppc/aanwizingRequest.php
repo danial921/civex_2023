@@ -24,7 +24,7 @@ class aanwizingRequest extends FormRequest
     public function rules()
     {
         return [
-            'aanwijzing_judul' => 'required',
+            // 'aanwijzing_judul' => 'required',
             'aanwijzing_tanya' => 'required'
         ];
     }
