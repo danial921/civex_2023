@@ -13,21 +13,16 @@
                     @include('gec.slicing.aanwijzing-status3')
                 @endif
 
-                {{-- saat belum bertanya --}}
+
+            {{-- @include('gec.slicing.aanwijzing-form')
+            @include('gec.slicing.aanwijzing-resulttable') --}}
+
+
                 @if($aanwijizing_tanya === null && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-8 23:59:59') && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-10-11 23:59:59'))
                     @include('gec.slicing.aanwijzing-form')
                 @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-11 23:59:59'))
-                {{-- hasil jawaban aanwijzing, ditampilkan jika sudah masuk waktunya --}}
-                    @include('gec.slicing.aanwijzing-resultpreview')
-                {{-- recap aanwijzing --}}
                     @include('gec.slicing.aanwijzing-resulttable')
-                @else
-                    {{-- preview sudah mengajukan --}}
-                    @include('gec.slicing.aanwijzing-preview')
                 @endif
-
-
-                
             </div>
             <div class="col-lg-4 col-12">
                 @include('gec.slicing.timeline')

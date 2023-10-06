@@ -5,7 +5,7 @@
             <img src="{{ asset('civex/img/timelinenumber/1.svg') }}" class="wd-40 mg-l-10 mg-r-25 d-none d-lg-block">
             <div class="container-fluid">
                 <p class="title mb-0">Pendaftaran Peserta</p>
-                <p class="subtitle">7 Agustus – 3 Oktober 2023 </p>
+                <p class="subtitle">7 Agustus – 15 Oktober 2023 </p>
             </div>
         </div>
         <div class="d-flex align-items-center mb-lg-3 mb-0">
