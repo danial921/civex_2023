@@ -246,7 +246,7 @@
                         @if ($dataPeserta->status_berkas_final == '0')
                             <p class="w-100 text-center"><i>tim belum mengirimkan berkas</i></p>
                         @elseif ($dataPeserta->status_berkas_final == '1')
-                            <form method="POST" action="{{ route('show-pdf') }}" target="_blank">
+                            <!-- <form method="POST" action="{{ route('show-pdf') }}" target="_blank">
                                 @csrf
                                 <input type="hidden" name="url" value="{{ $dataPeserta->ppt }}">
                                 <button type="submit" class="w-100 btn btn-download">
@@ -254,7 +254,13 @@
                                         width="20" height="20">
                                         File Powerpoint
                                 </button>
-                            </form>
+                            </form> -->
+                                <a type="button" class="w-100 btn btn-download" href="{{ $dataPeserta->ppt }}">
+                                    <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
+                                        width="20" height="20">
+                                        Download File Powerpoint
+                                        
+                                </a>
                             <div class="col-lg-6 col-12 mb-lg-3 mb-1">
                                 <label for="staticEmail" class="form-pendaftaran mb-0">Url Video</label>
                                 <input type="text" readonly disabled class="form-control" id="staticEmail"
