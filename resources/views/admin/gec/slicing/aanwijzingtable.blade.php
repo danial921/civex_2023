@@ -7,7 +7,7 @@
                     <tr>
                         <th class="text-center wd-40p">nama tim</th>
                         <th class="text-center wd-20">pertanyaan</th>
-                        <th class="text-center wd-20">status</th>
+                        <!-- <th class="text-center wd-20">status</th> -->
                         <th class="text-center wd-5p">Menu</th>
                     </tr>
                 </thead>
@@ -20,7 +20,7 @@
                             <td>
                                 <p class="mg-b-0">{{ $team->aanwijzing_tanya }}</p>
                             </td>
-                            <td class="text-center">
+                            <!-- <td class="text-center">
                             @if ($team->aanwijzing_jawab === null)
                                 <div class="mb-2 admin-teamstatus gec-01">
                                     <p>belum dijawab</p>
@@ -32,7 +32,7 @@
                             @else
                                 <p>error</p>
                             @endif
-                            </td>
+                            </td> -->
                             <td>
                                 <div class="dropdown">
                                     <a href="\admin\detailpertanyaan-gec\{{ $team->id }}" class="btn btn-icon pd-0">
