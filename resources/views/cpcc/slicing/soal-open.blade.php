@@ -11,7 +11,7 @@
                         </div>
                         <div class="mb-2 bd-highligt sub-title">Soal Dapat di download pada link berikut :</div>
                         <div class="pb-2">
-                            <a href="">
+                            <a href="https://drive.google.com/drive/folders/1YwGVCvGiCZkz1AmSud6bI8SLCwlps842?usp=sharing">
                                 <button type="button" class="btn btn-daftar w-100">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
