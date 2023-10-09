@@ -19,7 +19,7 @@
                                 </button>
                             </a>
                         </div>
-                        <div class="pb-1"> <a href="">
+                        <div class="pb-1"> <a href="https://docs.google.com/file/d/1smY5iVSHlqp8OMORALdeu9v-2Wdgiho1/edit?usp=docslist_api&filetype=msword">
                                 <button type="button" class="btn btn-daftar">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
