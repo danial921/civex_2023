@@ -38,7 +38,7 @@
                 </a>
             </div>
             <div class="col-lg-6 col-12 mb-2">
-                <a href="">
+                <a href="https://docs.google.com/file/d/1smY5iVSHlqp8OMORALdeu9v-2Wdgiho1/edit?usp=docslist_api&filetype=msword">
                     <button type="button" class="btn btn-daftar w-100">
                         <img src="{{ asset('civex/img/icon/icon-cloud.svg') }}" alt="your_image"
                             width="20" height="20">
