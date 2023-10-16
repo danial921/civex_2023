@@ -19,7 +19,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-12 mb-lg-3 mb-1">
+            <!-- <div class="col-lg-4 col-md-4 col-12 mb-lg-3 mb-1">
                 <div class="card">
                     <div class="card-header bg-green text-center">
                         Pertanyaan Sudah Dijawab
@@ -39,7 +39,7 @@
                         <div class="isi"> {{ $pertanyaanBelumTerjawab }}</div>
                     </div>
                 </div>
-            </div>
+            </div> -->
              <div class="col-12">
                 {{-- tabel aanwijzing peserta --}}
                 @include('admin.cppc.slicing.aanwijzingtable')
