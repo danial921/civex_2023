@@ -12,14 +12,14 @@
                     </button>
                 </a>
                 {{-- Tunggu Release --}}
-                @if(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-24 23:59:59'))
+                @if(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-9-24 23:59:59'))
                 <div class="mb-2"></div>
                 <a href="">
-                    <button type="button" class="btn btn-daftar  w-100">
+                    <a type="button" class="btn btn-daftar  w-100" href="https://drive.google.com/file/d/10FssaXM7nFjx2eTLNmfTaAxPuExk64fw/view?usp=drivesdk" target="_blank">
                         <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                             width="20" height="20">
                         <b>Kisi Kisi</b> Tryout
-                    </button>
+                    </a>
                 </a>
                 @else
                 <div class="mb-2"></div>

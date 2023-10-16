@@ -2,6 +2,10 @@
 
 @section('content')
     <div class="container pt-5 mt-5">
+        @include('kit.post-access-pendaftaran')
+    </div>
+    {{--
+<div class="container pt-5 mt-5">
         <div class="back d-flex align-items-center justify-content-between mg-b-20 mg-sm-b-25 mg-lg-b-25">
             <div class="d-flex align-items-center justify-content-start">
                 <a href="/dashboard"
@@ -13,13 +17,14 @@
                     Engineering Competition</h4>
             </div>
         </div>
-        @if($urutan <= 0)
-            {{-- jumbotron early masih ada --}}
+        @if ($urutan <= 0)
+            jumbotron early masih ada
             @include('gec.slicing.form1-status2')
         @else
-            {{-- jumbotronkalo udah abis --}}
+            jumbotronkalo udah abis
             @include('gec.slicing.form1-status')
         @endif
         @include('gec.slicing.form1-formulir')
     </div>
+    --}}
 @endsection
