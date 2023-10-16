@@ -38,7 +38,7 @@
                 <table class="transparent-table hero-desc" border="0">
                     <tr>
                         <th class="pr-3">Link </th>
-                        <td><a href="https://www.youtube.com/watch?v=omvCDkyNTOA">: {{ ENV('URL_CBT') }}</a></td>
+                        <td><a href="">: {{ ENV('URL_CBT') }}</a></td>
                       </tr>
                       <tr>
                         <th class="pr-3">Username</th>
