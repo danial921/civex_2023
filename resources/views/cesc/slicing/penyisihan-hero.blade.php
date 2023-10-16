@@ -23,8 +23,8 @@
                 </a>
                 @else
                 <div class="mb-2"></div>
-                <a>
-                    <button disabled type="button" class="btn btn-daftar  w-100">
+                <a href="https://drive.google.com/file/d/10FssaXM7nFjx2eTLNmfTaAxPuExk64fw/view?usp=drivesdk">
+                    <button type="button" class="btn btn-daftar  w-100">
                         <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                             width="20" height="20">
                         <b>Kisi Kisi</b> Tryout
