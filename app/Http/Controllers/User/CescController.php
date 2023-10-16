@@ -94,8 +94,8 @@ class CescController extends Controller
         return view('cesc.penyisihan', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
-            'usernamelomba' => 'danial99',
-            'pwlomba' => 'danial99'    
+            'usernamelomba' => 'testing-user',
+            'pwlomba' => 'testing-user'    
         ]);
     }
 
