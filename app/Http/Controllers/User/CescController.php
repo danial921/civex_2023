@@ -16,7 +16,7 @@ class CescController extends Controller
     public function __construct(){
         $this->FetchApiController = new FetchApiController();
     }
-    
+
     public function CESC(){
         if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31' && auth()->user()->status !== '4' && auth()->user()->status !== '41'){
             return redirect('/cesc/verifikasi');
@@ -95,7 +95,7 @@ class CescController extends Controller
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
             'usernamelomba' => 'testing-user',
-            'pwlomba' => 'testing-user'    
+            'pwlomba' => 'testing-user'
         ]);
     }
 
@@ -104,7 +104,7 @@ class CescController extends Controller
         if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31' && auth()->user()->status !== '4' && auth()->user()->status !== '41'){
             return redirect('/cesc/verifikasi');
         }
-        
+
         if(auth()->user()->status !== '3' && auth()->user()->status !== '4' && auth()->user()->status !== '41'){
             return redirect('/cesc/penyisihan');
         }
@@ -130,7 +130,7 @@ class CescController extends Controller
         if(auth()->user()->status !== '3' && auth()->user()->status !== '4' && auth()->user()->status !== '41'){
             return redirect('/cesc/penyisihan');
         }
-        
+
         $data = cesc_form::where('id_user', auth()->user()->id)->first();
 
         return view('cesc.submission_semifinal', [
@@ -147,7 +147,7 @@ class CescController extends Controller
         if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31' && auth()->user()->status !== '4' && auth()->user()->status !== '41'){
             return redirect('/cesc/verifikasi');
         }
-        
+
         $data = cesc_form::where('id_user', auth()->user()->id)->first();
         // $gdriveController = new GoogleDriveController();
 
@@ -171,7 +171,7 @@ class CescController extends Controller
 
         return view('cesc.final', [
             'username' => auth()->user()->name,
-            'status' => auth()->user()->status    
+            'status' => auth()->user()->status
         ]);
     }
 }

@@ -18,7 +18,7 @@
                     <button type="button" class="btn btn-daftar  w-100">
                         <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                             width="20" height="20">
-                        <b>Kisi Kisi</b> Tryout
+                        <b>Kisi Kisi</b> Penyisihan
                     </button>
                 </a>
                 @else

@@ -16,11 +16,11 @@
                 {{-- @include('cpcc.slicing.aanwijzing-form')
                 @include('cpcc.slicing.aanwijzing-resulttable') --}}
 
-                @if($aanwijizing_tanya == null && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-8 23:59:59') && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-10-14 23:59:59'))
-                    @include('cpcc.slicing.aanwijzing-form')
-                @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-14 23:59:59'))
+                {{-- @if($aanwijizing_tanya == null && strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-8 23:59:59') && strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-10-14 23:59:59')) --}}
+                    {{-- @include('cpcc.slicing.aanwijzing-form') --}}
+                {{-- @elseif(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-10-14 23:59:59')) --}}
                     @include('cpcc.slicing.aanwijzing-resulttable')
-                @endif
+                {{-- @endif --}}
 
             </div>
             <div class="col-lg-4 col-12">
