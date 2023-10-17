@@ -1,7 +1,7 @@
 <div class="card mb-2">
     <div class="card-body aanjwizing">
         <p class="title mb-lg-2 mb-1">Hasil Jawaban Aanwijzing</p>
-        <a href="">
+        <a href="https://drive.google.com/file/d/1224o_4mSKE9ZWxky00O3-HqT76RsdaN7/view?usp=drivesdk">
             <button type="button" class="btn btn-daftar">
                 <img src="{{ asset('civex/img/icon/icon-cloud.svg') }}" alt="your_image"
                     width="20" height="20">
