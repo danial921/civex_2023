@@ -39,7 +39,7 @@
         <div class="d-flex align-items-center mb-3">
             <img src="{{ asset('civex/img/timelinenumber/6.svg') }}" class="wd-40 mg-l-10 mg-r-25 d-none d-lg-block">
             <div class="container-fluid">
-                <p class="title mb-0">Batas Pengumpulan Videp</p>
+                <p class="title mb-0">Batas Pengumpulan Video</p>
                 <p class="subtitle">16 November 2023</p>
             </div>
         </div>
