@@ -19,7 +19,7 @@ class GecController extends Controller
     public function __construct(){
         $this->FetchApiController = new FetchApiController();
     }
-    
+
     public function GEC(){
         if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
             return redirect('/gec/verifikasi');
@@ -96,7 +96,7 @@ class GecController extends Controller
         if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
             return redirect('/gec/verifikasi');
         }
-        
+
         return view('gec.soal', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
@@ -117,10 +117,11 @@ class GecController extends Controller
 
         $data = DB::table('gec_teams')->get();
         $dataTim = gec_form::where('id_user', auth()->user()->id)->first();
-    
-        return view('gec.aanwijizing', [
+
+        return view('gec.aanwijzing', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
+            // 'status' => '1',
             'questions' => $data,
             'aanwijizing_tanya' => $dataTim->aanwijzing_tanya,
             'pertanyaanAanwijzing' => $dataTim->aanwijzing_tanya,
@@ -136,7 +137,7 @@ class GecController extends Controller
         }
         $dataPeserta = DB::table('gec_teams')->where('id',$id)->first();
 
-        return view('gec.detail-aanwijizing', [
+        return view('gec.detail-aanwijzing', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
             'judulAanwijzing' => $dataPeserta->aanwijzing_judul,
@@ -147,19 +148,19 @@ class GecController extends Controller
 
     public function store_GEC_aanwijizing(aanwizingRequest $request)
     {
-        
+
         if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
             return redirect('/gec/verifikasi');
         }
 
         $data = gec_form::where('id_user', auth()->user()->id)->first();
-        
+
         gec_form::where('id_user', auth()->user()->id)->update([
             'aanwijzing_tanya' => $request->input('aanwijzing_tanya'),
-            'aanwijzing_judul' => $request->input('aanwijzing_judul'),
+            // 'aanwijzing_judul' => $request->input('aanwijzing_judul'),
         ]);
 
-        return redirect('/gec/aanwijizing');
+        return redirect('/gec/aanwijzing');
     }
 
     public function GEC_submission()
@@ -169,7 +170,7 @@ class GecController extends Controller
         }
 
         $data = gec_form::where('id_user', auth()->user()->id)->first();
-        
+
         return view('gec.submission', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
@@ -178,7 +179,7 @@ class GecController extends Controller
             'institusi' => $data->institusi,
             'ketuatim' => $data->ketua_nama,
             'dosenpembimbing' => $data->dosen_pembimbing,
-             
+
         ]);
     }
 
@@ -189,9 +190,9 @@ class GecController extends Controller
         }
 
         $data = gec_form::where('id_user', auth()->user()->id)->first();
-        $gdriveController = new GoogleDriveController();
+        // $gdriveController = new GoogleDriveController();
         gec_form::where('id_user', auth()->user()->id)->update([
-            'submission_proposal' => $this->FetchApiController->uploadToAPI($request->nama_tim."_GEC_proposal.".$request->file('submission_proposal')->extension(), $request->file('submission_proposal')),
+            'submission_proposal' => $this->FetchApiController->uploadToAPI($data->nama_tim."_GEC_proposal.".$request->file('submission_proposal')->extension(), $request->file('submission_proposal')),
             'status_proposal' => '1',
             'url_video' => $request->input('url_video')
         ]);

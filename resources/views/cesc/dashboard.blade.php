@@ -4,7 +4,6 @@
     <div class="container verifikasi pt-5 mt-5">
         <div class="row">
             <div class="col-lg-8 col-12">
-                {{ $status }}
                 @if($status == '2')
                     {{-- pendaftaran di verifikasi --}}
                     @include('cesc.slicing.dashboard-status')

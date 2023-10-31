@@ -14,7 +14,7 @@ class webinarController extends Controller
     public function __construct(){
         $this->FetchApiController = new FetchApiController();
     }
-    
+
     public function store_regist(webinarRequest $request){
         // try{
         //     return response()->json($request->all());
@@ -27,11 +27,11 @@ class webinarController extends Controller
             $registrants = [];
             $registrants['nama'] = $data['nama'];
             $registrants['email'] = $data['email'];
-            $registrants['instansi'] = $data['instansi'];      
-            
-            $file = $request->file('bukti_bayar');
+            $registrants['instansi'] = $data['instansi'];
+
+            $file = $request->file('bukti_story');
             $registrants['bukti_bayar'] = $this->FetchApiController->uploadToAPI($request->input('nama')."-webinar." . $file->extension(), $file);
-            
+
             // $registrants['bukti_bayar'] = "aaa";
             $webinar = webinar_registrants::create($registrants);
 
@@ -52,16 +52,16 @@ class webinarController extends Controller
 
             Notification::route('mail', $webinarNew->email)->notify(new webworkNotification([
                 'nama_tim' => $webinarNew->nama,
-                'subject' => '*[CIVIL EXPO ITS 2022]*',
+                'subject' => '[CIVIL EXPO ITS 2023]',
                 'pesan' => 'Your registration is confirmed! Thanks for your enthusiasm in participating in Webinar ITS Civil Engineering Expo (CIVEX) 2023.' ,
-                'pesan2' => "For further information, please join us via the link below ⬇ 
+                'pesan2' => "For further information, please join us via the link below ⬇
                 https://chat.whatsapp.com/BWiLpEDFJVBBTI3V06z174
-                
+
                 If you have any inquiries, do not hesitate to contact us
                 Nathan
                 dg1344
                 087729772745 ,
-                
+
                 Ica
                 chachaa7_
                 085369346806",

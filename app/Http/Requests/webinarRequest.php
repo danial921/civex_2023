@@ -27,7 +27,7 @@ class webinarRequest extends FormRequest
             'nama' => 'required',
             'email' => 'required|email',
             'instansi' => 'required',
-            'bukti_bayar' => 'required|file|max:2048'
+            'bukti_story' => 'required|file|max:2048'
         ];
     }
 }

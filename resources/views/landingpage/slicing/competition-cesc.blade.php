@@ -59,7 +59,7 @@
         </div>
     </div>
 
-    <div class="competition-CESC-timeline">
+    <div class="competition-gec-timeline">
         <div class="container"><p class="title">Timeline</p></div>
         <div class="container">
             <div class="scrollable">

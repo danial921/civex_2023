@@ -21,16 +21,21 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1">
-                        <label for="staticEmail" class="form-pendaftaran mb-0">Institusi</label>
+                        <label for="staticEmail" class="form-pendaftaran mb-0">Nama</label>
                         <input type="text" readonly disabled class="form-control" id="staticEmail"
                             value="{{ $dataPeserta->nama }}">
+                    </div>
+                    <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                        <label for="staticEmail" class="form-pendaftaran mb-0">Email</label>
+                        <input type="text" readonly disabled class="form-control" id="staticEmail"
+                            value="{{ $dataPeserta->email }}">
                     </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1">
                         <label for="staticEmail" class="form-pendaftaran mb-0">Instansi</label>
                         <input type="text" readonly disabled class="form-control" id="staticEmail"
                             value="{{ $dataPeserta->instansi }}">
                     </div>
-                    <div class="titleheading mb-lg-3 mb-1">Berkas Pembayaran</div>
+                    <div class="titleheading mb-lg-3 mb-1">Berkas Unggahan Story</div>
                     <div class="col-lg-12 col-12 mb-lg-3 mb-1 detail">
                         @if ($dataPeserta->bukti_bayar == null)
                             <p class="w-100 text-center"><i>tim belum mengirimkan berkas</i></p>
@@ -41,7 +46,7 @@
                                 <button type="submit" class="w-100 btn btn-download">
                                     <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                         width="20" height="20">
-                                        Bukti Bayar
+                                        Bukti story
                                 </button>
                             </form>
                         @endif

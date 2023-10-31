@@ -94,8 +94,8 @@ class CescController extends Controller
         return view('cesc.penyisihan', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
-            'usernamelomba' => 'danial99',
-            'pwlomba' => 'danial99'    
+            'usernamelomba' => 'testing-user',
+            'pwlomba' => 'testing-user'    
         ]);
     }
 
@@ -105,7 +105,7 @@ class CescController extends Controller
             return redirect('/cesc/verifikasi');
         }
         
-        if(auth()->user()->status !== '3' || auth()->user()->status !== '4'|| auth()->user()->status !== '41'){
+        if(auth()->user()->status !== '3' && auth()->user()->status !== '4' && auth()->user()->status !== '41'){
             return redirect('/cesc/penyisihan');
         }
 
@@ -127,7 +127,7 @@ class CescController extends Controller
             return redirect('/cesc/verifikasi');
         }
 
-        if(auth()->user()->status !== '3' || auth()->user()->status !== '4'|| auth()->user()->status !== '41'){
+        if(auth()->user()->status !== '3' && auth()->user()->status !== '4' && auth()->user()->status !== '41'){
             return redirect('/cesc/penyisihan');
         }
         
@@ -149,10 +149,10 @@ class CescController extends Controller
         }
         
         $data = cesc_form::where('id_user', auth()->user()->id)->first();
-        $gdriveController = new GoogleDriveController();
+        // $gdriveController = new GoogleDriveController();
 
         cesc_form::where('id_user', auth()->user()->id)->update([
-            'submission_proposal' => $this->FetchApiController->uploadToAPI($request->nama_tim."_CESC_proposal.".$request->file('submission_proposal')->extension(), $request->file('submission_proposal')),
+            'submission_proposal' => $this->FetchApiController->uploadToAPI($data->nama_tim."_CESC_proposal.".$request->file('submission_proposal')->extension(), $request->file('submission_proposal')),
             'status_proposal' => '1'
         ]);
 
