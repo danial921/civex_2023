@@ -193,6 +193,7 @@ class GecController extends Controller
         // $gdriveController = new GoogleDriveController();
         gec_form::where('id_user', auth()->user()->id)->update([
             'submission_proposal' => $this->FetchApiController->uploadToAPI($data->nama_tim."_GEC_proposal.".$request->file('submission_proposal')->extension(), $request->file('submission_proposal')),
+            'excel' => $this->FetchApiController->uploadToAPI($data->nama_tim."_GEC_worksheet.".$request->file('submission_excel')->extension(), $request->file('submission_excel')),
             'status_proposal' => '1',
             'url_video' => $request->input('url_video')
         ]);

@@ -25,6 +25,7 @@ class ProposalRequest extends FormRequest
     {
         return [
             'submission_proposal' => 'required|mimes:pdf|max:2048',
+            'submission_excel' => 'required|mimes:csv,xls,xlsx|max:2048',
             'url_video' => 'required'
         ];
     }

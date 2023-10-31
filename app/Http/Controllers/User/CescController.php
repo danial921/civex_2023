@@ -8,6 +8,7 @@ use App\Http\Requests\cesc\CescBiodataRequest;
 use App\Http\Requests\cesc\ProposalRequest;
 use App\Models\cesc_form;
 use App\Models\User;
+use App\Models\cbtAccount;
 use App\Http\Controllers\GoogleDriveController;
 use App\Http\Controllers\FetchApiController;
 
@@ -91,11 +92,17 @@ class CescController extends Controller
             return redirect('/cesc/verifikasi');
         }
 
+        $data_cbt = cbtAccount::where('register_email', cesc_form::where('id_user', auth()->user()->id)
+                                                                ->pluck('ketua_email'))
+                                ->select(['register_name', 'register_password'])
+                                ->get()
+                                ->toArray();
+        
         return view('cesc.penyisihan', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
-            'usernamelomba' => 'testing-user',
-            'pwlomba' => 'testing-user'    
+            'usernamelomba' => $data_cbt[0]['register_name'],
+            'pwlomba' => $data_cbt[0]['register_password']    
         ]);
     }
 
