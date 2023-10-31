@@ -26,7 +26,7 @@
                 </a>
             </div>
             <div class="col-lg-6 col-12 mb-lg-0 mb-2">
-                <a href="">
+                <a href="https://cesc-civex.sibiti.co.id/">
                     <button type="button" class="btn btn-daftar w-100">
                         <img src="{{ asset('civex/img/icon/icon-website.svg') }}" alt="your_image"
                             width="20" height="20">
