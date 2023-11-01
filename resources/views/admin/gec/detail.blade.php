@@ -138,8 +138,21 @@
                             </form>
                         @endif
                     </div>
+                    <div class="col-lg-6 col-12 mb-lg-3 mb-1 detail">
+                        <label for="staticEmail" class="form-pendaftaran mb-1">File Worksheet</label>
+                        @if ($dataPeserta->excel == null)
+                            <p class="w-100 text-center"><i>tim belum mengirimkan berkas</i></p>
+                        @elseif ($dataPeserta->excel != null)
+                            
+                            <a href="{{ $dataPeserta->excel }}" class="w-100 btn btn-download">
+                                <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
+                                    width="20" height="20">
+                                    File Worksheet
+                            </a>
+                        @endif
+                    </div>
                     <div class="col-lg-6 col-12 mb-lg-3 mb-1">
-                        <label for="staticEmail" class="form-pendaftaran mb-0">Video Pengumpulan</label>
+                        <label for="staticEmail" class="form-pendaftaran mb-0">Video Pengumpulan Instagram</label>
                         <input type="text" readonly disabled class="form-control" id="staticEmail"
                             value="{{ $dataPeserta->url_video }}">
                     </div>
