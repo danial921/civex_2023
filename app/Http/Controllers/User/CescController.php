@@ -92,11 +92,19 @@ class CescController extends Controller
             return redirect('/cesc/verifikasi');
         }
 
-        $data_cbt = cbtAccount::where('register_email', cesc_form::where('id_user', auth()->user()->id)
-                                                                ->pluck('ketua_email'))
+        $data_email_cesc = cesc_form::where('id_user', auth()->user()->id)
+        ->pluck('ketua_email')
+        ->toArray();
+
+        if(count($data_email_cesc) < 1){
+            $data_cbt[0]['register_name'] = '-';
+            $data_cbt[0]['register_password'] = '-';
+        }else{
+            $data_cbt = cbtAccount::where('register_email', $data_email_cesc[0])
                                 ->select(['register_name', 'register_password'])
                                 ->get()
                                 ->toArray();
+        }
         
         return view('cesc.penyisihan', [
             'username' => auth()->user()->name,
