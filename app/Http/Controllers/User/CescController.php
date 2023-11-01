@@ -104,15 +104,14 @@ class CescController extends Controller
         $data_email_cesc = cesc_form::where('id_user', auth()->user()->id)
             ->pluck('ketua_email')
             ->toArray();
+        // return response()->json($data_email_cesc, 200);
 
-        if ($data_email_cesc != null) {
+
+        if ($data_email_cesc != null ) {
             $data_cbt = cbtAccount::where('register_email', $data_email_cesc[0])
-                ->select(['register_name', 'register_password'])
-                ->get()
-                ->toArray();
-        } else {
-            $data_cbt[0]['register_name'] = '-';
-            $data_cbt[0]['register_password'] = '-';
+            ->select(['register_name', 'register_password'])
+            ->get()
+            ->toArray();
         }
 
         return view('cesc.penyisihan', [
