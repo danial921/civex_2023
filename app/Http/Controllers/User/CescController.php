@@ -111,8 +111,12 @@ class CescController extends Controller
                 ->get()
                 ->toArray();
         } else {
-            $data_cbt[0]['register_name'] = '-';
-            $data_cbt[0]['register_password'] = '-';
+            return view('cesc.penyisihan', [
+                'username' => auth()->user()->name,
+                'status' => auth()->user()->status,
+                'usernamelomba' => '-',
+                'pwlomba' => '-',
+            ]);
         }
 
         return view('cesc.penyisihan', [
