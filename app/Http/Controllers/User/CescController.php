@@ -105,18 +105,14 @@ class CescController extends Controller
             ->pluck('ketua_email')
             ->toArray();
 
-        if (count($data_email_cesc) > 0) {
+        if ($data_email_cesc != null) {
             $data_cbt = cbtAccount::where('register_email', $data_email_cesc[0])
                 ->select(['register_name', 'register_password'])
                 ->get()
                 ->toArray();
         } else {
-            return view('cesc.penyisihan', [
-                'username' => auth()->user()->name,
-                'status' => auth()->user()->status,
-                'usernamelomba' => '-',
-                'pwlomba' => '-',
-            ]);
+            $data_cbt[0]['register_name'] = '-';
+            $data_cbt[0]['register_password'] = '-';
         }
 
         return view('cesc.penyisihan', [
