@@ -107,12 +107,14 @@ class CescController extends Controller
             ->toArray();
         // return response()->json($data_email_cesc, 200);
 
-
-        if ($data_email_cesc != null ) {
+        if(count($data_email_cesc) < 1){
+            $data_cbt[0]['register_name'] = '-';
+            $data_cbt[0]['register_password'] = '-';
+        }else{
             $data_cbt = cbtAccount::where('register_email', $data_email_cesc[0])
-            ->select(['register_name', 'register_password'])
-            ->get()
-            ->toArray();
+                                ->select(['register_name', 'register_password'])
+                                ->get()
+                                ->toArray();
         }
 
         return view('cesc.penyisihan', [
