@@ -115,6 +115,11 @@ class CescController extends Controller
                                 ->select(['register_name', 'register_password'])
                                 ->get()
                                 ->toArray();
+
+            if(count($data_cbt) < 1){
+                $data_cbt[0]['register_name'] = '-';
+                $data_cbt[0]['register_password'] = '-';   
+            }
         }
 
         return view('cesc.penyisihan', [
