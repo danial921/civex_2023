@@ -21,6 +21,7 @@ class CescController extends Controller
     public function CESC()
     {
         if (auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31' && auth()->user()->status !== '4' && auth()->user()->status !== '41') {
+
             return redirect('/cesc/verifikasi');
         }
 
@@ -106,12 +107,19 @@ class CescController extends Controller
             ->toArray();
         // return response()->json($data_email_cesc, 200);
 
-
-        if ($data_email_cesc != null ) {
+        if(count($data_email_cesc) < 1){
+            $data_cbt[0]['register_name'] = '-';
+            $data_cbt[0]['register_password'] = '-';
+        }else{
             $data_cbt = cbtAccount::where('register_email', $data_email_cesc[0])
-            ->select(['register_name', 'register_password'])
-            ->get()
-            ->toArray();
+                                ->select(['register_name', 'register_password'])
+                                ->get()
+                                ->toArray();
+
+            if(count($data_cbt) < 1){
+                $data_cbt[0]['register_name'] = '-';
+                $data_cbt[0]['register_password'] = '-';   
+            }
         }
 
         return view('cesc.penyisihan', [
@@ -128,7 +136,9 @@ class CescController extends Controller
             return redirect('/cesc/verifikasi');
         }
 
+
         if (auth()->user()->status !== '3' && auth()->user()->status !== '4' && auth()->user()->status !== '41') {
+
             return redirect('/cesc/penyisihan');
         }
 
@@ -195,6 +205,7 @@ class CescController extends Controller
         return view('cesc.final', [
             'username' => auth()->user()->name,
             'status' => auth()->user()->status,
+
         ]);
     }
 }
