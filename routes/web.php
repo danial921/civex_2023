@@ -98,6 +98,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/gec/detail-aanwijzing/{id}', [GecController::class, 'GEC_detail_aanwijizing']);
         Route::get('/gec/submission', [GecController::class, 'GEC_submission']);
         Route::post('/gec/submission', [GecController::class, 'store_GEC_submission'])->name('submit-proposal-gec');
+        Route::post('/gec/url-submission', [GecController::class, 'store_url_GEC_submission'])->name('submit-url-gec');
     });
 
     Route::middleware('isCPPC')->group(function () {

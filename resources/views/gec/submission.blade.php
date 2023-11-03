@@ -12,13 +12,14 @@
                 <h4 class="tx-poppins tx-medium mg-b-0">Submission <span class="c-gec">GEC</span> Berkas</h4>
             </div>
         </div>
-
         @if($status_proposal === 1)
             {{-- hero submit --}}
             @include('gec.slicing.submission-submited')
-        @elseif($status_proposal === 0)
+        @elseif($status_proposal === 0 )
             {{-- form submission --}}
             @include('gec.slicing.submission-form')
         @endif
+
     </div>
+    @include('gec.slicing.submission-url')  
 @endsection
