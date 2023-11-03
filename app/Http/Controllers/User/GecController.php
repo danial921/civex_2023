@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\gec\GecBiodataRequest;
 use App\Http\Requests\gec\aanwizingRequest;
 use App\Http\Requests\gec\ProposalRequest;
+use App\Http\Requests\gec\urlRequest;
 use App\Models\gec_form;
 use App\Models\User;
 use App\Http\Controllers\GoogleDriveController;
@@ -179,6 +180,7 @@ class GecController extends Controller
             'institusi' => $data->institusi,
             'ketuatim' => $data->ketua_nama,
             'dosenpembimbing' => $data->dosen_pembimbing,
+            'status_url' => $data->url_video
 
         ]);
     }
@@ -195,6 +197,19 @@ class GecController extends Controller
             'submission_proposal' => $this->FetchApiController->uploadToAPI($data->nama_tim."_GEC_proposal.".$request->file('submission_proposal')->extension(), $request->file('submission_proposal')),
             'excel' => $this->FetchApiController->uploadToAPI($data->nama_tim."_GEC_worksheet.".$request->file('submission_excel')->extension(), $request->file('submission_excel')),
             'status_proposal' => '1',
+        ]);
+
+        return redirect('/gec/submission');
+    }
+
+    public function store_url_GEC_submission(urlRequest $request){
+        if(auth()->user()->status !== '2' && auth()->user()->status !== '3' && auth()->user()->status !== '31'){
+            return redirect('/gec/verifikasi');
+        }
+
+        $data = gec_form::where('id_user', auth()->user()->id)->first();
+        // $gdriveController = new GoogleDriveController();
+        gec_form::where('id_user', auth()->user()->id)->update([
             'url_video' => $request->input('url_video')
         ]);
 
