@@ -1,4 +1,8 @@
 <div class="card container">
+        <div class="card-header">
+        <h3 class="mt-2">Submission Proposal</h3>
+    </div>
+    <div class="card-body">
     <div class="card-body">
         <form id="gec_form" class="mt-2 " method="post" route="{{ route('submit-proposal-gec') }}" enctype="multipart/form-data">
         @csrf
@@ -61,7 +65,7 @@
                     <input type="button" value="submit" class="btn btn-civex  mg-b-20 mg-r-20" id="btnSubmit" data-toggle="modal" data-animation="effect-scale" data-target="#simpan"></input>
                 </div>
             </div>
-        </form>    
+        </form>
     </div>
 </div>
 <!-- Modal simpan -->

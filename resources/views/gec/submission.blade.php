@@ -20,5 +20,7 @@
             {{-- form submission --}}
             @include('gec.slicing.submission-form')
         @endif
+
     </div>
+    @include('gec.slicing.submission-url')
 @endsection
