@@ -1080,8 +1080,12 @@ p.hero-subtitle {
         box-shadow: none !important;
         background: #46639600 !important;
 
+        span.navbar-toggler-icon{
+            background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(225, 225, 225)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>");
+        }
+
         @media screen and (max-width: 990px) {
-            background: #ffffff !important;
+            background: #00000000 !important;
         }
 
         a {
@@ -3261,7 +3265,13 @@ p.hero-subtitle {
     margin: 0 auto;
     max-width: 2000px;
     max-height: 900px;
+    @media screen and (min-width: 720px) {
     height: calc(100vh + 10rem);
+    }
+    @media screen and (max-width: 720px) {
+        height: 100vh;
+        }
+
     background: #4785CE;
     overflow: hidden;
 
@@ -3279,25 +3289,48 @@ p.hero-subtitle {
     img.ornamen2 {
         z-index: 1;
         position: absolute;
+        @media screen and (min-width: 720px) {
+
         top: 130px;
+    }
         right: 0;
         width: 100%;
         text-align: center;
+        @media screen and (max-width: 720px) {
+            width: 150%;
+            left: -15px;
+            bottom: 50px;
+        }
     }
 
     img.ornamen3 {
         z-index: 2;
         position: absolute;
-        top: 200px;
+
         right: 0;
         width: 100%;
         text-align: center;
+        @media screen and (min-width: 720px) {
+            top: 200px;
+        }
+        @media screen and (max-width: 720px) {
+
+            bottom: 30px;
+            left: 0px;
+        }
     }
 
     img.ornamen4 {
         z-index: 3;
         position: absolute;
-        top: 500px;
+        @media screen and (min-width: 720px) {
+            top: 500px;
+            }
+
+            @media screen and (max-width: 720px) {
+                bottom: 0;
+                }
+
         right: 0;
         width: 100%;
         text-align: center;
@@ -3308,6 +3341,10 @@ p.hero-subtitle {
     }
 
     .node {
+        @media screen and (max-width: 720px) {
+            top: 20%;
+            opacity: 90%;
+        }
         z-index: 4;
         position: absolute;
         right: 15%;
@@ -3371,7 +3408,7 @@ p.hero-subtitle {
 
         .arrow-1 {
             margin-top: 0;
-            animation: moveUpDownArrow1 3s infinite;
+            animation: moveUpDownArrow1 4s infinite;
             /* Animasi naik turun dengan interval 3 detik */
         }
 
@@ -3385,7 +3422,7 @@ p.hero-subtitle {
         .arrow-3 {
             margin-left: 30px;
             margin-top: 0;
-            animation: moveUpDownArrow3 3s infinite;
+            animation: moveUpDownArrow3 4s infinite;
             /* Animasi naik turun dengan interval 5 detik */
         }
 
@@ -3400,12 +3437,20 @@ p.hero-subtitle {
 
     .jumbo {
         position: relative;
-        height: calc(100vh - 10rem);
+
+        @media screen and (min-width: 720px) {
+            height: calc(100vh - 10rem);
+        }
+        @media screen and (max-width: 720px) {
+            height: 100vh;
+        }
         z-index: 10;
 
         .title {
             margin-top: 20px;
-            display: flex;
+            @media screen and (min-width: 720px) {
+                display: flex;
+            }
 
             p {
                 color: #FFF;
@@ -3415,20 +3460,34 @@ p.hero-subtitle {
                 font-style: normal;
                 font-weight: 900;
                 line-height: normal;
+                @media screen and (max-width: 720px) {
+                    font-size: 35px;
+                }
             }
 
             .title-1 {
                 margin-top: 0px;
                 margin-right: 20px;
+                @media screen and (max-width: 720px) {
+                    margin-right: 0px;
+                    margin-top: 10px;
+                }
             }
 
             img {
                 margin-top: 0px;
+                @media screen and (max-width: 720px) {
+                    margin-top: 15px;
+                }
             }
 
             .title-2 {
                 margin-left: 20px;
                 margin-top: 80px !important;
+                @media screen and (max-width: 720px) {
+                    margin-left: 0px;
+                margin-top: 25px !important;
+                }
             }
         }
 
@@ -3444,12 +3503,23 @@ p.hero-subtitle {
             font-weight: 500;
             line-height: normal;
             letter-spacing: 1.5px;
+            @media screen and (max-width: 720px) {
+                font-size: 18px;
+                margin-top: 20px;
+            }
         }
 
         .ticket-bar {
             position: absolute;
+            @media screen and (min-width: 720px) {
+                top: 490px;
+            }
             right: 100px;
-            top: 490px;
+
+            @media screen and (max-width: 720px) {
+                right: 20px;
+                bottom: 80px;
+            }
 
             @keyframes moveUpAndDown {
                 0% {
@@ -3499,14 +3569,25 @@ p.hero-subtitle {
                 left: 40px;
                 animation: moveUpAndDown 3s infinite;
                 /* Animasi naik turun */
+                @media screen and (max-width: 720px) {
+                    width: 30px;
+                }
             }
-
+            img.main-ticket{
+                @media screen and (max-width: 720px) {
+                    width: 200px;
+                }
+            }
             img.arrow-2 {
                 position: absolute;
                 top: -70px;
                 left: 130px;
                 animation: moveUpAndDown2 4s infinite;
                 /* Animasi naik turun */
+                @media screen and (max-width: 720px) {
+                    width: 30px;
+                    left: 90px;
+                }
             }
 
             img.arrow-3 {
@@ -3515,6 +3596,10 @@ p.hero-subtitle {
                 right: 80px;
                 animation: moveUpAndDown3 5s infinite;
                 /* Animasi naik turun */
+                @media screen and (max-width: 720px) {
+                    width: 30px;
+                    right: 20px;
+                }
             }
         }
     }
@@ -3625,16 +3710,29 @@ p.hero-subtitle {
     width: 100%;
     height: max-content;
     padding-bottom: 300px;
+    @media screen and (max-width: 720px) {
+        padding-bottom: 150px;
+    }
+
     background: #F9F7EA;
     overflow: hidden;
 
+.spk{
+    align-items: center;
+    img{
 
+        width: 90% ;
+    }
+}
     img.ornamen1 {
         z-index: 0;
         position: absolute;
         top: 0;
         right: 0;
         text-align: center;
+        @media screen and (max-width: 720px) {
+        opacity: 62%;
+        }
     }
 
     img.ornamen2 {
@@ -3661,6 +3759,10 @@ p.hero-subtitle {
             font-style: normal;
             font-weight: 900;
             line-height: 109.867%;
+            @media screen and (max-width: 720px) {
+                font-size: 28px;
+            }
+
         }
 
         p.sub-title {
@@ -3668,6 +3770,10 @@ p.hero-subtitle {
             text-align: justify;
             font-family: 'Inter';
             font-size: 20px;
+            @media screen and (max-width: 720px) {
+                font-size: 18px;
+                font-weight: 400;
+            }
             font-style: normal;
             font-weight: 500;
             line-height: 109.867%;
@@ -3757,6 +3863,10 @@ p.hero-subtitle {
         bottom: 20%;
         right: 0;
         text-align: center;
+        @media screen and (max-width: 720px) {
+        width: 50%;
+        opacity: 50%;
+        }
     }
 
     img.ornamen2 {
@@ -3765,6 +3875,10 @@ p.hero-subtitle {
         bottom: 0px;
         position: absolute;
         text-align: center;
+        @media screen and (max-width: 720px) {
+            width: 50%;
+            opacity: 50%;
+            }
     }
 
 
@@ -3788,6 +3902,9 @@ font-size: 35px;
 font-style: normal;
 font-weight: 900;
 line-height: 109.867%; /* 38.454px */
+@media screen and (max-width: 720px) {
+    font-size: 20px;
+}
             }
             img{
                 width: 90%;
@@ -3800,6 +3917,11 @@ font-size: 20px;
 font-style: normal;
 font-weight: 500;
 line-height: 109.867%; /* 26.368px */
+line-height: 109.867%; /* 38.454px */
+@media screen and (max-width: 720px) {
+    font-size: 17px;
+    font-weight: 400;
+}
             }
             .intro-guest{
                 color: #FFF;
@@ -3809,9 +3931,15 @@ font-size: 25px;
 font-style: normal;
 font-weight: 700;
 line-height: 109.867%; /* 32.96px */
+@media screen and (max-width: 720px) {
+    font-size: 20px;
+}
             }
             img.hivi{
                 width: 50%;
+                @media screen and (max-width: 720px) {
+                    width: 80%
+                    }
             }
         }
 
@@ -3835,6 +3963,9 @@ line-height: 109.867%; /* 32.96px */
     max-width: 2000px;
     width: 100%;
     padding-bottom: 400px;
+    @media screen and (max-width: 720px) {
+        padding-bottom: 150px;
+        }
     height: max-content;
     background: #4785CE;
     overflow: hidden;
@@ -3869,6 +4000,10 @@ img.grass1 {
     bottom: 165px;
     right: 40px;
     animation: sway-rotate 1s ease-in-out infinite;
+    @media screen and (max-width: 720px) {
+        width: 40px;
+        bottom: 45px;
+        }
 }
 
 
@@ -3880,6 +4015,11 @@ img.grass2 {
     bottom: 145px;
     left: 300px;
     animation: sway-rotate 1.5s ease-in-out infinite;
+    @media screen and (max-width: 720px) {
+        width: 40px;
+        bottom: 50px;
+        left: 30px;
+        }
 }
 
 
@@ -3905,16 +4045,22 @@ line-height: 109.867%; /* 27.467px */
         }
         span{
             color: #FFF;
-text-align: justify;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 500;
-line-height: 109.867%; /* 27.467px */
+            text-align: justify;
+            font-family: Inter;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 109.867%;
+            @media screen and (max-width: 720px) {
+                font-size: 18px;
+                }
         }
         .icon-band{
             img{
                 height: 100px;
+                @media screen and (max-width: 720px) {
+                    height: 50px;
+                    }
             }
         }
     }
