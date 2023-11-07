@@ -4,20 +4,23 @@
     </div>
     <div class="card-body">
 
-@if (true)
-    <div class="text-center"><p><em>Submission Video Submited</em></p></div>
-@else
-<div class="row">
-    <label for="url_video" class="form-pendaftaran mb-2">Unggah Video (URL)</label>
-    <input type="text" class="form-control" id="url_video" name="url_video">
-    @error('url_video')
-        <div class="alert alert-danger">{{ $message }}</div>
-    @enderror
-    <div class="mt-3 d-flex justify-content-end align-items-center">
-        <input type="button" value="submit" class="btn btn-civex  mg-b-20 mg-r-20" id="btnSubmit" data-toggle="modal" data-animation="effect-scale" data-target="#simpan"></input>
-    </div>
-</div>
-@endif
+        @if (false)
+            <div class="text-center">
+                <p><em>Submission Video Submited</em></p>
+            </div>
+        @else
+            <div class="row">
+                <label for="url_video" class="form-pendaftaran mb-2">Unggah Video (URL)</label>
+                <input type="text" class="form-control" id="url_video" name="url_video">
+                @error('url_video')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+                <div class="mt-3 d-flex justify-content-end align-items-center">
+                    <input type="button" value="submit" class="btn btn-civex  mg-b-20 mg-r-20" id="btnSubmit"
+                        data-toggle="modal" data-animation="effect-scale" data-target="#simpan"></input>
+                </div>
+            </div>
+        @endif
 
     </div>
 </div>
@@ -32,11 +35,11 @@
                     diisi?</p>
             </div>
             <div class="modal-footer">
-                <a class="btn btn-civex-danger tx-poppins tx-medium"
-                    data-dismiss="modal">Batal</a>
-                <button href="#" class="btn btn-civex tx-poppins tx-medium" onclick="submitForm()" id="btnSubmit2">Ya, Saya Yakin</button>
+                <a class="btn btn-civex-danger tx-poppins tx-medium" data-dismiss="modal">Batal</a>
+                <button href="#" class="btn btn-civex tx-poppins tx-medium" onclick="submitForm()"
+                    id="btnSubmit2">Ya, Saya Yakin</button>
             </div>
         </div>
     </div>
 </div>
-<script src=" {{ asset('js/form-gec.js') }} " ></script>
+<script src=" {{ asset('js/form-gec.js') }} "></script>
