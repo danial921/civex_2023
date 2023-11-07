@@ -18,8 +18,7 @@
                 <div class="card mg-b-20">
                     <div class="card-body">
                         <p class="title">Video Tutorial Pendaftaran</p>
-                        <!-- <iframe width="100%" height="400px" src="https://www.youtube.com/embed/ZM9RSg-ppOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/omvCDkyNTOA?si=qB3raD65tglvG9e4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/3I_IusWHxaA?si=BjaWcDsaWrOSl9RZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>

@@ -35,7 +35,7 @@
                             value="{{ $dosenpembimbing }}">
                     </div>
                 </div>
-                @if(strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-11-8 23:59:59'))
+                @if(strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-11-10 23:59:59'))
                 <div class="col-lg-6 col-12 mb-lg-3 mb-1">
                     <label for="submission_proposal" class="form-pendaftaran mb-2">Unggah Proposal</label>
                     <input type="file" class="form-control" id="submission_proposal" name="submission_proposal">
@@ -43,8 +43,15 @@
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>
+                <div class="col-lg-6 col-12 mb-lg-3 mb-1">
+                    <label for="submission_excel" class="form-pendaftaran mb-2">Unggah Worksheet Perhitungan (excel)</label>
+                    <input type="file" class="form-control" id="submission_excel" name="submission_excel">
+                    @error('submission_excel')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
                 @endif
-                @if(strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-11-15 23:59:59'))
+                @if(strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-11-16 23:59:59'))
                 <div class="col-lg-6 col-12 mb-lg-3 mb-1">
                     <label for="url_video" class="form-pendaftaran mb-2">Unggah Video (URL)</label>
                     <input type="text" class="form-control" id="url_video" name="url_video">
@@ -52,7 +59,7 @@
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>
-                <div class="subtitleform">* video dapat di upload di youtube, dan pastikan video tidak di private</div>
+                <div class="subtitleform">* video dapat di upload di instagram</div>
                 @endif
                 <div class="mt-3 d-flex justify-content-end align-items-center">
                     <input type="button" value="submit" class="btn btn-civex  mg-b-20 mg-r-20" id="btnSubmit" data-toggle="modal" data-animation="effect-scale" data-target="#simpan"></input>
