@@ -23,20 +23,30 @@
         <div class="container align-items-center justify-content-center text-center">
             <p class="speaker-title" data-aos="zoom-in">Introducing</p>
             <div class="row speaker mt-5">
-                <div class="col-3 mt-5" data-aos="fade-right">
-                    <div class="speaker-name">Dott. ric. Ahmad Basshofi Habieb, S.T., M.Sc.</div>
-                    <div class="speaker-name-sub mt-2">2<sup>nd</sup> Speaker</div>
-                    <img class="mt-2" class="w-100" src="{{ asset('civex/img/closing/speaker-3.svg') }}" alt="">
-                </div>
-                <div class="col-6" data-aos="zoom-in">
+                <div class="col-12 d-lg-none d-block" data-aos="zoom-in">
                     <div class="speaker-utama-name">Andovi Da Lopez.</div>
                     <div class="speaker-utama-name-sub mt-2">Main Speaker</div>
-                    <img class="mt-2" style="max-width: 60%" src="{{ asset('civex/img/closing/speaker-1.svg') }}" alt="">
+                    <img class="mt-2" style="max-width: 70%" src="{{ asset('civex/img/closing/speaker-1.svg') }}"
+                        alt="">
                 </div>
-                <div class="col-3 mt-5" data-aos="fade-left">
-                    <div class="speaker-name">Shania Indira</div>
-                    <div class="speaker-name-sub mt-2">Moderator</div>
-                    <img class="mt-2" class="w-100" src="{{ asset('civex/img/closing/speaker-2.svg') }}" alt="">
+                <div class="col-lg-3 col-6 mt-5 spk d-flex align-items-center" data-aos="fade-right">
+                    <div class="">
+                        <div class="speaker-name">Dott. ric. Ahmad Basshofi Habieb, S.T., M.Sc.</div>
+                        <div class="speaker-name-sub mt-2">2<sup>nd</sup> Speaker</div>
+                        <img class="mt-2" src="{{ asset('civex/img/closing/speaker-3.svg') }}" alt="">
+                    </div>
+                </div>
+                <div class="col-6 d-none d-lg-block speaker" data-aos="zoom-in">
+                    <div class="speaker-utama-name">Andovi Da Lopez.</div>
+                    <div class="speaker-utama-name-sub mt-2">Main Speaker</div>
+                    <img class="mt-2" style="max-width: 85%" src="{{ asset('civex/img/closing/speaker-1.svg') }}" alt="">
+                </div>
+                <div class="col-lg-3 col-6 mt-5 spk d-flex align-items-center" data-aos="fade-left">
+                    <div class="">
+                        <div class="speaker-name">Shania Indira</div>
+                        <div class="speaker-name-sub mt-2">Moderator</div>
+                        <img class="mt-2"src="{{ asset('civex/img/closing/speaker-2.svg') }}" alt="">
+                    </div>
                 </div>
             </div>
 

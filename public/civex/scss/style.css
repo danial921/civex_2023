@@ -944,9 +944,12 @@ p.hero-subtitle {
   box-shadow: none !important;
   background: rgba(70, 99, 150, 0) !important;
 }
+.landing-page .navbar-closing span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(225, 225, 225)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>");
+}
 @media screen and (max-width: 990px) {
   .landing-page .navbar-closing {
-    background: #ffffff !important;
+    background: rgba(0, 0, 0, 0) !important;
   }
 }
 .landing-page .navbar-closing a {
@@ -2842,9 +2845,18 @@ p.hero-subtitle {
   margin: 0 auto;
   max-width: 2000px;
   max-height: 900px;
-  height: calc(100vh + 10rem);
   background: #4785CE;
   overflow: hidden;
+}
+@media screen and (min-width: 720px) {
+  .closing-hero {
+    height: calc(100vh + 10rem);
+  }
+}
+@media screen and (max-width: 720px) {
+  .closing-hero {
+    height: 100vh;
+  }
 }
 .closing-hero img.ornamen1 {
   z-index: 0;
@@ -2857,26 +2869,56 @@ p.hero-subtitle {
 .closing-hero img.ornamen2 {
   z-index: 1;
   position: absolute;
-  top: 130px;
   right: 0;
   width: 100%;
   text-align: center;
+}
+@media screen and (min-width: 720px) {
+  .closing-hero img.ornamen2 {
+    top: 130px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .closing-hero img.ornamen2 {
+    width: 150%;
+    left: -15px;
+    bottom: 50px;
+  }
 }
 .closing-hero img.ornamen3 {
   z-index: 2;
   position: absolute;
-  top: 200px;
   right: 0;
   width: 100%;
   text-align: center;
 }
+@media screen and (min-width: 720px) {
+  .closing-hero img.ornamen3 {
+    top: 200px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .closing-hero img.ornamen3 {
+    bottom: 30px;
+    left: 0px;
+  }
+}
 .closing-hero img.ornamen4 {
   z-index: 3;
   position: absolute;
-  top: 500px;
   right: 0;
   width: 100%;
   text-align: center;
+}
+@media screen and (min-width: 720px) {
+  .closing-hero img.ornamen4 {
+    top: 500px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .closing-hero img.ornamen4 {
+    bottom: 0;
+  }
 }
 .closing-hero .closing-bg {
   z-index: 1;
@@ -2886,6 +2928,12 @@ p.hero-subtitle {
   position: absolute;
   right: 15%;
   top: 15%;
+}
+@media screen and (max-width: 720px) {
+  .closing-hero .node {
+    top: 20%;
+    opacity: 90%;
+  }
 }
 @keyframes moveUpDownArrow1 {
   0% {
@@ -2933,7 +2981,7 @@ p.hero-subtitle {
 }
 .closing-hero .node .arrow-1 {
   margin-top: 0;
-  animation: moveUpDownArrow1 3s infinite;
+  animation: moveUpDownArrow1 4s infinite;
   /* Animasi naik turun dengan interval 3 detik */
 }
 .closing-hero .node .arrow-2 {
@@ -2945,7 +2993,7 @@ p.hero-subtitle {
 .closing-hero .node .arrow-3 {
   margin-left: 30px;
   margin-top: 0;
-  animation: moveUpDownArrow3 3s infinite;
+  animation: moveUpDownArrow3 4s infinite;
   /* Animasi naik turun dengan interval 5 detik */
 }
 .closing-hero .node .arrow-4 {
@@ -2956,12 +3004,25 @@ p.hero-subtitle {
 }
 .closing-hero .jumbo {
   position: relative;
-  height: calc(100vh - 10rem);
   z-index: 10;
+}
+@media screen and (min-width: 720px) {
+  .closing-hero .jumbo {
+    height: calc(100vh - 10rem);
+  }
+}
+@media screen and (max-width: 720px) {
+  .closing-hero .jumbo {
+    height: 100vh;
+  }
 }
 .closing-hero .jumbo .title {
   margin-top: 20px;
-  display: flex;
+}
+@media screen and (min-width: 720px) {
+  .closing-hero .jumbo .title {
+    display: flex;
+  }
 }
 .closing-hero .jumbo .title p {
   color: #FFF;
@@ -2972,16 +3033,38 @@ p.hero-subtitle {
   font-weight: 900;
   line-height: normal;
 }
+@media screen and (max-width: 720px) {
+  .closing-hero .jumbo .title p {
+    font-size: 35px;
+  }
+}
 .closing-hero .jumbo .title .title-1 {
   margin-top: 0px;
   margin-right: 20px;
 }
+@media screen and (max-width: 720px) {
+  .closing-hero .jumbo .title .title-1 {
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+}
 .closing-hero .jumbo .title img {
   margin-top: 0px;
+}
+@media screen and (max-width: 720px) {
+  .closing-hero .jumbo .title img {
+    margin-top: 15px;
+  }
 }
 .closing-hero .jumbo .title .title-2 {
   margin-left: 20px;
   margin-top: 80px !important;
+}
+@media screen and (max-width: 720px) {
+  .closing-hero .jumbo .title .title-2 {
+    margin-left: 0px;
+    margin-top: 25px !important;
+  }
 }
 .closing-hero .jumbo .sub-title {
   position: relative;
@@ -2996,10 +3079,26 @@ p.hero-subtitle {
   line-height: normal;
   letter-spacing: 1.5px;
 }
+@media screen and (max-width: 720px) {
+  .closing-hero .jumbo .sub-title {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+}
 .closing-hero .jumbo .ticket-bar {
   position: absolute;
   right: 100px;
-  top: 490px;
+}
+@media screen and (min-width: 720px) {
+  .closing-hero .jumbo .ticket-bar {
+    top: 490px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .closing-hero .jumbo .ticket-bar {
+    right: 20px;
+    bottom: 80px;
+  }
 }
 @keyframes moveUpAndDown {
   0% {
@@ -3041,6 +3140,16 @@ p.hero-subtitle {
   animation: moveUpAndDown 3s infinite;
   /* Animasi naik turun */
 }
+@media screen and (max-width: 720px) {
+  .closing-hero .jumbo .ticket-bar img.arrow-1 {
+    width: 30px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .closing-hero .jumbo .ticket-bar img.main-ticket {
+    width: 200px;
+  }
+}
 .closing-hero .jumbo .ticket-bar img.arrow-2 {
   position: absolute;
   top: -70px;
@@ -3048,12 +3157,24 @@ p.hero-subtitle {
   animation: moveUpAndDown2 4s infinite;
   /* Animasi naik turun */
 }
+@media screen and (max-width: 720px) {
+  .closing-hero .jumbo .ticket-bar img.arrow-2 {
+    width: 30px;
+    left: 90px;
+  }
+}
 .closing-hero .jumbo .ticket-bar img.arrow-3 {
   position: absolute;
   top: -70px;
   right: 80px;
   animation: moveUpAndDown3 5s infinite;
   /* Animasi naik turun */
+}
+@media screen and (max-width: 720px) {
+  .closing-hero .jumbo .ticket-bar img.arrow-3 {
+    width: 30px;
+    right: 20px;
+  }
 }
 .closing-hero .container {
   padding-top: 10rem;
@@ -3160,12 +3281,28 @@ p.hero-subtitle {
   background: #F9F7EA;
   overflow: hidden;
 }
+@media screen and (max-width: 720px) {
+  .talkshow-hero {
+    padding-bottom: 150px;
+  }
+}
+.talkshow-hero .spk {
+  align-items: center;
+}
+.talkshow-hero .spk img {
+  width: 90%;
+}
 .talkshow-hero img.ornamen1 {
   z-index: 0;
   position: absolute;
   top: 0;
   right: 0;
   text-align: center;
+}
+@media screen and (max-width: 720px) {
+  .talkshow-hero img.ornamen1 {
+    opacity: 62%;
+  }
 }
 .talkshow-hero img.ornamen2 {
   z-index: 0;
@@ -3190,6 +3327,11 @@ p.hero-subtitle {
   font-weight: 900;
   line-height: 109.867%;
 }
+@media screen and (max-width: 720px) {
+  .talkshow-hero .jumbo p.title {
+    font-size: 28px;
+  }
+}
 .talkshow-hero .jumbo p.sub-title {
   color: #000;
   text-align: justify;
@@ -3198,6 +3340,12 @@ p.hero-subtitle {
   font-style: normal;
   font-weight: 500;
   line-height: 109.867%;
+}
+@media screen and (max-width: 720px) {
+  .talkshow-hero .jumbo p.sub-title {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 .talkshow-hero .jumbo p.speaker-title {
   color: #000;
@@ -3238,13 +3386,13 @@ p.hero-subtitle {
   font-weight: 600;
   line-height: 109.867%; /* 22.782px */
 }
-.talkshow-hero .jumbo .speaker .speaker-name-subb {
+.talkshow-hero .jumbo .speaker .speaker-name-sub {
   color: #000;
   text-align: center;
   font-family: Inter;
   font-size: 18;
-  font-style: normal;
-  font-weight: 600;
+  font-style: italic;
+  font-weight: 400;
   line-height: 109.867%; /* 22.782px */
 }
 .talkshow-hero .container {
@@ -3273,12 +3421,24 @@ p.hero-subtitle {
   right: 0;
   text-align: center;
 }
+@media screen and (max-width: 720px) {
+  .concert-hero img.ornamen1 {
+    width: 50%;
+    opacity: 50%;
+  }
+}
 .concert-hero img.ornamen2 {
   z-index: 0;
   width: 60%;
   bottom: 0px;
   position: absolute;
   text-align: center;
+}
+@media screen and (max-width: 720px) {
+  .concert-hero img.ornamen2 {
+    width: 50%;
+    opacity: 50%;
+  }
 }
 .concert-hero .closing-bg {
   z-index: 1;
@@ -3300,6 +3460,11 @@ p.hero-subtitle {
   font-weight: 900;
   line-height: 109.867%; /* 38.454px */
 }
+@media screen and (max-width: 720px) {
+  .concert-hero .jumbo .container .title {
+    font-size: 20px;
+  }
+}
 .concert-hero .jumbo .container img {
   width: 90%;
 }
@@ -3311,6 +3476,13 @@ p.hero-subtitle {
   font-style: normal;
   font-weight: 500;
   line-height: 109.867%; /* 26.368px */
+  line-height: 109.867%; /* 38.454px */
+}
+@media screen and (max-width: 720px) {
+  .concert-hero .jumbo .container .subs {
+    font-size: 17px;
+    font-weight: 400;
+  }
 }
 .concert-hero .jumbo .container .intro-guest {
   color: #FFF;
@@ -3321,8 +3493,18 @@ p.hero-subtitle {
   font-weight: 700;
   line-height: 109.867%; /* 32.96px */
 }
+@media screen and (max-width: 720px) {
+  .concert-hero .jumbo .container .intro-guest {
+    font-size: 20px;
+  }
+}
 .concert-hero .jumbo .container img.hivi {
   width: 50%;
+}
+@media screen and (max-width: 720px) {
+  .concert-hero .jumbo .container img.hivi {
+    width: 80%;
+  }
 }
 .concert-hero .container {
   padding-top: 3rem;
@@ -3343,6 +3525,11 @@ p.hero-subtitle {
   height: max-content;
   background: #4785CE;
   overflow: hidden;
+}
+@media screen and (max-width: 720px) {
+  .another-perform {
+    padding-bottom: 150px;
+  }
 }
 .another-perform img.ornamen1 {
   z-index: 2;
@@ -3372,6 +3559,12 @@ p.hero-subtitle {
   right: 40px;
   animation: sway-rotate 1s ease-in-out infinite;
 }
+@media screen and (max-width: 720px) {
+  .another-perform img.grass1 {
+    width: 40px;
+    bottom: 45px;
+  }
+}
 .another-perform img.grass2 {
   z-index: 1;
   position: absolute;
@@ -3380,6 +3573,13 @@ p.hero-subtitle {
   bottom: 145px;
   left: 300px;
   animation: sway-rotate 1.5s ease-in-out infinite;
+}
+@media screen and (max-width: 720px) {
+  .another-perform img.grass2 {
+    width: 40px;
+    bottom: 50px;
+    left: 30px;
+  }
 }
 .another-perform .closing-bg {
   z-index: 1;
@@ -3403,10 +3603,20 @@ p.hero-subtitle {
   font-size: 25px;
   font-style: normal;
   font-weight: 500;
-  line-height: 109.867%; /* 27.467px */
+  line-height: 109.867%;
+}
+@media screen and (max-width: 720px) {
+  .another-perform .jumbo span {
+    font-size: 18px;
+  }
 }
 .another-perform .jumbo .icon-band img {
   height: 100px;
+}
+@media screen and (max-width: 720px) {
+  .another-perform .jumbo .icon-band img {
+    height: 50px;
+  }
 }
 .another-perform .container {
   padding-top: 3rem;
