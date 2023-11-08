@@ -4,7 +4,7 @@ namespace App\Http\Requests\gec;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ProposalRequest extends FormRequest
+class urlRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,8 +24,7 @@ class ProposalRequest extends FormRequest
     public function rules()
     {
         return [
-            'submission_proposal' => 'required|mimes:pdf|max:2048',
-            'submission_excel' => 'required|mimes:csv,xls,xlsx|max:2048'
+            'url_video' => 'required'
         ];
     }
 }
