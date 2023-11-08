@@ -32,6 +32,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
+
                 <h5 class="tx-poppins tx-medium">Submit Url Video</h5>
                 <p class="mg-b-0">Apakah anda yakin ingin melakukan Url Video?</p>
             </div>

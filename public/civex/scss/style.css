@@ -936,6 +936,85 @@ p.hero-subtitle {
   overflow-x: hidden;
   position: relative;
 }
+.landing-page .navbar-closing {
+  transition: background-color 0.5s ease;
+  margin: 0 auto;
+  max-width: 2000px;
+  background-color: #E3EEF0 !important;
+  box-shadow: none !important;
+  background: rgba(70, 99, 150, 0) !important;
+}
+@media screen and (max-width: 990px) {
+  .landing-page .navbar-closing {
+    background: #ffffff !important;
+  }
+}
+.landing-page .navbar-closing a {
+  padding: 15px 0px 15px 30px;
+}
+.landing-page .navbar-closing a img.nav-icon {
+  height: 35px !important;
+}
+.landing-page .navbar-closing .nav-item {
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+.landing-page .navbar-closing .nav-item a {
+  color: #ffffff !important;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  margin-right: 20px;
+}
+.landing-page .navbar-closing .nav-item.civex-active {
+  background-color: rgba(255, 0, 0, 0) !important;
+}
+.landing-page .navbar-closing .nav-item.civex-active a {
+  color: #FFFFFF !important;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  margin-right: 20px;
+}
+.landing-page .navbar-closing .active {
+  height: 40px;
+  display: inline-block;
+  padding: 0px 15px;
+  margin: auto 0;
+  border-radius: 28px;
+  border: 2px solid #FFFFFF !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-page .navbar-closing .active a {
+  background-color: rgba(0, 0, 0, 0) !important;
+  margin: 0px 10px;
+  padding: 0px;
+}
+.landing-page .navbar-closing .active:hover {
+  background-color: black !important;
+  transition: background-color 0.5s ease;
+  border: 2px solid rgba(0, 0, 0, 0) !important;
+  color: #fff;
+}
+.landing-page .navbar-closing .active:hover a {
+  color: #fff !important;
+  font-weight: 800 !important;
+}
+.landing-page .navbar-closing.scrolling {
+  background-color: rgba(0, 0, 0, 0.61) !important;
+  transition: background-color 0.5s ease;
+}
 .landing-page .navbar-countdown {
   background-color: #E3EEF0 !important;
   box-shadow: none !important;
@@ -1497,6 +1576,11 @@ p.hero-subtitle {
 .landing-page .container-galery .slick-next:before {
   width: 10px;
   content: url("/civex/img/landingpage/galeri-icon-next.svg");
+}
+
+.opening-hero {
+  background: #4785CE;
+  height: 100vh;
 }
 
 .landing-page .container-galery #slider-container {
@@ -2751,6 +2835,601 @@ p.hero-subtitle {
     font-size: 20px;
     padding-top: 0px;
   }
+}
+
+.closing-hero {
+  position: relative;
+  margin: 0 auto;
+  max-width: 2000px;
+  max-height: 900px;
+  height: calc(100vh + 10rem);
+  background: #4785CE;
+  overflow: hidden;
+}
+.closing-hero img.ornamen1 {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+}
+.closing-hero img.ornamen2 {
+  z-index: 1;
+  position: absolute;
+  top: 130px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+}
+.closing-hero img.ornamen3 {
+  z-index: 2;
+  position: absolute;
+  top: 200px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+}
+.closing-hero img.ornamen4 {
+  z-index: 3;
+  position: absolute;
+  top: 500px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+}
+.closing-hero .closing-bg {
+  z-index: 1;
+}
+.closing-hero .node {
+  z-index: 4;
+  position: absolute;
+  right: 15%;
+  top: 15%;
+}
+@keyframes moveUpDownArrow1 {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 90px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@keyframes moveUpDownArrow2 {
+  0% {
+    margin-top: 90px;
+  }
+  50% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 90px;
+  }
+}
+@keyframes moveUpDownArrow3 {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 90px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@keyframes moveUpDownArrow4 {
+  0% {
+    margin-top: 90px;
+  }
+  50% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 90px;
+  }
+}
+.closing-hero .node .arrow-1 {
+  margin-top: 0;
+  animation: moveUpDownArrow1 3s infinite;
+  /* Animasi naik turun dengan interval 3 detik */
+}
+.closing-hero .node .arrow-2 {
+  margin-left: 30px;
+  margin-top: 90px;
+  animation: moveUpDownArrow2 4s infinite;
+  /* Animasi naik turun dengan interval 4 detik */
+}
+.closing-hero .node .arrow-3 {
+  margin-left: 30px;
+  margin-top: 0;
+  animation: moveUpDownArrow3 3s infinite;
+  /* Animasi naik turun dengan interval 5 detik */
+}
+.closing-hero .node .arrow-4 {
+  margin-left: 30px;
+  margin-top: 90px;
+  animation: moveUpDownArrow4 4s infinite;
+  /* Animasi naik turun dengan interval 6 detik */
+}
+.closing-hero .jumbo {
+  position: relative;
+  height: calc(100vh - 10rem);
+  z-index: 10;
+}
+.closing-hero .jumbo .title {
+  margin-top: 20px;
+  display: flex;
+}
+.closing-hero .jumbo .title p {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.closing-hero .jumbo .title .title-1 {
+  margin-top: 0px;
+  margin-right: 20px;
+}
+.closing-hero .jumbo .title img {
+  margin-top: 0px;
+}
+.closing-hero .jumbo .title .title-2 {
+  margin-left: 20px;
+  margin-top: 80px !important;
+}
+.closing-hero .jumbo .sub-title {
+  position: relative;
+  display: block;
+  color: #FFF;
+  margin-top: 50px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.5px;
+}
+.closing-hero .jumbo .ticket-bar {
+  position: absolute;
+  right: 100px;
+  top: 490px;
+}
+@keyframes moveUpAndDown {
+  0% {
+    top: -50px;
+  }
+  50% {
+    top: -70px;
+  }
+  100% {
+    top: -50px;
+  }
+}
+@keyframes moveUpAndDown2 {
+  0% {
+    top: -70px;
+  }
+  50% {
+    top: -100px;
+  }
+  100% {
+    top: -70px;
+  }
+}
+@keyframes moveUpAndDown3 {
+  0% {
+    top: -70px;
+  }
+  50% {
+    top: -100px;
+  }
+  100% {
+    top: -70px;
+  }
+}
+.closing-hero .jumbo .ticket-bar img.arrow-1 {
+  position: absolute;
+  top: -50px;
+  left: 40px;
+  animation: moveUpAndDown 3s infinite;
+  /* Animasi naik turun */
+}
+.closing-hero .jumbo .ticket-bar img.arrow-2 {
+  position: absolute;
+  top: -70px;
+  left: 130px;
+  animation: moveUpAndDown2 4s infinite;
+  /* Animasi naik turun */
+}
+.closing-hero .jumbo .ticket-bar img.arrow-3 {
+  position: absolute;
+  top: -70px;
+  right: 80px;
+  animation: moveUpAndDown3 5s infinite;
+  /* Animasi naik turun */
+}
+.closing-hero .container {
+  padding-top: 10rem;
+}
+@media screen and (max-width: 920px) {
+  .closing-hero .container {
+    padding-top: 6rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .closing-hero .col-3 {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+.closing-hero .col-3 .card-counter {
+  border-radius: 22px;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 3px;
+}
+.closing-hero .col-3 .card-counter .nominal {
+  padding: 3px;
+}
+.closing-hero .col-3 .card-counter .nominal .count {
+  padding: 20px;
+  color: #080F1A;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+@media screen and (max-width: 720px) {
+  .closing-hero .col-3 .card-counter .nominal .count {
+    font-size: 30px;
+    padding: 0px;
+    padding-top: 5px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .closing-hero .col-3 .card-counter .nominal {
+    padding: 1px;
+  }
+}
+.closing-hero .col-3 .card-counter .nominal .subtitle {
+  padding-bottom: 10px;
+  color: #004267;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 15px;
+}
+@media screen and (max-width: 720px) {
+  .closing-hero .col-3 .card-counter .nominal .subtitle {
+    font-size: 12px;
+  }
+}
+.closing-hero p.title {
+  color: #000;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media screen and (max-width: 720px) {
+  .closing-hero p.title {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 0rem;
+  }
+}
+.closing-hero p.sub {
+  margin-top: 0px;
+  color: #000;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media screen and (max-width: 720px) {
+  .closing-hero p.sub {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+}
+
+.talkshow-hero {
+  position: relative;
+  margin: 0 auto;
+  max-width: 2000px;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding-bottom: 300px;
+  background: #F9F7EA;
+  overflow: hidden;
+}
+.talkshow-hero img.ornamen1 {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+.talkshow-hero img.ornamen2 {
+  z-index: 0;
+  width: 100%;
+  bottom: -3px;
+  position: absolute;
+  text-align: center;
+}
+.talkshow-hero .closing-bg {
+  height: 100%;
+  z-index: 1;
+}
+.talkshow-hero .jumbo {
+  z-index: 10;
+}
+.talkshow-hero .jumbo p.title {
+  color: #000;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 109.867%;
+}
+.talkshow-hero .jumbo p.sub-title {
+  color: #000;
+  text-align: justify;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 109.867%;
+}
+.talkshow-hero .jumbo p.speaker-title {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 109.867%; /* 38.454px */
+}
+.talkshow-hero .jumbo .speaker {
+  text-align: center;
+}
+.talkshow-hero .jumbo .speaker .speaker-utama-name {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 109.867%;
+  /* 31.611px */
+}
+.talkshow-hero .jumbo .speaker .speaker-utama-name-sub {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 109.867%;
+  /* 31.611px */
+}
+.talkshow-hero .jumbo .speaker .speaker-name {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 109.867%; /* 22.782px */
+}
+.talkshow-hero .jumbo .speaker .speaker-name-subb {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 109.867%; /* 22.782px */
+}
+.talkshow-hero .container {
+  padding-top: 3rem;
+}
+@media screen and (max-width: 920px) {
+  .talkshow-hero .container {
+    padding-top: 2rem;
+  }
+}
+
+.concert-hero {
+  position: relative;
+  margin: 0 auto;
+  max-width: 2000px;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  background: #4785CE;
+  overflow: hidden;
+}
+.concert-hero img.ornamen1 {
+  z-index: 0;
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+  text-align: center;
+}
+.concert-hero img.ornamen2 {
+  z-index: 0;
+  width: 60%;
+  bottom: 0px;
+  position: absolute;
+  text-align: center;
+}
+.concert-hero .closing-bg {
+  z-index: 1;
+}
+.concert-hero .jumbo {
+  position: relative;
+  z-index: 10;
+}
+.concert-hero .jumbo .container {
+  z-index: 10;
+  text-align: center;
+}
+.concert-hero .jumbo .container .title {
+  color: #FFF;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 109.867%; /* 38.454px */
+}
+.concert-hero .jumbo .container img {
+  width: 90%;
+}
+.concert-hero .jumbo .container .subs {
+  color: #FFF;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 109.867%; /* 26.368px */
+}
+.concert-hero .jumbo .container .intro-guest {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 109.867%; /* 32.96px */
+}
+.concert-hero .jumbo .container img.hivi {
+  width: 50%;
+}
+.concert-hero .container {
+  padding-top: 3rem;
+}
+@media screen and (max-width: 920px) {
+  .concert-hero .container {
+    padding-top: 2rem;
+  }
+}
+
+.another-perform {
+  position: relative;
+  margin: 0 auto;
+  max-width: 2000px;
+  width: 100%;
+  padding-bottom: 400px;
+  height: -moz-max-content;
+  height: max-content;
+  background: #4785CE;
+  overflow: hidden;
+}
+.another-perform img.ornamen1 {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  right: 0;
+  text-align: center;
+}
+@keyframes sway-rotate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(5px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+.another-perform img.grass1 {
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  width: 120px;
+  bottom: 165px;
+  right: 40px;
+  animation: sway-rotate 1s ease-in-out infinite;
+}
+.another-perform img.grass2 {
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  bottom: 145px;
+  left: 300px;
+  animation: sway-rotate 1.5s ease-in-out infinite;
+}
+.another-perform .closing-bg {
+  z-index: 1;
+}
+.another-perform .jumbo {
+  position: relative;
+  z-index: 10;
+}
+.another-perform .jumbo .title {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 109.867%; /* 27.467px */
+}
+.another-perform .jumbo span {
+  color: #FFF;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 109.867%; /* 27.467px */
+}
+.another-perform .jumbo .icon-band img {
+  height: 100px;
+}
+.another-perform .container {
+  padding-top: 3rem;
+}
+@media screen and (max-width: 920px) {
+  .another-perform .container {
+    padding-top: 2rem;
+  }
+}
+
+@keyframes highlight {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Highlight dengan memperbesar elemen */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.highlight-animation {
+  animation: highlight 2s ease-in-out infinite; /* Animasi highlight selama 2 detik, berulang terus-menerus */
 }
 
 .authcard {
