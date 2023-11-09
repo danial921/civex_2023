@@ -14,14 +14,14 @@
                     <img src="{{ asset('civex/img/icon/logo-hatti.png') }}" alt="Image 2">
                 </div>
                 <div class="img-wrapper mt-3 mb-3">
-                    <img src="{{ asset('civex/img/icon/logo-pelindo-mitratel.png') }}" alt="Image 3">
+                    <img src="{{ asset('civex/img/icon/logo-gab-1.png') }}" alt="Image 3">
                 </div>
-                {{-- <div class="img-wrapper">
-                    <img src="{{ asset('civex/img/icon/logo-mitratel S.png') }}" alt="Image 3">
+                <div class="img-wrapper mt-3 mb-3">
+                    <img src="{{ asset('civex/img/icon/logo-gab-2.png') }}" alt="Image 3">
                 </div>
-                <div class="img-wrapper">
-                    <img src="{{ asset('civex/galery/sponsor/5.svg') }}" alt="Image 3">
-                </div> --}}
+                <div class="img-wrapper mt-3 mb-3">
+                    <img src="{{ asset('civex/img/icon/logo-gab-3.png') }}" alt="Image 3">
+                </div>
             </div>
 
         </div>
