@@ -24,8 +24,8 @@ class ProposalRequest extends FormRequest
     public function rules()
     {
         return [
-            'submission_proposal' => 'required|mimes:pdf|max:2048',
-            'submission_excel' => 'required|mimes:csv,xls,xlsx|max:2048'
+            'submission_proposal' => 'required|mimes:pdf|max:28480',
+            'submission_excel' => 'required|mimes:csv,xls,xlsx|max:28480'
         ];
     }
 }
