@@ -229,7 +229,7 @@
                         @if ($dataPeserta->submission_proposal == '-')
                             <p class="w-100 text-center"><i>tim belum mengirimkan berkas</i></p>
                         @elseif ($dataPeserta->submission_proposal != '-')
-                            <a href="{{ $dataPeserta->submission_proposal }}" class="w-100 btn btn-download">
+                            <a href="{{ $dataPeserta->submission_proposal }}" class="w-100 btn btn-download" target="_blank">
                                 <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
                                     width="20" height="20">
                                     File Submission Proposal
