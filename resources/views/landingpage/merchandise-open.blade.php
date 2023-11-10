@@ -23,7 +23,7 @@
     <main>
 
         <!--MDB Navbars-->
-        <div class="" style="height: 300px; background: aqua;"></div>
+        @include('landingpage.slicing.merchandise-hero')
         @include('landingpage.slicing.merchandise-catalougue')
         @include('landingpage.slicing.copyright')
         {{-- </div> --}}
