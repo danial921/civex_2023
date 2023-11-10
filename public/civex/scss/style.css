@@ -3354,7 +3354,8 @@ p.hero-subtitle {
   font-size: 35px;
   font-style: normal;
   font-weight: 800;
-  line-height: 109.867%; /* 38.454px */
+  line-height: 109.867%;
+  /* 38.454px */
 }
 .talkshow-hero .jumbo .speaker {
   text-align: center;
@@ -3384,7 +3385,8 @@ p.hero-subtitle {
   font-size: 18;
   font-style: normal;
   font-weight: 600;
-  line-height: 109.867%; /* 22.782px */
+  line-height: 109.867%;
+  /* 22.782px */
 }
 .talkshow-hero .jumbo .speaker .speaker-name-sub {
   color: #000;
@@ -3393,7 +3395,8 @@ p.hero-subtitle {
   font-size: 18;
   font-style: italic;
   font-weight: 400;
-  line-height: 109.867%; /* 22.782px */
+  line-height: 109.867%;
+  /* 22.782px */
 }
 .talkshow-hero .container {
   padding-top: 3rem;
@@ -3458,7 +3461,8 @@ p.hero-subtitle {
   font-size: 35px;
   font-style: normal;
   font-weight: 900;
-  line-height: 109.867%; /* 38.454px */
+  line-height: 109.867%;
+  /* 38.454px */
 }
 @media screen and (max-width: 720px) {
   .concert-hero .jumbo .container .title {
@@ -3475,8 +3479,10 @@ p.hero-subtitle {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 109.867%; /* 26.368px */
-  line-height: 109.867%; /* 38.454px */
+  line-height: 109.867%;
+  /* 26.368px */
+  line-height: 109.867%;
+  /* 38.454px */
 }
 @media screen and (max-width: 720px) {
   .concert-hero .jumbo .container .subs {
@@ -3491,7 +3497,8 @@ p.hero-subtitle {
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
-  line-height: 109.867%; /* 32.96px */
+  line-height: 109.867%;
+  /* 32.96px */
 }
 @media screen and (max-width: 720px) {
   .concert-hero .jumbo .container .intro-guest {
@@ -3594,7 +3601,8 @@ p.hero-subtitle {
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
-  line-height: 109.867%; /* 27.467px */
+  line-height: 109.867%;
+  /* 27.467px */
 }
 .another-perform .jumbo span {
   color: #FFF;
@@ -3632,14 +3640,214 @@ p.hero-subtitle {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1); /* Highlight dengan memperbesar elemen */
+    transform: scale(1.1);
+    /* Highlight dengan memperbesar elemen */
   }
   100% {
     transform: scale(1);
   }
 }
 .highlight-animation {
-  animation: highlight 2s ease-in-out infinite; /* Animasi highlight selama 2 detik, berulang terus-menerus */
+  animation: highlight 2s ease-in-out infinite;
+  /* Animasi highlight selama 2 detik, berulang terus-menerus */
+}
+
+.merch-katalog {
+  border-radius: 50px;
+  border: 1px solid #000;
+  background: #FFF;
+  height: -moz-max-content;
+  height: max-content;
+  background: white;
+  max-width: 1400px;
+  min-height: calc(100vh - 5rem);
+  margin: 4rem auto 0 auto;
+}
+.merch-katalog img.size {
+  max-width: 90%;
+  max-height: 90%;
+}
+.merch-katalog h1 {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.merch-katalog a {
+  border-radius: 15px;
+  border: 1px solid #000;
+  background: #E6F3FC;
+}
+.merch-katalog a span {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.75px;
+}
+.merch-katalog a.active {
+  background-color: #FFE68D;
+}
+.merch-katalog #gallery {
+  border-radius: 30px;
+  border: 1px solid #000;
+  background: #E6F3FC;
+}
+.merch-katalog #gallery .gallery-category {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: visibility 0.5s ease, opacity 0.5s ease, height 0.5s ease;
+}
+.merch-katalog #gallery .gallery-category.active {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+.merch-katalog #gallery .item-card {
+  margin: 0 auto;
+  width: 250px;
+}
+.merch-katalog #gallery .item-card .bg-white {
+  background-color: white !important;
+  transition: background-color 0.3s ease-out;
+}
+.merch-katalog #gallery .item-card .bg-black {
+  background-color: black;
+  transition: background-color 0.3s ease-out;
+}
+.merch-katalog #gallery .item-card .bg-black:hover {
+  background-color: #616161 !important;
+}
+.merch-katalog #gallery .item-card .bg-white:hover {
+  background-color: #C7C7C7 !important;
+}
+.merch-katalog #gallery .item-card .image {
+  max-width: 250px;
+  width: 100%;
+  height: 250px;
+  border: 2px solid #000;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.merch-katalog #gallery .item-card .image img {
+  max-width: 90%;
+  max-height: 90%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.merch-katalog #gallery .item-card a.button-card {
+  border-radius: 0px;
+  border: 1px solid #000;
+  background: #000;
+}
+.merch-katalog #gallery .item-card .name {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 7px;
+  letter-spacing: 0.54px;
+}
+.merch-katalog #gallery .item-card .name .sub {
+  color: #000;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.45px;
+}
+
+.merch-hero {
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  max-width: 2000px;
+  max-height: 900px;
+}
+@media screen and (max-width: 920px) {
+  .merch-hero {
+    height: calc(100vh - 6rem);
+    margin-top: 5rem !important;
+  }
+}
+.merch-hero .closing-bg {
+  z-index: 1;
+}
+.merch-hero img.ornamen1 {
+  z-index: 0;
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  width: 120px;
+  text-align: center;
+}
+@media screen and (max-width: 920px) {
+  .merch-hero img.ornamen1 {
+    width: 60px;
+  }
+}
+.merch-hero img.ornamen2 {
+  z-index: 0;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  width: 200px;
+  text-align: center;
+}
+@media screen and (max-width: 920px) {
+  .merch-hero img.ornamen2 {
+    width: 160px;
+  }
+}
+.merch-hero img.ornamen3 {
+  z-index: 0;
+  position: absolute;
+  bottom: 0%;
+  left: 5%;
+  width: 180px;
+  text-align: center;
+}
+@media screen and (max-width: 920px) {
+  .merch-hero img.ornamen3 {
+    width: 120px;
+  }
+}
+.merch-hero img.hero {
+  z-index: 1;
+  position: absolute;
+  max-width: 85%;
+  max-height: 90%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 920px) {
+  .merch-hero img.hero {
+    max-width: 95%;
+    max-height: 95%;
+  }
+}
+.merch-hero .jumbo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+  border: 1px solid #000;
+  background: #FFF;
+  height: calc(100% - 2rem);
 }
 
 .authcard {
