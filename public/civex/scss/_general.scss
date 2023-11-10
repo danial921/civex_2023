@@ -4098,10 +4098,10 @@ line-height: 109.867%; /* 27.467px */
         border-radius: 50px;
     border: 1px solid #000;
     background: #FFF;
-    height: calc(100vh - 5rem);
+    height: max-content;
     background: red;
     max-width: 1400px;
-    max-height: 1400px;
+    max-height: calc(100vh - 5rem);
     margin: 4rem auto 0 auto;
     h1{
         color: #000;
@@ -4111,5 +4111,26 @@ line-height: 109.867%; /* 27.467px */
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+    }
+    a{
+        border-radius: 15px;
+        border: 1px solid #000;
+        background: #E6F3FC;
+        span{
+
+            color: #000;
+            text-align: center;
+            font-family: Inter;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.75px;
+        }
+    }
+    #gallery{
+        border-radius: 30px;
+        border: 1px solid #000;
+        background: #E6F3FC;
     }
 }
