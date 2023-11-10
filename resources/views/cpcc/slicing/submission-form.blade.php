@@ -31,9 +31,9 @@
                             value="{{ $dosenpembimbing }}">
                     </div>
                 </div>
-                @if(strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-11-9 23:59:59'))
+                @if(strtotime(date("Y-m-d H:i:s")) <= strtotime('2023-11-14 23:59:59'))
                 <div class="col-lg-6 col-12 mb-lg-3 mb-1">
-                    <label for="submission_proposal" class="form-pendaftaran mb-2">Unggah Proposal</label>
+                    <label for="submission_proposal" class="form-pendaftaran mb-2">Unggah Berkas Proposal (.zip)</label>
                     <input type="file" class="form-control" id="submission_proposal" name="submission_proposal">
                     @error('submission_proposal')
                         <div class="alert alert-danger">{{ $message }}</div>
@@ -44,7 +44,7 @@
                     <input type="button" value="submit" class="btn btn-civex  mg-b-20 mg-r-20" id="btnSubmit" data-toggle="modal" data-animation="effect-scale" data-target="#simpan"></input>
                 </div>
             </div>
-        </form>    
+        </form>
     </div>
 </div>
 <!-- Modal simpan -->
@@ -53,9 +53,9 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <h5 class="tx-poppins tx-medium">Pendaftaran TIM</h5>
-                <p class="mg-b-0">Apakah anda yakin ingin melakukan pendaftaran tim dengan data tim yang telah
-                    diisi?</p>
+                <h5 class="tx-poppins tx-medium">Submission Form</h5>
+                <p class="mg-b-0">Apakah anda yakin ingin melakukan submission tim yang telah
+                    diisi?</p>
             </div>
             <div class="modal-footer">
                 <a class="btn btn-civex-danger tx-poppins tx-medium"

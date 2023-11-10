@@ -24,7 +24,7 @@ class ProposalRequest extends FormRequest
     public function rules()
     {
         return [
-            'submission_proposal' => 'required|mimes:pdf|max:2048',
+            'submission_proposal' => 'required|mimes:zip|max:28480',
         ];
     }
 }

@@ -34,8 +34,8 @@
                 <img class="ml-lg-3 ml-2"src="{{ asset('civex/img/closing/arrow-bawah.svg') }}" alt="">
             </div>
             <div class="icon-band text-center mt-3">
-                <img data-aos="fade-right" class="mr-5" src="{{ asset('civex/img/closing/overjoy.png') }}" alt="">
-                <img data-aos="fade-left" class="ml-5" src="{{ asset('civex/img/closing/overjoy.png') }}" alt="">
+                <img data-aos="fade-right" class="mr-lg-5 mr-1" src="{{ asset('civex/img/closing/overjoy.png') }}" alt="">
+                <img data-aos="fade-left" class="ml-lg-5 ml-1" src="{{ asset('civex/img/closing/ascension.svg') }}" alt="">
             </div>
         </div>
 
