@@ -4170,6 +4170,11 @@ p.hero-subtitle {
     max-width: 1400px;
     min-height: calc(100vh - 5rem);
     margin: 4rem auto 0 auto;
+    @media screen and (max-width: 920px) {
+        margin: 2rem 1rem 0 1rem;
+        min-height: fit-content;
+        border-radius: 20px;
+    }
     img.size{
         max-width: 90%;
         max-height: 90%;
@@ -4184,11 +4189,18 @@ p.hero-subtitle {
         font-weight: 700;
         line-height: normal;
     }
+    a.btn{
+        @media screen and (max-width: 920px) {
+        padding: 3px 10px;
 
+        }}
     a {
         border-radius: 15px;
         border: 1px solid #000;
         background: #E6F3FC;
+        @media screen and (max-width: 920px) {
+            width: fit-content;
+        }
 
         span {
 
@@ -4200,6 +4212,9 @@ p.hero-subtitle {
             font-weight: 600;
             line-height: normal;
             letter-spacing: 0.75px;
+            @media screen and (max-width: 920px) {
+                font-size: 12px;
+            }
         }
     }
 
@@ -4224,6 +4239,9 @@ p.hero-subtitle {
         border-radius: 30px;
         border: 1px solid #000;
         background: #E6F3FC;
+        @media screen and (max-width: 920px) {
+            border-radius: 15px;
+        }
 
         .item-card {
             margin: 0 auto;
@@ -4270,6 +4288,9 @@ p.hero-subtitle {
                 border-radius: 0px;
                 border: 1px solid #000;
                 background: #000;
+                @media screen and (max-width: 920px) {
+                width: 100%;
+                }
             }
 
             .name {
