@@ -17,11 +17,11 @@
                     <div id="tshirt" class="gallery-category active">
                         <div class="row mt-3">
                             <div class="col-lg-6 col-12">
-                                <div class="item-card m-0 m-lg-2">
+                                <div class="item-card m-2 m-lg-auto">
                                     <div class="image bg-balck align-item-center">
                                         <img src="{{ asset('civex/img/katalog/t-shirt-white.png') }}" alt="">
                                     </div>
-                                    <a class="button-card bg-white d-flex justify-content-between px-2 py-3">
+                                    <a href="https://its.id/m/PreOrderMerchCivex2023" class="button-card bg-white d-flex justify-content-between px-2 py-3">
                                         <img src="{{ asset('civex/img/katalog/detail-black.svg') }}" alt="">
                                         <img src="{{ asset('civex/img/katalog/buy-now-black.svg') }}" alt="">
                                     </a>
@@ -32,11 +32,11 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-12">
-                                <div class="item-card m-0 m-lg-2">
+                                <div class="item-card m-2 m-lg-auto">
                                     <div class="image bg-white align-item-center">
                                         <img src="{{ asset('civex/img/katalog/t-shirt-black.png') }}" alt="">
                                     </div>
-                                    <a class="button-card bg-black d-flex justify-content-between px-2 py-3">
+                                    <a href="https://its.id/m/PreOrderMerchCivex2023" class="button-card bg-black d-flex justify-content-between px-2 py-3">
                                         <img src="{{ asset('civex/img/katalog/detail-white.svg') }}" alt="">
                                         <img src="{{ asset('civex/img/katalog/buy-now-white.svg') }}" alt="">
                                     </a>
@@ -51,11 +51,11 @@
                     <div id="totebag" class="gallery-category">
                         <div class="row mt-3">
                             <div class="col-lg-6 col-12">
-                                <div class="item-card m-0 m-lg-2">
+                                <div class="item-card m-2 m-lg-auto">
                                     <div class="image bg-balck align-item-center">
                                         <img src="{{ asset('civex/img/katalog/totebag-white.png') }}" alt="">
                                     </div>
-                                    <a class="button-card bg-white d-flex justify-content-between px-2 py-3">
+                                    <a href="https://its.id/m/PreOrderMerchCivex2023" class="button-card bg-white d-flex justify-content-between px-2 py-3">
                                         <img src="{{ asset('civex/img/katalog/detail-black.svg') }}" alt="">
                                         <img src="{{ asset('civex/img/katalog/buy-now-black.svg') }}" alt="">
                                     </a>
@@ -66,11 +66,11 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-12">
-                                <div class="item-card m-0 m-lg-2">
+                                <div class="item-card m-2 m-lg-auto">
                                     <div class="image bg-white align-item-center">
                                         <img src="{{ asset('civex/img/katalog/totebag-black.png') }}" alt="">
                                     </div>
-                                    <a class="button-card bg-black d-flex justify-content-between px-2 py-3">
+                                    <a href="https://its.id/m/PreOrderMerchCivex2023" class="button-card bg-black d-flex justify-content-between px-2 py-3">
                                         <img src="{{ asset('civex/img/katalog/detail-white.svg') }}" alt="">
                                         <img src="{{ asset('civex/img/katalog/buy-now-white.svg') }}" alt="">
                                     </a>
@@ -89,7 +89,7 @@
                                     <div class="image bg-balck align-item-center">
                                         <img src="{{ asset('civex/img/katalog/sticker-1.png') }}" alt="">
                                     </div>
-                                    <a class="button-card bg-white d-flex justify-content-between px-2 py-3">
+                                    <a href="https://its.id/m/PreOrderMerchCivex2023" class="button-card bg-white d-flex justify-content-between px-2 py-3">
                                         <img src="{{ asset('civex/img/katalog/detail-black.svg') }}" alt="">
                                         <img src="{{ asset('civex/img/katalog/buy-now-black.svg') }}" alt="">
                                     </a>
@@ -104,7 +104,7 @@
                                     <div class="image bg-balck align-item-center">
                                         <img src="{{ asset('civex/img/katalog/sticker-2.png') }}" alt="">
                                     </div>
-                                    <a class="button-card bg-white d-flex justify-content-between px-2 py-3">
+                                    <a href="https://its.id/m/PreOrderMerchCivex2023" class="button-card bg-white d-flex justify-content-between px-2 py-3">
                                         <img src="{{ asset('civex/img/katalog/detail-black.svg') }}" alt="">
                                         <img src="{{ asset('civex/img/katalog/buy-now-black.svg') }}" alt="">
                                     </a>
@@ -119,7 +119,7 @@
                                     <div class="image bg-balck align-item-center">
                                         <img src="{{ asset('civex/img/katalog/sticker-3.png') }}" alt="">
                                     </div>
-                                    <a class="button-card bg-white d-flex justify-content-between px-2 py-3">
+                                    <a href="https://its.id/m/PreOrderMerchCivex2023" class="button-card bg-white d-flex justify-content-between px-2 py-3">
                                         <img src="{{ asset('civex/img/katalog/detail-black.svg') }}" alt="">
                                         <img src="{{ asset('civex/img/katalog/buy-now-black.svg') }}" alt="">
                                     </a>
@@ -134,7 +134,7 @@
                                     <div class="image bg-balck align-item-center">
                                         <img src="{{ asset('civex/img/katalog/sticker-4.png') }}" alt="">
                                     </div>
-                                    <a class="button-card bg-white d-flex justify-content-between px-2 py-3">
+                                    <a href="https://its.id/m/PreOrderMerchCivex2023" class="button-card bg-white d-flex justify-content-between px-2 py-3">
                                         <img src="{{ asset('civex/img/katalog/detail-black.svg') }}" alt="">
                                         <img src="{{ asset('civex/img/katalog/buy-now-black.svg') }}" alt="">
                                     </a>
@@ -149,7 +149,7 @@
                                     <div class="image bg-balck align-item-center">
                                         <img src="{{ asset('civex/img/katalog/sticker-5.png') }}" alt="">
                                     </div>
-                                    <a class="button-card bg-white d-flex justify-content-between px-2 py-3">
+                                    <a href="https://its.id/m/PreOrderMerchCivex2023" class="button-card bg-white d-flex justify-content-between px-2 py-3">
                                         <img src="{{ asset('civex/img/katalog/detail-black.svg') }}" alt="">
                                         <img src="{{ asset('civex/img/katalog/buy-now-black.svg') }}" alt="">
                                     </a>
@@ -164,7 +164,7 @@
                                     <div class="image bg-balck align-item-center">
                                         <img src="{{ asset('civex/img/katalog/sticker-6.png') }}" alt="">
                                     </div>
-                                    <a class="button-card bg-white d-flex justify-content-between px-2 py-3">
+                                    <a href="https://its.id/m/PreOrderMerchCivex2023" class="button-card bg-white d-flex justify-content-between px-2 py-3">
                                         <img src="{{ asset('civex/img/katalog/detail-black.svg') }}" alt="">
                                         <img src="{{ asset('civex/img/katalog/buy-now-black.svg') }}" alt="">
                                     </a>
@@ -183,7 +183,7 @@
                                     <div class="image bg-balck align-item-center">
                                         <img src="{{ asset('civex/img/katalog/lighter-1.png') }}" alt="">
                                     </div>
-                                    <a class="button-card bg-white d-flex justify-content-between px-2 py-3">
+                                    <a href="https://its.id/m/PreOrderMerchCivex2023" class="button-card bg-white d-flex justify-content-between px-2 py-3">
                                         <img src="{{ asset('civex/img/katalog/detail-black.svg') }}" alt="">
                                         <img src="{{ asset('civex/img/katalog/buy-now-black.svg') }}" alt="">
                                     </a>
@@ -198,7 +198,7 @@
                                     <div class="image bg-balck align-item-center">
                                         <img src="{{ asset('civex/img/katalog/lighter-2.png') }}" alt="">
                                     </div>
-                                    <a class="button-card bg-white d-flex justify-content-between px-2 py-3">
+                                    <a href="https://its.id/m/PreOrderMerchCivex2023" class="button-card bg-white d-flex justify-content-between px-2 py-3">
                                         <img src="{{ asset('civex/img/katalog/detail-black.svg') }}" alt="">
                                         <img src="{{ asset('civex/img/katalog/buy-now-black.svg') }}" alt="">
                                     </a>
@@ -217,7 +217,7 @@
                                     <div class="image bg-balck align-item-center">
                                         <img src="{{ asset('civex/img/katalog/keychain-1.png') }}" alt="">
                                     </div>
-                                    <a class="button-card bg-white d-flex justify-content-between px-2 py-3">
+                                    <a href="https://its.id/m/PreOrderMerchCivex2023" class="button-card bg-white d-flex justify-content-between px-2 py-3">
                                         <img src="{{ asset('civex/img/katalog/detail-black.svg') }}" alt="">
                                         <img src="{{ asset('civex/img/katalog/buy-now-black.svg') }}" alt="">
                                     </a>
@@ -232,7 +232,7 @@
                                     <div class="image bg-balck align-item-center">
                                         <img src="{{ asset('civex/img/katalog/keychain-2.png') }}" alt="">
                                     </div>
-                                    <a class="button-card bg-white d-flex justify-content-between px-2 py-3">
+                                    <a href="https://its.id/m/PreOrderMerchCivex2023" class="button-card bg-white d-flex justify-content-between px-2 py-3">
                                         <img src="{{ asset('civex/img/katalog/detail-black.svg') }}" alt="">
                                         <img src="{{ asset('civex/img/katalog/buy-now-black.svg') }}" alt="">
                                     </a>
@@ -251,7 +251,7 @@
                                     <div class="image bg-balck align-item-center">
                                         <img src="{{ asset('civex/img/katalog/bundel-1.png') }}" alt="">
                                     </div>
-                                    <a class="button-card bg-white d-flex justify-content-between px-2 py-3">
+                                    <a href="https://its.id/m/PreOrderMerchCivex2023" class="button-card bg-white d-flex justify-content-between px-2 py-3">
                                         <img src="{{ asset('civex/img/katalog/detail-black.svg') }}" alt="">
                                         <img src="{{ asset('civex/img/katalog/buy-now-black.svg') }}" alt="">
                                     </a>
@@ -267,7 +267,7 @@
                                     <div class="image bg-balck align-item-center">
                                         <img src="{{ asset('civex/img/katalog/bundel-2.png') }}" alt="">
                                     </div>
-                                    <a class="button-card bg-white d-flex justify-content-between px-2 py-3">
+                                    <a href="https://its.id/m/PreOrderMerchCivex2023" class="button-card bg-white d-flex justify-content-between px-2 py-3">
                                         <img src="{{ asset('civex/img/katalog/detail-black.svg') }}" alt="">
                                         <img src="{{ asset('civex/img/katalog/buy-now-black.svg') }}" alt="">
                                     </a>
