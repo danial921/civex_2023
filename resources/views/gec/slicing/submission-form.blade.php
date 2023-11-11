@@ -1,5 +1,5 @@
 <div class="card container">
-        <div class="card-header">
+    <div class="card-header">
         <h3 class="mt-2">Submission Proposal</h3>
     </div>
     <div class="card-body">
