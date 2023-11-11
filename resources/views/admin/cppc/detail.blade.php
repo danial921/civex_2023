@@ -229,7 +229,12 @@
                         @if ($dataPeserta->submission_proposal == '-')
                             <p class="w-100 text-center"><i>tim belum mengirimkan berkas</i></p>
                         @elseif ($dataPeserta->submission_proposal != '-')
-                            <form method="POST" action="{{ route('show-pdf') }}" target="_blank">
+                            <a href="{{ $dataPeserta->submission_proposal }}" class="w-100 btn btn-download" target="_blank">
+                                <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image"
+                                    width="20" height="20">
+                                    File Submission Proposal
+                            </a>
+                            {{--<form method="POST" action="{{ route('show-pdf') }}" target="_blank">
                                 @csrf
                                 <input type="hidden" name="url" value="{{ $dataPeserta->submission_proposal }}">
                                 <button type="submit" class="w-100 btn btn-download">
@@ -237,7 +242,7 @@
                                         width="20" height="20">
                                         File Submission Proposal
                                 </button>
-                            </form>
+                            </form> --}}
                         @endif
                     </div>
                     
