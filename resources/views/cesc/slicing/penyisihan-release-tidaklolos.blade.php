@@ -4,7 +4,7 @@
         <p class="hero-subtitle anounce">Dengan berat hati kami menyatakan tim kamu <b><span class="c-red">TIDAK
                     LOLOS</span></b> ke babak selanjutnya, Rilis nilai penyisihan dapat diakses pada link berikut :</p>
         <div class="mb-1"></div>
-        <a href="">
+        <a href="https://drive.google.com/file/d/1QWiJbk2wXVIseWxnpSaep1cbJtTCzIsv/view?usp=sharing">
             <button type="button" class="btn btn-daftar  w-100">
                 <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image" width="20" height="20">
                 <b>Rilis Nilai</b> Penyisihan
