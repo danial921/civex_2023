@@ -10,7 +10,7 @@
                         <div class="col-12">
                             @include('cesc.slicing.semifinal-jumbotron-welcome')
                         </div>
-                        @if(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-11-12 23:59:59') && $status_proposal === '-')
+                        @if(strtotime(date("Y-m-d H:i:s")) >= strtotime('2023-11-18 20:00:00') && $status_proposal === '-')
                             <div class="col-12">
                                 {{--  Rilis Semifinal --}}
                                 @include('cesc.slicing.semifinal-rilis-soal')
