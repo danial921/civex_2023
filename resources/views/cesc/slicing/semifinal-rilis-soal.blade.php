@@ -45,7 +45,7 @@
 </div>
 
 
-{{-- <div class="card mb-lg-3 mb-2 soal">
+<div class="card mb-lg-3 mb-2 soal">
     <div class="card-body">
         <div class="pb-1 bd-highlight title">Form Upload Submission <span class="bold-blue"></div>
         <div class="row">
@@ -58,7 +58,7 @@
                     </button>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-lg-0 mb-2">
+           {{-- <div class="col-lg-4 col-md-6 col-12 mb-lg-0 mb-2">
                 <a href="/cesc/submission-semifinal">
                     <button type="button" class="btn btn-daftar w-100">
                         <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image" width="20"
@@ -67,10 +67,9 @@
                     </button>
                 </a>
 
-            </div>
+            </div> --}}
             <div class="col-lg-4 col-md-6 col-12 mb-lg-0 mb-2">
-
-                <a href="submission-semifinal">
+                <a href="https://drive.google.com/file/d/1MPrEfB4mTEFnS5O_-yRN8bS0ibcvqlg1/view">
                     <button type="button" class="btn btn-daftar w-100">
                         <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image" width="20"
                             height="20">
@@ -81,4 +80,4 @@
             </div>
         </div>
     </div>
-</div> --}}
+</div>
