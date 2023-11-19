@@ -58,16 +58,16 @@
                     </button>
                 </a>
             </div>
-           {{-- <div class="col-lg-4 col-md-6 col-12 mb-lg-0 mb-2">
-                <a href="/cesc/submission-semifinal">
+           <div class="col-lg-4 col-md-6 col-12 mb-lg-0 mb-2">
+                <a href="https://its.id/m/SEMIFINALCESC2023">
                     <button type="button" class="btn btn-daftar w-100">
-                        <img src="{{ asset('civex/img/icon/icon-paper.svg') }}" alt="your_image" width="20"
+                        <img src="{{ asset('civex/img/icon/icon-zoom.svg') }}" alt="your_image" width="20"
                             height="20">
-                        <b>Download</b> Buku Panduan Peserta
+                        Link<b>Zoom Meeting</b>
                     </button>
                 </a>
 
-            </div> --}}
+            </div>
             <div class="col-lg-4 col-md-6 col-12 mb-lg-0 mb-2">
                 <a href="https://drive.google.com/file/d/1MPrEfB4mTEFnS5O_-yRN8bS0ibcvqlg1/view">
                     <button type="button" class="btn btn-daftar w-100">
